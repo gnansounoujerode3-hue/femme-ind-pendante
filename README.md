@@ -1,4 +1,4 @@
-# Se réveiller, pas subir
+# Réveillée, mais prisonnière — Se réveiller, pas subir
 
 Ebook complet sur la paralysie du sommeil, réalisé à partir du
 `WORKBOOK-OFFICIEL-JOUR-2-CREE-TON-PREMIER-PRODUIT-DIGITAL.pdf`

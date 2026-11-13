@@ -141,26 +141,26 @@ def make_cover():
     doc = pymupdf.open()
     page = doc.new_page(width=PAGE.width, height=PAGE.height)
     w, h = PAGE.width, PAGE.height
-    page.insert_image(page.rect, pixmap=pymupdf.Pixmap(os.path.join(HERE, "art", "cover.jpg")))
-    page.draw_rect(page.rect, color=None, fill=(0.04, 0.07, 0.15), fill_opacity=0.24, overlay=True)
-    page.draw_rect(pymupdf.Rect(0, 0, w, 140), color=None, fill=(0.04, 0.07, 0.15),
-                   fill_opacity=0.62, overlay=True)
-    page.draw_rect(pymupdf.Rect(0, h - 158, w, h), color=None, fill=(0.04, 0.07, 0.15),
-                   fill_opacity=0.70, overlay=True)
-    page.insert_text(pymupdf.Point(34, 47), "COMPRENDRE  ·  APAISER  ·  PASSER A L'ACTION",
-                     fontsize=5.9, fontname="hebo", color=(0.91, 0.78, 0.66))
-    page.insert_text(pymupdf.Point(33, 93), "Se réveiller,", fontsize=30, fontname="hebo",
+    page.insert_image(page.rect, filename=os.path.join(HERE, "art", "cover-sleep-paralysis.jpg"), keep_proportion=False)
+    page.draw_rect(pymupdf.Rect(0, 0, w, 190), color=None,
+                   fill=(0.025, 0.035, 0.08), fill_opacity=0.48)
+    page.draw_rect(pymupdf.Rect(0, h - 105, w, h), color=None,
+                   fill=(0.025, 0.035, 0.08), fill_opacity=0.75)
+    page.insert_font(fontname="coverdisplay", fontfile=os.path.join(HERE, "ttf", "playfair-display-latin-700-normal.ttf"))
+    page.insert_font(fontname="covertext", fontfile=os.path.join(HERE, "ttf", "inter-latin-600-normal.ttf"))
+    page.insert_text((32, 46), "COMPRENDRE  ·  APAISER  ·  AGIR", fontname="covertext",
+                     fontsize=7, color=(0.94, 0.73, 0.55))
+    page.insert_text((30, 91), "Réveillée,", fontname="coverdisplay", fontsize=31,
                      color=(1, 1, 1))
-    page.insert_text(pymupdf.Point(33, 124), "pas subir", fontsize=30, fontname="hebo",
-                     color=(0.96, 0.79, 0.62))
-    page.draw_line(pymupdf.Point(34, h - 124), pymupdf.Point(80, h - 124),
-                   color=(0.91, 0.78, 0.66), width=1.4)
-    page.insert_text(pymupdf.Point(34, h - 105), "La paralysie du sommeil", fontsize=8.4,
-                     fontname="hebo", color=(1, 1, 1))
-    page.insert_text(pymupdf.Point(34, h - 92), "expliquée, apaisée, maîtrisée",
-                     fontsize=8.4, fontname="helv", color=(0.90, 0.85, 0.78))
-    page.insert_text(pymupdf.Point(34, h - 58), "21 NUITS POUR REPRENDRE LE CONTROLE",
-                     fontsize=5.8, fontname="hebo", color=(0.96, 0.79, 0.62))
+    page.insert_text((30, 132), "mais prisonnière", fontname="coverdisplay", fontsize=27,
+                     color=(1, 0.84, 0.71))
+    page.insert_text((32, 160), "COMPRENDRE LA PARALYSIE DU SOMMEIL", fontname="covertext",
+                     fontsize=7.8, color=(1, 1, 1))
+    page.draw_line((32, h - 78), (76, h - 78), color=(0.91, 0.65, 0.45), width=1.4)
+    page.insert_text((32, h - 56), "Se réveiller, pas subir", fontname="coverdisplay",
+                     fontsize=14, color=(1, 1, 1))
+    page.insert_text((32, h - 35), "UN GUIDE PRATIQUE POUR RETROUVER SES REPÈRES", fontname="covertext",
+                     fontsize=6.6, color=(0.95, 0.85, 0.76))
     return doc
 
 
@@ -182,7 +182,7 @@ def footer(page, num, dark):
 VIEWER = """<!doctype html>
 <html lang="fr"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Se réveiller, pas subir — aperçu</title>
+<title>Réveillée, mais prisonnière — aperçu</title>
 <style>
   :root {{ --navy:#14243F; --terra:#B0522F; --cream:#F9F2EA; }}
   * {{ box-sizing: border-box; }}
@@ -206,7 +206,7 @@ VIEWER = """<!doctype html>
 </style></head><body>
 <header>
   <div class="eyebrow">EBOOK · {n} PAGES · A5</div>
-  <h1>Se réveiller, pas subir</h1>
+  <h1>Réveillée, mais prisonnière</h1>
   <p class="sub">La paralysie du sommeil expliquée, apaisée, maîtrisée —
   avec un programme de 21 nuits, une fiche d'urgence et un journal de bord.</p>
   <a class="dl" href="SE-REVEILLER-PAS-SUBIR-paralysie-du-sommeil.pdf">Télécharger le PDF</a>
@@ -293,7 +293,7 @@ def build():
         footer(doc[i], i + 1, (i + 1) in dark)
 
     doc.set_metadata({
-        "title": "Se réveiller, pas subir — la paralysie du sommeil expliquée, apaisée, maîtrisée",
+        "title": "Réveillée, mais prisonnière — comprendre la paralysie du sommeil",
         "author": "Collection Femme Indépendante",
         "subject": "Guide pratique et programme de 21 nuits contre la paralysie du sommeil",
         "keywords": "paralysie du sommeil, sommeil, anxiété, angoisse nocturne, Afrique francophone, minzi-minzi, insomnie",
