@@ -8,7 +8,7 @@ Ebook complet sur la paralysie du sommeil, réalisé à partir du
 
 | Fichier | Contenu |
 |---|---|
-| `SE-REVEILLER-PAS-SUBIR-paralysie-du-sommeil.pdf` | **Le produit fini** : 79 pages, format A5, couverture illustrée, sommaire paginé, signets, 5 parties, programme de 21 nuits, fiche d'urgence, journal de bord. |
+| `SE-REVEILLER-PAS-SUBIR-paralysie-du-sommeil.pdf` | **Le produit fini** : 80 pages, format A5, couverture illustrée, sommaire paginé et cliquable, signets, 5 parties, programme de 21 nuits, fiche d'urgence et journal de bord. |
 | `index.html` | Aperçu de toutes les pages dans le navigateur + lien de téléchargement. |
 | `WORKBOOK-JOUR-2-COMPLETE-paralysie-du-sommeil.md` | Le workbook du Jour 2 rempli (VIN, promesse, format, structure, prompts, checklist). |
 
@@ -16,10 +16,11 @@ Ebook complet sur la paralysie du sommeil, réalisé à partir du
 
 1. **Avant de commencer** — « Ce n'est pas une attaque, c'est un décalage »
 2. **Partie I — Comprendre** : le verrou de 90 secondes, les déclencheurs, les 3 personnages de la nuit
-3. **Partie II — Survivre** : la méthode S.A.F.E. pendant l'épisode, les 20 minutes d'après-crise
-4. **Partie III — Croire** : le minzi-minzi, le djinn et l'ombre ; ce que la prière fait vraiment
+3. **Partie II — Survivre** : la méthode S.A.F.E. (4 gestes) pendant l'épisode, les 20 minutes d'après-crise
+4. **Partie III — Croire** : le minzi-minzi, le djinn et l'ombre ; ce que la prière fait vraiment ; les noms du phénomène selon les cultures
 5. **Partie IV — Agir** : le programme des 21 nuits, une page par nuit
-6. **Partie V — Tenir** : fiche d'urgence, journal de bord, quand consulter, déclaration
+6. **Partie V — Tenir** : fiche d'urgence, journal de bord, quand consulter, déclaration, sources
+La fiche de travail VIN et le prompt figurent dans le workbook complété, séparé du livre destiné aux lecteurs.
 
 ## Reconstruire le PDF
 
@@ -36,3 +37,8 @@ l'ordre d'assemblage. La maquette est dans `ebook/style.css`.
 - `00-toc.html` → sommaire, dont les numéros de page se remplissent seuls
 - `<!--KEY:xx-->` → déclare une clé, insérée ailleurs via `__PAGE_xx__`
 - `<!--BM:n|Titre-->` → signet PDF de niveau n
+- `__TOC_xx__` → même chose, mais dans une phrase (« page __TOC_c11__ »)
+
+Les liens internes sont posés après assemblage : les numéros de page détectés
+dans le sommaire et certains renvois deviennent cliquables et pointe vers
+la page qu'il affiche (`_make_links` dans `build.py`).

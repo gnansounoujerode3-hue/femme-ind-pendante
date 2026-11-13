@@ -12,7 +12,6 @@ def split_blocks(html):
     blocks = []
     depth = 0
     start = None
-    i = 0
     for m in re.finditer(r"<(/?)([a-zA-Z0-9]+)([^>]*?)(/?)>", html):
         tag = m.group(2).lower()
         closing = m.group(1) == "/"
@@ -26,11 +25,6 @@ def split_blocks(html):
             if depth == 0 and start is not None:
                 blocks.append(html[start:m.end()])
                 start = None
-        if i == 0:
-            i = 1
-    # reste du texte hors balises
-    if start is None:
-        tail = html[0:0]
     return blocks
 
 
@@ -60,3 +54,8 @@ def paginate(html, css, width, height, archive, gap=0.0):
     if cur:
         pages.append(cur)
     return ["\n".join(p) for p in pages]
+
+
+def is_short(html, css, width, height, archive, ratio=0.72):
+    """Vrai si le contenu ne remplit pas la page (évite les pages orphelines)."""
+    return measure(html, css, width, archive) < height * ratio

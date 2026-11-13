@@ -2,7 +2,7 @@
 
 Ce document reprend **exactement les 6 exercices du workbook officiel** (VIN, promesse, format, structure en 5 parties, IA, checklist) et les remplit avec le sujet *paralysie du sommeil*. Il sert de trace de fabrication : tu peux le réutiliser pour ton produit n°2.
 
-Le livrable final : **`SE-REVEILLER-PAS-SUBIR-paralysie-du-sommeil.pdf`** (79 pages, format A5, prêt à vendre).
+Le livrable final : **`SE-REVEILLER-PAS-SUBIR-paralysie-du-sommeil.pdf`** (80 pages, format A5 ; relecture médicale recommandée avant commercialisation).
 
 ---
 
@@ -11,26 +11,26 @@ Le livrable final : **`SE-REVEILLER-PAS-SUBIR-paralysie-du-sommeil.pdf`** (79 pa
 | Critère | Réponse | Note |
 |---|---|---|
 | **V — Problème (Valeur)** | Les personnes qui font des paralysies du sommeil croient vivre une attaque spirituelle ou perdre la tête. Elles n'ont ni explication claire, ni protocole d'urgence, ni moyen de réduire la fréquence des épisodes. | — |
-| **I — Intensité** | 9/10. La terreur est totale, la sensation d'étouffement est réelle, et l'expérience laisse une peur durable du coucher. Le retentissement est immédiat et quotidien. | 9/10 |
-| **N — Nombre** | ~7,6 % de la population générale sur la vie entière ; 28 à 34 % chez les étudiants (Sharpless & Barber, 2011 ; méta-analyses récentes plus élevées). En Afrique francophone, très forte charge culturelle (minzi-minzi au Bénin, ndoki, djinn) → forte demande d'explications respectueuses. | Élevé |
+| **I — Intensité** | Estimation à valider auprès des personnes concernées : certains épisodes peuvent être très angoissants et perturber le sommeil. | Hypothèse |
+| **N — Nombre** | ~7,6 % de la population générale sur la vie entière ; 28 à 34 % chez les étudiants (Sharpless & Barber, 2011 ; méta-analyses récentes plus élevées). En Afrique francophone, très forte charge culturelle (minzi-minzi au Bénin, ndoki, djinn) → hypothèse de demande d'explications respectueuses, à vérifier. | Élevé |
 
-**Mini-conclusion : V + I + N élevés → idée validée.**
+**Mini-conclusion :** idée prometteuse à tester auprès du public ; ces hypothèses ne constituent pas une validation de marché.
 
 ---
 
 ## 2. TRANSFORMATION — la promesse (page 4 du workbook)
 
 **1. Pour qui ?**
-Des femmes et des hommes d'Afrique francophone, entre 18 et 40 ans, qui subissent des paralysies du sommeil, croient (ou qu'on leur a dit) qu'il s'agit d'une attaque mystique, et n'osent pas en parler — avec un smartphone et 10 minutes par soir.
+Hypothèse de cible à confirmer : des adultes d'Afrique francophone qui subissent des paralysies du sommeil, croient (ou qu'on leur a dit) qu'il s'agit d'une attaque mystique, et n'osent pas en parler — avec un smartphone et 10 minutes par soir.
 
 **2. Résultat concret promis**
-Comprendre ce qui se passe dans le corps, savoir traverser un épisode sans panique, et réduire la fréquence et l'intensité des crises avec un programme de 21 nuits.
+Comprendre ce qui se passe et découvrir des pistes pour gérer les épisodes, avec un programme de 21 nuits, sans garantie de résultat.
 
 **3. Délai**
-La compréhension : immédiate. Le protocole d'urgence : dès la première nuit. La réduction des crises : en 21 nuits.
+Le programme propose un exercice par soir pendant 21 nuits ; aucune réduction des crises n’est garantie.
 
 **Formule de la promesse (complétée) :**
-> « Comment **arrêter d'avoir peur de tes nuits** en **21 nuits** sans **renier ta foi ni ta culture**. »
+> « Comment **mieux comprendre et gérer la paralysie du sommeil** en suivant un programme de **21 nuits**, sans **renier ta foi ni ta culture**. »
 
 **Sous-titre commercial :** La paralysie du sommeil expliquée, apaisée, maîtrisée.
 
@@ -40,7 +40,7 @@ La compréhension : immédiate. Le protocole d'urgence : dès la première nuit.
 
 - **Format choisi :** PDF A5, prêt à lire sur téléphone, à imprimer ou à envoyer par WhatsApp.
 - **Pourquoi le PDF :** création rapide, compatible tous appareils, perçu comme professionnel, permet de tester l'idée sans investissement.
-- **Nombre de pages réel :** 79 (structure feuilletée : 2 à 5 pages par section).
+- **Nombre de pages réel :** 80 (structure feuilletée : 2 à 5 pages par section).
 - **Titre définitif :** *Se réveiller, pas subir — la paralysie du sommeil expliquée, apaisée, maîtrisée.*
 
 ---

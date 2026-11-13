@@ -56,6 +56,12 @@ def story_pages(html, css):
     return pymupdf.open(TMP)
 
 
+def story_links(html, css):
+    """Rendu simple ; les liens internes sont posés après assemblage
+    (MuPDF ne résout pas les ancres situées après le lien)."""
+    return story_pages(html, css)
+
+
 def is_dark(name):
     return bool(re.match(r"p\d-\d\d-partie", name))
 
@@ -69,12 +75,65 @@ def render_path(path, source=""):
     pages = P.paginate(html, css, AREA.width, AREA.height, FONTS)
     out = pymupdf.open()
     for pg_html in pages:
-        tmp = story_pages(pg_html, css)
+        tmp = story_links(pg_html, css)
         for i in range(tmp.page_count):
             page = out.new_page(width=PAGE.width, height=PAGE.height)
             page.draw_rect(page.rect, color=None, fill=NAVY if dark else CREAM)
             page.show_pdf_page(page.rect, tmp, i)
     return out
+
+
+def _spot_spans(page):
+    """Fragments numériques écrits dans la couleur marqueur, en ordre de lecture."""
+    out = []
+    for b in page.get_text("dict")["blocks"]:
+        for line in b.get("lines", []):
+            for sp in line["spans"]:
+                t = sp["text"].strip()
+                if t.isdigit() and hex(sp["color"]) in ("0x14243e", "0xe9a471"):
+                    out.append((pymupdf.Rect(sp["bbox"]), t, sp["origin"], sp["size"]))
+    out.sort(key=lambda x: (round(x[0].y0, 1), x[0].x0))
+    return out
+
+
+def _make_links(doc, pad=1.4):
+    """Rend cliquables les numéros de page du sommaire et des renvois.
+
+    Le numéro imprimé *est* la page (le sommaire est rempli en deux passes),
+    donc chaque lien vise simplement la page qu'il affiche : aucun appariement
+    fragile à maintenir.
+    """
+    total = doc.page_count
+    hits = 0
+    for pno in range(total):
+        page = doc[pno]
+        for b in page.get_text("dict")["blocks"]:
+            for line in b.get("lines", []):
+                for sp in line["spans"]:
+                    t = sp["text"].strip()
+                    if not t.isdigit():
+                        continue
+                    num = int(t)
+                    if not 1 <= num <= total or num > 90:
+                        continue
+                    rect = pymupdf.Rect(sp["bbox"])
+                    if rect.y0 > page.rect.height - 42:
+                        continue                      # numéro de pied de page
+                    if abs(rect.y1 - (page.rect.height - 30 + 11)) < 6:
+                        continue
+                    left = page.get_text("text", clip=pymupdf.Rect(
+                        0, rect.y0 - 3, rect.x0, rect.y1 + 1))
+                    in_column = rect.x1 > page.rect.width - 58
+                    if not (in_column or left.rstrip().lower().endswith("page")):
+                        continue
+                    page.insert_link({
+                        "kind": pymupdf.LINK_GOTO,
+                        "from": rect + (-pad, -pad, pad, pad),
+                        "page": num - 1,
+                        "to": pymupdf.Point(ML, MT + 18),
+                    })
+                    hits += 1
+    return hits
 
 
 # ------------------------------------------------------------------ couverture
@@ -107,7 +166,7 @@ def make_cover():
 
 def footer(page, num, dark):
     w, h = PAGE.width, PAGE.height
-    y = h - 30
+    y = h - 22
     page.draw_line(pymupdf.Point(ML, y), pymupdf.Point(w - MR, y),
                    color=(0.35, 0.39, 0.48) if dark else (0.858, 0.804, 0.741),
                    width=0.5)
@@ -146,7 +205,7 @@ VIEWER = """<!doctype html>
   .note {{ max-width:760px; margin:0 auto; padding:0 22px 40px; color:#7E8A9B; font-size:12.5px; line-height:1.6; }}
 </style></head><body>
 <header>
-  <div class="eyebrow">EBOOK · 79 PAGES · A5</div>
+  <div class="eyebrow">EBOOK · {n} PAGES · A5</div>
   <h1>Se réveiller, pas subir</h1>
   <p class="sub">La paralysie du sommeil expliquée, apaisée, maîtrisée —
   avec un programme de 21 nuits, une fiche d'urgence et un journal de bord.</p>
@@ -185,6 +244,7 @@ def build():
         m = re.search(r"<!--KEY:([a-z0-9_]+)-->", raw)
         keys[f] = m.group(1) if m else None
 
+
     def make(pagemap):
         cache = {}
         for f in files:
@@ -192,7 +252,13 @@ def build():
             raw = open(os.path.join(HERE, "content", f), encoding="utf-8").read()
             if key:
                 for k, v in pagemap.items():
-                    raw = raw.replace("__PAGE_%s__" % k, str(v))
+                    n = str(v)
+                    slots = []
+                    for token in ("__PAGE_%s__" % k, "__TOC_%s__" % k.upper()):
+                        slots += [(m.start(), m.end(), k)
+                                  for m in re.finditer(re.escape(token), raw)]
+                    for start, end, key in reversed(sorted(slots)):
+                        raw = raw[:start] + n + raw[end:]
             tmpdir = os.path.join(HERE, "_tmp")
             os.makedirs(tmpdir, exist_ok=True)
             path = os.path.join(tmpdir, f)
@@ -210,16 +276,19 @@ def build():
             frag = cache[f]
             if keys[f]:
                 nums[keys[f]] = n + 1
-            if f.startswith("p"):
+            if is_dark(f):          # seules les ouvertures de partie sont sur fond nuit
                 for i in range(frag.page_count):
                     dark.add(n + i + 1)
             n += frag.page_count
 
     doc = pymupdf.open()
     doc.insert_pdf(make_cover())
+
+    # liens internes : les marqueurs [[|cle|]] sont posés juste après le numéro
     for f in files:
         doc.insert_pdf(cache[f])
 
+    nlinks = _make_links(doc)
     for i in range(1, doc.page_count):
         footer(doc[i], i + 1, (i + 1) in dark)
 
@@ -248,7 +317,7 @@ def build():
     leftovers = set()
     for i in range(doc.page_count):
         leftovers |= set(re.findall(r"__PAGE_[A-Za-z0-9_]+__", doc[i].get_text()))
-    print(f"OK -> {os.path.basename(out)}  ({doc.page_count} pages)")
+    print(f"OK -> {os.path.basename(out)}  ({doc.page_count} pages, {nlinks} liens)")
     if leftovers:
         print("  JETONS NON RÉSOLUS :", leftovers)
     return out
