@@ -1,0 +1,187 @@
+@font-face { font-family: display; src: url(playfair-display-latin-700-normal.ttf); }
+@font-face { font-family: display; src: url(playfair-display-latin-600-normal.ttf); font-weight: 600; }
+@font-face { font-family: displayit; src: url(playfair-display-latin-400-italic.ttf); }
+@font-face { font-family: text; src: url(lora-latin-400-normal.ttf); }
+@font-face { font-family: text; src: url(lora-latin-700-normal.ttf); font-weight: bold; }
+@font-face { font-family: textit; src: url(lora-latin-400-italic.ttf); }
+@font-face { font-family: ui; src: url(inter-latin-400-normal.ttf); }
+@font-face { font-family: ui; src: url(inter-latin-500-normal.ttf); font-weight: 500; }
+@font-face { font-family: ui; src: url(inter-latin-600-normal.ttf); font-weight: 600; }
+@font-face { font-family: ui; src: url(inter-latin-700-normal.ttf); font-weight: bold; }
+
+body { font-family: text; font-size: 9.2pt; line-height: 1.66; color: #2B2724; }
+p { margin: 0 0 7pt 0; }
+p + p { margin-top: 0; }
+b, strong { font-family: text; font-weight: bold; }
+i, em { font-family: textit; }
+
+/* ---------- ouverture de partie ---------- */
+.opener { page-break-before: always; margin-bottom: 14pt; }
+.eyebrow { font-family: ui; font-size: 6.6pt; font-weight: 600; letter-spacing: 1.5pt; color: #B0522F; margin: 0 0 8pt 0; }
+.part-no { font-family: display; font-size: 40pt; color: #E2CDB4; line-height: 0.9; margin: 0 0 2pt 0; }
+h1 { font-family: display; font-weight: 700; font-size: 20pt; line-height: 1.12; color: #14243F; margin: 0 0 9pt 0; }
+.standfirst { font-family: displayit; font-size: 10.6pt; line-height: 1.45; color: #6B5A4A; margin: 0 0 12pt 0; }
+.rule { height: 2pt; background-color: #B0522F; width: 34pt; margin: 0 0 12pt 0; }
+
+h2 { font-family: display; font-weight: 700; font-size: 12.6pt; color: #14243F; margin: 14pt 0 6pt 0; line-height: 1.2; }
+h3 { font-family: ui; font-weight: 700; font-size: 8.2pt; letter-spacing: 0.9pt; color: #B0522F; margin: 12pt 0 4pt 0; }
+
+/* ---------- composants ---------- */
+.lead { font-size: 10pt; line-height: 1.6; color: #3A332D; }
+.quote { font-family: displayit; font-size: 13pt; line-height: 1.4; color: #14243F; margin: 12pt 0; padding-left: 12pt; border-left: 2pt solid #B0522F; }
+.quote p { margin: 0; }
+
+.essential { background-color: #F8F2E9; padding: 9pt 11pt 10pt 11pt; margin: 10pt 0; border-left: 2.5pt solid #B0522F; }
+.essential p { margin: 0; font-family: ui; font-size: 8pt; line-height: 1.55; color: #4A4038; }
+.essential .lab { font-family: ui; font-weight: 700; font-size: 6.4pt; letter-spacing: 1.2pt; color: #B0522F; display: block; margin-bottom: 3pt; }
+
+.warn { background-color: #FBF0EC; padding: 9pt 11pt 10pt 11pt; margin: 10pt 0; border-top: 0.8pt solid #B0522F; border-bottom: 0.8pt solid #B0522F; }
+.warn p { margin: 0 0 3pt 0; font-family: ui; font-size: 8pt; line-height: 1.55; color: #4A4038; }
+.warn .lab { font-family: ui; font-weight: 700; font-size: 6.4pt; letter-spacing: 1.2pt; color: #B0522F; display: block; margin-bottom: 3pt; }
+
+.action { background-color: #14243F; padding: 10pt 12pt 11pt 12pt; margin: 10pt 0; }
+.action p { font-family: ui; font-size: 8.1pt; line-height: 1.55; color: #E6DCCE; margin: 0 0 3pt 0; }
+.action .lab { font-family: ui; font-weight: 700; font-size: 6.4pt; letter-spacing: 1.2pt; color: #E9A472; display: block; margin-bottom: 3pt; }
+.action b { color: #FFFFFF; font-family: ui; font-weight: 700; }
+
+ul, ol { margin: 0 0 8pt 0; padding-left: 13pt; }
+li { font-size: 8.9pt; line-height: 1.55; margin-bottom: 3.5pt; color: #2B2724; }
+ul.clean { list-style: none; padding-left: 0; }
+
+table { width: 100%; border-collapse: collapse; margin: 9pt 0 10pt 0; }
+th { font-family: ui; font-weight: 700; font-size: 7pt; letter-spacing: 0.4pt; background-color: #14243F; color: #FFFFFF; text-align: left; padding: 4.5pt 6pt; }
+td { font-family: ui; font-size: 7.7pt; line-height: 1.45; padding: 4.5pt 6pt; border-bottom: 0.5pt solid #E3D8C9; color: #3A332D; vertical-align: top; }
+td b { font-family: ui; font-weight: 700; color: #14243F; }
+
+table.fixed { table-layout: fixed; }
+
+/* cases à cocher */
+table.ck { width: 100%; border-collapse: collapse; margin: 0 0 1pt 0; table-layout: fixed; }
+table.ck td.box-cell { width: 15pt; padding: 2.5pt 0 0 0; vertical-align: top; }
+table.ck td.txt-cell { font-family: ui; font-size: 8.2pt; line-height: 1.45; padding: 2pt 0 2pt 0; vertical-align: top; border-bottom: none; color: #3A332D; }
+table.ck td.num-cell { width: 12pt; font-family: ui; font-weight: 700; font-size: 8pt; color: #B0522F; padding-top: 2.5pt; vertical-align: top; border-bottom: none; }
+.sq { width: 7pt; height: 7pt; border: 0.7pt solid #8E7C68; background-color: #FFFFFF; }
+
+/* lignes d'écriture */
+.lines { margin: 6pt 0 10pt 0; }
+.line { border-bottom: 0.6pt solid #D9CBB8; height: 15pt; }
+.line.short { width: 62%; }
+
+/* journal / grille */
+table.grid td { border: 0.5pt solid #D9CBB8; height: 16pt; }
+table.grid th { font-size: 6.4pt; padding: 3pt 2pt; text-align: center; }
+
+.small { font-family: ui; font-size: 7pt; line-height: 1.5; color: #7A6B5C; }
+.source { font-family: ui; font-size: 6.2pt; letter-spacing: 0.3pt; color: #9B8C7C; margin: 2pt 0 10pt 0; }
+.center { text-align: center; }
+
+.sep { text-align: center; font-family: ui; font-size: 8pt; color: #C9B49A; letter-spacing: 4pt; margin: 14pt 0; }
+
+.bignum { font-family: display; font-weight: 700; font-size: 26pt; color: #B0522F; line-height: 1; }
+.caption { font-family: ui; font-size: 6.6pt; color: #8A7B6B; letter-spacing: 0.4pt; margin: 0 0 10pt 0; }
+
+.signature { border-bottom: 0.6pt solid #B6A491; height: 18pt; }
+.sig-label { font-family: ui; font-size: 6.6pt; letter-spacing: 0.8pt; color: #8A7B6B; }
+
+/* table des matières */
+table.toc { margin: 4pt 0 0 0; }
+table.toc td { border-bottom: 0.5pt dotted #D9CBB8; padding: 5.5pt 0; font-family: ui; font-size: 8.4pt; color: #2B2724; }
+table.toc td.toc-num { width: 22pt; font-family: display; font-weight: 700; font-size: 10pt; color: #B0522F; }
+table.toc td.toc-pg { width: 22pt; text-align: right; font-family: ui; font-weight: 600; font-size: 8pt; color: #14243F; }
+
+/* carte d'urgence */
+.emergency { background-color: #14243F; padding: 14pt 15pt; margin: 8pt 0 0 0; }
+.emergency .lab { font-family: ui; font-weight: 700; font-size: 6.4pt; letter-spacing: 1.4pt; color: #E9A472; margin-bottom: 5pt; }
+.emergency h2 { color: #FFFFFF; margin: 0 0 8pt 0; font-size: 14pt; }
+.emergency p { color: #E6DCCE; font-family: ui; font-size: 8pt; line-height: 1.55; margin: 0 0 6pt 0; }
+.emergency b { color: #FFFFFF; }
+.emergency .step { font-family: display; font-weight: 700; font-size: 11pt; color: #E9A472; }
+
+/* sauts de page explicites (MuPDF) */
+.pb { page-break-before: always; }
+
+/* ouverture de chapitre */
+.ch-open { margin-bottom: 12pt; }
+.ch-num { font-family: ui; font-weight: 700; font-size: 6.6pt; letter-spacing: 1.6pt; color: #B0522F; margin: 0 0 5pt 0; }
+.ch-title { font-family: display; font-weight: 700; font-size: 17pt; line-height: 1.14; color: #14243F; margin: 0 0 8pt 0; }
+
+/* encadré scène */
+.scene { background-color: #14243F; padding: 11pt 13pt; margin: 10pt 0; }
+.scene p { font-family: textit; font-size: 9.2pt; line-height: 1.55; color: #F2EBE1; margin: 0 0 5pt 0; }
+.scene p:last-child { margin-bottom: 0; }
+
+/* cartes numérotées */
+table.steps { margin: 4pt 0 8pt 0; }
+table.steps td.s-n { width: 26pt; font-family: display; font-weight: 700; font-size: 15pt; color: #B0522F; padding: 6pt 4pt 6pt 0; vertical-align: top; border-bottom: 0.5pt solid #E3D8C9; }
+table.steps td.s-t { font-family: ui; font-size: 8pt; line-height: 1.5; padding: 6pt 0; border-bottom: 0.5pt solid #E3D8C9; color: #3A332D; }
+table.steps td.s-t b { font-family: ui; font-weight: 700; color: #14243F; }
+
+/* nuit du programme */
+.night-head { border-top: 2pt solid #B0522F; padding-top: 7pt; margin: 0 0 9pt 0; }
+.night-label { font-family: ui; font-weight: 700; font-size: 6.2pt; letter-spacing: 1.5pt; color: #B0522F; }
+.night-title { font-family: display; font-weight: 700; font-size: 15pt; color: #14243F; line-height: 1.15; margin: 3pt 0 0 0; }
+.night-phase { font-family: ui; font-size: 6.4pt; color: #9B8C7C; letter-spacing: 0.5pt; margin-top: 3pt; }
+
+/* bloc de saisie */
+.fill { background-color: #F8F2E9; padding: 9pt 11pt; margin: 8pt 0; }
+.fill .lab2 { font-family: ui; font-weight: 700; font-size: 6.2pt; letter-spacing: 1.1pt; color: #8A7B6B; margin-bottom: 4pt; }
+
+/* ---------- héros d'ouverture de partie (fond nuit) ---------- */
+.hero-fill { background-color: #14243F; }
+.hero { margin-top: 40pt; }
+.hero .p-lab { font-family: ui; font-weight: 700; font-size: 6.4pt; letter-spacing: 2pt; color: #E9A472; margin: 0 0 10pt 0; }
+.hero .p-num { font-family: display; font-weight: 700; font-size: 92pt; line-height: 0.86; color: #22304A; margin: 0 0 4pt 0; }
+.hero h1 { font-family: display; font-weight: 700; font-size: 27pt; line-height: 1.1; color: #FFFFFF; margin: 0 0 10pt 0; }
+.hero .p-sub { font-family: ui; font-size: 9.4pt; line-height: 1.5; color: #B9AFA1; margin: 0 0 18pt 0; }
+.hero .p-quote { font-family: displayit; font-size: 9.6pt; line-height: 1.55; color: #8E8577; margin: 0; }
+.hero .p-rule { height: 2pt; width: 34pt; background-color: #B0522F; margin: 0 0 14pt 0; }
+
+/* numéro de ligne dans les tableaux */
+td.n { font-family: display; font-weight: 700; font-size: 14pt; color: #B0522F; width: 20pt; }
+
+/* ---------- composants canoniques ---------- */
+table.blk { width: 100%; border-collapse: collapse; margin: 9pt 0; }
+table.blk td.cell { padding: 9pt 11pt 10pt 11pt; vertical-align: top; }
+table.blk.cream td.cell { background-color: #F8F2E9; }
+table.blk.dark td.cell { background-color: #14243F; }
+table.blk.dark p, table.blk.dark .lab2, table.blk.dark td.txt-cell { color: #E6DCCE; }
+table.blk.dark b { color: #FFFFFF; }
+.lab2 { font-family: ui; font-weight: 700; font-size: 6.2pt; letter-spacing: 1.1pt; color: #8A7B6B; margin: 0 0 5pt 0; }
+.cell p.small, .cell .small { color: #6E6153; }
+table.blk.dark .cell .small { color: #B9AFA1; }
+table.ck td.box-cell { padding: 2.5pt 0; }
+table.ck td.txt-cell { padding: 2pt 0; }
+table.cols { table-layout: fixed; width: 100%; border-collapse: collapse; margin: 9pt 0 10pt 0; }
+
+/* blocs fond coloré (div, pas table : MuPDF ne peint pas le fond des td) */
+.box-cream { background-color: #F8F2E9; padding: 10pt 12pt 11pt 12pt; margin: 9pt 0; }
+.box-dark { background-color: #14243F; padding: 11pt 13pt 12pt 13pt; margin: 9pt 0; }
+.box-cream .lab2, .box-cream .small { color: #6E6153; }
+.box-cream .lab2 { font-family: ui; font-weight: 700; font-size: 6.2pt; letter-spacing: 1.1pt; color: #8A7B6B; margin: 0 0 5pt 0; }
+.box-dark .lab2 { font-family: ui; font-weight: 700; font-size: 6.2pt; letter-spacing: 1.1pt; color: #E9A472; margin: 0 0 5pt 0; }
+.box-dark p { font-family: ui; font-size: 8.1pt; line-height: 1.55; color: #E6DCCE; margin: 0; }
+.box-dark b { color: #FFFFFF; }
+.box-dark .sq { border-color: #C0A98D; background-color: transparent; }
+.box-dark td.txt-cell { color: #E4DACE; }
+
+/* fiches nuits */
+.night-head { border-top: 2pt solid #B0522F; padding-top: 7pt; margin: 0 0 9pt 0; }
+.night-label { font-family: ui; font-weight: 700; font-size: 6.2pt; letter-spacing: 1.4pt; color: #B0522F; }
+.night-title { font-family: display; font-weight: 700; font-size: 15pt; color: #14243F; line-height: 1.16; margin: 3pt 0 0 0; }
+.box-cream table.cols tr td { border-bottom: 0.5pt dotted #DCCFBC; padding: 4pt 0; font-family: ui; font-size: 7.4pt; color: #4A4038; }
+.box-cream table.cols { margin: 4pt 0 0 0; }
+
+/* journal */
+table.journal tr td { height: 17pt; }
+table.journal td { border-bottom: 0.5pt solid #DCCFBC; }
+table.journal td.g-n { font-family: display; font-weight: 700; font-size: 9pt; color: #B0522F; }
+table.journal th { font-size: 6.2pt; padding: 4pt 3pt; }
+
+/* sommaire compact */
+table.toc td { padding: 4.2pt 0; font-size: 8.1pt; }
+table.toc td.toc-num { font-size: 9.4pt; }
+table.toc td.toc-pg { font-size: 7.8pt; }
+table.toc .small { font-size: 6.5pt; }
+table.toc td { padding: 3.4pt 0; }
+table.journal tr td { height: 13pt; padding: 2pt 4pt; }
+table.journal td.g-n { font-size: 8pt; }
