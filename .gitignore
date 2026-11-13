@@ -3,3 +3,5 @@ __pycache__/
 ebook/_*
 ebook/pages/
 .venv/
+ebook/_tmp/
+ebook/_tmp.pdf

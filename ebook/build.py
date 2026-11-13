@@ -193,7 +193,9 @@ def build():
             if key:
                 for k, v in pagemap.items():
                     raw = raw.replace("__PAGE_%s__" % k, str(v))
-            path = os.path.join(HERE, "_pm_%s" % f)
+            tmpdir = os.path.join(HERE, "_tmp")
+            os.makedirs(tmpdir, exist_ok=True)
+            path = os.path.join(tmpdir, f)
             open(path, "w", encoding="utf-8").write(raw)
             cache[f] = render_path(path, source=f)
         return cache
