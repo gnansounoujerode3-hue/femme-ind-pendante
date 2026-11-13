@@ -148,19 +148,17 @@ def make_cover():
                    fill=(0.025, 0.035, 0.08), fill_opacity=0.75)
     page.insert_font(fontname="coverdisplay", fontfile=os.path.join(HERE, "ttf", "playfair-display-latin-700-normal.ttf"))
     page.insert_font(fontname="covertext", fontfile=os.path.join(HERE, "ttf", "inter-latin-600-normal.ttf"))
-    page.insert_text((32, 46), "COMPRENDRE  ·  APAISER  ·  AGIR", fontname="covertext",
-                     fontsize=7, color=(0.94, 0.73, 0.55))
-    page.insert_text((30, 91), "Réveillée,", fontname="coverdisplay", fontsize=31,
+    page.insert_text((30, 58), "Comment réagir", fontname="coverdisplay", fontsize=27,
                      color=(1, 1, 1))
-    page.insert_text((30, 132), "mais prisonnière", fontname="coverdisplay", fontsize=27,
+    page.insert_text((30, 97), "face a la paralysie", fontname="coverdisplay", fontsize=25,
+                     color=(1, 1, 1))
+    page.insert_text((30, 136), "du sommeil   ?", fontname="coverdisplay", fontsize=27,
                      color=(1, 0.84, 0.71))
-    page.insert_text((32, 160), "COMPRENDRE LA PARALYSIE DU SOMMEIL", fontname="covertext",
-                     fontsize=7.8, color=(1, 1, 1))
-    page.draw_line((32, h - 78), (76, h - 78), color=(0.91, 0.65, 0.45), width=1.4)
-    page.insert_text((32, h - 56), "Se réveiller, pas subir", fontname="coverdisplay",
-                     fontsize=14, color=(1, 1, 1))
-    page.insert_text((32, h - 35), "UN GUIDE PRATIQUE POUR RETROUVER SES REPÈRES", fontname="covertext",
-                     fontsize=6.6, color=(0.95, 0.85, 0.76))
+    page.draw_line((32, h - 80), (76, h - 80), color=(0.91, 0.65, 0.45), width=1.4)
+    page.insert_text((32, h - 56), "Réveillée, mais prisonnière", fontname="coverdisplay",
+                     fontsize=15, color=(1, 1, 1))
+    page.insert_text((32, h - 35), "UN GUIDE PRATIQUE POUR MIEUX VIVRE SES MOMENT.", fontname="covertext",
+                     fontsize=6.9, color=(0.95, 0.85, 0.76))
     return doc
 
 
