@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120">
+  <pattern id="motif" width="120" height="120" patternUnits="userSpaceOnUse">
+    <rect width="120" height="120" fill="none"/>
+    <path d="M0 14h120M0 106h120" stroke="#1E1B4B" stroke-width="3" opacity="0.55"/>
+    <path d="M14 0v120M106 0v120" stroke="#1E1B4B" stroke-width="3" opacity="0.55"/>
+    <path d="M60 22l18 18-18 18-18-18z" fill="#E9B44C" opacity="0.72"/>
+    <path d="M60 32l8 8-8 8-8-8z" fill="#1E1B4B" opacity="0.7"/>
+    <path d="M22 60l18-18 18 18-18 18z" fill="#E76F51" opacity="0.62"/>
+    <path d="M80 60l18 18-18 18-18-18z" fill="#0F766E" opacity="0.6"/>
+    <circle cx="22" cy="22" r="5" fill="#1E1B4B" opacity="0.5"/>
+    <circle cx="98" cy="22" r="5" fill="#1E1B4B" opacity="0.5"/>
+    <circle cx="22" cy="98" r="5" fill="#1E1B4B" opacity="0.5"/>
+    <circle cx="98" cy="98" r="5" fill="#1E1B4B" opacity="0.5"/>
+    <path d="M34 42l8 8M42 42l-8 8M78 78l8 8M86 78l-8 8" stroke="#1E1B4B" stroke-width="3" stroke-linecap="round" opacity="0.55"/>
+    <path d="M52 0v12M68 0v12M52 108v12M68 108v12" stroke="#E9B44C" stroke-width="4" opacity="0.8"/>
+    <path d="M0 52h12M0 68h12M108 52h12M108 68h12" stroke="#E9B44C" stroke-width="4" opacity="0.8"/>
+  </pattern>
+  <rect width="120" height="120" fill="url(#motif)"/>
+</svg>
