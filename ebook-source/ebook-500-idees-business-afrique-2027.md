@@ -637,7 +637,7 @@ Les villes africaines construisent à un rythme record et s'équipent massivemen
 - **#500 — Fourniture et pose de films solaires anti-chaleur pour vitres de bureaux et voitures** *[Moyen]* : Réduit la chaleur intérieure et la facture de climatisation de 20 à 30 %.
 
 
-## Partie 04 — Valide ton Top 3 en 48 heures avant de dépenser 1 FCFA
+## Partie 04 — Valide ton Top 3 en 48 heures avant de dépenser 1 FCFA
 Tu viens de repérer 3 à 5 idées prometteuses dans les 500 fiches de la Partie 03 ? Ne te lance pas encore à l'aveugle. En moins de 48 heures et avec zéro dépense de production, tu vas soumettre ton Top 3 au filtre implacable de la méthode VIN et du terrain.
 
 - **V — Valeur (Problème précis)** : En une phrase : quelle douleur ou envie précise ton client paie-t-il pour résoudre ? (Ex. : gagner du temps, manger sain, augmenter ses ventes, réparer vite).

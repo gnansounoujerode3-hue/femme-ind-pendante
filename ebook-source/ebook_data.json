@@ -1,0 +1,4349 @@
+{
+  "config": {
+    "ebook_title": "500 Idées de Business à Lancer en Afrique en 2027",
+    "ebook_subtitle": "Le guide pratique pour choisir, valider et lancer ton activité rentable en 7 jours — même avec un petit budget",
+    "promise_formula": "Comment choisir, valider et lancer ton business rentable en Afrique en 2027 en 7 jours sans gros capital ni peur de te tromper.",
+    "edition": "Édition 2027 • Guide Pratique & Catalogue Complet",
+    "author_name": "[Ton Nom / Ta Marque]",
+    "author_role": "Entrepreneur(e) & Créateur(rice) de Produits Digitaux",
+    "author_bio": "Ajoute ici 3 à 4 lignes sur ton parcours, ta ville et pourquoi tu aides les entrepreneurs africains à passer à l'action en 2027. (Modifie ebook-source/author_config.json puis relance build_pdfs.py !)",
+    "contact_whatsapp": "+2XX XX XX XX XX (À personnaliser)",
+    "contact_social": "@toncompte (Facebook / Instagram / TikTok)",
+    "contact_email": "contact@tondomaine.com",
+    "date_creation": "16 novembre 2026"
+  },
+  "budget_guide": [
+    {
+      "tier": "Petit",
+      "label": "Petit budget",
+      "range": "Moins de 50 000 FCFA (environ 0 à 80 $ USD)",
+      "desc": "Activités démarrables depuis chez soi avec un smartphone, une compétence ou un petit kit de base. Zéro local commercial exigé au départ : idéal pour tester le marché dès cette semaine."
+    },
+    {
+      "tier": "Moyen",
+      "label": "Budget moyen",
+      "range": "50 000 à 300 000 FCFA (environ 80 à 500 $ USD)",
+      "desc": "Nécessite un premier stock ciblé, un équipement semi-pro (moulin, machine à coudre, kit solaire, congélateur, outillage) ou une petite enveloppe de mise en marché locale."
+    },
+    {
+      "tier": "Structuré",
+      "label": "Budget structuré",
+      "range": "300 000 FCFA et plus (500 $ USD et +)",
+      "desc": "Projets à forte barrière d'entrée (atelier équipé, chambres froides, véhicule utilitaire, laboratoire agréé ou équipe salariée) accessibles via épargne, association, tontine business ou co-investissement diaspora."
+    }
+  ],
+  "sectors": [
+    {
+      "num": 1,
+      "title": "Agro-business & Transformation Locale",
+      "intro": "L'Afrique importe encore des milliards de dollars de produits alimentaires qu'elle cultive sur place. En 2027, transformer, conditionner et valoriser les récoltes locales reste l'un des leviers les plus rentables du continent.",
+      "start_code": "001",
+      "end_code": "025",
+      "counts": {
+        "Petit": 6,
+        "Moyen": 14,
+        "Structuré": 5
+      },
+      "ideas": [
+        {
+          "id": 1,
+          "code": "001",
+          "title": "Production et ensachage de farine infantile enrichie",
+          "desc": "Mélange nutritif local (mil, soja, maïs, arachide) conditionné en sachets hygiéniques pour jeunes mamans et pharmacies.",
+          "budget": "Moyen"
+        },
+        {
+          "id": 2,
+          "code": "002",
+          "title": "Chips de banane plantain aromatisées en sachets scellés",
+          "desc": "Déclinaisons salées, pimentées, gingembre ou oignon vendues aux supérettes, écoles et bureaux.",
+          "budget": "Petit"
+        },
+        {
+          "id": 3,
+          "code": "003",
+          "title": "Pâte d'arachide artisanale en pots en verre",
+          "desc": "Fabrication sans conservateurs avec étiquetage soigné pour ménages urbains et boutiques bio.",
+          "budget": "Petit"
+        },
+        {
+          "id": 4,
+          "code": "004",
+          "title": "Transformation de manioc en attiéké ou gari premium",
+          "desc": "Conditionnement sous vide ou déshydraté longue conservation ciblant les villes et la diaspora.",
+          "budget": "Moyen"
+        },
+        {
+          "id": 5,
+          "code": "005",
+          "title": "Séchage solaire de mangues, ananas et papayes",
+          "desc": "Fruits séchés sans sucre ajouté vendus en snacks sains dans les supermarchés et à l'export.",
+          "budget": "Moyen"
+        },
+        {
+          "id": 6,
+          "code": "006",
+          "title": "Production d'huile de coco vierge pressée à froid",
+          "desc": "Huile multifonction (cuisine et cosmétique) embouteillée en petits formats à forte marge.",
+          "budget": "Moyen"
+        },
+        {
+          "id": 7,
+          "code": "007",
+          "title": "Torréfaction et conditionnement de café local de spécialité",
+          "desc": "Achat de grains aux coopératives, torréfaction artisanale et vente en grains ou moulu aux cafés et hôtels.",
+          "budget": "Structuré"
+        },
+        {
+          "id": 8,
+          "code": "008",
+          "title": "Fabrication de chocolat artisanal africain (bean-to-bar)",
+          "desc": "Tablettes, pâtes à tartiner et coffrets cadeaux valorisant le cacao local pour hôtels et cadeaux d'entreprise.",
+          "budget": "Structuré"
+        },
+        {
+          "id": 9,
+          "code": "009",
+          "title": "Production de purée de tomate fraîche en bocaux",
+          "desc": "Transformation des surplus saisonniers de tomates pour éviter les pertes et vendre hors saison.",
+          "budget": "Moyen"
+        },
+        {
+          "id": 10,
+          "code": "010",
+          "title": "Épices africaines moulues et mélanges prêts à cuisiner",
+          "desc": "Assaisonnements naturels (gingembre, poivre de Penja, ail, kankan, soumbala désodorisé) en flacons modernes.",
+          "budget": "Petit"
+        },
+        {
+          "id": 11,
+          "code": "011",
+          "title": "Culture maraîchère hors-sol en milieu urbain",
+          "desc": "Production de laitue, menthe, basilic et tomates cerises sur terrasses ou petites parcelles pour restaurants.",
+          "budget": "Moyen"
+        },
+        {
+          "id": 12,
+          "code": "012",
+          "title": "Production de champignons pleurotes sur substrats agricoles",
+          "desc": "Culture rapide en intérieur sur rafles de maïs ou sciure avec récolte en quelques semaines.",
+          "budget": "Moyen"
+        },
+        {
+          "id": 13,
+          "code": "013",
+          "title": "Extraction et mise en bouteille de jus de gingembre et bissap",
+          "desc": "Boissons naturelles pasteurisées avec DLC stable livrées aux restaurants, événements et commerces.",
+          "budget": "Petit"
+        },
+        {
+          "id": 14,
+          "code": "014",
+          "title": "Transformation du fonio précuit prêt en 5 minutes",
+          "desc": "Céréale sans gluten très recherchée par les ménages actifs, les sportifs et les boutiques de la diaspora.",
+          "budget": "Moyen"
+        },
+        {
+          "id": 15,
+          "code": "015",
+          "title": "Production de miel pur filtré et conditionné",
+          "desc": "Collecte chez les apiculteurs ruraux, contrôle qualité, mise en pots scellés et traçabilité locale.",
+          "budget": "Moyen"
+        },
+        {
+          "id": 16,
+          "code": "016",
+          "title": "Noix de cajou grillées et aromatisées (miel, piment, sésame)",
+          "desc": "Snack haut de gamme vendu dans les aéroports, stations-service, bars et paniers cadeaux.",
+          "budget": "Moyen"
+        },
+        {
+          "id": 17,
+          "code": "017",
+          "title": "Fabrication de farine de patate douce et de banane plantain",
+          "desc": "Alternatives locales sans gluten vendues aux boulangeries, pâtisseries et consommateurs soucieux de santé.",
+          "budget": "Moyen"
+        },
+        {
+          "id": 18,
+          "code": "018",
+          "title": "Production de piment en pâte et sauces piquantes artisanales",
+          "desc": "Recettes signatures (shito, purée de piment vert, huile pimentée) en pots scellés longue durée.",
+          "budget": "Petit"
+        },
+        {
+          "id": 19,
+          "code": "019",
+          "title": "Conditionnement de riz local nettoyé et décortiqué premium",
+          "desc": "Sacs de 1 kg, 5 kg et 25 kg sans cailloux avec branding valorisant le « consommons local ».",
+          "budget": "Structuré"
+        },
+        {
+          "id": 20,
+          "code": "020",
+          "title": "Culture de pépinières d'arbres fruitiers greffés",
+          "desc": "Vente de plants d'avocatiers, manguiers, agrumes et papayers à haut rendement aux agriculteurs et particuliers.",
+          "budget": "Moyen"
+        },
+        {
+          "id": 21,
+          "code": "021",
+          "title": "Production d'engrais organique et compost agricole",
+          "desc": "Valorisation des déchets organiques de marchés en fertilisant naturel vendu aux maraîchers.",
+          "budget": "Petit"
+        },
+        {
+          "id": 22,
+          "code": "022",
+          "title": "Location de petites machines agricoles (décortiqueuses, motopompes)",
+          "desc": "Service journalier de mécanisation léger pour petits producteurs n'ayant pas les moyens d'acheter.",
+          "budget": "Structuré"
+        },
+        {
+          "id": 23,
+          "code": "023",
+          "title": "Achat groupé et négoce de vivriers (maïs, igname, oignon)",
+          "desc": "Collecte bord-champ en période d'abondance, stockage sécurisé et revente aux demi-grossistes urbains.",
+          "budget": "Structuré"
+        },
+        {
+          "id": 24,
+          "code": "024",
+          "title": "Fabrication de bouillons culinaires 100 % naturels",
+          "desc": "Cubes et poudres d'assaisonnement sans glutamate à base de légumes déshydratés, crevettes séchées et herbes.",
+          "budget": "Moyen"
+        },
+        {
+          "id": 25,
+          "code": "025",
+          "title": "Production de yaourt végétal (soja, coco, souchet)",
+          "desc": "Boissons et desserts fermentés accessibles et nutritifs ciblant les urbains intolérants au lactose.",
+          "budget": "Moyen"
+        }
+      ]
+    },
+    {
+      "num": 2,
+      "title": "Alimentation, Restauration Rapide & Livraison",
+      "intro": "Avec l'urbanisation rapide et des journées de travail de plus en plus longues, les citadins africains recherchent des repas propres, rapides, savoureux et livrés à l'heure au bureau comme à la maison.",
+      "start_code": "026",
+      "end_code": "050",
+      "counts": {
+        "Petit": 11,
+        "Moyen": 11,
+        "Structuré": 3
+      },
+      "ideas": [
+        {
+          "id": 26,
+          "code": "026",
+          "title": "Livraison de déjeuners équilibrés aux employés de bureau",
+          "desc": "Abonnement hebdomadaire avec menu envoyé chaque matin sur WhatsApp et livraison avant midi.",
+          "budget": "Petit"
+        },
+        {
+          "id": 27,
+          "code": "027",
+          "title": "Cuisine fantôme (dark kitchen) de plats traditionnels revisités",
+          "desc": "Préparation depuis une cuisine dédiée sans salle coûteuse, vente 100 % livraison via WhatsApp et réseaux sociaux.",
+          "budget": "Moyen"
+        },
+        {
+          "id": 28,
+          "code": "028",
+          "title": "Stand mobile de petits-déjeuners express près des gares et bureaux",
+          "desc": "Bouillies enrichies, omelettes, sandwiches chauds, café et jus frais servis dès 6 h 30.",
+          "budget": "Petit"
+        },
+        {
+          "id": 29,
+          "code": "029",
+          "title": "Box de légumes épluchés, lavés et découpés prêts à cuire",
+          "desc": "Sachets hygiéniques pour sauces locales (gombo, feuilles, oignons, tomates) livrés aux femmes actives.",
+          "budget": "Petit"
+        },
+        {
+          "id": 30,
+          "code": "030",
+          "title": "Traiteur spécialisé en plateaux-repas pour séminaires et formations",
+          "desc": "Offres clés en main pour ONG, banques, entreprises et ateliers professionnels.",
+          "budget": "Moyen"
+        },
+        {
+          "id": 31,
+          "code": "031",
+          "title": "Pâtisserie maison sur commande via Instagram et WhatsApp",
+          "desc": "Gâteaux d'anniversaire personnalisés, cupcakes et mignardises préparés sur pré-commande avec acompte.",
+          "budget": "Petit"
+        },
+        {
+          "id": 32,
+          "code": "032",
+          "title": "Bar à jus détox et smoothies naturels à emporter",
+          "desc": "Cures de 3 à 7 jours et bouteilles individuelles ciblant les quartiers d'affaires et salles de sport.",
+          "budget": "Moyen"
+        },
+        {
+          "id": 33,
+          "code": "033",
+          "title": "Atelier de crêpes, gaufres et beignets gourmets",
+          "desc": "Versions sucrées et salées avec garnitures modernes près des campus universitaires et centres commerciaux.",
+          "budget": "Petit"
+        },
+        {
+          "id": 34,
+          "code": "034",
+          "title": "Service de grillades (poulet braisé, poisson, brochettes) livrées le soir",
+          "desc": "Commande simple par WhatsApp entre 18 h et 23 h avec accompagnements au choix.",
+          "budget": "Moyen"
+        },
+        {
+          "id": 35,
+          "code": "035",
+          "title": "Préparation et vente de repas diététiques (perte de poids / sport)",
+          "desc": "Programmes repas hebdomadaires calibrés en protéines et légumes frais pour citadins pressés.",
+          "budget": "Moyen"
+        },
+        {
+          "id": 36,
+          "code": "036",
+          "title": "Épicerie fine « 100 % Made in Africa » de quartier",
+          "desc": "Regroupement des meilleurs produits locaux transformés (miels, farines, épices, jus, thés) en un seul point.",
+          "budget": "Structuré"
+        },
+        {
+          "id": 37,
+          "code": "037",
+          "title": "Service de chef à domicile pour dîners privés et week-ends",
+          "desc": "Cuisine sur place pour familles aisées, expatriés et réceptions intimes sans stress.",
+          "budget": "Petit"
+        },
+        {
+          "id": 38,
+          "code": "038",
+          "title": "Vente de glaces artisanales aux fruits tropicaux (corossol, mangue, baobab)",
+          "desc": "Sorbetière compacte et kiosque dans les zones familiales, plages ou marchés nocturnes.",
+          "budget": "Moyen"
+        },
+        {
+          "id": 39,
+          "code": "039",
+          "title": "Abonnement paniers de fruits et légumes frais de la ferme",
+          "desc": "Livraison hebdomadaire directe du producteur au consommateur avec paiement Mobile Money.",
+          "budget": "Petit"
+        },
+        {
+          "id": 40,
+          "code": "040",
+          "title": "Boulangerie artisanale de pains spéciaux aux céréales locales",
+          "desc": "Pains au mil, maïs, moringa ou sésame séduisant une clientèle urbaine soucieuse de qualité.",
+          "budget": "Structuré"
+        },
+        {
+          "id": 41,
+          "code": "041",
+          "title": "Service de poisson et viande nettoyés, marinés et prêts à griller",
+          "desc": "Barquettes sous film livrées le vendredi et samedi pour les repas de famille.",
+          "budget": "Moyen"
+        },
+        {
+          "id": 42,
+          "code": "042",
+          "title": "Coffee-bike ou kiosque à café glacé et thé local (kinkeliba, bissap)",
+          "desc": "Point de vente léger à fort passage devant les immeubles de bureaux et écoles supérieures.",
+          "budget": "Moyen"
+        },
+        {
+          "id": 43,
+          "code": "043",
+          "title": "Confection de box brunch du week-end à livrer",
+          "desc": "Coffrets esthétiques (viennoiseries, fruits, jus, œufs, crêpes) très populaires auprès des couples et amis.",
+          "budget": "Petit"
+        },
+        {
+          "id": 44,
+          "code": "044",
+          "title": "Cantine scolaire saine et abonnements goûters pour enfants",
+          "desc": "Partenariat avec les écoles privées pour fournir des repas équilibrés et rassurants aux parents.",
+          "budget": "Moyen"
+        },
+        {
+          "id": 45,
+          "code": "045",
+          "title": "Vente de yaourts glacés et degue / thiakry modernisés",
+          "desc": "Packaging moderne en pots scellés avec toppings (fruits frais, granola, miel) vendus en entreprise.",
+          "budget": "Petit"
+        },
+        {
+          "id": 46,
+          "code": "046",
+          "title": "Rôtisserie de poulets fermiers marinés aux herbes locales",
+          "desc": "Point fixe ou food-cart avec forte rotation en fin de journée et les week-ends.",
+          "budget": "Moyen"
+        },
+        {
+          "id": 47,
+          "code": "047",
+          "title": "Vente de glaçons alimentaires purifiés en sacs",
+          "desc": "Fourniture régulière aux maquis, bars, restaurants, événements et vendeuses de boissons.",
+          "budget": "Structuré"
+        },
+        {
+          "id": 48,
+          "code": "048",
+          "title": "Atelier de charcuterie halal / volaille artisanale",
+          "desc": "Saucisses de poulet, blancs fumés et brochettes préparées répondant à une forte demande locale.",
+          "budget": "Moyen"
+        },
+        {
+          "id": 49,
+          "code": "049",
+          "title": "Box apéro et bouchées salées (samoussas, pastels, nems) surgelées",
+          "desc": "Sachets prêts à frire ou passer au air-fryer vendus aux ménages et organisateurs de fêtes.",
+          "budget": "Petit"
+        },
+        {
+          "id": 50,
+          "code": "050",
+          "title": "Service de courses au marché sur commande (personal shopper alimentaire)",
+          "desc": "Achats frais au grand marché selon la liste WhatsApp du client avec livraison à domicile contre commission.",
+          "budget": "Petit"
+        }
+      ]
+    },
+    {
+      "num": 3,
+      "title": "E-commerce, Social Commerce & Import-Export",
+      "intro": "En 2027, le vrai e-commerce africain se passe sur WhatsApp, TikTok, Facebook et Instagram avec paiement à la livraison ou via Mobile Money. Vendre malin sans immobiliser de gros stocks ouvre des marges rapides.",
+      "start_code": "051",
+      "end_code": "075",
+      "counts": {
+        "Petit": 8,
+        "Moyen": 15,
+        "Structuré": 2
+      },
+      "ideas": [
+        {
+          "id": 51,
+          "code": "051",
+          "title": "Boutique WhatsApp d'accessoires téléphoniques durables",
+          "desc": "Câbles renforcés, batteries externes solaires, écouteurs et supports vendus avec livraison express.",
+          "budget": "Moyen"
+        },
+        {
+          "id": 52,
+          "code": "052",
+          "title": "Importation en achat groupé (pré-commandes) depuis la Chine ou la Turquie",
+          "desc": "Collecte des commandes et acomptes avant d'importer pour éliminer le risque d'invendus.",
+          "budget": "Petit"
+        },
+        {
+          "id": 53,
+          "code": "053",
+          "title": "Boutique en ligne de petits appareils de cuisine gain de temps",
+          "desc": "Air-fryers, mini-mixeurs rechargeables, hachoirs électriques démontrés en vidéos courtes sur TikTok.",
+          "budget": "Moyen"
+        },
+        {
+          "id": 54,
+          "code": "054",
+          "title": "Revente de gadgets solaires et lampes rechargeables anti-coupures",
+          "desc": "Ventilateurs rechargeables, ampoules solaires et stations d'énergie portables très demandés.",
+          "budget": "Moyen"
+        },
+        {
+          "id": 55,
+          "code": "055",
+          "title": "Friperie en ligne triée et repassée (sélection vintage & bureau)",
+          "desc": "Vêtements de seconde main de haute qualité photographiés proprement et vendus par live TikTok/Facebook.",
+          "budget": "Petit"
+        },
+        {
+          "id": 56,
+          "code": "056",
+          "title": "Boutique de produits pour bébés et jeunes mamans",
+          "desc": "Porte-bébés ergonomiques, biberons, veilleuses et couches lavables vendus en packs naissance.",
+          "budget": "Moyen"
+        },
+        {
+          "id": 57,
+          "code": "057",
+          "title": "Exportation de produits locaux africains vers la diaspora",
+          "desc": "Envoi groupé (fret aérien/maritime) d'épices, tissus, beurre de karité et denrées sèches vers l'Europe/Amérique.",
+          "budget": "Moyen"
+        },
+        {
+          "id": 58,
+          "code": "058",
+          "title": "Boutique spécialisée en accessoires d'organisation maison",
+          "desc": "Boîtes de rangement, cintres multiples, organiseurs de cuisine et de salle de bain à forte valeur perçue.",
+          "budget": "Moyen"
+        },
+        {
+          "id": 59,
+          "code": "059",
+          "title": "Revente de matériel de création de contenu pour débutants",
+          "desc": "Micros-cravates sans fil, trépieds, ring lights et fonds photo vendus aux jeunes créateurs et commerçants.",
+          "budget": "Moyen"
+        },
+        {
+          "id": 60,
+          "code": "060",
+          "title": "Service d'intermédiaire d'achat à l'étranger (conciergerie shopping)",
+          "desc": "Achat sur sites internationaux pour clients sans carte bancaire internationale contre commission fixe.",
+          "budget": "Petit"
+        },
+        {
+          "id": 61,
+          "code": "061",
+          "title": "Boutique de fournitures scolaires et kits rentrée livrés à domicile",
+          "desc": "Packs complets par classe épargnant aux parents les files d'attente en septembre.",
+          "budget": "Moyen"
+        },
+        {
+          "id": 62,
+          "code": "062",
+          "title": "Vente en ligne d'articles de literie et linge de maison premium",
+          "desc": "Draps en coton doux, couettes légères et coussins décoratifs présentés en vidéos d'ambiance.",
+          "budget": "Moyen"
+        },
+        {
+          "id": 63,
+          "code": "063",
+          "title": "Marketplace locale de produits artisanaux sur Instagram/WhatsApp",
+          "desc": "Prise de photos pro chez les artisans locaux et vente à la commission sans acheter le stock.",
+          "budget": "Petit"
+        },
+        {
+          "id": 64,
+          "code": "064",
+          "title": "Boutique d'accessoires automobiles utiles",
+          "desc": "Caméras de bord, housses de siège, parfums durables, gonfleurs portables et kits d'urgence.",
+          "budget": "Moyen"
+        },
+        {
+          "id": 65,
+          "code": "065",
+          "title": "Vente de coffrets cadeaux personnalisés (Saint-Valentin, Fête des Mères, Noël)",
+          "desc": "Box thématiques prêtes à offrir avec livraison surprise et carte personnalisée.",
+          "budget": "Petit"
+        },
+        {
+          "id": 66,
+          "code": "066",
+          "title": "Revente de produits de quincaillerie et outillage léger en ligne",
+          "desc": "Visseuses sans fil, coffrets d'outils domestiques et serrures connectées pour particuliers.",
+          "budget": "Moyen"
+        },
+        {
+          "id": 67,
+          "code": "067",
+          "title": "Boutique de chaussures et sacs tendance sur commande rapide",
+          "desc": "Modèles sélectionnés avec stock tampon chez un grossiste local et livraison le jour même.",
+          "budget": "Petit"
+        },
+        {
+          "id": 68,
+          "code": "068",
+          "title": "Commerce intra-africain (ZLECAf) entre pays voisins",
+          "desc": "Achat de spécialités d'un pays (textiles, cosmétiques, denrées) et distribution dans la capitale voisine.",
+          "budget": "Structuré"
+        },
+        {
+          "id": 69,
+          "code": "069",
+          "title": "Vente de vêtements et équipements de sport à domicile",
+          "desc": "Tapis de yoga, élastiques de résistance, cordes à sauter et tenues fitness vendus en packs.",
+          "budget": "Moyen"
+        },
+        {
+          "id": 70,
+          "code": "070",
+          "title": "Boutique de fournitures de bureau et papeterie esthétique",
+          "desc": "Agendas de planification, carnets professionnels et accessoires de bureau pour PME et étudiants.",
+          "budget": "Moyen"
+        },
+        {
+          "id": 71,
+          "code": "071",
+          "title": "Revente de smartphones et ordinateurs reconditionnés garantis",
+          "desc": "Appareils testés avec garantie locale de 3 à 6 mois répondant au besoin d'équipement abordable.",
+          "budget": "Structuré"
+        },
+        {
+          "id": 72,
+          "code": "072",
+          "title": "Vente de plantes d'intérieur en pots décoratifs",
+          "desc": "Plantes faciles d'entretien livrées aux bureaux, hôtels et appartements modernes.",
+          "budget": "Petit"
+        },
+        {
+          "id": 73,
+          "code": "073",
+          "title": "Boutique d'articles pour animaux de compagnie (chiens et chats)",
+          "desc": "Croquettes, laisses, antiparasitaires et paniers pour une clientèle urbaine en plein essor.",
+          "budget": "Moyen"
+        },
+        {
+          "id": 74,
+          "code": "074",
+          "title": "Service de liquidation et revente de stocks dormants pour commerçants",
+          "desc": "Aide aux boutiques physiques pour écouler leurs invendus en ligne moyennant une commission.",
+          "budget": "Petit"
+        },
+        {
+          "id": 75,
+          "code": "075",
+          "title": "Vente de kits de démarrage business clés en main",
+          "desc": "Packs matériel + guide (ex. kit démarrage lavage auto, kit manucure, kit pâtisserie) pour aspirants entrepreneurs.",
+          "budget": "Moyen"
+        }
+      ]
+    },
+    {
+      "num": 4,
+      "title": "Services Digitaux, Freelance & Intelligence Artificielle",
+      "intro": "Un smartphone performant ou un ordinateur et une connexion internet suffisent en 2027 pour vendre des services numériques aux PME africaines comme à des clients internationaux payant en euros ou dollars.",
+      "start_code": "076",
+      "end_code": "100",
+      "counts": {
+        "Petit": 24,
+        "Moyen": 1,
+        "Structuré": 0
+      },
+      "ideas": [
+        {
+          "id": 76,
+          "code": "076",
+          "title": "Community management pour commerces locaux (restaurants, salons, boutiques)",
+          "desc": "Gestion de 3 à 5 pages Facebook/Instagram/TikTok par mois sur abonnement mensuel récurrent.",
+          "budget": "Petit"
+        },
+        {
+          "id": 77,
+          "code": "077",
+          "title": "Montage de vidéos courtes (Reels, TikTok, Shorts) pour créateurs et marques",
+          "desc": "Découpage dynamique, sous-titres animés et rythme engageant réalisés sur CapCut ou Premiere.",
+          "budget": "Petit"
+        },
+        {
+          "id": 78,
+          "code": "078",
+          "title": "Création de catalogues WhatsApp Business et tunnels de vente simples",
+          "desc": "Mise en place de réponses automatiques, fiches produits et scripts de closing pour commerçants.",
+          "budget": "Petit"
+        },
+        {
+          "id": 79,
+          "code": "079",
+          "title": "Design graphique sur Canva et Photoshop pour PME",
+          "desc": "Affiches promotionnelles, flyers, menus digitaux, logos et miniatures YouTube en packs mensuels.",
+          "budget": "Petit"
+        },
+        {
+          "id": 80,
+          "code": "080",
+          "title": "Gestion de campagnes publicitaires Facebook, Instagram et TikTok Ads",
+          "desc": "Aide aux e-commerçants africains pour générer des messages WhatsApp qualifiés et rentables.",
+          "budget": "Petit"
+        },
+        {
+          "id": 81,
+          "code": "081",
+          "title": "Création de sites vitrines et boutiques en ligne (WordPress, Shopify, Chariow)",
+          "desc": "Déploiement rapide en 5 jours avec intégration Mobile Money pour artisans et PME.",
+          "budget": "Petit"
+        },
+        {
+          "id": 82,
+          "code": "082",
+          "title": "Intégration d'assistants WhatsApp IA pour entreprises locales",
+          "desc": "Automatisation des réponses clients 24h/24, prise de rendez-vous et suivi de commandes.",
+          "budget": "Petit"
+        },
+        {
+          "id": 83,
+          "code": "083",
+          "title": "Rédaction web SEO et copywriting de pages de vente",
+          "desc": "Écriture d'articles, fiches produits et séquences emails/WhatsApp pour infopreneurs et agences.",
+          "budget": "Petit"
+        },
+        {
+          "id": 84,
+          "code": "084",
+          "title": "Assistance virtuelle pour entrepreneurs de la diaspora et d'Europe",
+          "desc": "Gestion d'agendas, emails, facturation, support client et veille à distance sur forfait mensuel.",
+          "budget": "Petit"
+        },
+        {
+          "id": 85,
+          "code": "085",
+          "title": "Création de présentations PowerPoint et pitch decks professionnels",
+          "desc": "Mise en forme de dossiers de financement pour startups, ONG et consultants africains.",
+          "budget": "Petit"
+        },
+        {
+          "id": 86,
+          "code": "086",
+          "title": "Optimisation de fiches Google Business Profile pour commerces locaux",
+          "desc": "Référencement sur Google Maps (photos, avis, horaires) pour attirer plus de clients en boutique.",
+          "budget": "Petit"
+        },
+        {
+          "id": 87,
+          "code": "087",
+          "title": "Transcription audio/vidéo et sous-titrage multilingue",
+          "desc": "Transformation d'interviews, podcasts, conférences et prêches en textes et sous-titres propres.",
+          "budget": "Petit"
+        },
+        {
+          "id": 88,
+          "code": "088",
+          "title": "Création de visuels produits par IA pour marques e-commerce",
+          "desc": "Mise en scène studio de produits locaux (cosmétiques, boissons, mode) à coût réduit.",
+          "budget": "Petit"
+        },
+        {
+          "id": 89,
+          "code": "089",
+          "title": "Développement d'applications no-code (gestion de stock, suivi clients)",
+          "desc": "Outils internes sur mesure avec Notion, Airtable ou Glide pour petites entreprises.",
+          "budget": "Petit"
+        },
+        {
+          "id": 90,
+          "code": "090",
+          "title": "Audit et refonte de CV, lettres de motivation et profils LinkedIn",
+          "desc": "Service très demandé par les jeunes diplômés et cadres visant des postes internationaux.",
+          "budget": "Petit"
+        },
+        {
+          "id": 91,
+          "code": "091",
+          "title": "Traduction français-anglais-langues locales pour documents et sites",
+          "desc": "Adaptation culturelle pour ONG, entreprises exportatrices et médias digitaux.",
+          "budget": "Petit"
+        },
+        {
+          "id": 92,
+          "code": "092",
+          "title": "Voix-off professionnelle pour publicités radio, TikTok et vidéos YouTube",
+          "desc": "Enregistrement propre avec un bon micro USB depuis chez soi pour agences et créateurs.",
+          "budget": "Petit"
+        },
+        {
+          "id": 93,
+          "code": "093",
+          "title": "Saisie de données et nettoyage de bases Excel / Google Sheets",
+          "desc": "Automatisation de tableaux de bord de suivi des ventes et stocks pour commerçants.",
+          "budget": "Petit"
+        },
+        {
+          "id": 94,
+          "code": "094",
+          "title": "Production de podcasts et gestion technique pour coachs et entreprises",
+          "desc": "Nettoyage audio, habillage sonore, publication sur Spotify/Apple et extraits vidéo.",
+          "budget": "Petit"
+        },
+        {
+          "id": 95,
+          "code": "095",
+          "title": "Création de cartes de visite digitales NFC et QR codes interactifs",
+          "desc": "Menus QR pour restaurants et cartes digitales rechargeables pour professionnels.",
+          "budget": "Petit"
+        },
+        {
+          "id": 96,
+          "code": "096",
+          "title": "Agence de micro-influence locale mettant en relation marques et créateurs",
+          "desc": "Négociation et coordination de campagnes avec des micro-influenceurs TikTok/Facebook contre commission.",
+          "budget": "Petit"
+        },
+        {
+          "id": 97,
+          "code": "097",
+          "title": "Support client externalisé par chat et WhatsApp pour boutiques en ligne",
+          "desc": "Prise en charge des messages clients et confirmation téléphonique des commandes à la livraison.",
+          "budget": "Petit"
+        },
+        {
+          "id": 98,
+          "code": "098",
+          "title": "Photographie et tournage vidéo au smartphone pour commerces de quartier",
+          "desc": "Packs « 10 vidéos + 15 photos » filmés en une demi-journée avec un smartphone stabilisé.",
+          "budget": "Moyen"
+        },
+        {
+          "id": 99,
+          "code": "099",
+          "title": "Maintenance informatique de proximité et installation logiciels/réseaux",
+          "desc": "Dépannage PC, sauvegarde cloud et sécurisation Wi-Fi pour cabinets, écoles et PME.",
+          "budget": "Petit"
+        },
+        {
+          "id": 100,
+          "code": "100",
+          "title": "Accompagnement IA pratique pour professionnels (prompts & productivité)",
+          "desc": "Mise en place de workflows IA personnalisés pour avocats, enseignants, agents immobiliers et vendeurs.",
+          "budget": "Petit"
+        }
+      ]
+    },
+    {
+      "num": 5,
+      "title": "Produits Digitaux, Formation & Éducation (EdTech)",
+      "intro": "Créer une fois et vendre des centaines de fois sans stock physique ni frais de livraison : en 2027, l'économie du savoir explose en Afrique francophone grâce au Mobile Money et aux plateformes dédiées.",
+      "start_code": "101",
+      "end_code": "125",
+      "counts": {
+        "Petit": 22,
+        "Moyen": 2,
+        "Structuré": 1
+      },
+      "ideas": [
+        {
+          "id": 101,
+          "code": "101",
+          "title": "E-books pratiques et guides PDF sur des problèmes précis",
+          "desc": "Guides courts et actionnables (business, parentalité, carrière, cuisine, santé) vendus à prix accessible.",
+          "budget": "Petit"
+        },
+        {
+          "id": 102,
+          "code": "102",
+          "title": "Pack de templates Canva pour commerçants africains",
+          "desc": "Modèles prêts à éditer (promos, menus, témoignages, fiches tarifs) vendus en téléchargement immédiat.",
+          "budget": "Petit"
+        },
+        {
+          "id": 103,
+          "code": "103",
+          "title": "Modèles Excel / Google Sheets de gestion de caisse et budget",
+          "desc": "Tableaux automatisés de calcul de marges, stocks et budget familial adaptés au FCFA.",
+          "budget": "Petit"
+        },
+        {
+          "id": 104,
+          "code": "104",
+          "title": "Cours de soutien scolaire en ligne et prépa examens (BEPC, BAC)",
+          "desc": "Fiches de révision PDF, annales corrigées et séances WhatsApp/Zoom pour lycéens.",
+          "budget": "Petit"
+        },
+        {
+          "id": 105,
+          "code": "105",
+          "title": "Formation pratique à l'utilisation de l'IA au quotidien",
+          "desc": "Ateliers courts pour étudiants, salariés et entrepreneurs souhaitant gagner 10 heures par semaine.",
+          "budget": "Petit"
+        },
+        {
+          "id": 106,
+          "code": "106",
+          "title": "Cours de langues africaines en ligne pour la diaspora et les enfants",
+          "desc": "Modules audio/vidéo et cahiers d'exercices (wolof, fon, yoruba, lingala, bambara, swahili, douala).",
+          "budget": "Petit"
+        },
+        {
+          "id": 107,
+          "code": "107",
+          "title": "Ateliers d'anglais professionnel orienté emploi et business",
+          "desc": "Coaching conversationnel en petits groupes sur WhatsApp et Google Meet.",
+          "budget": "Petit"
+        },
+        {
+          "id": 108,
+          "code": "108",
+          "title": "Mini-formations sur la vente via WhatsApp Business et TikTok",
+          "desc": "Méthodes concrètes en vidéos courtes dédiées aux vendeuses et commerçants locaux.",
+          "budget": "Petit"
+        },
+        {
+          "id": 109,
+          "code": "109",
+          "title": "Cahiers d'activités éducatifs PDF à imprimer pour enfants (3 à 10 ans)",
+          "desc": "Jeux de lecture, calcul, coloriages culturels africains vendus aux parents et écoles maternelles.",
+          "budget": "Petit"
+        },
+        {
+          "id": 110,
+          "code": "110",
+          "title": "Bibliothèque de contrats et documents administratifs types pour PME",
+          "desc": "Modèles de factures, devis, contrats de prestation et reçus relus par un juriste local.",
+          "budget": "Petit"
+        },
+        {
+          "id": 111,
+          "code": "111",
+          "title": "Formation pratique à la bureautique (Excel, Word, PowerPoint, Google Workspace)",
+          "desc": "Cours accélérés le week-end ou en ligne pour jeunes diplômés et assistants administratifs.",
+          "budget": "Petit"
+        },
+        {
+          "id": 112,
+          "code": "112",
+          "title": "Coaching préparation aux bourses d'études et admissions internationales",
+          "desc": "Accompagnement dossier, projet d'étude et entretiens pour étudiants ambitieux.",
+          "budget": "Petit"
+        },
+        {
+          "id": 113,
+          "code": "113",
+          "title": "Club privé payant sur Telegram/WhatsApp de veille appels d'offres et emplois",
+          "desc": "Abonnement mensuel regroupant opportunités vérifiées, bourses, financements et marchés publics.",
+          "budget": "Petit"
+        },
+        {
+          "id": 114,
+          "code": "114",
+          "title": "Formations courtes aux métiers pratiques (pâtisserie, savonnerie, couture, coiffure)",
+          "desc": "Vidéos pas-à-pas tournées au smartphone avec fiches recettes et suivi en groupe privé.",
+          "budget": "Petit"
+        },
+        {
+          "id": 115,
+          "code": "115",
+          "title": "Bootcamp d'initiation au codage et métiers du numérique pour ados",
+          "desc": "Stages de vacances scolaires en présentiel ou en ligne apprenant à créer sites et mini-jeux.",
+          "budget": "Moyen"
+        },
+        {
+          "id": 116,
+          "code": "116",
+          "title": "Guide et kit complet pour lancer une marque cosmétique ou alimentaire locale",
+          "desc": "Checklists réglementaires, contacts fournisseurs d'emballages et calculateurs de coûts.",
+          "budget": "Petit"
+        },
+        {
+          "id": 117,
+          "code": "117",
+          "title": "Cours d'éducation financière et gestion de salaire pour jeunes actifs",
+          "desc": "Programme de 30 jours pour sortir des dettes, épargner et investir intelligemment.",
+          "budget": "Petit"
+        },
+        {
+          "id": 118,
+          "code": "118",
+          "title": "Banque d'images et de vidéos authentiques africaines libres de droits",
+          "desc": "Vente de packs visuels représentant des scènes modernes africaines pour designers et entreprises.",
+          "budget": "Moyen"
+        },
+        {
+          "id": 119,
+          "code": "119",
+          "title": "Préparation aux concours de la fonction publique et grandes écoles",
+          "desc": "Quiz quotidiens, résumés de culture générale et examens blancs en ligne.",
+          "budget": "Petit"
+        },
+        {
+          "id": 120,
+          "code": "120",
+          "title": "Formation au montage vidéo et design sur smartphone uniquement",
+          "desc": "Apprendre aux débutants sans ordinateur à créer un contenu pro avec leur téléphone.",
+          "budget": "Petit"
+        },
+        {
+          "id": 121,
+          "code": "121",
+          "title": "Location d'espace calme équipé pour cours particuliers et webinaires",
+          "desc": "Petite salle climatisée avec bonne fibre louée à l'heure aux formateurs et coachs.",
+          "budget": "Structuré"
+        },
+        {
+          "id": 122,
+          "code": "122",
+          "title": "Création de cahiers d'exercices et plannings imprimables (planners 2027)",
+          "desc": "Plannings de vie, journaux de gratitude, suivis d'objectifs business en PDF ou imprimés.",
+          "budget": "Petit"
+        },
+        {
+          "id": 123,
+          "code": "123",
+          "title": "Service de mise en page d'e-books et de supports de formation pour coachs",
+          "desc": "Transformation de notes vocales ou brouillons en PDF professionnels vendables.",
+          "budget": "Petit"
+        },
+        {
+          "id": 124,
+          "code": "124",
+          "title": "Atelier pratique de prise de parole en public et aisance face caméra",
+          "desc": "Sessions hebdomadaires aidant entrepreneurs et cadres à convaincre en vidéo et en réunion.",
+          "budget": "Petit"
+        },
+        {
+          "id": 125,
+          "code": "125",
+          "title": "Plateforme ou newsletter payante de résumés de livres business en français",
+          "desc": "Synthèses audio de 10 minutes + fiches PDF actionnables chaque semaine sur abonnement.",
+          "budget": "Petit"
+        }
+      ]
+    },
+    {
+      "num": 6,
+      "title": "Beauté, Cosmétiques Naturels & Bien-être",
+      "intro": "Le marché africain de la beauté et des soins naturels connaît une croissance fulgurante. Les consommatrices plébiscitent désormais les ingrédients locaux authentiques (karité, baobab, moringa, bissap, cacao) avec un packaging moderne.",
+      "start_code": "126",
+      "end_code": "150",
+      "counts": {
+        "Petit": 11,
+        "Moyen": 10,
+        "Structuré": 4
+      },
+      "ideas": [
+        {
+          "id": 126,
+          "code": "126",
+          "title": "Beurre de karité chantilly parfumé aux huiles essentielles",
+          "desc": "Texture fouettée légère en pots élégants pour peau et cheveux secs, vendue sur réseaux sociaux.",
+          "budget": "Petit"
+        },
+        {
+          "id": 127,
+          "code": "127",
+          "title": "Gamme de soins pour cheveux naturels (nappy) et locks",
+          "desc": "Huiles de pousse (ricin, chébé, karkar, menthe), vaporisateurs hydratants et beurres coiffants.",
+          "budget": "Moyen"
+        },
+        {
+          "id": 128,
+          "code": "128",
+          "title": "Fabrication de savons noirs améliorés et savons à froid naturels",
+          "desc": "Formules au curcuma, miel, charbon actif, papaye ou neem ciblant l'éclat sans dépigmentation nocive.",
+          "budget": "Petit"
+        },
+        {
+          "id": 129,
+          "code": "129",
+          "title": "Service de coiffure, tresses et pose de perruques à domicile",
+          "desc": "Gain de temps maximal pour femmes actives et jeunes mamans avec prise de rendez-vous WhatsApp.",
+          "budget": "Petit"
+        },
+        {
+          "id": 130,
+          "code": "130",
+          "title": "Bar à ongles mobile (manucure, pédicure, vernis semi-permanent)",
+          "desc": "Interventions à domicile ou en entreprise lors des pauses déjeuner et le week-end.",
+          "budget": "Moyen"
+        },
+        {
+          "id": 131,
+          "code": "131",
+          "title": "Maquillage professionnel pour mariages, shootings et cérémonies",
+          "desc": "Prestation haut de gamme avec portfolio avant/après sur Instagram et TikTok.",
+          "budget": "Moyen"
+        },
+        {
+          "id": 132,
+          "code": "132",
+          "title": "Atelier d'entretien, lavage et customisation de perruques",
+          "desc": "Service de rénovation, coloration et repose de perruques de valeur sur dépôt-retrait.",
+          "budget": "Petit"
+        },
+        {
+          "id": 133,
+          "code": "133",
+          "title": "Vente d'huiles végétales pures pressées localement (baobab, moringa, sésame)",
+          "desc": "Flacons compte-gouttes en verre ambré ciblant parapharmacies, spas et particuliers.",
+          "budget": "Moyen"
+        },
+        {
+          "id": 134,
+          "code": "134",
+          "title": "Gommages corporels naturels au café local, sucre roux et coco",
+          "desc": "Produits faciles à formuler et très photogéniques, parfaits en coffrets cadeaux.",
+          "budget": "Petit"
+        },
+        {
+          "id": 135,
+          "code": "135",
+          "title": "Institut spécialisé en soins du visage doux et anti-imperfections",
+          "desc": "Protocoles adaptés aux peaux noires et métissées (sans produits agressifs) avec suivi mensuel.",
+          "budget": "Structuré"
+        },
+        {
+          "id": 136,
+          "code": "136",
+          "title": "Fabrication de baumes à lèvres et huiles à barbe naturels",
+          "desc": "Gamme masculine et mixte à base de cire d'abeille locale, karité et huiles nourrissantes.",
+          "budget": "Petit"
+        },
+        {
+          "id": 137,
+          "code": "137",
+          "title": "Service de massage relaxant et bien-être à domicile",
+          "desc": "Prestations anti-stress sur rendez-vous pour cadres, femmes enceintes et sportifs.",
+          "budget": "Moyen"
+        },
+        {
+          "id": 138,
+          "code": "138",
+          "title": "Vente de parfums d'ambiance, bougies artisanales et encens traditionnels revisités (thiouraye)",
+          "desc": "Présentations chic en bocaux pour maisons modernes, hôtels et boutiques.",
+          "budget": "Petit"
+        },
+        {
+          "id": 139,
+          "code": "139",
+          "title": "Salon de coiffure express pour hommes et enfants avec réservation",
+          "desc": "Service ponctuel, hygiène irréprochable, abonnement mensuel coupe + barbe.",
+          "budget": "Structuré"
+        },
+        {
+          "id": 140,
+          "code": "140",
+          "title": "Vente d'accessoires satin (bonnets, taies d'oreiller, chouchous)",
+          "desc": "Protection nocturne des cheveux naturels et tresses, fabriquée localement en petites séries.",
+          "budget": "Petit"
+        },
+        {
+          "id": 141,
+          "code": "141",
+          "title": "Bar à sourcils et extension de cils sur rendez-vous",
+          "desc": "Prestation rapide à forte marge et forte fidélisation mensuelle.",
+          "budget": "Moyen"
+        },
+        {
+          "id": 142,
+          "code": "142",
+          "title": "Distributeur de cosmétiques naturels certifiés par abonnement (Beauty Box)",
+          "desc": "Coffret trimestriel faisant découvrir 4 à 5 marques cosmétiques africaines locales.",
+          "budget": "Moyen"
+        },
+        {
+          "id": 143,
+          "code": "143",
+          "title": "Fabrication de déodorants naturels en stick ou crème sans aluminium",
+          "desc": "Alternative saine à base de karité, bicarbonate doux, argile blanche et huile de coco.",
+          "budget": "Petit"
+        },
+        {
+          "id": 144,
+          "code": "144",
+          "title": "Spa spécialisé pour pieds fatigués et soins pédicure esthétique",
+          "desc": "Concept ciblé dans un quartier d'affaires avec ambiance apaisante et forfaits détente.",
+          "budget": "Structuré"
+        },
+        {
+          "id": 145,
+          "code": "145",
+          "title": "Vente d'infusions et tisanes bien-être africaines (moringa, citronnelle, kinkéliba, bissap)",
+          "desc": "Sachets pyramides ou boîtes design pour sommeil, digestion et vitalité.",
+          "budget": "Moyen"
+        },
+        {
+          "id": 146,
+          "code": "146",
+          "title": "Atelier de henné moderne et tatouages éphémères pour cérémonies",
+          "desc": "Motifs raffinés pour mariages, baptêmes et fêtes religieuses avec déplacement sur site.",
+          "budget": "Petit"
+        },
+        {
+          "id": 147,
+          "code": "147",
+          "title": "Conseil en routine capillaire et diagnostic personnalisé en ligne",
+          "desc": "Bilan individuel payant + ordonnance de produits adaptés pour stopper la casse des cheveux.",
+          "budget": "Petit"
+        },
+        {
+          "id": 148,
+          "code": "148",
+          "title": "Production d'eaux florales et lotions toniques naturelles",
+          "desc": "Hydrolats doux (rose, fleur d'oranger, aloès) conditionnés en sprays rafraîchissants.",
+          "budget": "Moyen"
+        },
+        {
+          "id": 149,
+          "code": "149",
+          "title": "Location de chaises ou cabines dans un espace beauté partagé (coworking beauté)",
+          "desc": "Sous-location hebdomadaire à des coiffeuses, maquilleuses et prothésistes ongulaires indépendantes.",
+          "budget": "Structuré"
+        },
+        {
+          "id": 150,
+          "code": "150",
+          "title": "Marque de produits de bain pour bébés 100 % doux et naturels",
+          "desc": "Savons surgras au karité et huiles massantes sans parfum synthétique pour peaux sensibles.",
+          "budget": "Moyen"
+        }
+      ]
+    },
+    {
+      "num": 7,
+      "title": "Mode, Textile Africain & Accessoires",
+      "intro": "La fierté culturelle et le style afro-contemporain séduisent autant les jeunes urbains que la diaspora. En 2027, combiner savoir-faire des tailleurs locaux, finitions soignées et vente digitale crée de vraies marques rentables.",
+      "start_code": "151",
+      "end_code": "175",
+      "counts": {
+        "Petit": 7,
+        "Moyen": 16,
+        "Structuré": 2
+      },
+      "ideas": [
+        {
+          "id": 151,
+          "code": "151",
+          "title": "Marque de prêt-à-porter afro-urbain (chemises, vestes, robes modernes en wax/bogolan)",
+          "desc": "Petites collections capsules bien coupées vendues via Instagram, WhatsApp et pop-up stores.",
+          "budget": "Moyen"
+        },
+        {
+          "id": 152,
+          "code": "152",
+          "title": "Service de couture express et retouches à domicile",
+          "desc": "Collecte et livraison de vêtements à ajuster pour cadres et familles débordées.",
+          "budget": "Petit"
+        },
+        {
+          "id": 153,
+          "code": "153",
+          "title": "Confection de sacs à main, cabas et pochettes d'ordinateur en pagne tissé et cuir",
+          "desc": "Accessoires professionnels alliant identité africaine et utilité quotidienne.",
+          "budget": "Moyen"
+        },
+        {
+          "id": 154,
+          "code": "154",
+          "title": "Location de tenues de cérémonie (robes de soirée, grands boubous, costumes)",
+          "desc": "Rentabilisation de pièces haut de gamme pour mariages, galas et shootings photo.",
+          "budget": "Structuré"
+        },
+        {
+          "id": 155,
+          "code": "155",
+          "title": "Marque de t-shirts et sweats à messages afro-positifs imprimés à la demande",
+          "desc": "Sérigraphie ou flocage sur commande pour éviter de bloquer du capital en stock.",
+          "budget": "Petit"
+        },
+        {
+          "id": 156,
+          "code": "156",
+          "title": "Confection de tenues professionnelles et uniformes d'entreprise",
+          "desc": "Polos brodés, blouses médicales, tabliers de restaurants et tenues d'hôtellerie.",
+          "budget": "Moyen"
+        },
+        {
+          "id": 157,
+          "code": "157",
+          "title": "Fabrication artisanale de sandales, mules et mocassins en cuir local",
+          "desc": "Collaboration avec des cordonniers qualifiés, branding soigné et vente en ligne.",
+          "budget": "Moyen"
+        },
+        {
+          "id": 158,
+          "code": "158",
+          "title": "Création de bijoux fantaisie afro-chic (perles, laiton, cauris, corne)",
+          "desc": "Colliers, boucles d'oreilles et bracelets tendance à forte marge en coffrets.",
+          "budget": "Petit"
+        },
+        {
+          "id": 159,
+          "code": "159",
+          "title": "Atelier de personnalisation et broderie numérique sur vêtements et casquettes",
+          "desc": "Personnalisation pour marques, écoles, associations, mariages et cadeaux.",
+          "budget": "Structuré"
+        },
+        {
+          "id": 160,
+          "code": "160",
+          "title": "Ligne de vêtements confortables pour femmes enceintes et allaitantes",
+          "desc": "Modèles élégants et pratiques répondant à un créneau peu desservi localement.",
+          "budget": "Moyen"
+        },
+        {
+          "id": 161,
+          "code": "161",
+          "title": "Marque de sous-vêtements, pyjamas et vêtements d'intérieur en coton respirant",
+          "desc": "Pièces légères adaptées au climat tropical, vendues en lots sur WhatsApp.",
+          "budget": "Moyen"
+        },
+        {
+          "id": 162,
+          "code": "162",
+          "title": "Vente de tissus traditionnels rares sourcés directement chez les tisserands",
+          "desc": "Faso Dan Fani, Kenté, Kita, Ndop, raphia ou bazin riche livrés localement et à la diaspora.",
+          "budget": "Moyen"
+        },
+        {
+          "id": 163,
+          "code": "163",
+          "title": "Service de stylisme et conseil en image pour dirigeants et mariés",
+          "desc": "Accompagnement shopping, choix de tenues de cérémonie et relooking complet.",
+          "budget": "Petit"
+        },
+        {
+          "id": 164,
+          "code": "164",
+          "title": "Fabrication de chapeaux, bobs, foulards et accessoires de tête assortis",
+          "desc": "Pièces rapides à coudre à partir de chutes de beaux tissus (upcycling rentable).",
+          "budget": "Petit"
+        },
+        {
+          "id": 165,
+          "code": "165",
+          "title": "Marque de tenues scolaires durables et bien coupées",
+          "desc": "Partenariat avec écoles privées et vente directe aux parents avant la rentrée.",
+          "budget": "Moyen"
+        },
+        {
+          "id": 166,
+          "code": "166",
+          "title": "Collection de mode grande taille (plus-size) élégante et moderne",
+          "desc": "Coupes flatteuses adaptées aux morphologies réelles, encore trop rares en prêt-à-porter local.",
+          "budget": "Moyen"
+        },
+        {
+          "id": 167,
+          "code": "167",
+          "title": "Confection de tenues assorties pour couples et familles (cérémonies & fêtes)",
+          "desc": "Packs « Famille complète » très demandés pour mariages, baptêmes, Tabaski et Noël.",
+          "budget": "Moyen"
+        },
+        {
+          "id": 168,
+          "code": "168",
+          "title": "Service de blanchisserie et repassage premium avec collecte à domicile",
+          "desc": "Abonnements mensuels au kilo pour célibataires actifs, cadres et expatriés.",
+          "budget": "Moyen"
+        },
+        {
+          "id": 169,
+          "code": "169",
+          "title": "Cordonnerie moderne et rénovation de baskets / sacs en cuir",
+          "desc": "Nettoyage profond, recoloration et réparation de chaussures de marque urbaines.",
+          "budget": "Petit"
+        },
+        {
+          "id": 170,
+          "code": "170",
+          "title": "Ligne de maillots de bain et tenues de plage aux motifs africains",
+          "desc": "Vente dans les hôtels côtiers, resorts et sur les réseaux sociaux toute l'année.",
+          "budget": "Moyen"
+        },
+        {
+          "id": 171,
+          "code": "171",
+          "title": "Confection d'articles textiles maison (rideaux, coussins, chemins de table)",
+          "desc": "Décoration sur mesure utilisant tissus locaux et cotons unis modernes.",
+          "budget": "Moyen"
+        },
+        {
+          "id": 172,
+          "code": "172",
+          "title": "Marque de vêtements minimalistes pour enfants (0 à 8 ans)",
+          "desc": "Tissus doux 100 % coton local, pratiques et résistants pour les cadeaux de naissance.",
+          "budget": "Moyen"
+        },
+        {
+          "id": 173,
+          "code": "173",
+          "title": "Service de dépôt-vente de vêtements de marque et tenues portées une fois",
+          "desc": "Plateforme locale permettant de revendre robes de cérémonie et costumes contre commission.",
+          "budget": "Petit"
+        },
+        {
+          "id": 174,
+          "code": "174",
+          "title": "Fabrication de ceintures, portefeuilles et porte-cartes en cuir artisanal",
+          "desc": "Idées cadeaux masculins durables personnalisables par gravure.",
+          "budget": "Moyen"
+        },
+        {
+          "id": 175,
+          "code": "175",
+          "title": "Atelier de formation courte à la coupe-couture moderne et patronnage",
+          "desc": "Cours du soir et week-ends pour jeunes souhaitant lancer leur propre marque.",
+          "budget": "Moyen"
+        }
+      ]
+    },
+    {
+      "num": 8,
+      "title": "Immobilier, Logement & Services à l'Habitat",
+      "intro": "La croissance démographique urbaine crée un besoin colossal en logements, gestion locative fiable et entretien des maisons. Même sans capital pour construire, les services immobiliers génèrent des revenus rapides.",
+      "start_code": "176",
+      "end_code": "200",
+      "counts": {
+        "Petit": 10,
+        "Moyen": 9,
+        "Structuré": 6
+      },
+      "ideas": [
+        {
+          "id": 176,
+          "code": "176",
+          "title": "Conciergerie et gestion d'appartements meublés courte durée (Airbnb / diaspora)",
+          "desc": "Accueil voyageurs, ménage, photos et gestion des réservations contre 15 à 25 % de commission.",
+          "budget": "Petit"
+        },
+        {
+          "id": 177,
+          "code": "177",
+          "title": "Chasseur immobilier pour nouveaux arrivants, étudiants et expatriés",
+          "desc": "Recherche vérifiée d'appartements sans arnaque avec visites filmées sur WhatsApp.",
+          "budget": "Petit"
+        },
+        {
+          "id": 178,
+          "code": "178",
+          "title": "Agence digitale de mise en relation locative vérifiée",
+          "desc": "Annonces propres avec vidéos réelles, loyers transparents et frais de mise en relation honnêtes.",
+          "budget": "Petit"
+        },
+        {
+          "id": 179,
+          "code": "179",
+          "title": "Service de nettoyage professionnel de fin de chantier et avant emménagement",
+          "desc": "Équipe mobile équipée pour livrer des maisons et bureaux impeccables.",
+          "budget": "Moyen"
+        },
+        {
+          "id": 180,
+          "code": "180",
+          "title": "Gestion locative de confiance pour propriétaires de la diaspora",
+          "desc": "Suivi des loyers, petits travaux, photos mensuelles et rapports transparents à distance.",
+          "budget": "Petit"
+        },
+        {
+          "id": 181,
+          "code": "181",
+          "title": "Home staging et aménagement clé en main d'appartements meublés",
+          "desc": "Achat de meubles, décoration et mise en valeur pour augmenter le loyer des propriétaires.",
+          "budget": "Moyen"
+        },
+        {
+          "id": 182,
+          "code": "182",
+          "title": "Service de déménagement organisé avec emballage sécurisé",
+          "desc": "Fourniture de cartons, démontage de meubles et transport soigné dans les grandes villes.",
+          "budget": "Structuré"
+        },
+        {
+          "id": 183,
+          "code": "183",
+          "title": "Entretien d'espaces verts, jardins privés et cours d'immeubles",
+          "desc": "Tonte, taille, plantation et arrosage sur contrat mensuel pour villas, hôtels et entreprises.",
+          "budget": "Moyen"
+        },
+        {
+          "id": 184,
+          "code": "184",
+          "title": "Désinsectisation, dératisation et traitement anti-moustiques professionnel",
+          "desc": "Interventions certifiées pour maisons, restaurants, hôtels et entrepôts.",
+          "budget": "Moyen"
+        },
+        {
+          "id": 185,
+          "code": "185",
+          "title": "Nettoyage à domicile de canapés, matelas et tapis par injection-extraction",
+          "desc": "Prestation à forte valeur perçue avec vidéos avant/après très virales sur TikTok.",
+          "budget": "Moyen"
+        },
+        {
+          "id": 186,
+          "code": "186",
+          "title": "Courtage en terrains sécurisés avec accompagnement vérifications foncières",
+          "desc": "Mise en relation avec notaires/géomètres pour sécuriser les achats de la diaspora.",
+          "budget": "Petit"
+        },
+        {
+          "id": 187,
+          "code": "187",
+          "title": "Service de peinture intérieure décorative et rafraîchissement express",
+          "desc": "Forfaits « 1 pièce repeinte en 24h » pour locataires et propriétaires.",
+          "budget": "Petit"
+        },
+        {
+          "id": 188,
+          "code": "188",
+          "title": "Pose de papiers peints, panneaux muraux 3D et revêtements vinyle",
+          "desc": "Transformation rapide et abordable de salons, boutiques et bureaux.",
+          "budget": "Moyen"
+        },
+        {
+          "id": 189,
+          "code": "189",
+          "title": "Entretien et nettoyage de piscines résidentielles et hôtelières",
+          "desc": "Abonnement hebdomadaire d'équilibrage de l'eau et maintenance des pompes.",
+          "budget": "Moyen"
+        },
+        {
+          "id": 190,
+          "code": "190",
+          "title": "Installation de moustiquaires magnétiques et sur mesure pour fenêtres",
+          "desc": "Solution esthétique et sanitaire très prisée par les familles urbaines.",
+          "budget": "Moyen"
+        },
+        {
+          "id": 191,
+          "code": "191",
+          "title": "Service de bricolage multi-services (homme à tout faire à la demande)",
+          "desc": "Pose de tringles, fixation TV, petites fuites, serrures et montage de meubles facturés à l'intervention.",
+          "budget": "Petit"
+        },
+        {
+          "id": 192,
+          "code": "192",
+          "title": "Location d'espaces de coliving modernes pour jeunes professionnels",
+          "desc": "Sous-location autorisée ou gestion de chambres meublées avec Wi-Fi et ménage inclus.",
+          "budget": "Structuré"
+        },
+        {
+          "id": 193,
+          "code": "193",
+          "title": "Suivi de chantier transparent par vidéo pour la diaspora",
+          "desc": "Visites hebdomadaires indépendantes avec rapport photo/vidéo et contrôle des factures matériaux.",
+          "budget": "Petit"
+        },
+        {
+          "id": 194,
+          "code": "194",
+          "title": "Aménagement de petits espaces de coworking de quartier",
+          "desc": "Bureaux partagés climatisés avec fibre et groupe/solaire loués à la journée ou au mois.",
+          "budget": "Structuré"
+        },
+        {
+          "id": 195,
+          "code": "195",
+          "title": "Service de lavage haute pression de façades, pavés et terrasses",
+          "desc": "Remise à neuf rapide des extérieurs de villas, stations-service et commerces.",
+          "budget": "Moyen"
+        },
+        {
+          "id": 196,
+          "code": "196",
+          "title": "Conseil en décoration d'intérieur à distance (planches d'ambiance & liste shopping)",
+          "desc": "Accompagnement abordable aidant les ménages à embellir leur salon sans architecte coûteux.",
+          "budget": "Petit"
+        },
+        {
+          "id": 197,
+          "code": "197",
+          "title": "Garde-meubles et box de stockage sécurisés à court terme",
+          "desc": "Location d'espaces secs pour voyageurs, étudiants en vacances et commerçants.",
+          "budget": "Structuré"
+        },
+        {
+          "id": 198,
+          "code": "198",
+          "title": "Nettoyage professionnel de vitres et devantures de commerces",
+          "desc": "Abonnement bimensuel pour boutiques, pharmacies, banques et restaurants.",
+          "budget": "Petit"
+        },
+        {
+          "id": 199,
+          "code": "199",
+          "title": "Pose et entretien de gazon synthétique pour terrasses et jardins",
+          "desc": "Aménagement propre sans arrosage pour maisons, écoles maternelles et restaurants.",
+          "budget": "Structuré"
+        },
+        {
+          "id": 200,
+          "code": "200",
+          "title": "Service de vidange et entretien écologique de fosses septiques",
+          "desc": "Activité essentielle à forte demande récurrente dans les zones en expansion urbaine.",
+          "budget": "Structuré"
+        }
+      ]
+    },
+    {
+      "num": 9,
+      "title": "Transport, Mobilité & Logistique Urbaine",
+      "intro": "Le commerce explose, mais la livraison fiable reste le maillon faible dans presque toutes les villes africaines. En 2027, quiconque garantit ponctualité, sécurité et suivi WhatsApp peut bâtir une flotte rentable.",
+      "start_code": "201",
+      "end_code": "225",
+      "counts": {
+        "Petit": 5,
+        "Moyen": 11,
+        "Structuré": 9
+      },
+      "ideas": [
+        {
+          "id": 201,
+          "code": "201",
+          "title": "Service de livraison express par moto pour e-commerçants WhatsApp",
+          "desc": "Collecte chez les vendeuses, livraison avec encaissement cash/Mobile Money et reversement le soir même.",
+          "budget": "Moyen"
+        },
+        {
+          "id": 202,
+          "code": "202",
+          "title": "Transport scolaire privé sécurisé en minibus climatisé",
+          "desc": "Abonnement mensuel avec notification WhatsApp aux parents à chaque montée et descente.",
+          "budget": "Structuré"
+        },
+        {
+          "id": 203,
+          "code": "203",
+          "title": "Navette aéroport ponctuelle avec réservation en ligne",
+          "desc": "Accueil pancarte, Wi-Fi à bord et tarif fixe transparent pour voyageurs d'affaires et diaspora.",
+          "budget": "Structuré"
+        },
+        {
+          "id": 204,
+          "code": "204",
+          "title": "Lavage auto mobile écologique à domicile ou au bureau",
+          "desc": "Nettoyage complet intérieur/extérieur sur le parking du client pendant qu'il travaille.",
+          "budget": "Moyen"
+        },
+        {
+          "id": 205,
+          "code": "205",
+          "title": "Relais colis de quartier pour vendeurs en ligne",
+          "desc": "Boutique partenaire où les clients récupèrent leurs commandes à moindre coût contre petite commission.",
+          "budget": "Petit"
+        },
+        {
+          "id": 206,
+          "code": "206",
+          "title": "Location de voitures avec chauffeur pour mariages et déplacements VIP",
+          "desc": "Intermédiation de véhicules propres avec chauffeurs formés à l'étiquette.",
+          "budget": "Moyen"
+        },
+        {
+          "id": 207,
+          "code": "207",
+          "title": "Service de courses administratives et dépôt de dossiers en ville",
+          "desc": "Coursier de confiance qui gère les dépôts de courriers, factures et démarches chronophages.",
+          "budget": "Petit"
+        },
+        {
+          "id": 208,
+          "code": "208",
+          "title": "Livraison de bouteilles de gaz domestique à domicile en 30 minutes",
+          "desc": "Commande par appel ou WhatsApp avec installation sécurisée du détendeur.",
+          "budget": "Moyen"
+        },
+        {
+          "id": 209,
+          "code": "209",
+          "title": "Transport de marchandises légères par tricycle utilitaire",
+          "desc": "Livraison de matériaux, sacs de vivriers et meubles dans les quartiers peu accessibles aux camions.",
+          "budget": "Structuré"
+        },
+        {
+          "id": 210,
+          "code": "210",
+          "title": "Service de navette interurbaine confortable sur réservation",
+          "desc": "Trajets réguliers entre grandes villes avec sièges réservés, climatisation et ponctualité garantie.",
+          "budget": "Structuré"
+        },
+        {
+          "id": 211,
+          "code": "211",
+          "title": "Location de motos ou tricycles en contrat de location-vente à des chauffeurs",
+          "desc": "Revenu hebdomadaire régulier avec suivi GPS et contrat clair.",
+          "budget": "Structuré"
+        },
+        {
+          "id": 212,
+          "code": "212",
+          "title": "Micro-entrepôt (fulfillment) pour vendeurs e-commerce",
+          "desc": "Stockage, emballage et expédition quotidienne des commandes pour marchands travaillant depuis chez eux.",
+          "budget": "Moyen"
+        },
+        {
+          "id": 213,
+          "code": "213",
+          "title": "Livraison frigorifique légère pour produits frais, viandes et médicaments",
+          "desc": "Glacières électriques ou caissons isothermes sur moto/fourgonnette répondant à un gros manque.",
+          "budget": "Structuré"
+        },
+        {
+          "id": 214,
+          "code": "214",
+          "title": "Service de chauffeur privé à la demande (chauffeur sobre / déplacements ponctuels)",
+          "desc": "Mise à disposition de chauffeurs qualifiés pour conduire le propre véhicule du client.",
+          "budget": "Petit"
+        },
+        {
+          "id": 215,
+          "code": "215",
+          "title": "Groupage de colis entre grandes villes africaines et régions intérieures",
+          "desc": "Envoi rapide et tracé de petits colis pour familles et commerçants.",
+          "budget": "Moyen"
+        },
+        {
+          "id": 216,
+          "code": "216",
+          "title": "Atelier mobile de dépannage crevaison et batterie (assistance routière)",
+          "desc": "Intervention rapide par moto équipée (booster, compresseur, mèches) sur appel.",
+          "budget": "Moyen"
+        },
+        {
+          "id": 217,
+          "code": "217",
+          "title": "Location de vélos électriques ou trottinettes dans les zones touristiques et campus",
+          "desc": "Mobilité douce pour balades côtières, hôtels et grands campus.",
+          "budget": "Structuré"
+        },
+        {
+          "id": 218,
+          "code": "218",
+          "title": "Service de transfert et accompagnement de personnes âgées aux rendez-vous",
+          "desc": "Transport bienveillant vers hôpitaux, banques et administrations financé souvent par les enfants.",
+          "budget": "Moyen"
+        },
+        {
+          "id": 219,
+          "code": "219",
+          "title": "Courtage de fret et mise en relation camionneurs / chargeurs",
+          "desc": "Optimisation des retours à vide entre ports et villes intérieures contre commission.",
+          "budget": "Petit"
+        },
+        {
+          "id": 220,
+          "code": "220",
+          "title": "Nettoyage et detailing intérieur complet de véhicules",
+          "desc": "Rénovation des sièges, phares opaques et désinfection climatisation pour voitures d'occasion.",
+          "budget": "Moyen"
+        },
+        {
+          "id": 221,
+          "code": "221",
+          "title": "Installation de traceurs GPS antivol pour motos et voitures",
+          "desc": "Vente du boîtier + pose + abonnement annuel de suivi sur smartphone.",
+          "budget": "Moyen"
+        },
+        {
+          "id": 222,
+          "code": "222",
+          "title": "Service de livraison nocturne de pharmacie de garde et urgences",
+          "desc": "Courses urgentes sécurisées entre 20 h et minuit sur demande WhatsApp.",
+          "budget": "Moyen"
+        },
+        {
+          "id": 223,
+          "code": "223",
+          "title": "Auto-école moderne avec cours de code sur smartphone",
+          "desc": "Préparation accélérée et pédagogie bienveillante ciblant jeunes actifs et femmes.",
+          "budget": "Structuré"
+        },
+        {
+          "id": 224,
+          "code": "224",
+          "title": "Parking sécurisé de proximité dans un quartier commercial saturé",
+          "desc": "Exploitation d'un terrain clos avec gardiennage, lavage optionnel et abonnement mensuel.",
+          "budget": "Structuré"
+        },
+        {
+          "id": 225,
+          "code": "225",
+          "title": "Service d'emballage et expédition de bagages vers l'étranger",
+          "desc": "Conditionnement sécurisé, pesée et suivi jusqu'à l'agence de fret aérien.",
+          "budget": "Petit"
+        }
+      ]
+    },
+    {
+      "num": 10,
+      "title": "Énergie Solaire, Eau & Économie Verte",
+      "intro": "Avec un ensoleillement exceptionnel et des enjeux croissants d'accès à l'électricité fiable, à l'eau potable et à la gestion des déchets, les métiers verts sont l'un des plus grands eldorados africains de 2027.",
+      "start_code": "226",
+      "end_code": "250",
+      "counts": {
+        "Petit": 7,
+        "Moyen": 11,
+        "Structuré": 7
+      },
+      "ideas": [
+        {
+          "id": 226,
+          "code": "226",
+          "title": "Vente et installation de kits solaires domestiques anti-délestage",
+          "desc": "Packs clés en main (panneau, batterie lithium, onduleur) pour assurer Wi-Fi, TV, ventilateurs et frigo.",
+          "budget": "Structuré"
+        },
+        {
+          "id": 227,
+          "code": "227",
+          "title": "Kiosque solaire de recharge de téléphones, powerbanks et batteries",
+          "desc": "Service quotidien indispensable dans les marchés, zones périurbaines et gares routières.",
+          "budget": "Moyen"
+        },
+        {
+          "id": 228,
+          "code": "228",
+          "title": "Maintenance et nettoyage professionnel de panneaux solaires",
+          "desc": "Contrat semestriel augmentant le rendement des installations résidentielles et d'entreprises.",
+          "budget": "Petit"
+        },
+        {
+          "id": 229,
+          "code": "229",
+          "title": "Vente de kits d'irrigation solaire goutte-à-goutte pour maraîchers",
+          "desc": "Distribution et pose de pompes solaires économisant le carburant des producteurs.",
+          "budget": "Structuré"
+        },
+        {
+          "id": 230,
+          "code": "230",
+          "title": "Production et vente d'eau potable filtrée en bonbonnes rechargeables",
+          "desc": "Livraison régulière de fontaines à eau aux bureaux, écoles et ménages.",
+          "budget": "Structuré"
+        },
+        {
+          "id": 231,
+          "code": "231",
+          "title": "Vente et entretien de filtres à eau domestiques (céramique / osmose)",
+          "desc": "Alternative économique et écologique aux bouteilles plastiques jetables.",
+          "budget": "Moyen"
+        },
+        {
+          "id": 232,
+          "code": "232",
+          "title": "Collecte et tri sélectif de bouteilles plastiques (PET) pour recycleurs",
+          "desc": "Achat au kilo auprès des ménages/événements, compactage et revente aux usines de recyclage.",
+          "budget": "Moyen"
+        },
+        {
+          "id": 233,
+          "code": "233",
+          "title": "Fabrication de charbon écologique (briquettes) à partir de déchets agricoles",
+          "desc": "Valorisation des coques de noix, rafles de maïs et sciure en combustible propre et économique.",
+          "budget": "Moyen"
+        },
+        {
+          "id": 234,
+          "code": "234",
+          "title": "Vente de foyers améliorés économes en charbon et bois",
+          "desc": "Distribution de réchauds réduisant de 50 % la dépense de cuisson des ménages.",
+          "budget": "Moyen"
+        },
+        {
+          "id": 235,
+          "code": "235",
+          "title": "Collecte d'huiles de friture usagées chez les restaurants",
+          "desc": "Récupération régulière transformée en savons ménagers ou revendue à la filière biocarburant.",
+          "budget": "Petit"
+        },
+        {
+          "id": 236,
+          "code": "236",
+          "title": "Fabrication de sacs cabas réutilisables et emballages en papier kraft",
+          "desc": "Alternative locale aux sacs plastiques interdits, personnalisée au logo des boutiques.",
+          "budget": "Moyen"
+        },
+        {
+          "id": 237,
+          "code": "237",
+          "title": "Service de pré-collecte organisée des ordures ménagères par abonnement",
+          "desc": "Tournées ponctuelles en tricycle dans les nouveaux quartiers résidentiels.",
+          "budget": "Moyen"
+        },
+        {
+          "id": 238,
+          "code": "238",
+          "title": "Audit d'économie d'électricité pour PME, hôtels et ménages",
+          "desc": "Analyse des factures, remplacement par LED et dimensionnement solaire rentable.",
+          "budget": "Petit"
+        },
+        {
+          "id": 239,
+          "code": "239",
+          "title": "Reconditionnement et réparation de batteries et onduleurs solaires",
+          "desc": "Prolongation de la durée de vie des équipements énergétiques coûteux.",
+          "budget": "Moyen"
+        },
+        {
+          "id": 240,
+          "code": "240",
+          "title": "Fabrication de pavés écologiques à base de plastique recyclé et sable",
+          "desc": "Matériaux durables et imperméables vendus pour cours, trottoirs et parkings.",
+          "budget": "Structuré"
+        },
+        {
+          "id": 241,
+          "code": "241",
+          "title": "Installation de systèmes de récupération d'eau de pluie pour maisons et fermes",
+          "desc": "Gouttières, filtres et cuves de stockage réduisant les factures d'eau en saison sèche.",
+          "budget": "Moyen"
+        },
+        {
+          "id": 242,
+          "code": "242",
+          "title": "Location de stations d'énergie portables solaires pour événements et tournages",
+          "desc": "Alternative silencieuse et sans fumée aux groupes électrogènes polluants.",
+          "budget": "Structuré"
+        },
+        {
+          "id": 243,
+          "code": "243",
+          "title": "Fabrication de meubles et objets déco en palettes recyclées et pneus",
+          "desc": "Tables basses, fauteuils de terrasse et étagères vendus aux maquis branchés et particuliers.",
+          "budget": "Petit"
+        },
+        {
+          "id": 244,
+          "code": "244",
+          "title": "Production de biogaz domestique pour fermes d'élevage",
+          "desc": "Installation de biodigesteurs transformant le fumier en gaz de cuisson et engrais liquide.",
+          "budget": "Structuré"
+        },
+        {
+          "id": 245,
+          "code": "245",
+          "title": "Vente de lampadaires solaires autonomes pour résidences et quartiers",
+          "desc": "Éclairage de sécurité facile à poser sans tranchée ni facture d'électricité.",
+          "budget": "Moyen"
+        },
+        {
+          "id": 246,
+          "code": "246",
+          "title": "Service de réparation d'appareils électroniques pour prolonger leur cycle de vie",
+          "desc": "Réparation de ventilateurs, fers, mixeurs et écrans contre l'obsolescence rapide.",
+          "budget": "Petit"
+        },
+        {
+          "id": 247,
+          "code": "247",
+          "title": "Création de pépinières d'arbres urbains et reboisement RSE pour entreprises",
+          "desc": "Prestations clés en main pour les programmes environnementaux des grandes sociétés.",
+          "budget": "Moyen"
+        },
+        {
+          "id": 248,
+          "code": "248",
+          "title": "Distribution de chauffe-eau solaires pour hôtels, cliniques et villas",
+          "desc": "Réduction drastique des coûts électriques d'eau chaude avec retour sur investissement rapide.",
+          "budget": "Structuré"
+        },
+        {
+          "id": 249,
+          "code": "249",
+          "title": "Atelier d'upcycling textile (transformation de vieux jeans et tissus en sacs/poufs)",
+          "desc": "Pièces uniques écoresponsables prisées par les jeunes urbains et boutiques touristiques.",
+          "budget": "Petit"
+        },
+        {
+          "id": 250,
+          "code": "250",
+          "title": "Sensibilisation et gestion zéro-déchet pour festivals, mariages et conférences",
+          "desc": "Mise en place de bacs de tri, équipe de collecte et recyclage post-événement.",
+          "budget": "Petit"
+        }
+      ]
+    },
+    {
+      "num": 11,
+      "title": "Santé, Nutrition & Services à la Personne",
+      "intro": "La classe moyenne urbaine africaine investit de plus en plus dans la prévention, l'hygiène, la nutrition saine et l'accompagnement des proches vulnérables. Des services humains fiables répondent à des besoins urgents.",
+      "start_code": "251",
+      "end_code": "275",
+      "counts": {
+        "Petit": 12,
+        "Moyen": 11,
+        "Structuré": 2
+      },
+      "ideas": [
+        {
+          "id": 251,
+          "code": "251",
+          "title": "Accompagnement à domicile de personnes âgées et convalescentes",
+          "desc": "Aide au quotidien, suivi de prise de médicaments et compagnie financés par les familles et la diaspora.",
+          "budget": "Petit"
+        },
+        {
+          "id": 252,
+          "code": "252",
+          "title": "Coaching nutritionnel adapté à la cuisine africaine locale",
+          "desc": "Plans alimentaires équilibrés (sans importer de produits chers) pour gestion du poids et diabète.",
+          "budget": "Petit"
+        },
+        {
+          "id": 253,
+          "code": "253",
+          "title": "Service de livraison d'ordonnances et produits de parapharmacie",
+          "desc": "Récupération sécurisée en pharmacie partenaire avec facture officielle pour malades et seniors.",
+          "budget": "Petit"
+        },
+        {
+          "id": 254,
+          "code": "254",
+          "title": "Vente de compléments naturels locaux standardisés (poudre de moringa, baobab, spiruline)",
+          "desc": "Produits riches en nutriments conditionnés proprement avec posologie claire.",
+          "budget": "Moyen"
+        },
+        {
+          "id": 255,
+          "code": "255",
+          "title": "Cabinet ou service mobile d'optique accessible (lunettes de lecture et anti-lumière bleue)",
+          "desc": "Dépistage partenaire et vente de montures tendance à prix doux en entreprise.",
+          "budget": "Structuré"
+        },
+        {
+          "id": 256,
+          "code": "256",
+          "title": "Production et vente de serviettes hygiéniques lavables et écologiques",
+          "desc": "Solution économique, saine et durable ciblant jeunes filles, écoles et ONG.",
+          "budget": "Moyen"
+        },
+        {
+          "id": 257,
+          "code": "257",
+          "title": "Service de garde-malade de nuit en milieu hospitalier ou à domicile",
+          "desc": "Personnel formé, honnête et ponctuel soulageant les familles épuisées.",
+          "budget": "Petit"
+        },
+        {
+          "id": 258,
+          "code": "258",
+          "title": "Vente de trousses de premiers secours pour voitures, écoles et PME",
+          "desc": "Kits conformes et complets vendus avec un mémo illustré des gestes d'urgence.",
+          "budget": "Moyen"
+        },
+        {
+          "id": 259,
+          "code": "259",
+          "title": "Ateliers de gestion du stress et prévention du burn-out en entreprise",
+          "desc": "Sessions pratiques de respiration, ergonomie et équilibre pro-perso pour banques et sociétés.",
+          "budget": "Petit"
+        },
+        {
+          "id": 260,
+          "code": "260",
+          "title": "Location de matériel médical de convalescence (fauteuils roulants, béquilles, lits médicalisés)",
+          "desc": "Solution abordable évitant aux familles d'acheter un matériel utilisé quelques semaines.",
+          "budget": "Structuré"
+        },
+        {
+          "id": 261,
+          "code": "261",
+          "title": "Service de ménage fiable et formé à la carte ou par abonnement",
+          "desc": "Personnel recruté, vérifié et encadré pour ménages actifs et bureaux.",
+          "budget": "Petit"
+        },
+        {
+          "id": 262,
+          "code": "262",
+          "title": "Vente de produits d'entretien ménager écologiques fabriqués localement",
+          "desc": "Liquide vaisselle, lessive liquide et désinfectant multi-usages vendus en bidons rechargeables.",
+          "budget": "Petit"
+        },
+        {
+          "id": 263,
+          "code": "263",
+          "title": "Prise de rendez-vous médicaux et coordination santé pour la diaspora",
+          "desc": "Suivi des bilans de santé des parents restés au pays avec comptes rendus fiables.",
+          "budget": "Petit"
+        },
+        {
+          "id": 264,
+          "code": "264",
+          "title": "Atelier de fabrication de savons antiseptiques et gels hydroalcooliques locaux",
+          "desc": "Fourniture aux écoles, cliniques, restaurants et bureaux à tarif compétitif.",
+          "budget": "Moyen"
+        },
+        {
+          "id": 265,
+          "code": "265",
+          "title": "Service de massage post-natal et accompagnement jeunes mamans (doula moderne)",
+          "desc": "Soins traditionnels bienveillants, aide à l'allaitement et récupération après accouchement.",
+          "budget": "Petit"
+        },
+        {
+          "id": 266,
+          "code": "266",
+          "title": "Kiosque de contrôle tension et glycémie en pharmacie ou entreprise (en lien avec infirmier diplômé)",
+          "desc": "Sensibilisation préventive rapide orientant les patients vers un médecin si besoin.",
+          "budget": "Moyen"
+        },
+        {
+          "id": 267,
+          "code": "267",
+          "title": "Préparation de repas adaptés aux régimes médicaux (sans sel, pauvre en sucre)",
+          "desc": "Service traiteur santé pour personnes hypertendues, diabétiques ou hospitalisées.",
+          "budget": "Moyen"
+        },
+        {
+          "id": 268,
+          "code": "268",
+          "title": "Vente de moustiquaires imprégnées haut de gamme et répulsifs naturels",
+          "desc": "Formules à la citronnelle et eucalyptus citronné sans produits chimiques irritants.",
+          "budget": "Petit"
+        },
+        {
+          "id": 269,
+          "code": "269",
+          "title": "Service de stérilisation et désinfection de locaux (crèches, cabinets, bureaux)",
+          "desc": "Protocoles sanitaires réguliers certifiés rassurant parents et clients.",
+          "budget": "Moyen"
+        },
+        {
+          "id": 270,
+          "code": "270",
+          "title": "Plateforme ou conciergerie d'évacuation sanitaire et bilans médicaux à l'étranger",
+          "desc": "Orientation administrative, devis cliniques et accompagnement logistique transparent.",
+          "budget": "Petit"
+        },
+        {
+          "id": 271,
+          "code": "271",
+          "title": "Fabrication de coussins ergonomiques et oreillers orthopédiques locaux",
+          "desc": "Produits de confort vendus aux conducteurs, télétravailleurs et personnes souffrant du dos.",
+          "budget": "Moyen"
+        },
+        {
+          "id": 272,
+          "code": "272",
+          "title": "Service d'assistance administrative santé (dossiers assurance et mutuelle)",
+          "desc": "Aide aux assurés et cliniques pour constituer et suivre les dossiers de remboursement.",
+          "budget": "Petit"
+        },
+        {
+          "id": 273,
+          "code": "273",
+          "title": "Vente d'eau minérale aromatisée aux plantes locales sans sucre",
+          "desc": "Alternative saine aux sodas trop sucrés distribuée dans les salles de sport et bureaux.",
+          "budget": "Moyen"
+        },
+        {
+          "id": 274,
+          "code": "274",
+          "title": "Cabinet de réflexologie plantaire et récupération musculaire",
+          "desc": "Prestation bien-être très prisée après les longues journées debout ou dans les embouteillages.",
+          "budget": "Moyen"
+        },
+        {
+          "id": 275,
+          "code": "275",
+          "title": "Service de livraison hebdomadaire de produits d'hygiène essentiels (pack famille)",
+          "desc": "Abonnement livrant papier toilette, savon, lessive et eau de Javel à prix gros.",
+          "budget": "Moyen"
+        }
+      ]
+    },
+    {
+      "num": 12,
+      "title": "Événementiel, Mariages, Culture & Création de Contenu",
+      "intro": "Les célébrations familiales, conférences professionnelles et la création de contenu explosent partout sur le continent. En 2027, l'économie de l'attention et des événements offre des marges rapides.",
+      "start_code": "276",
+      "end_code": "300",
+      "counts": {
+        "Petit": 13,
+        "Moyen": 7,
+        "Structuré": 5
+      },
+      "ideas": [
+        {
+          "id": 276,
+          "code": "276",
+          "title": "Organisation complète ou coordination Jour-J de mariages (wedding planner)",
+          "desc": "Gestion prestataires, timing et budget pour couples modernes et mariages de la diaspora.",
+          "budget": "Petit"
+        },
+        {
+          "id": 277,
+          "code": "277",
+          "title": "Décoration de salles et arches de ballons pour anniversaires et baby showers",
+          "desc": "Prestations visuelles très partagées sur les réseaux sociaux générant un fort bouche-à-oreille.",
+          "budget": "Moyen"
+        },
+        {
+          "id": 278,
+          "code": "278",
+          "title": "Location de photobooth 360° et bornes photo instantanées",
+          "desc": "Animation vedette des mariages, galas d'entreprise et soirées privées à rentabilité rapide.",
+          "budget": "Structuré"
+        },
+        {
+          "id": 279,
+          "code": "279",
+          "title": "Couverture vidéo smartphone en direct pour mariages (Wedding Content Creator)",
+          "desc": "Livraison dès le lendemain matin de 15 Reels/TikTok prêts à poster, complémentaire au vidéaste classique.",
+          "budget": "Petit"
+        },
+        {
+          "id": 280,
+          "code": "280",
+          "title": "Location de vaisselle chic, nappes, chaises Napoléon et chapiteaux",
+          "desc": "Revenu récurrent chaque week-end avec un stock bien entretenu.",
+          "budget": "Structuré"
+        },
+        {
+          "id": 281,
+          "code": "281",
+          "title": "Studio de tournage podcast et vidéo loué à l'heure",
+          "desc": "Petit local insonorisé avec lumières LED, micros et décor modulable pour créateurs et entreprises.",
+          "budget": "Structuré"
+        },
+        {
+          "id": 282,
+          "code": "282",
+          "title": "Service d'hôtesses d'accueil et protocole événementiel bilingue",
+          "desc": "Équipe élégante et formée pour conférences, lancements de marques et mariages VIP.",
+          "budget": "Petit"
+        },
+        {
+          "id": 283,
+          "code": "283",
+          "title": "Création de faire-part digitaux animés et sites web de mariage",
+          "desc": "Invitations WhatsApp interactives avec RSVP, plan Google Maps et cagnotte Mobile Money.",
+          "budget": "Petit"
+        },
+        {
+          "id": 284,
+          "code": "284",
+          "title": "Bar mobile à cocktails sans alcool (mocktails tropicaux) pour réceptions",
+          "desc": "Service spectaculaire et rafraîchissant facturé au forfait par invité.",
+          "budget": "Moyen"
+        },
+        {
+          "id": 285,
+          "code": "285",
+          "title": "Animation de soirées (DJ mobile, sonorisation et éclairage LED)",
+          "desc": "Prestations week-ends pour cérémonies, inaugurations de boutiques et soirées d'entreprise.",
+          "budget": "Structuré"
+        },
+        {
+          "id": 286,
+          "code": "286",
+          "title": "Confection de souvenirs d'invités personnalisés (bougies, mini-miels, éventails, mugs)",
+          "desc": "Cadeaux gravés aux prénoms des mariés ou au logo d'une entreprise.",
+          "budget": "Petit"
+        },
+        {
+          "id": 287,
+          "code": "287",
+          "title": "Photographie corporate, portraits LinkedIn et reportages d'entreprise",
+          "desc": "Intervention en demi-journée pour équipes dirigeantes, ONG et événements professionnels.",
+          "budget": "Moyen"
+        },
+        {
+          "id": 288,
+          "code": "288",
+          "title": "Organisation d'afterworks networking thématiques pour jeunes entrepreneurs",
+          "desc": "Billetterie accessible + sponsoring de marques locales souhaitant toucher cette audience.",
+          "budget": "Petit"
+        },
+        {
+          "id": 289,
+          "code": "289",
+          "title": "Service de streaming live multi-caméras pour cérémonies et conférences",
+          "desc": "Permet à la diaspora de suivre mariages, funérailles ou séminaires en direct haute définition.",
+          "budget": "Moyen"
+        },
+        {
+          "id": 290,
+          "code": "290",
+          "title": "Chaîne YouTube / TikTok thématique monétisée (business, tech, cuisine, histoire africaine)",
+          "desc": "Revenus combinés : publicité, partenariats marques locales et vente de produits digitaux.",
+          "budget": "Petit"
+        },
+        {
+          "id": 291,
+          "code": "291",
+          "title": "Location d'écrans géants LED et vidéoprojecteurs professionnels",
+          "desc": "Fourniture technique pour séminaires, projections de matchs et festivals.",
+          "budget": "Structuré"
+        },
+        {
+          "id": 292,
+          "code": "292",
+          "title": "Production de jingles, spots audio et vidéos publicitaires courtes pour PME",
+          "desc": "Formats 30 secondes pensés pour Facebook, TikTok, WhatsApp et radios locales.",
+          "budget": "Petit"
+        },
+        {
+          "id": 293,
+          "code": "293",
+          "title": "Maître de cérémonie (MC) professionnel pour événements corporate et privés",
+          "desc": "Animation fluide, bilingue ou humoristique facturée au cachet élevé.",
+          "budget": "Petit"
+        },
+        {
+          "id": 294,
+          "code": "294",
+          "title": "Organisation de marchés éphémères (pop-up stores) pour marques locales",
+          "desc": "Location de stands à 20–40 créateurs le temps d'un week-end dans un lieu attractif.",
+          "budget": "Moyen"
+        },
+        {
+          "id": 295,
+          "code": "295",
+          "title": "Service de sécurité et contrôle d'accès par QR code pour événements",
+          "desc": "Billetterie digitale anti-fraude et gestion fluide des entrées de concerts et conférences.",
+          "budget": "Petit"
+        },
+        {
+          "id": 296,
+          "code": "296",
+          "title": "Calligraphie, panneaux de bienvenue en plexiglas et signalétique événementielle",
+          "desc": "Pièces sur mesure très prisées dans les mariages chics et salons professionnels.",
+          "budget": "Moyen"
+        },
+        {
+          "id": 297,
+          "code": "297",
+          "title": "Agent artistique et booking de musiciens acoustiques / troupes culturelles",
+          "desc": "Mise en relation d'artistes locaux avec hôtels, mariages et ambassades contre commission.",
+          "budget": "Petit"
+        },
+        {
+          "id": 298,
+          "code": "298",
+          "title": "Service de nettoyage express post-événement (nuit ou tôt le matin)",
+          "desc": "Équipe dédiée remettant salles et jardins en état juste après les fêtes.",
+          "budget": "Petit"
+        },
+        {
+          "id": 299,
+          "code": "299",
+          "title": "Création de décors de Noël, fêtes nationales et vitrines pour magasins/hôtels",
+          "desc": "Prestation saisonnière à forte marge vendue dès le mois d'octobre aux entreprises.",
+          "budget": "Moyen"
+        },
+        {
+          "id": 300,
+          "code": "300",
+          "title": "Production de livres-souvenirs et albums photo haut de gamme imprimés",
+          "desc": "Mise en page et impression de beaux livres pour mariages, jubilés et anniversaires d'entreprise.",
+          "budget": "Petit"
+        }
+      ]
+    },
+    {
+      "num": 13,
+      "title": "Tourisme Local, Écotourisme & Hospitalité",
+      "intro": "Le tourisme intra-africain et les séjours de la diaspora (« Detty December », retours aux sources, week-ends détente) explosent. Des expériences locales authentiques, propres et bien organisées se vendent toute l'année.",
+      "start_code": "301",
+      "end_code": "325",
+      "counts": {
+        "Petit": 15,
+        "Moyen": 7,
+        "Structuré": 3
+      },
+      "ideas": [
+        {
+          "id": 301,
+          "code": "301",
+          "title": "Organisation d'excursions week-end clés en main pour résidents urbains",
+          "desc": "Sorties tout compris (transport, repas, activités) vers plages, cascades, parcs et villages historiques.",
+          "budget": "Petit"
+        },
+        {
+          "id": 302,
+          "code": "302",
+          "title": "Visites guidées gastronomiques (Street Food Tour sécurisé)",
+          "desc": "Découverte culinaire de la ville pour touristes, expatriés et membres de la diaspora.",
+          "budget": "Petit"
+        },
+        {
+          "id": 303,
+          "code": "303",
+          "title": "Agence de séjours sur mesure « Retour aux sources » pour la diaspora",
+          "desc": "Packs complets incluant accueil aéroport, hébergement, visites culturelles et chauffeur privé.",
+          "budget": "Petit"
+        },
+        {
+          "id": 304,
+          "code": "304",
+          "title": "Gestion d'écolodges, tentes safari ou bungalows insolites (glamping)",
+          "desc": "Hébergements nature à taille humaine près de la côte, des lacs ou des collines.",
+          "budget": "Structuré"
+        },
+        {
+          "id": 305,
+          "code": "305",
+          "title": "Guide touristique thématique spécialisé (histoire, architecture, art, nature)",
+          "desc": "Visites privées vendues via Airbnb Experiences, hôtels partenaires et Instagram.",
+          "budget": "Petit"
+        },
+        {
+          "id": 306,
+          "code": "306",
+          "title": "Organisation de retraites bien-être et déconnexion le week-end",
+          "desc": "Séjours 48h mêlant nature, yoga/marche, alimentation saine et ateliers d'inspiration.",
+          "budget": "Moyen"
+        },
+        {
+          "id": 307,
+          "code": "307",
+          "title": "Service de photographie vacances pour voyageurs et familles de la diaspora",
+          "desc": "Séance photo de 2 heures dans les plus beaux spots de la ville pour des souvenirs pro.",
+          "budget": "Petit"
+        },
+        {
+          "id": 308,
+          "code": "308",
+          "title": "Location de matériel de plage et camping (parasols, glacières, tentes, kayaks)",
+          "desc": "Point de location les week-ends sur les plages et zones de loisirs fréquentées.",
+          "budget": "Moyen"
+        },
+        {
+          "id": 309,
+          "code": "309",
+          "title": "Boutique en ligne et comptoir d'artisanat souvenir premium (emballage voyage)",
+          "desc": "Sélection raffinée d'objets authentiques faciles à glisser en valise cabine.",
+          "budget": "Moyen"
+        },
+        {
+          "id": 310,
+          "code": "310",
+          "title": "Conciergerie de voyage d'affaires (réservations, visas, traducteur, voiture)",
+          "desc": "Interlocuteur unique pour investisseurs et délégations en visite courte.",
+          "budget": "Petit"
+        },
+        {
+          "id": 311,
+          "code": "311",
+          "title": "Organisation de balades en pirogue, bateau ou jet-ski sécurisées",
+          "desc": "Partenariat avec pêcheurs locaux ou flotte propre avec gilets de sauvetage et récit culturel.",
+          "budget": "Moyen"
+        },
+        {
+          "id": 312,
+          "code": "312",
+          "title": "Ateliers immersifs de cuisine locale ou de teinture textile pour visiteurs",
+          "desc": "Expériences de 3 heures où les voyageurs apprennent un savoir-faire local et repartent avec leur création.",
+          "budget": "Petit"
+        },
+        {
+          "id": 313,
+          "code": "313",
+          "title": "Service de blanchisserie express et livraison en 4 heures pour hôtels et Airbnb",
+          "desc": "Partenariat B2B soulageant les petits établissements sans buanderie interne.",
+          "budget": "Moyen"
+        },
+        {
+          "id": 314,
+          "code": "314",
+          "title": "Guide digital payant (PDF interactif + carte Google Maps) des meilleures adresses d'une ville",
+          "desc": "Vendu aux voyageurs et expatriés cherchant restaurants fiables, plages, taxis et bons plans.",
+          "budget": "Petit"
+        },
+        {
+          "id": 315,
+          "code": "315",
+          "title": "Fourniture de kits d'accueil écoresponsables pour hôtels et résidences meublées",
+          "desc": "Mini-savons au karité, chaussons, thés locaux et carnets de bienvenue personnalisés.",
+          "budget": "Moyen"
+        },
+        {
+          "id": 316,
+          "code": "316",
+          "title": "Service de garde de bagages sécurisée près des gares, plages et centres-villes",
+          "desc": "Consigne à l'heure ou à la journée pour voyageurs en transit avant leur vol du soir.",
+          "budget": "Moyen"
+        },
+        {
+          "id": 317,
+          "code": "317",
+          "title": "Tourisme agricole (agrotourisme) : visites de fermes cacao, café ou mangues",
+          "desc": "Journées découvertes familiales et scolaires combinant dégustation et vente directe.",
+          "budget": "Petit"
+        },
+        {
+          "id": 318,
+          "code": "318",
+          "title": "Formation du personnel hôtelier et restauration à l'excellence du service client",
+          "desc": "Ateliers pratiques sur l'accueil, la vente additionnelle et la gestion des avis Google/Booking.",
+          "budget": "Petit"
+        },
+        {
+          "id": 319,
+          "code": "319",
+          "title": "Organisation de séminaires « teambuilding » hors la ville pour entreprises",
+          "desc": "Forfaits journée verte alliant réunions, jeux d'équipe et repas champêtre.",
+          "budget": "Petit"
+        },
+        {
+          "id": 320,
+          "code": "320",
+          "title": "Table d'hôte privée chez l'habitant sur réservation",
+          "desc": "Dîner authentique en petit comité (6 à 12 personnes) avec histoire des plats et ambiance chaleureuse.",
+          "budget": "Petit"
+        },
+        {
+          "id": 321,
+          "code": "321",
+          "title": "Service de location de scooters ou vélos dans les stations balnéaires",
+          "desc": "Solution libre et économique pour explorer les villes côtières et îles touristiques.",
+          "budget": "Structuré"
+        },
+        {
+          "id": 322,
+          "code": "322",
+          "title": "Audit et amélioration de la visibilité Booking / Google / TripAdvisor pour petits hôtels",
+          "desc": "Refonte photos, réponses aux avis et stratégie tarifaire augmentant le taux d'occupation.",
+          "budget": "Petit"
+        },
+        {
+          "id": 323,
+          "code": "323",
+          "title": "Organisation de circuits photo et observation d'oiseaux / nature",
+          "desc": "Niche rentable attirant passionnés locaux et visiteurs internationaux respectueux de l'environnement.",
+          "budget": "Petit"
+        },
+        {
+          "id": 324,
+          "code": "324",
+          "title": "Assistance démarches voyages, assurances et réservations billets pour particuliers",
+          "desc": "Service de proximité rassurant pour familles et seniors peu à l'aise avec les paiements en ligne.",
+          "budget": "Petit"
+        },
+        {
+          "id": 325,
+          "code": "325",
+          "title": "Création d'aires de pique-nique aménagées et sécurisées à entrée payante",
+          "desc": "Valorisation d'un terrain arboré en périphérie avec paillotes, grillades et jeux pour familles.",
+          "budget": "Structuré"
+        }
+      ]
+    },
+    {
+      "num": 14,
+      "title": "Élevage Rentable, Pisciculture & Apiculture",
+      "intro": "La demande en protéines animales (poulet, œufs, poisson, viande) ne cesse d'augmenter dans toutes les métropoles africaines. Les élevages modernes à cycle court offrent une rotation rapide de trésorerie.",
+      "start_code": "326",
+      "end_code": "350",
+      "counts": {
+        "Petit": 6,
+        "Moyen": 9,
+        "Structuré": 10
+      },
+      "ideas": [
+        {
+          "id": 326,
+          "code": "326",
+          "title": "Élevage de poulets de chair à cycle court (45 jours)",
+          "desc": "Rotation rapide permettant 5 à 6 bandes par an avec vente en vif ou prêt à cuire.",
+          "budget": "Moyen"
+        },
+        {
+          "id": 327,
+          "code": "327",
+          "title": "Production et distribution directe d'œufs de table en plateaux",
+          "desc": "Vente régulière aux pâtisseries, kiosques petits-déjeuners, supérettes et ménages.",
+          "budget": "Structuré"
+        },
+        {
+          "id": 328,
+          "code": "328",
+          "title": "Pisciculture hors-sol de poissons-chats (clarias) ou tilapias en bacs",
+          "desc": "Élevage rentable dans une cour urbaine ou périurbaine sans besoin d'étang naturel.",
+          "budget": "Structuré"
+        },
+        {
+          "id": 329,
+          "code": "329",
+          "title": "Élevage de lapins (cuniculture) pour restaurants et boucheries",
+          "desc": "Viande saine très appréciée, reproduction rapide et faible espace nécessaire.",
+          "budget": "Moyen"
+        },
+        {
+          "id": 330,
+          "code": "330",
+          "title": "Élevage d'escargots géants africains (héliciculture)",
+          "desc": "Faible coût alimentaire, forte demande dans les maquis/restaurants chics et valorisation de la bave en cosmétique.",
+          "budget": "Petit"
+        },
+        {
+          "id": 331,
+          "code": "331",
+          "title": "Apiculture moderne (ruches améliorées) pour miel, cire et propolis",
+          "desc": "Production à forte valeur ajoutée vendue en alimentaire, santé et cosmétique.",
+          "budget": "Moyen"
+        },
+        {
+          "id": 332,
+          "code": "332",
+          "title": "Production d'asticots de mouche soldat noire (BSF) pour aliment bétail/poissons",
+          "desc": "Protéine écologique à partir de biodéchets réduisant fortement le coût d'alimentation des éleveurs.",
+          "budget": "Moyen"
+        },
+        {
+          "id": 333,
+          "code": "333",
+          "title": "Élevage de poulets locaux améliorés (poulet bicyclette / goliath)",
+          "desc": "Forte demande culturelle pour les fêtes et les restaurants traditionnels avec meilleure marge.",
+          "budget": "Moyen"
+        },
+        {
+          "id": 334,
+          "code": "334",
+          "title": "Production et vente de provende (aliments équilibrés) pour volailles et poissons",
+          "desc": "Formulation locale à base de maïs, soja et son pour approvisionner les petits fermiers.",
+          "budget": "Structuré"
+        },
+        {
+          "id": 335,
+          "code": "335",
+          "title": "Élevage de cailles (œufs de caille et viande fine)",
+          "desc": "Cycle ultra-rapide (ponte dès 6 semaines) sur très petite surface, prisé pour ses vertus nutritionnelles.",
+          "budget": "Petit"
+        },
+        {
+          "id": 336,
+          "code": "336",
+          "title": "Fumage hygiénique et conditionnement sous vide de poissons d'élevage",
+          "desc": "Valorisation du poisson frais en produit prêt à consommer vendu aux supermarchés et diaspora.",
+          "budget": "Moyen"
+        },
+        {
+          "id": 337,
+          "code": "337",
+          "title": "Élevage de pintades pour les fêtes de fin d'année et restaurants",
+          "desc": "Volaille rustique très recherchée à prix élevé lors des périodes festives.",
+          "budget": "Moyen"
+        },
+        {
+          "id": 338,
+          "code": "338",
+          "title": "Embouche ovine et caprine ciblée (préparation Tabaski / fêtes)",
+          "desc": "Achat de jeunes animaux, engraissement rationnel sur 3 à 4 mois et revente au pic de demande.",
+          "budget": "Structuré"
+        },
+        {
+          "id": 339,
+          "code": "339",
+          "title": "Écloserie et vente de poussins d'un jour ou pré-démarrés (21 jours)",
+          "desc": "Répond à la forte demande des éleveurs voulant réduire la mortalité de démarrage.",
+          "budget": "Structuré"
+        },
+        {
+          "id": 340,
+          "code": "340",
+          "title": "Production d'alevins vigoureux (tilapia/clarias) pour pisciculteurs",
+          "desc": "Maillon indispensable et très rentable de la chaîne piscicole locale.",
+          "budget": "Structuré"
+        },
+        {
+          "id": 341,
+          "code": "341",
+          "title": "Abattage, plumage et livraison de volailles propres à la demande",
+          "desc": "Prestation de service facturée par tête aux éleveurs, traiteurs et ménages.",
+          "budget": "Petit"
+        },
+        {
+          "id": 342,
+          "code": "342",
+          "title": "Élevage de porcs en loges hygiéniques (zones à forte demande)",
+          "desc": "Forte prolificité et débouchés garantis auprès des charcuteries et grills urbains.",
+          "budget": "Structuré"
+        },
+        {
+          "id": 343,
+          "code": "343",
+          "title": "Élevage d'aulacodes (agoutis) en captivité",
+          "desc": "Viande de gibier légalement élevée, très prisée et vendue à prix premium en ville.",
+          "budget": "Structuré"
+        },
+        {
+          "id": 344,
+          "code": "344",
+          "title": "Distribution de produits vétérinaires, vitamines et désinfectants (avec agrément/partenaire)",
+          "desc": "Conseil de proximité et approvisionnement fiable pour éleveurs périurbains.",
+          "budget": "Structuré"
+        },
+        {
+          "id": 345,
+          "code": "345",
+          "title": "Fabrication de mangeoires, abreuvoirs, cages et couveuses artisanales",
+          "desc": "Équipement local abordable vendu aux fermiers et nouveaux éleveurs.",
+          "budget": "Moyen"
+        },
+        {
+          "id": 346,
+          "code": "346",
+          "title": "Service de conseil technique et suivi sanitaire de petites fermes",
+          "desc": "Visites hebdomadaires aidant les propriétaires occupés (ou diaspora) à éviter les pertes.",
+          "budget": "Petit"
+        },
+        {
+          "id": 347,
+          "code": "347",
+          "title": "Élevage de vaches laitières améliorées et transformation en lait caillé/fromage local",
+          "desc": "Approvisionnement direct en produits laitiers frais (wagashi, yaourt fermier) très prisés.",
+          "budget": "Structuré"
+        },
+        {
+          "id": 348,
+          "code": "348",
+          "title": "Service de vaccination groupée et prophylaxie pour petits élevages (en lien vétérinaire)",
+          "desc": "Mutualisation des doses entre petits éleveurs d'un même village pour réduire les coûts.",
+          "budget": "Petit"
+        },
+        {
+          "id": 349,
+          "code": "349",
+          "title": "Élevage de canards et oies en zone humide ou semi-urbaine",
+          "desc": "Animaux robustes, peu sujets aux maladies et très appréciés en restauration.",
+          "budget": "Moyen"
+        },
+        {
+          "id": 350,
+          "code": "350",
+          "title": "Vente de fumier composté et fientes traitées aux maraîchers urbains",
+          "desc": "Transformation des déchets d'élevage en source de revenus additionnelle constante.",
+          "budget": "Petit"
+        }
+      ]
+    },
+    {
+      "num": 15,
+      "title": "Artisanat Moderne, Décoration & Petite Industrie",
+      "intro": "Les nouveaux appartements, bureaux, hôtels et cafés africains recherchent des objets beaux, durables et fabriqués sur place plutôt que des importations fragiles. La petite fabrication locale a un avenir radieux en 2027.",
+      "start_code": "351",
+      "end_code": "375",
+      "counts": {
+        "Petit": 5,
+        "Moyen": 12,
+        "Structuré": 8
+      },
+      "ideas": [
+        {
+          "id": 351,
+          "code": "351",
+          "title": "Fabrication de bougies parfumées artisanales en cire végétale ou d'abeille",
+          "desc": "Pots esthétiques vendus en décoration intérieure, spas et cadeaux d'entreprise.",
+          "budget": "Petit"
+        },
+        {
+          "id": 352,
+          "code": "352",
+          "title": "Atelier de menuiserie contemporaine (meubles minimalistes bois local & métal)",
+          "desc": "Bureaux de télétravail, tables basses et étagères modernes fabriqués sur commande.",
+          "budget": "Structuré"
+        },
+        {
+          "id": 353,
+          "code": "353",
+          "title": "Création de tableaux décoratifs afro-contemporains et cadres personnalisés",
+          "desc": "Décoration murale abordable pour salons, bureaux, restaurants et Airbnb.",
+          "budget": "Petit"
+        },
+        {
+          "id": 354,
+          "code": "354",
+          "title": "Fabrication de luminaires artisanaux en raphia, rotin, bambou ou calebasse",
+          "desc": "Suspensions et lampes tendance très recherchées par les hôtels et architectes d'intérieur.",
+          "budget": "Petit"
+        },
+        {
+          "id": 355,
+          "code": "355",
+          "title": "Production de papier toilette et essuie-tout en petite unité de découpe",
+          "desc": "Achat de bobines mères, découpe et conditionnement sous marque locale compétitive.",
+          "budget": "Structuré"
+        },
+        {
+          "id": 356,
+          "code": "356",
+          "title": "Fabrication de boîtes d'emballage carton et étuis cadeaux sur mesure",
+          "desc": "Répond au besoin urgent des pâtisseries, marques cosmétiques et restaurateurs locaux.",
+          "budget": "Moyen"
+        },
+        {
+          "id": 357,
+          "code": "357",
+          "title": "Atelier de gravure laser et découpe bois/acrylique (enseignes, porte-clés, trophées)",
+          "desc": "Personnalisation rapide pour entreprises, mariages, hôtels et créateurs.",
+          "budget": "Structuré"
+        },
+        {
+          "id": 358,
+          "code": "358",
+          "title": "Confection de tapis, paniers de rangement et sets de table tressés",
+          "desc": "Collaboration avec des artisanes rurales, design moderne et distribution urbaine/export.",
+          "budget": "Petit"
+        },
+        {
+          "id": 359,
+          "code": "359",
+          "title": "Fabrication de savons de ménage en barres ou copeaux naturels",
+          "desc": "Produit de consommation quotidienne à très forte rotation dans les quartiers et marchés.",
+          "budget": "Moyen"
+        },
+        {
+          "id": 360,
+          "code": "360",
+          "title": "Atelier de poterie et céramique moderne (vases, tasses, assiettes artisanales)",
+          "desc": "Pièces uniques très prisées des cafés tendance, restaurants et boutiques déco.",
+          "budget": "Moyen"
+        },
+        {
+          "id": 361,
+          "code": "361",
+          "title": "Impression sur objets personnalisés (mugs, gourdes, stylos, sacs tote-bags)",
+          "desc": "Équipement compact de sublimation idéal pour cadeaux d'entreprise et événements.",
+          "budget": "Moyen"
+        },
+        {
+          "id": 362,
+          "code": "362",
+          "title": "Fabrication de matelas en mousse de qualité et coussins sur mesure",
+          "desc": "Service de découpe et recouvrement pour banquettes de salons, restaurants et hôtels.",
+          "budget": "Structuré"
+        },
+        {
+          "id": 363,
+          "code": "363",
+          "title": "Production de craies scolaires sans poussière et fournitures locales",
+          "desc": "Vente directe aux écoles primaires, collèges et librairies de quartier.",
+          "budget": "Moyen"
+        },
+        {
+          "id": 364,
+          "code": "364",
+          "title": "Fabrication de miroirs décoratifs sur mesure (avec LED ou cadres artisanaux)",
+          "desc": "Très demandés pour salons de coiffure, dressings et salles de bain modernes.",
+          "budget": "Moyen"
+        },
+        {
+          "id": 365,
+          "code": "365",
+          "title": "Atelier de ferronnerie design (portails modernes, garde-corps, mobilier de jardin)",
+          "desc": "Allie sécurité et esthétique contemporaine pour les nouvelles constructions.",
+          "budget": "Structuré"
+        },
+        {
+          "id": 366,
+          "code": "366",
+          "title": "Fabrication de blocs de glace, sachets d'eau scellés ou emballages alimentaires propres",
+          "desc": "Unités semi-automatiques desservant les quartiers en forte croissance.",
+          "budget": "Structuré"
+        },
+        {
+          "id": 367,
+          "code": "367",
+          "title": "Création d'objets de décoration en résine époxy (plateaux, horloges, tables rivières)",
+          "desc": "Pièces originales à forte valeur ajoutée vendues via vidéos de fabrication sur TikTok.",
+          "budget": "Moyen"
+        },
+        {
+          "id": 368,
+          "code": "368",
+          "title": "Fabrication de tampons encreurs express et plaques professionnelles",
+          "desc": "Service B2B rapide pour nouvelles entreprises, médecins, notaires et associations.",
+          "budget": "Moyen"
+        },
+        {
+          "id": 369,
+          "code": "369",
+          "title": "Production de peintures murales et enduits décoratifs formulés localement",
+          "desc": "Réduction des coûts par rapport aux peintures importées avec vente directe aux chantiers.",
+          "budget": "Structuré"
+        },
+        {
+          "id": 370,
+          "code": "370",
+          "title": "Confection de poufs, fauteuils poires et coussins de sol déhoussables",
+          "desc": "Mobilier jeune et modulable apprécié des étudiants, cafés lounge et familles.",
+          "budget": "Moyen"
+        },
+        {
+          "id": 371,
+          "code": "371",
+          "title": "Fabrication de panneaux signalétiques, enseignes lumineuses et autocollants vitrines",
+          "desc": "Indispensable pour chaque nouveau commerce, pharmacie ou salon qui ouvre.",
+          "budget": "Structuré"
+        },
+        {
+          "id": 372,
+          "code": "372",
+          "title": "Production artisanale d'encens naturels, diffuseurs à bâtonnets et brumes d'oreiller",
+          "desc": "Gamme senteur maison à marge élevée facile à expédier.",
+          "budget": "Petit"
+        },
+        {
+          "id": 373,
+          "code": "373",
+          "title": "Atelier de rembourrage et rénovation de vieux fauteuils et chaises de bureau",
+          "desc": "Alternative économique au rachat de mobilier neuf pour ménages et sociétés.",
+          "budget": "Moyen"
+        },
+        {
+          "id": 374,
+          "code": "374",
+          "title": "Fabrication de jouets éducatifs en bois local (puzzles, cubes, jeux d'éveil)",
+          "desc": "Alternatifs aux jouets plastiques fragiles, prisés des crèches et parents attentifs.",
+          "budget": "Moyen"
+        },
+        {
+          "id": 375,
+          "code": "375",
+          "title": "Production de sacs isothermes et glacières souples cousues localement",
+          "desc": "Vendus aux livreurs de repas, vendeuses de boissons et familles en sortie.",
+          "budget": "Moyen"
+        }
+      ]
+    },
+    {
+      "num": 16,
+      "title": "Services aux Entreprises (B2B), RH & Administratif",
+      "intro": "Les PME africaines se structurent et se formalisent en 2027. Elles préfèrent externaliser les fonctions supports (compta, recrutement, prospection, administratif) plutôt que d'embaucher à temps plein.",
+      "start_code": "376",
+      "end_code": "400",
+      "counts": {
+        "Petit": 17,
+        "Moyen": 5,
+        "Structuré": 3
+      },
+      "ideas": [
+        {
+          "id": 376,
+          "code": "376",
+          "title": "Accompagnement à la création et formalisation d'entreprises (RCCM, IFU, statuts)",
+          "desc": "Service clé en main épargnant aux porteurs de projets les va-et-vient administratifs.",
+          "budget": "Petit"
+        },
+        {
+          "id": 377,
+          "code": "377",
+          "title": "Tenue de comptabilité simplifiée et suivi fiscal pour petites PME et commerçants",
+          "desc": "Forfait mensuel abordable avec mise en ordre des factures et déclarations à temps.",
+          "budget": "Petit"
+        },
+        {
+          "id": 378,
+          "code": "378",
+          "title": "Rédaction de business plans et dossiers de demande de subventions / financements",
+          "desc": "Service prisé par les entrepreneurs candidats aux concours, banques et fonds d'investissement.",
+          "budget": "Petit"
+        },
+        {
+          "id": 379,
+          "code": "379",
+          "title": "Cabinet de recrutement ciblé pour profils opérationnels (commerciaux, caissiers, livreurs)",
+          "desc": "Présélection sérieuse, vérification de références et garantie de remplacement.",
+          "budget": "Petit"
+        },
+        {
+          "id": 380,
+          "code": "380",
+          "title": "Externalisation commerciale (prospection B2B et prise de rendez-vous)",
+          "desc": "Développement du portefeuille clients d'autres PME moyennant un fixe + commission sur ventes.",
+          "budget": "Petit"
+        },
+        {
+          "id": 381,
+          "code": "381",
+          "title": "Service de recouvrement amiable de créances pour PME et propriétaires",
+          "desc": "Relances professionnelles structurées récupérant les impayés contre pourcentage encaissé.",
+          "budget": "Petit"
+        },
+        {
+          "id": 382,
+          "code": "382",
+          "title": "Nettoyage professionnel et entretien quotidien de bureaux d'entreprises",
+          "desc": "Contrats annuels récurrents avec passage tôt le matin ou après 18 h.",
+          "budget": "Moyen"
+        },
+        {
+          "id": 383,
+          "code": "383",
+          "title": "Fourniture groupée de consommables de bureau (papier, encre, café, eau) par abonnement",
+          "desc": "Livraison mensuelle automatique sans rupture de stock pour cabinets et ONG.",
+          "budget": "Moyen"
+        },
+        {
+          "id": 384,
+          "code": "384",
+          "title": "Impression professionnelle express (cartes de visite, brochures, roll-ups, facturiers)",
+          "desc": "Intermédiation avec des imprimeurs gros volume + conseil design pour PME.",
+          "budget": "Petit"
+        },
+        {
+          "id": 385,
+          "code": "385",
+          "title": "Mise en place de systèmes de gestion de caisse et facturation digitale",
+          "desc": "Installation et formation sur logiciels de caisse (POS) pour supérettes, pharmacies et restaurants.",
+          "budget": "Petit"
+        },
+        {
+          "id": 386,
+          "code": "386",
+          "title": "Service de traduction assermentée (en partenariat) et légalisation de documents",
+          "desc": "Gain de temps pour entreprises exportatrices, étudiants et candidats à l'émigration légale.",
+          "budget": "Petit"
+        },
+        {
+          "id": 387,
+          "code": "387",
+          "title": "Audit et formation d'équipes de vente en boutique et accueil téléphonique",
+          "desc": "Augmentation directe du chiffre d'affaires des magasins grâce à un meilleur accueil client.",
+          "budget": "Petit"
+        },
+        {
+          "id": 388,
+          "code": "388",
+          "title": "Archivage et numérisation de dossiers papier pour cliniques, cabinets et écoles",
+          "desc": "Transformation d'archives encombrantes en dossiers PDF classés et sauvegardés.",
+          "budget": "Moyen"
+        },
+        {
+          "id": 389,
+          "code": "389",
+          "title": "Location de salles de réunion et de formation équipées à la demi-journée",
+          "desc": "Espace propre avec vidéoprojecteur, café et fibre optique pour consultants et PME.",
+          "budget": "Structuré"
+        },
+        {
+          "id": 390,
+          "code": "390",
+          "title": "Service de secrétariat public moderne (saisie, impression, dossiers en ligne, passeports)",
+          "desc": "Point de services administratifs digitaux dans les quartiers dynamiques.",
+          "budget": "Moyen"
+        },
+        {
+          "id": 391,
+          "code": "391",
+          "title": "Création et gestion de boutiques cadeaux corporate de fin d'année",
+          "desc": "Paniers personnalisés « Made in Africa » vendus aux banques, télécoms et grandes sociétés.",
+          "budget": "Moyen"
+        },
+        {
+          "id": 392,
+          "code": "392",
+          "title": "Courtage en assurances PME (flotte auto, santé employés, multirisque boutique)",
+          "desc": "Sensibilisation et accompagnement souscription en partenariat avec compagnies agréées.",
+          "budget": "Petit"
+        },
+        {
+          "id": 393,
+          "code": "393",
+          "title": "Enquêtes de satisfaction client et visites « client mystère » pour marques",
+          "desc": "Rapports détaillés évaluant la qualité réelle d'accueil en agence, hôtel ou restaurant.",
+          "budget": "Petit"
+        },
+        {
+          "id": 394,
+          "code": "394",
+          "title": "Service d'accueil téléphonique et standard virtuel partagé",
+          "desc": "Réponse professionnelle au nom de plusieurs PME et transmission instantanée des messages.",
+          "budget": "Petit"
+        },
+        {
+          "id": 395,
+          "code": "395",
+          "title": "Accompagnement à la réponse aux appels d'offres publics et ONG",
+          "desc": "Veille, montage administratif rigoureux et relecture technique des soumissions.",
+          "budget": "Petit"
+        },
+        {
+          "id": 396,
+          "code": "396",
+          "title": "Service de paie externalisée et gestion des déclarations sociales (CNSS/IPRES)",
+          "desc": "Évite les pénalités aux petites entreprises de 5 à 30 salariés.",
+          "budget": "Petit"
+        },
+        {
+          "id": 397,
+          "code": "397",
+          "title": "Distribution de tenues de sécurité (EPI : casques, gilets, chaussures) pour chantiers",
+          "desc": "Vente B2B aux entreprises BTP, usines et sociétés logistiques.",
+          "budget": "Structuré"
+        },
+        {
+          "id": 398,
+          "code": "398",
+          "title": "Organisation de la communication interne et newsletters d'entreprise",
+          "desc": "Rédaction de bulletins, vidéos internes et rapports d'activité annuels pour ONG et sociétés.",
+          "budget": "Petit"
+        },
+        {
+          "id": 399,
+          "code": "399",
+          "title": "Service de domiciliation commerciale et réception de courrier pour jeunes sociétés",
+          "desc": "Adresse professionnelle prestigieuse + gestion des plis pour entrepreneurs indépendants.",
+          "budget": "Structuré"
+        },
+        {
+          "id": 400,
+          "code": "400",
+          "title": "Conseil en stratégie de prix, marges et contrôle de stock pour commerçants",
+          "desc": "Diagnostic flash de 48h permettant de stopper les fuites de caisse et booster les bénéfices.",
+          "budget": "Petit"
+        }
+      ]
+    },
+    {
+      "num": 17,
+      "title": "Finance de Proximité, Mobile Money & Fintech Locale",
+      "intro": "L'Afrique est le champion mondial du Mobile Money. Autour des paiements mobiles, de l'épargne disciplinée et de la gestion financière personnelle gravitent de nombreux services utiles et conformes aux règles locales.",
+      "start_code": "401",
+      "end_code": "425",
+      "counts": {
+        "Petit": 20,
+        "Moyen": 4,
+        "Structuré": 1
+      },
+      "ideas": [
+        {
+          "id": 401,
+          "code": "401",
+          "title": "Kiosque multi-services Mobile Money, paiement factures et transfert",
+          "desc": "Point de proximité propre, sécurisé et toujours approvisionné dans un quartier en expansion.",
+          "budget": "Structuré"
+        },
+        {
+          "id": 402,
+          "code": "402",
+          "title": "Accompagnement des commerçants à l'intégration des paiements marchands QR / Mobile Money",
+          "desc": "Configuration, affichage QR et formation réduisant les erreurs de monnaie et vols.",
+          "budget": "Petit"
+        },
+        {
+          "id": 403,
+          "code": "403",
+          "title": "Coaching individuel en gestion budgétaire et désendettement",
+          "desc": "Plan personnalisé de 90 jours aidant salariés et entrepreneurs à reprendre le contrôle de leurs finances.",
+          "budget": "Petit"
+        },
+        {
+          "id": 404,
+          "code": "404",
+          "title": "Ateliers d'éducation financière en entreprise et écoles",
+          "desc": "Interventions pédagogiques sur l'épargne, les pièges du crédit et la préparation retraite.",
+          "budget": "Petit"
+        },
+        {
+          "id": 405,
+          "code": "405",
+          "title": "Conception et vente de kits physiques d'épargne (classeurs budgets & enveloppes défis)",
+          "desc": "Méthode des enveloppes très populaire sur TikTok adaptée aux billets FCFA.",
+          "budget": "Petit"
+        },
+        {
+          "id": 406,
+          "code": "406",
+          "title": "Service d'aide au paiement en ligne sécurisé pour factures, abonnements et réservations",
+          "desc": "Accompagnement des personnes non bancarisées souhaitant payer examens, vols ou logiciels.",
+          "budget": "Moyen"
+        },
+        {
+          "id": 407,
+          "code": "407",
+          "title": "Animation de tontines digitales structurées et transparentes (via outils conformes)",
+          "desc": "Organisation rigoureuse de groupes d'épargne solidaire entre collègues ou commerçants.",
+          "budget": "Petit"
+        },
+        {
+          "id": 408,
+          "code": "408",
+          "title": "Courtage et orientation vers les financements de microfinance et fonds PME",
+          "desc": "Préparation des dossiers financiers rendant les petits entrepreneurs bancables.",
+          "budget": "Petit"
+        },
+        {
+          "id": 409,
+          "code": "409",
+          "title": "Vente de coffres-forts compacts, détecteurs de faux billets et tiroirs-caisses",
+          "desc": "Équipements de sécurisation vendus aux boutiques, pharmacies, stations et kiosques.",
+          "budget": "Moyen"
+        },
+        {
+          "id": 410,
+          "code": "410",
+          "title": "Service de réconciliation quotidienne des ventes cash / Mobile Money pour commerces multi-points",
+          "desc": "Contrôle à distance des encaissements pour propriétaires ne pouvant être sur place.",
+          "budget": "Petit"
+        },
+        {
+          "id": 411,
+          "code": "411",
+          "title": "Média ou chaîne pédagogique d'analyse de la bourse régionale (BRVM) et investissement",
+          "desc": "Vulgarisation grand public (sans conseil financier illégal) monétisée par formations et sponsors.",
+          "budget": "Petit"
+        },
+        {
+          "id": 412,
+          "code": "412",
+          "title": "Création d'outils de suivi de rentabilité pour chauffeurs VTC, motos et livreurs",
+          "desc": "Tableaux simples sur smartphone calculant gain net réel après carburant et entretien.",
+          "budget": "Petit"
+        },
+        {
+          "id": 413,
+          "code": "413",
+          "title": "Service de comparaison et d'intermédiation en assurances voyage et auto",
+          "desc": "Gain de temps et transparence sur les garanties en partenariat avec courtiers agréés.",
+          "budget": "Petit"
+        },
+        {
+          "id": 414,
+          "code": "414",
+          "title": "Accompagnement de la diaspora pour structurer ses investissements au pays",
+          "desc": "Études de faisabilité terrain indépendantes évitant les pertes d'argent dans des projets flous.",
+          "budget": "Petit"
+        },
+        {
+          "id": 415,
+          "code": "415",
+          "title": "Point multiservice de recharge crédits, abonnements TV (Canal+, streaming) et électricité prépayée",
+          "desc": "Service de quartier à fort trafic générant un flux constant de clients pour ventes croisées.",
+          "budget": "Moyen"
+        },
+        {
+          "id": 416,
+          "code": "416",
+          "title": "Formation pratique à la gestion de trésorerie pour femmes commerçantes",
+          "desc": "Ateliers très simples en français facile ou langues locales avec cahiers visuels.",
+          "budget": "Petit"
+        },
+        {
+          "id": 417,
+          "code": "417",
+          "title": "Service de création et vérification de factures pro et reçus numériques",
+          "desc": "Mise en place d'outils gratuits sur téléphone pour artisans et prestataires informels.",
+          "budget": "Petit"
+        },
+        {
+          "id": 418,
+          "code": "418",
+          "title": "Conseil en optimisation des coûts télécoms, abonnements et frais bancaires pour PME",
+          "desc": "Audit rapide permettant de réduire de 15 à 30 % les charges fixes mensuelles.",
+          "budget": "Petit"
+        },
+        {
+          "id": 419,
+          "code": "419",
+          "title": "Club de lecture et mastermind payant sur l'investissement et l'entrepreneuriat",
+          "desc": "Rencontres mensuelles structurées favorisant l'entraide, la discipline et les opportunités d'affaires.",
+          "budget": "Petit"
+        },
+        {
+          "id": 420,
+          "code": "420",
+          "title": "Service d'estimation de valeur de fonds de commerce pour acheteurs et vendeurs",
+          "desc": "Aide objective avant la reprise d'une boutique, d'un restaurant ou d'un salon existant.",
+          "budget": "Petit"
+        },
+        {
+          "id": 421,
+          "code": "421",
+          "title": "Vente de terminaux d'impression de reçus Bluetooth pour marchands mobiles",
+          "desc": "Mini-imprimantes thermiques connectées au smartphone professionnalisant les livreurs et vendeurs.",
+          "budget": "Moyen"
+        },
+        {
+          "id": 422,
+          "code": "422",
+          "title": "Accompagnement administratif pour l'ouverture de comptes marchands et passerelles de paiement",
+          "desc": "Aide aux créateurs digitaux pour encaisser partout en Afrique (FedaPay, Paystack, CinetPay, etc.).",
+          "budget": "Petit"
+        },
+        {
+          "id": 423,
+          "code": "423",
+          "title": "Création de simulateurs Excel/Web de prêts, marges et retours sur investissement",
+          "desc": "Outils pratiques vendus aux agents immobiliers, promoteurs et porteurs de projets.",
+          "budget": "Petit"
+        },
+        {
+          "id": 424,
+          "code": "424",
+          "title": "Service de veille fiscale et rappels d'échéances par WhatsApp pour indépendants",
+          "desc": "Micro-abonnement mensuel évitant les amendes de retard aux freelances et gérants.",
+          "budget": "Petit"
+        },
+        {
+          "id": 425,
+          "code": "425",
+          "title": "Formation au e-commerce transfrontalier et gestion multi-devises pour vendeurs africains",
+          "desc": "Apprendre à encaisser des clients de 10 pays africains et de la diaspora sans blocage.",
+          "budget": "Petit"
+        }
+      ]
+    },
+    {
+      "num": 18,
+      "title": "Enfance, Parentalité & Services aux Familles",
+      "intro": "Les parents urbains travaillent de plus en plus tous les deux et investissent massivement dans l'éducation, la sécurité et l'épanouissement de leurs enfants. La confiance est ici la clé d'une fidélité de plusieurs années.",
+      "start_code": "426",
+      "end_code": "450",
+      "counts": {
+        "Petit": 14,
+        "Moyen": 9,
+        "Structuré": 2
+      },
+      "ideas": [
+        {
+          "id": 426,
+          "code": "426",
+          "title": "Garde d'enfants ponctuelle vérifiée (baby-sitting de soirée et week-end)",
+          "desc": "Service fiable permettant aux couples de sortir ou travailler l'esprit tranquille.",
+          "budget": "Petit"
+        },
+        {
+          "id": 427,
+          "code": "427",
+          "title": "Aide aux devoirs à domicile ou en petits groupes après l'école",
+          "desc": "Encadrement quotidien de 16 h à 18 h 30 soulageant les parents rentrant tard.",
+          "budget": "Petit"
+        },
+        {
+          "id": 428,
+          "code": "428",
+          "title": "Halte-garderie ou crèche moderne de quartier à horaires adaptés",
+          "desc": "Structure sécurisée et propre près des zones de bureaux avec suivi photo quotidien aux parents.",
+          "budget": "Structuré"
+        },
+        {
+          "id": 429,
+          "code": "429",
+          "title": "Animation d'anniversaires d'enfants clés en main à domicile",
+          "desc": "Jeux, maquillage enfant, chasse au trésor, mascotte et gestion du goûter.",
+          "budget": "Moyen"
+        },
+        {
+          "id": 430,
+          "code": "430",
+          "title": "Location de châteaux gonflables, trampolines et jeux géants pour fêtes",
+          "desc": "Revenu très rentable chaque week-end et durant les vacances scolaires.",
+          "budget": "Structuré"
+        },
+        {
+          "id": 431,
+          "code": "431",
+          "title": "Clubs de vacances éducatifs et créatifs (arts, robotique, cuisine, sport)",
+          "desc": "Stages hebdomadaires occupant utilement les enfants pendant les congés scolaires.",
+          "budget": "Moyen"
+        },
+        {
+          "id": 432,
+          "code": "432",
+          "title": "Vente et location de livres jeunesse africains (bibliothèque itinérante ou box lecture)",
+          "desc": "Abonnement mensuel développant le goût de la lecture avec des héros qui ressemblent aux enfants.",
+          "budget": "Moyen"
+        },
+        {
+          "id": 433,
+          "code": "433",
+          "title": "Service d'étiquetage et plastification de manuels scolaires avant la rentrée",
+          "desc": "Gain de temps très apprécié des parents occupés en août et septembre.",
+          "budget": "Petit"
+        },
+        {
+          "id": 434,
+          "code": "434",
+          "title": "Atelier d'éveil musical, dessin, théâtre ou danse pour enfants le mercredi et samedi",
+          "desc": "Activités parascolaires structurées facturées au trimestre.",
+          "budget": "Petit"
+        },
+        {
+          "id": 435,
+          "code": "435",
+          "title": "Recrutement, formation et placement de nounous et aides familiales",
+          "desc": "Formation en hygiène, premiers secours et cuisine + suivi post-placement rassurant.",
+          "budget": "Moyen"
+        },
+        {
+          "id": 436,
+          "code": "436",
+          "title": "Location de matériel de puériculture (poussettes, sièges auto, lits parapluie)",
+          "desc": "Idéal pour les familles de la diaspora en vacances au pays ou les premiers mois de bébé.",
+          "budget": "Moyen"
+        },
+        {
+          "id": 437,
+          "code": "437",
+          "title": "Confection de repas et purées fraîches maison pour bébés (6 à 24 mois)",
+          "desc": "Pots sains à base de produits locaux (patate douce, banane, poisson, légumes) sans sucre ajouté.",
+          "budget": "Petit"
+        },
+        {
+          "id": 438,
+          "code": "438",
+          "title": "Boutique de jeux éducatifs, Montessori et puzzles adaptés par âge",
+          "desc": "Sélection conseillée par tranche d'âge vendue en ligne et en coffrets cadeaux.",
+          "budget": "Moyen"
+        },
+        {
+          "id": 439,
+          "code": "439",
+          "title": "Coaching parental et ateliers pratiques (gestion des écrans, discipline bienveillante)",
+          "desc": "Accompagnement concret des parents modernes confrontés aux défis éducatifs de 2027.",
+          "budget": "Petit"
+        },
+        {
+          "id": 440,
+          "code": "440",
+          "title": "Service de couture et personnalisation de trousseaux de naissance",
+          "desc": "Couvertures brodées, bavoirs, sacs à langer et capes de bain en coton doux.",
+          "budget": "Petit"
+        },
+        {
+          "id": 441,
+          "code": "441",
+          "title": "Orientation scolaire et bilan d'orientation pour collégiens et lycéens",
+          "desc": "Aide au choix des filières et métiers porteurs d'avenir pour rassurer parents et jeunes.",
+          "budget": "Petit"
+        },
+        {
+          "id": 442,
+          "code": "442",
+          "title": "Cours de natation sécurisés pour enfants en partenariat avec des piscines d'hôtels",
+          "desc": "Apprentissage vital très demandé pendant les week-ends et vacances.",
+          "budget": "Petit"
+        },
+        {
+          "id": 443,
+          "code": "443",
+          "title": "Service d'accompagnement des enfants aux activités extrascolaires",
+          "desc": "Prise en charge sécurisée sortie d'école → sport/musique → domicile.",
+          "budget": "Moyen"
+        },
+        {
+          "id": 444,
+          "code": "444",
+          "title": "Création de chambres d'enfants thématiques (peinture murale, rangements, coin lecture)",
+          "desc": "Aménagement ludique et abordable valorisant l'espace d'étude à la maison.",
+          "budget": "Moyen"
+        },
+        {
+          "id": 445,
+          "code": "445",
+          "title": "Dépôt-vente de vêtements, vélos et équipements enfants presque neufs",
+          "desc": "Économie circulaire très appréciée car les enfants grandissent vite.",
+          "budget": "Petit"
+        },
+        {
+          "id": 446,
+          "code": "446",
+          "title": "Ateliers d'initiation à la cuisine ludique pour enfants et ados",
+          "desc": "Cours du samedi matin apprenant autonomie, hygiène et recettes simples.",
+          "budget": "Petit"
+        },
+        {
+          "id": 447,
+          "code": "447",
+          "title": "Service de shooting photo famille, grossesse et nouveau-né à domicile",
+          "desc": "Capturer les étapes clés de la famille dans le confort de leur maison.",
+          "budget": "Moyen"
+        },
+        {
+          "id": 448,
+          "code": "448",
+          "title": "Fabrication de cartes mémoire (flashcards) bilingues français/anglais/langues locales",
+          "desc": "Outils pédagogiques visuels vendus aux parents et écoles maternelles.",
+          "budget": "Petit"
+        },
+        {
+          "id": 449,
+          "code": "449",
+          "title": "Soutien spécifique aux enfants ayant des difficultés de lecture ou concentration",
+          "desc": "Approche ludique et patiente en séances individuelles très recherchée par les familles.",
+          "budget": "Petit"
+        },
+        {
+          "id": 450,
+          "code": "450",
+          "title": "Application ou service WhatsApp de carnet de liaison et devoirs pour petites écoles privées",
+          "desc": "Modernisation de la communication école-parents contre abonnement par élève.",
+          "budget": "Petit"
+        }
+      ]
+    },
+    {
+      "num": 19,
+      "title": "Sport, Fitness & Loisirs Urbains",
+      "intro": "La conscience santé explose dans les villes africaines : jogging du week-end, fitness, foot entre amis, jeux sociaux et loisirs familiaux sains créent une économie de la détente en pleine expansion.",
+      "start_code": "451",
+      "end_code": "475",
+      "counts": {
+        "Petit": 12,
+        "Moyen": 7,
+        "Structuré": 6
+      },
+      "ideas": [
+        {
+          "id": 451,
+          "code": "451",
+          "title": "Coaching sportif à domicile ou en parc (individuel et petits groupes)",
+          "desc": "Séances de remise en forme tôt le matin ou après le bureau avec abonnement mensuel.",
+          "budget": "Petit"
+        },
+        {
+          "id": 452,
+          "code": "452",
+          "title": "Bootcamp fitness plein air le samedi matin (perte de poids & cardio)",
+          "desc": "Ambiance conviviale, tarif accessible à la séance ou au mois, zéro loyer de salle.",
+          "budget": "Petit"
+        },
+        {
+          "id": 453,
+          "code": "453",
+          "title": "Programme de coaching fitness et perte de poids 100 % en ligne sur WhatsApp",
+          "desc": "Vidéos courtes quotidiennes sans matériel + suivi alimentaire local + groupe de motivation.",
+          "budget": "Petit"
+        },
+        {
+          "id": 454,
+          "code": "454",
+          "title": "Cours de danse fitness afro (Afro-Fit, Zumba africaine, danse traditionnelle cardio)",
+          "desc": "Allie plaisir musical, culture et dépense calorique — énorme succès auprès des femmes.",
+          "budget": "Petit"
+        },
+        {
+          "id": 455,
+          "code": "455",
+          "title": "Exploitation d'un terrain de foot à 5 (maracana synthétique) avec éclairage nocturne",
+          "desc": "Réservation à l'heure le soir et le week-end + buvette et tournois inter-entreprises.",
+          "budget": "Structuré"
+        },
+        {
+          "id": 456,
+          "code": "456",
+          "title": "Organisation de tournois sportifs inter-entreprises et corporatifs",
+          "desc": "Sponsoring, inscriptions d'équipes et ambiance networking très prisée des RH.",
+          "budget": "Moyen"
+        },
+        {
+          "id": 457,
+          "code": "457",
+          "title": "Salle de jeux vidéo / E-sport lounge propre et bien climatisée",
+          "desc": "Consoles nouvelle génération, tournois FIFA/eFootball et tournois mobiles le week-end.",
+          "budget": "Structuré"
+        },
+        {
+          "id": 458,
+          "code": "458",
+          "title": "Location de jeux de société et organisation de soirées ludiques (café-jeux)",
+          "desc": "Concept convivial pour jeunes adultes cherchant des sorties originales sans alcool obligatoire.",
+          "budget": "Moyen"
+        },
+        {
+          "id": 459,
+          "code": "459",
+          "title": "Club de course à pied urbain et organisation de mini-marathons locaux",
+          "desc": "Inscriptions coureurs, t-shirts officiels et partenariats marques d'eau et santé.",
+          "budget": "Petit"
+        },
+        {
+          "id": 460,
+          "code": "460",
+          "title": "Cours de yoga, pilates et étirements pour cadres stressés",
+          "desc": "Interventions en entreprise, sur terrasses d'hôtels ou en plein air au lever du soleil.",
+          "budget": "Petit"
+        },
+        {
+          "id": 461,
+          "code": "461",
+          "title": "Vente de boissons protéinées, barres énergétiques naturelles et collations sportives",
+          "desc": "Recettes locales (arachide, dattes, cacao, avoine, gingembre) vendues devant les salles de sport.",
+          "budget": "Petit"
+        },
+        {
+          "id": 462,
+          "code": "462",
+          "title": "Gestion et entretien d'espaces de fitness en plein air ou en résidences privées",
+          "desc": "Contrats avec promoteurs immobiliers et hôtels pour animer leurs salles de sport.",
+          "budget": "Petit"
+        },
+        {
+          "id": 463,
+          "code": "463",
+          "title": "Cours d'arts martiaux et d'auto-défense (spécial femmes, enfants et ados)",
+          "desc": "Confiance en soi, discipline et sécurité facturées en forfaits trimestriels.",
+          "budget": "Petit"
+        },
+        {
+          "id": 464,
+          "code": "464",
+          "title": "Organisation de randonnées pédestres et balades sportives dominicales",
+          "desc": "Formules tout compris (transport, encadrement, petit-déjeuner sain) à prix accessible.",
+          "budget": "Petit"
+        },
+        {
+          "id": 465,
+          "code": "465",
+          "title": "Location de matériel de sport à domicile (vélos d'appartement, haltères, bancs)",
+          "desc": "Abonnement mensuel pour personnes souhaitant tester avant d'acheter.",
+          "budget": "Structuré"
+        },
+        {
+          "id": 466,
+          "code": "466",
+          "title": "Atelier d'entretien et réparation de vélos de sport et de ville",
+          "desc": "Service de proximité accompagnant l'essor du cyclisme loisir urbain.",
+          "budget": "Moyen"
+        },
+        {
+          "id": 467,
+          "code": "467",
+          "title": "Organisation d'escape games mobiles ou jeux d'enquête grandeur nature",
+          "desc": "Animation originale pour entreprises (teambuilding), campus et groupes d'amis.",
+          "budget": "Moyen"
+        },
+        {
+          "id": 468,
+          "code": "468",
+          "title": "Kiosque de location de rollers, trottinettes ou skateboards sur esplanades et corniches",
+          "desc": "Activité familiale très rentable en fin d'après-midi et les jours fériés.",
+          "budget": "Moyen"
+        },
+        {
+          "id": 469,
+          "code": "469",
+          "title": "Création d'un terrain de padel ou badminton urbain",
+          "desc": "Sports raquette tendance à très forte rentabilité horaire dans les quartiers aisés.",
+          "budget": "Structuré"
+        },
+        {
+          "id": 470,
+          "code": "470",
+          "title": "Vente de tenues de sport personnalisées et maillots pour clubs amateurs et écoles",
+          "desc": "Flocage complet (numéros, logos, sponsors) sur commande groupée.",
+          "budget": "Moyen"
+        },
+        {
+          "id": 471,
+          "code": "471",
+          "title": "Cinéma plein air itinérant pour quartiers, plages, hôtels et entreprises",
+          "desc": "Projecteur puissant, écran gonflable, son propre et vente de pop-corn/boissons.",
+          "budget": "Structuré"
+        },
+        {
+          "id": 472,
+          "code": "472",
+          "title": "Service d'analyse vidéo et mise en valeur (highlights) de jeunes footballeurs",
+          "desc": "Tournage de matchs amateurs et montage de vidéos de présentation pour académies.",
+          "budget": "Moyen"
+        },
+        {
+          "id": 473,
+          "code": "473",
+          "title": "Salle de gym compacte de quartier à tarifs mensuels accessibles",
+          "desc": "Équipement essentiel bien entretenu, horaires larges (6h–21h) et coach présent.",
+          "budget": "Structuré"
+        },
+        {
+          "id": 474,
+          "code": "474",
+          "title": "Club de lecture, débat et cinéma indépendant sur abonnement mensuel",
+          "desc": "Communauté culturelle urbaine générant des revenus par cotisations et partenariats lieux.",
+          "budget": "Petit"
+        },
+        {
+          "id": 475,
+          "code": "475",
+          "title": "Animation de pauses actives (15 minutes d'étirements) dans les bureaux et centres d'appels",
+          "desc": "Contrats B2B améliorant le bien-être et réduisant les douleurs de dos des salariés.",
+          "budget": "Petit"
+        }
+      ]
+    },
+    {
+      "num": 20,
+      "title": "Services Techniques, BTP, Réparation & Sécurité",
+      "intro": "Les villes africaines construisent à un rythme record et s'équipent massivement en climatiseurs, smartphones, véhicules et caméras. Un prestataire technique ponctuel, propre et honnête ne manque jamais de clients.",
+      "start_code": "476",
+      "end_code": "500",
+      "counts": {
+        "Petit": 3,
+        "Moyen": 15,
+        "Structuré": 7
+      },
+      "ideas": [
+        {
+          "id": 476,
+          "code": "476",
+          "title": "Entretien, nettoyage et recharge de climatiseurs (particuliers et bureaux)",
+          "desc": "Service indispensable en climat tropical avec contrats de maintenance trimestriels très rentables.",
+          "budget": "Moyen"
+        },
+        {
+          "id": 477,
+          "code": "477",
+          "title": "Réparation express de smartphones (écrans, batteries, connecteurs) avec retrait à domicile",
+          "desc": "Service transparent et garanti qui rassure face à la peur des pièces échangées.",
+          "budget": "Moyen"
+        },
+        {
+          "id": 478,
+          "code": "478",
+          "title": "Installation de caméras de vidéosurveillance connectées sur smartphone",
+          "desc": "Packs sécurité maison/boutique avec accès en direct depuis le téléphone du propriétaire.",
+          "budget": "Moyen"
+        },
+        {
+          "id": 479,
+          "code": "479",
+          "title": "Service de plomberie d'urgence propre et ponctuel (24/7)",
+          "desc": "Intervention rapide sur fuites, chauffe-eau et sanitaires avec devis clair avant travaux.",
+          "budget": "Petit"
+        },
+        {
+          "id": 480,
+          "code": "480",
+          "title": "Électricité bâtiment moderne et sécurisation de tableaux électriques",
+          "desc": "Mise aux normes, pose de parasurtenseurs et inverseurs automatiques pour villas et PME.",
+          "budget": "Moyen"
+        },
+        {
+          "id": 481,
+          "code": "481",
+          "title": "Installation de clôtures électriques et systèmes d'alarme résidentiels",
+          "desc": "Forte demande dans les nouveaux lotissements urbains pour sécuriser les propriétés.",
+          "budget": "Structuré"
+        },
+        {
+          "id": 482,
+          "code": "482",
+          "title": "Maintenance et réparation d'électroménager à domicile (frigos, congélateurs, machines à laver)",
+          "desc": "Évite aux ménages le transport coûteux d'appareils lourds vers un atelier.",
+          "budget": "Moyen"
+        },
+        {
+          "id": 483,
+          "code": "483",
+          "title": "Pose de carrelage, faïence et revêtements de sol haut de gamme",
+          "desc": "Équipe rigoureuse sur les finitions, très recherchée par les promoteurs et particuliers exigeants.",
+          "budget": "Moyen"
+        },
+        {
+          "id": 484,
+          "code": "484",
+          "title": "Fabrication et pose de faux plafonds en plâtre (staff) et éclairage LED encastré",
+          "desc": "Finition moderne indispensable dans les nouvelles constructions et rénovations de boutiques.",
+          "budget": "Moyen"
+        },
+        {
+          "id": 485,
+          "code": "485",
+          "title": "Service d'étanchéité de toitures et terrasses contre les infiltrations de pluie",
+          "desc": "Forte demande saisonnière avec diagnostic précis et garantie travaux.",
+          "budget": "Moyen"
+        },
+        {
+          "id": 486,
+          "code": "486",
+          "title": "Location de petit matériel BTP (bétonnières, échafaudages, marteaux-piqueurs, groupes)",
+          "desc": "Rentabilisation rapide auprès des maçons, petits entrepreneurs et auto-constructeurs.",
+          "budget": "Structuré"
+        },
+        {
+          "id": 487,
+          "code": "487",
+          "title": "Menuiserie aluminium et pose de baies vitrées / portes modernes",
+          "desc": "Très prisée pour immeubles, bureaux, pharmacies et villas contemporaines.",
+          "budget": "Structuré"
+        },
+        {
+          "id": 488,
+          "code": "488",
+          "title": "Vente et installation de serrures intelligentes (empreinte, code, carte)",
+          "desc": "Sécurité moderne idéale pour appartements Airbnb, bureaux et résidences privées.",
+          "budget": "Moyen"
+        },
+        {
+          "id": 489,
+          "code": "489",
+          "title": "Diagnostic automobile électronique à la valise à domicile",
+          "desc": "Lecture des voyants moteurs avant réparation ou avant achat d'une voiture d'occasion.",
+          "budget": "Moyen"
+        },
+        {
+          "id": 490,
+          "code": "490",
+          "title": "Service de dépannage et maintenance de groupes électrogènes",
+          "desc": "Entretien préventif mensuel (vidange, filtres) pour cliniques, hôtels, supermarchés et villas.",
+          "budget": "Moyen"
+        },
+        {
+          "id": 491,
+          "code": "491",
+          "title": "Pose et maintenance de réseaux Wi-Fi maillés et Starlink pour bureaux et hôtels",
+          "desc": "Élimination des zones mortes internet dans les grands bâtiments et résidences.",
+          "budget": "Moyen"
+        },
+        {
+          "id": 492,
+          "code": "492",
+          "title": "Production et vente de briques compressées, parpaings vibrés ou hourdis de qualité",
+          "desc": "Fourniture locale fiable avec livraison sur chantier dans les zones en plein essor.",
+          "budget": "Structuré"
+        },
+        {
+          "id": 493,
+          "code": "493",
+          "title": "Service de devis quantitatifs et conseil achat matériaux pour particuliers qui construisent",
+          "desc": "Évite les gaspillages et surfacturations sur les chantiers privés moyennant honoraire fixe.",
+          "budget": "Petit"
+        },
+        {
+          "id": 494,
+          "code": "494",
+          "title": "Installation de portails motorisés et interphones vidéo",
+          "desc": "Confort et sécurité très recherchés dans les quartiers résidentiels modernes.",
+          "budget": "Structuré"
+        },
+        {
+          "id": 495,
+          "code": "495",
+          "title": "Soudure mobile et petites réparations métalliques à domicile",
+          "desc": "Intervention directe sur portails, grilles de protection et supports climatiseurs sans démontage.",
+          "budget": "Moyen"
+        },
+        {
+          "id": 496,
+          "code": "496",
+          "title": "Contrôle technique pré-achat de véhicules d'occasion",
+          "desc": "Inspection mécanique et carrosserie indépendante facturée à l'acheteur avant signature.",
+          "budget": "Petit"
+        },
+        {
+          "id": 497,
+          "code": "497",
+          "title": "Installation de systèmes de détection incendie et vente d'extincteurs aux normes",
+          "desc": "Obligation réglementaire pour hôtels, écoles, stations, bureaux et entrepôts.",
+          "budget": "Structuré"
+        },
+        {
+          "id": 498,
+          "code": "498",
+          "title": "Service de forage et installation de châteaux d'eau domestiques (en équipe/partenariat)",
+          "desc": "Autonomie en eau très recherchée dans les zones périurbaines nouvellement loties.",
+          "budget": "Structuré"
+        },
+        {
+          "id": 499,
+          "code": "499",
+          "title": "Réparation et maintenance d'imprimantes, photocopieurs et scanners de bureaux",
+          "desc": "Contrats d'entretien avec cabinets, écoles et secrétariats publics.",
+          "budget": "Moyen"
+        },
+        {
+          "id": 500,
+          "code": "500",
+          "title": "Fourniture et pose de films solaires anti-chaleur pour vitres de bureaux et voitures",
+          "desc": "Réduit la chaleur intérieure et la facture de climatisation de 20 à 30 %.",
+          "budget": "Moyen"
+        }
+      ]
+    }
+  ],
+  "part01": {
+    "kicker": "PARTIE 01 • INTRODUCTION",
+    "title": "Pourquoi 2027 est le meilleur moment pour lancer ton business en Afrique",
+    "workbook_question": "Réponse à la section 01 du Workbook : Quel est le problème et pourquoi est-il important ?",
+    "lead": "Chaque jour, des milliers de jeunes diplômés, de salariés, de femmes actives et de membres de la diaspora africaine rêvent d'indépendance financière. Pourtant, la majorité reste bloquée au point de départ pour deux raisons très simples : soit ils ne savent pas quelle idée rentable choisir face aux réalités locales, soit ils copient un business saturé et perdent leurs économies faute de méthode.",
+    "problem_blocks": [
+      {
+        "title": "Le vrai blocage n'est pas le manque de courage, mais le manque de filtre",
+        "body": "En Afrique francophone, l'envie d'entreprendre est immense. Mais entre les idées importées d'Europe qui ne collent pas au pouvoir d'achat local et les projets qui demandent des millions de FCFA avant même le premier client, beaucoup finissent par abandonner avant d'avoir essayé."
+      },
+      {
+        "title": "Pourquoi agir maintenant pour 2027 ?",
+        "body": "L'année 2027 marque l'accélération de cinq vagues économiques majeures sur le continent. Ceux qui se positionnent aujourd'hui avec une offre simple, locale et validée rapidement prendront une longueur d'avance décisive."
+      }
+    ],
+    "trends": [
+      {
+        "title": "1. L'explosion des paiements mobiles et du commerce WhatsApp",
+        "body": "Du Bénin au Sénégal, de la Côte d'Ivoire au Cameroun, vendre sans boutique physique via WhatsApp Business, Facebook, TikTok et Mobile Money est devenu la norme."
+      },
+      {
+        "title": "2. Le virage du « Consommons Local » et de la transformation alimentaire",
+        "body": "Face à la hausse des prix des produits importés, les ménages et la diaspora plébiscitent les farines, jus, épices, cosmétiques et textiles fabriqués localement avec hygiène et bel emballage."
+      },
+      {
+        "title": "3. L'intelligence artificielle accessible sur simple smartphone",
+        "body": "Un indépendant équipé d'IA produit désormais en 2 heures des visuels, scripts, devis, formations ou contenus clients qui demandaient autrefois une agence entière."
+      },
+      {
+        "title": "4. L'urgence énergétique et l'économie verte",
+        "body": "Le coût élevé du réseau électrique pousse commerces, exploitations agricoles et ménages vers les kits solaires, le froid solaire, le recyclage et l'eau potable de proximité."
+      },
+      {
+        "title": "5. L'externalisation de services vers la diaspora et les PME locales",
+        "body": "Les PME africaines cherchent à externaliser comptabilité, recrutement, livraison et relation client ; la diaspora paie volontiers des prestataires fiables restés au pays."
+      }
+    ],
+    "profiles": [
+      {
+        "profile": "Étudiant / Jeune diplômé",
+        "budget": "Petit budget (< 50 000 FCFA)",
+        "sectors": "Secteurs 04 (Digital/IA), 05 (EdTech), 03 (Social commerce), 12 (Contenu)"
+      },
+      {
+        "profile": "Salarié en quête d'un revenu bis",
+        "budget": "Petit à Moyen budget",
+        "sectors": "Secteurs 02 (Livraison weekend), 08 (Immobilier), 16 (B2B), 17 (Fintech)"
+      },
+      {
+        "profile": "Femme active / Maman entrepreneure",
+        "budget": "Petit à Moyen budget",
+        "sectors": "Secteurs 01 (Agro-transfo), 06 (Beauté), 07 (Mode), 18 (Enfance)"
+      },
+      {
+        "profile": "Artisan / Technicien qualifié",
+        "budget": "Moyen budget",
+        "sectors": "Secteurs 10 (Solaire), 15 (Artisanat), 20 (BTP & Réparation)"
+      },
+      {
+        "profile": "Investisseur / Diaspora en partenariat",
+        "budget": "Budget Structuré",
+        "sectors": "Secteurs 09 (Logistique), 13 (Tourisme), 14 (Élevage/Pisciculture), 01 (Unités)"
+      }
+    ]
+  },
+  "part02": {
+    "kicker": "PARTIE 02 • ERREURS À ÉVITER",
+    "title": "Les 7 erreurs fatales qui tuent 80 % des nouveaux business en Afrique",
+    "workbook_question": "Réponse à la section 02 du Workbook : Quelles sont les erreurs fréquentes que les gens font ?",
+    "intro": "Avant même de choisir ton idée parmi les 500 de ce catalogue, protège ton énergie et ton capital. Ces 7 erreurs reviennent dans presque tous les échecs évitables observés sur le terrain.",
+    "errors": [
+      {
+        "title": "Erreur 1 : Lancer sur un « coup de cœur » sans vérifier la douleur client",
+        "consequence": "Conséquence : Tu fabriques un beau produit ou ouvres un service dont personne n'a besoin en urgence.",
+        "fix": "Réflexe 2027 : Applique la méthode VIN (Valeur, Intensité, Nombre) et parle à 5 vrais clients avant d'acheter du stock."
+      },
+      {
+        "title": "Erreur 2 : Copier le voisin exactement à l'identique",
+        "consequence": "Conséquence : Quand trois boutiques vendent le même produit au même carrefour, la seule arme restante est de casser les prix — et tout le monde perd.",
+        "fix": "Réflexe 2027 : Change au moins un angle fort : qualité d'emballage, livraison à domicile, horaire tardif, abonnement ou cible précise."
+      },
+      {
+        "title": "Erreur 3 : Immobiliser 80 % de son capital dans le décor ou un local",
+        "consequence": "Conséquence : Loyer, caution, enseigne et meubles engloutissent ta trésorerie avant que tu n'aies encaissé ton 10e client.",
+        "fix": "Réflexe 2027 : Démarre depuis chez toi, sur commande, en kiosque mobile ou en partenariat avec un point déjà existant."
+      },
+      {
+        "title": "Erreur 4 : Mélanger la caisse du business et les dépenses personnelles",
+        "consequence": "Conséquence : Tu as l'impression de bien vendre, mais impossible de renouveler le stock le mois suivant parce que l'argent a payé loyer, cérémonies et imprévus familiaux.",
+        "fix": "Réflexe 2027 : Deux portefeuilles / comptes Mobile Money strictement séparés dès le Jour 1, et verse-toi un salaire fixe ou un pourcentage clair."
+      },
+      {
+        "title": "Erreur 5 : Vendre à crédit « aux connaissances » sans règles écrites",
+        "consequence": "Conséquence : Ton fonds de roulement reste bloqué chez des clients qui disparaissent quand il faut payer, et tu perds à la fois l'argent et la relation.",
+        "fix": "Réflexe 2027 : Paiement comptant ou acompte minimum de 50 % à la commande, relance automatique par WhatsApp avant livraison."
+      },
+      {
+        "title": "Erreur 6 : Fixer ses prix sans calculer les coûts cachés",
+        "consequence": "Conséquence : Tu oublies les frais de transport, pertes/invendus, emballages, données internet, frais de retrait Mobile Money et ton propre temps : tu travailles à perte.",
+        "fix": "Réflexe 2027 : Additionne TOUS les coûts directs, ajoute 15 % d'imprévus puis ta marge nette avant d'annoncer ton tarif."
+      },
+      {
+        "title": "Erreur 7 : Attendre la perfection absolue avant de se lancer",
+        "consequence": "Conséquence : Pendant que tu peaufines ton logo, tes statuts ou ton site pendant 6 mois, un concurrent imparfait mais rapide prend déjà le marché.",
+        "fix": "Réflexe 2027 : Comme le rappelle le Workbook Jour 2, oublie la perfection. Sors une version simple, encaisse tes 10 premiers clients et améliore en V2.0."
+      }
+    ]
+  },
+  "part04": {
+    "kicker": "PARTIE 04 • ÉTAPE 2",
+    "title": "Valide ton Top 3 en 48 heures avant de dépenser 1 FCFA",
+    "workbook_question": "Réponse à la section 04 du Workbook : Deuxième action concrète — Filtrer et prouver la demande réelle.",
+    "intro": "Tu viens de repérer 3 à 5 idées prometteuses dans les 500 fiches de la Partie 03 ? Ne te lance pas encore à l'aveugle. En moins de 48 heures et avec zéro dépense de production, tu vas soumettre ton Top 3 au filtre implacable de la méthode VIN et du terrain.",
+    "vin": [
+      {
+        "title": "V — Valeur (Problème précis)",
+        "desc": "En une phrase : quelle douleur ou envie précise ton client paie-t-il pour résoudre ? (Ex. : gagner du temps, manger sain, augmenter ses ventes, réparer vite)."
+      },
+      {
+        "title": "I — Intensité (/10)",
+        "desc": "Le problème est-il urgent ou secondaire ? Vise au moins 7/10 : si le client peut attendre 6 mois sans agir, il reportera son achat."
+      },
+      {
+        "title": "N — Nombre (Volume solvable)",
+        "desc": "Combien de clients capables de payer vivent ce problème dans ton quartier, ta ville ou ta communauté en ligne chaque semaine ?"
+      }
+    ],
+    "steps_48h": [
+      {
+        "title": "Heure 0 à 4 : Sélectionne 3 idées finalistes",
+        "desc": "Une idée en « Petit budget » (démarrage immédiat), une qui exploite tes contacts actuels, et ton coup de cœur rentable."
+      },
+      {
+        "title": "Heure 4 à 18 : Remplis la grille de score ci-dessous",
+        "desc": "Note chaque idée de 1 à 5 sur 6 critères concrets (/30). Élimine immédiatement toute idée en dessous de 20/30."
+      },
+      {
+        "title": "Heure 18 à 36 : Le test des 5 vraies conversations",
+        "desc": "Appelle ou rencontre 5 personnes correspondant à ta cible. Ne demande pas « Est-ce que tu aimes mon idée ? » (tout le monde dit oui par politesse), demande : « Combien as-tu dépensé pour ce besoin le mois dernier ? Et si je te livre tel résultat vendredi pour X FCFA, tu commandes ? »."
+      },
+      {
+        "title": "Heure 36 à 48 : Preuve par l'engagement",
+        "desc": "Une idée est officiellement validée lorsque au moins 2 personnes sur 5 acceptent de précommander, verser un petit acompte ou réserver un créneau daté."
+      }
+    ],
+    "scoring": [
+      {
+        "title": "1. Besoin urgent et prouvé (méthode VIN)",
+        "desc": "Les clients cherchent déjà une solution et dépensent de l'argent pour cela."
+      },
+      {
+        "title": "2. Budget de départ accessible tout de suite",
+        "desc": "Tu disposes déjà du capital nécessaire sans t'endetter dangereusement."
+      },
+      {
+        "title": "3. Compétence ou apprentissage rapide (< 7 jours)",
+        "desc": "Tu sais faire, ou tu peux t'associer / te former en quelques jours."
+      },
+      {
+        "title": "4. Cycle de vente court (< 7 jours)",
+        "desc": "Tu peux produire, livrer et encaisser dans la même semaine."
+      },
+      {
+        "title": "5. Marge nette saine (>= 30 %)",
+        "desc": "Après transport, emballage et frais Mobile Money, il te reste un vrai bénéfice."
+      },
+      {
+        "title": "6. Récurrence possible",
+        "desc": "Le même client peut racheter chaque semaine, chaque mois ou recommander 3 proches."
+      }
+    ],
+    "example_title": "Exemple concret rempli : Idée #002 — Chips de banane plantain aromatisées",
+    "example_lines": [
+      "• Méthode VIN : V = Offrir un snack croquant, propre et bien emballé pour les pauses bureau/écoles • I = 8/10 (demande quotidienne immédiate) • N = Massif (bureaux, supérettes, campus, feux tricolores).",
+      "• Score sur 30 : Besoin (5/5) + Budget < 50k FCFA (5/5) + Apprentissage rapide (5/5) + Cycle de vente 24h (5/5) + Marge > 40 % (4/5) + Réachat hebdo (5/5) = 29 / 30 → Feu vert immédiat !",
+      "• Test 48h réussi : 2 lots tests préparés le soir, proposés le lendemain à 10 collègues et 2 supérettes de quartier → 8 sachets vendus comptant + 1 commande hebdomadaire confirmée avant d'acheter la friteuse pro."
+    ]
+  },
+  "part05": {
+    "kicker": "PARTIE 05 • ÉTAPE 3",
+    "title": "Plan d'action en 7 jours pour lancer et encaisser tes premiers clients",
+    "workbook_question": "Réponse à la section 05 du Workbook : Troisième action concrète — Passer de l'idée validée au premier encaissement.",
+    "intro": "Ton idée n°1 est validée. Voici la feuille de route exacte sur 7 jours pour transformer cette décision en premières ventes réelles — sans site web coûteux, sans bureau et sans attendre des mois.",
+    "days": [
+      {
+        "day": "Jour 1",
+        "title": "Verrouille ton offre et ton prix",
+        "desc": "Définis 1 offre d'entrée simple (format découverte + offre standard), calcule tes coûts complets et rédige ta promesse en 1 phrase claire."
+      },
+      {
+        "day": "Jour 2",
+        "title": "Prépare ton « minimum vendable »",
+        "desc": "Crée 3 photos propres à la lumière du jour (ou une fiche PDF/Canva claire), configure ton profil WhatsApp Business (catalogue + numéro Mobile Money prêt)."
+      },
+      {
+        "day": "Jour 3",
+        "title": "Liste tes 30 premiers acheteurs probables",
+        "desc": "Note 10 connaissances directes, 10 contacts professionnels/quartier et 10 groupes Facebook/WhatsApp pertinents où ta cible se trouve déjà."
+      },
+      {
+        "day": "Jour 4",
+        "title": "Lance l'offensive directe (30 messages)",
+        "desc": "Envoie le Script 1 personnalisé aux 20 premiers contacts et publie 1 statut WhatsApp + 1 post Facebook avec une offre de lancement limitée aux 5 premiers."
+      },
+      {
+        "day": "Jour 5",
+        "title": "Convertis, encaisse et livre impeccablement",
+        "desc": "Encaisse un acompte ou paiement à la commande, livre avec 10 minutes d'avance ou un petit mot d'attention qui crée la surprise positive."
+      },
+      {
+        "day": "Jour 6",
+        "title": "Récolte les preuves et active le bouche-à-oreille",
+        "desc": "Demande un court avis vocal ou écrit WhatsApp à tes premiers clients + propose « 1 recommandation = 1 petit bonus offert »."
+      },
+      {
+        "day": "Jour 7",
+        "title": "Fais ton bilan cash et prépare la semaine 2",
+        "desc": "Applique la règle des 3 enveloppes sur tes encaissements, note ce qui a le mieux marché et double l'action sur le canal le plus rentable."
+      }
+    ],
+    "scripts": [
+      {
+        "title": "Script 1 — Message WhatsApp cercle proche / réseau tiède",
+        "body": "« Bonjour [Prénom], j'espère que tu vas bien ! Je lance cette semaine [nom de ton service/produit] pour aider [cible] à [bénéfice concret] en [délai], sans [principal blocage]. Pour mes 5 premiers clients de lancement d'ici samedi, je propose le pack à [Prix] au lieu de [Prix normal]. Est-ce que ça t'intéresse, ou connais-tu quelqu'un autour de toi qui en a besoin en ce moment ? »"
+      },
+      {
+        "title": "Script 2 — Post Facebook / Statut WhatsApp à fort impact",
+        "body": "« Vous cherchez [résultat concret] à [Ville/Quartier] sans [galère habituelle] ? Dès cette semaine, nous lançons [Nom de l'offre] : [2 avantages simples + délai de livraison]. Offre de lancement valable jusqu'à dimanche pour les 10 premières commandes. Écrivez « INFOS » en commentaire ou envoyez un message direct sur WhatsApp au [Numéro] pour réserver votre place. »"
+      },
+      {
+        "title": "Script 3 — Répondre à l'objection « C'est un peu cher »",
+        "body": "« Je comprends tout à fait ! C'est justement pour éviter les mauvaises surprises que ce tarif inclut [élément de qualité/garantie/service inclus]. Pour démarrer plus léger aujourd'hui, on peut commencer par notre formule Essentiel à [Prix réduit / petit format] afin que tu testes la qualité par toi-même dès cette semaine. On part sur celle-ci ? »"
+      }
+    ],
+    "pricing": [
+      "1. Additionne tous tes coûts directs (matière première, emballage, livraison, électricité/gaz, frais Mobile Money).",
+      "2. Ajoute la valeur de ton temps (même modeste au début) + 10 à 15 % pour les imprévus et pertes.",
+      "3. Ajoute ta marge bénéficiaire cible (minimum 30 % sur les produits, 50 %+ sur les services) pour obtenir ton Prix Plancher."
+    ],
+    "envelopes": [
+      {
+        "title": "Enveloppe 1 — 50 % Réinvestissement & Stock",
+        "desc": "Reste intouchable dans le compte pro pour racheter les matières premières, améliorer l'emballage et faire grandir l'activité."
+      },
+      {
+        "title": "Enveloppe 2 — 30 % Charges, Réserve & Imprévus",
+        "desc": "Couvre transport, crédit internet, marketing, impôts/formalisation et coussin de sécurité en cas de semaine creuse."
+      },
+      {
+        "title": "Enveloppe 3 — 20 % Rémunération du Fondateur",
+        "desc": "Ton salaire clair et officiel. C'est uniquement cette enveloppe qui finance tes dépenses personnelles : jamais la caisse brute !"
+      }
+    ]
+  },
+  "conclusion": {
+    "kicker": "CONCLUSION • PROCHAIN PAS",
+    "title": "Oublie la perfection, passe à l'action dès les 48 prochaines heures",
+    "workbook_question": "Réponse à la section Conclusion du Workbook : Quel est le prochain pas pour le lecteur ?",
+    "message": "Tu as maintenant entre les mains 500 idées concrètes adaptées aux réalités africaines de 2027, la grille pour éviter les pièges qui coûtent cher, la méthode VIN pour valider en 48 heures et le plan exact sur 7 jours pour encaisser tes premiers clients. Mais la différence entre un lecteur qui rêve et un entrepreneur qui encaisse tient en une seule chose : l'action immédiate.",
+    "mantra": "« Ton premier jour de vente ne sera pas parfait, et c'est normal. L'important est de lancer une version simple, d'encaisser ton premier client réel et d'améliorer en version 2.0. »",
+    "next_steps": [
+      "1. Dans les 2 prochaines heures : choisis 1 seule idée parmi tes 3 finalistes (commence par celle que tu peux tester au moindre coût).",
+      "2. Dans les 48 prochaines heures : réalise les 5 conversations terrain et publie ta première offre test auprès de 10 proches.",
+      "3. À J+7 : récolte les avis de tes premiers acheteurs et passe directement à ta version 2.0 améliorée."
+    ],
+    "action_sheet": [
+      "Mon secteur retenu (01 à 20) : ________________________________________________",
+      "Mon idée choisie (#___) : _____________________________________________________",
+      "Mon budget de départ réaliste : _______________________ FCFA",
+      "Ma promesse en 1 phrase (Comment ___ en ___ sans ___) : _______________________",
+      "Mes 5 premiers prospects à contacter demain matin : ___________________________",
+      "Date de mon premier encaissement cible : ______________________________________"
+    ]
+  },
+  "workbook": {
+    "author": "[Ton Nom / Ta Marque]",
+    "date": "16 novembre 2026",
+    "title": "500 Idées de Business à Lancer en Afrique en 2027",
+    "promise": "Comment choisir, valider et lancer ton business rentable en Afrique en 2027 en 7 jours sans gros capital ni peur de te tromper.",
+    "page1": {
+      "badge": "WORKBOOK OFFICIEL – JOUR 2",
+      "title": "CRÉE TON PREMIER PRODUIT DIGITAL",
+      "subtitle": "Dossier d'application complété pour le projet : « 500 Idées de Business à Lancer en Afrique en 2027 »",
+      "welcome": "Bienvenue dans ton guide pratique pour transformer ton idée en un véritable produit digital. Ce workbook est conçu spécialement pour toi, entrepreneur africain francophone, qui souhaites passer à l'action dès aujourd'hui. Pas besoin d'être expert en technologie ou d'avoir des années d'expérience. Ce qui compte, c'est ta volonté d'avancer et de créer quelque chose de concret qui aide les autres. Dans les pages suivantes, la méthode exacte du Workbook Jour 2 (valider → structurer → créer étape par étape) est appliquée de bout en bout à ton ebook sur les 500 idées de business en Afrique en 2027.",
+      "summary_rows": [
+        [
+          "Produit créé",
+          "500 Idées de Business à Lancer en Afrique en 2027"
+        ],
+        [
+          "Cible prioritaire",
+          "Entrepreneurs & porteurs de projets en Afrique francophone + diaspora"
+        ],
+        [
+          "Format retenu",
+          "PDF professionnel prêt à diffuser + sources éditables"
+        ],
+        [
+          "Créateur / Marque",
+          "[Ton Nom / Ta Marque]"
+        ],
+        [
+          "Date de réalisation",
+          "16 novembre 2026"
+        ]
+      ]
+    },
+    "page2": {
+      "kicker": "PAGE 2 • OBJECTIF",
+      "title": "À la fin de ce workbook, tu as un produit",
+      "intro": "Oublie la perfection. Ton premier produit ne sera pas parfait, et c'est normal. Ce qui importe aujourd'hui, c'est de passer à l'action et de créer quelque chose de réel que tu pourras améliorer avec le temps. Chaque page contient des exercices concrets appliqués ici directement à ton ebook.",
+      "quote": "→ À la fin, tu pourras écrire : « J'ai créé mon premier produit digital. »",
+      "commitment": [
+        [
+          "Nom / Marque",
+          "[Ton Nom / Ta Marque]"
+        ],
+        [
+          "Date",
+          "16 novembre 2026"
+        ],
+        [
+          "Signature / Statut",
+          "Validé — Engagement tenu pour « 500 Idées de Business à Lancer en Afrique en 2027 »"
+        ]
+      ]
+    },
+    "page3": {
+      "kicker": "PAGE 3 • VALIDATION",
+      "title": "Validation Express de ton Idée (Méthode VIN)",
+      "intro": "Avant de créer ton produit, assure-toi que ton idée répond à un vrai besoin. VIN signifie Valeur, Intensité et Nombre. Si ces trois éléments sont élevés, ton idée est validée et tu peux avancer en toute confiance.",
+      "V": "Des milliers de jeunes, salariés, femmes actives et membres de la diaspora en Afrique francophone veulent entreprendre en 2027, mais restent bloqués par manque d'idées concrètes adaptées au terrain, à leur petit budget et sans méthode simple pour valider avant d'investir.",
+      "I_score": "9 / 10",
+      "I_exp": "Le chômage, la hausse du coût de la vie et le besoin d'indépendance financière rendent la création d'une source de revenus urgente. Beaucoup perdent leurs maigres économies dans des business mal ciblés faute de filtre et de plan de démarrage.",
+      "N": "Marché massif et très répandu : des millions de francophones en Afrique de l'Ouest et Centrale (Bénin, Côte d'Ivoire, Sénégal, Togo, Cameroun, Burkina Faso, Mali, RDC, Guinée, Gabon...) et dans la diaspora cherchent ce type de feuille de route chaque mois.",
+      "conclusion": "Mini-conclusion : V (problème réel) + I (9/10) + N (marché massif) sont élevés → Idée 100 % validée !"
+    },
+    "page4": {
+      "kicker": "PAGE 4 • PROMESSE",
+      "title": "Transformation de ton Idée en Promesse Claire",
+      "intro": "Ton produit doit offrir une transformation concrète à tes lecteurs. Plus ta promesse est précise (pour qui, quel résultat, en combien de temps), plus elle est convaincante.",
+      "q1": "Les futurs entrepreneurs africains francophones (étudiants, salariés, femmes actives, commerçants et diaspora) cherchant un business rentable et réaliste pour 2027.",
+      "q2": "Choisir une activité adaptée à son budget réel (Petit, Moyen ou Structuré), la valider en 48 heures sur le terrain et lancer les premières ventes concrètes.",
+      "q3": "En 7 jours (48 heures de filtrage et validation terrain + 5 jours de lancement commercial).",
+      "formula_template": "« Comment _________________ en _________________ sans _________________. »",
+      "formula_filled": "« Comment choisir, valider et lancer ton business rentable en Afrique en 2027 en 7 jours sans gros capital ni peur de te tromper. »"
+    },
+    "page5": {
+      "kicker": "PAGE 5 • FORMAT",
+      "title": "Choisis ton Format (Simple et Rapide)",
+      "reasons_pdf": [
+        "Facile à créer et mettre à jour avec des outils accessibles",
+        "Compatible avec tous les appareils (téléphones Android/iPhone, tablettes, PC)",
+        "Professionnel et crédible pour vendre sur WhatsApp, Chariow, Selar ou Maketou",
+        "Rapide à produire pour passer à l'action sans blocage technique",
+        "Parfait pour tester ton idée et encaisser avant de créer des vidéos"
+      ],
+      "why_chosen": "Le PDF s'ouvre instantanément sur smartphone même avec une connexion faible, se livre automatiquement par WhatsApp ou Mobile Money, se lit hors ligne et offre une vraie valeur perçue de livre de référence.",
+      "pages_note": "Recommandation de base du workbook : 5 à 15 pages pour un premier mini-guide. Pour honorer la promesse réelle de « 500 idées détaillées », l'édition finale publiée compte exactement 51 pages structurées en 20 secteurs, accompagnée d'un extrait gratuit idéal de 10 pages (Couverture + Parties 01, 02 et début Secteur 01) conforme au format court.",
+      "provisional_title": "500 Idées de Business à Lancer en Afrique en 2027"
+    },
+    "page6": {
+      "kicker": "PAGE 6 • STRUCTURE",
+      "title": "Structure Ton Produit en 5 Parties + Conclusion",
+      "parts": [
+        [
+          "01",
+          "Introduction",
+          "Le problème du manque de filtre entrepreneurial en Afrique et pourquoi les 5 vagues économiques de 2027 créent une opportunité historique (+ guide des budgets)."
+        ],
+        [
+          "02",
+          "Erreurs à éviter",
+          "Les 7 erreurs fatales qui ruinent les débutants (copier sans se différencier, tout mettre dans le local, mélanger les caisses, vendre à crédit, attendre la perfection)."
+        ],
+        [
+          "03",
+          "Étape 1",
+          "Sélectionner son idée : catalogue complet des 500 idées classées en 20 secteurs porteurs Afrique 2027 (25 idées/secteur avec budget Petit, Moyen ou Structuré)."
+        ],
+        [
+          "04",
+          "Étape 2",
+          "Valider son Top 3 en 48 heures avant d'investir 1 FCFA grâce à la grille de notation /30, la méthode VIN et le test des 5 vraies conversations."
+        ],
+        [
+          "05",
+          "Étape 3",
+          "Lancer son business en 7 jours : feuille de route jour par jour (J1 à J7), 3 scripts WhatsApp/Facebook, calcul du prix juste et règle des 3 enveloppes."
+        ],
+        [
+          "End",
+          "Conclusion",
+          "Engagement écrit du lecteur sur 48h, passage à l'action imparfait mais immédiat, puis page auteur personnalisable et prise de contact."
+        ]
+      ]
+    },
+    "page7": {
+      "kicker": "PAGE 7 • IA & CHECKLIST",
+      "title": "Utilise l'IA pour Générer Ton Contenu Rapidement",
+      "prompt_template": "Agis comme un expert pédagogique. Crée un guide structuré sur [sujet] destiné à [type de personne]. Le guide doit être clair, simple, pratique et structuré en étapes. Inclure une introduction motivante, 3 à 5 étapes détaillées et une conclusion actionnable.",
+      "prompt_applied": "« Agis comme un expert pédagogique et analyste marché africain. Crée un guide structuré sur [500 idées de business rentables à lancer en Afrique en 2027, réparties en 20 secteurs et 3 niveaux de budget, avec validation en 48h et plan de lancement en 7 jours] destiné à [des entrepreneurs africains francophones et membres de la diaspora voulant démarrer vite sans gros capital]. Le guide doit être clair, simple, pratique et structuré en étapes. Inclure une introduction motivante, les 7 erreurs à éviter, 3 étapes détaillées (Choisir, Valider, Lancer) et une conclusion actionnable. »",
+      "how_to_use": [
+        "1. Prompt copié et adapté avec le sujet précis et la cible Afrique 2027",
+        "2. Génération structurée en 20 secteurs × 25 fiches uniques (500 idées sans doublon)",
+        "3. Adaptation locale : montants en FCFA & USD, Mobile Money, réalités terrain 2027",
+        "4. Révision linguistique et cohérence éditoriale complète",
+        "5. Mise en page professionnelle avec couverture originale et typographie dédiée",
+        "6. Export en PDF final vérifié + fichiers sources éditables pour personnalisation"
+      ],
+      "checklist": [
+        [
+          "J'ai généré le contenu avec l'IA",
+          true
+        ],
+        [
+          "J'ai relu et corrigé (500 idées uniques vérifiées, français soigné)",
+          true
+        ],
+        [
+          "J'ai simplifié le langage (phrases courtes, actionnables)",
+          true
+        ],
+        [
+          "J'ai personnalisé avec mes exemples (réalités Afrique francophone 2027)",
+          true
+        ],
+        [
+          "J'ai mis en page dans un gabarit éditorial soigné (couverture + sommaire)",
+          true
+        ],
+        [
+          "J'ai enregistré en format PDF (500-Idees-de-Business-a-Lancer-en-Afrique-en-2027.pdf)",
+          true
+        ],
+        [
+          "J'ai testé l'ouverture du fichier (inspection visuelle de contrôle)",
+          true
+        ]
+      ],
+      "important_note": "Important : Personnalise ebook-source/author_config.json avec ton vrai nom, ton histoire (3-4 lignes) et ton numéro WhatsApp, puis relance le script pour obtenir ta version signée à 100 % !"
+    },
+    "page8": {
+      "kicker": "PAGE 8 • RÉCAPITULATIF",
+      "title": "Félicitations ! Tu es presque au bout",
+      "intro": "Beaucoup parlent de créer un produit digital, mais peu passent réellement à l'action. Voici le bilan exact des 5 étapes du Workbook Jour 2 validées pour ton ebook :",
+      "recap_cards": [
+        [
+          "1. Tu as validé ton idée",
+          "Méthode VIN appliquée (Valeur claire, Intensité 9/10, Nombre massif)",
+          "VALIDÉ"
+        ],
+        [
+          "2. Tu as défini ta promesse",
+          "Formule claire en 7 jours sans gros capital ni peur de se tromper",
+          "VALIDÉ"
+        ],
+        [
+          "3. Tu as choisi ton format",
+          "PDF haute lisibilité mobile + sources Markdown & JSON éditables",
+          "VALIDÉ"
+        ],
+        [
+          "4. Tu as structuré ton contenu",
+          "5 parties exactes (Intro, Erreurs, 500 Idées, Validation, Lancement) + Conclusion",
+          "VALIDÉ"
+        ],
+        [
+          "5. Tu as créé et mis en page",
+          "Ebook complet produit, vérifié et prêt à diffuser dès aujourd'hui",
+          "VALIDÉ"
+        ]
+      ]
+    },
+    "page9": {
+      "kicker": "PAGE 9 • DÉCLARATION OFFICIELLE",
+      "title": "Je confirme avoir créé mon premier produit digital",
+      "declaration": [
+        [
+          "Nom / Marque",
+          "[Ton Nom / Ta Marque]"
+        ],
+        [
+          "Signature",
+          "____________________________________ (À parapher après personnalisation)"
+        ],
+        [
+          "Date",
+          "16 novembre 2026"
+        ],
+        [
+          "Titre de mon produit",
+          "500 Idées de Business à Lancer en Afrique en 2027"
+        ]
+      ],
+      "fb_action": "Action immédiate : Publie dans le groupe Facebook avec une capture de la couverture de ton ebook !",
+      "social_posts": [
+        [
+          "Modèle 1 — Victoire communautaire (Workbook Jour 2)",
+          "« J'ai créé mon premier produit digital ! [Photo de couverture] Après avoir appliqué étape par étape la méthode VIN, défini ma promesse et structuré les 5 parties, voici enfin mon ebook : \"500 Idées de Business à Lancer en Afrique en 2027\". Pas besoin d'attendre la perfection pour passer à l'action. Merci à la communauté pour l'élan ! »"
+        ],
+        [
+          "Modèle 2 — Publication valeur & autorité",
+          "« Tu veux entreprendre en 2027 mais tu te demandes par quel business commencer avec ton budget actuel ? J'ai réuni 500 idées concrètes réparties en 20 secteurs africains (du petit budget < 50 000 FCFA aux projets structurés) + une méthode en 48h pour tester avant d'investir. Commente \"2027\" si tu veux découvrir le sommaire ! »"
+        ],
+        [
+          "Modèle 3 — Appel à l'action lancement / précommande",
+          "« OFFRE DE LANCEMENT : Mon nouveau guide \"500 Idées de Business à Lancer en Afrique en 2027\" est disponible en PDF instantané sur téléphone. En bonus : les 7 erreurs à éviter et le plan exact des 7 premiers jours avec scripts WhatsApp. Écris-moi en privé ou sur WhatsApp pour recevoir ton exemplaire dès aujourd'hui. »"
+        ]
+      ]
+    },
+    "page10": {
+      "kicker": "PAGE 10 • PROCHAINS PAS",
+      "title": "Et maintenant ? Tes prochains pas",
+      "steps": [
+        [
+          "1. Lance ton produit (10 personnes de ton entourage)",
+          "Partage dès aujourd'hui le PDF (ou les 10 premières pages en extrait gratuit) à 10 personnes ciblées pour récolter leurs vrais retours en 48 heures."
+        ],
+        [
+          "2. Améliore-le (Version 2.0)",
+          "Note quelles idées ont reçu le plus de questions. Pour la V2.0, ajoute par exemple des fiches chiffrées détaillées sur les 20 idées favorites de tes premiers lecteurs."
+        ],
+        [
+          "3. Crée le suivant avec la même méthode",
+          "Produits dérivés faciles à lancer ensuite : (a) « 50 Business à lancer avec moins de 25 000 FCFA », (b) « Modèles de business plan simplifiés sur WhatsApp & Excel », (c) « Pack scripts de vente Afrique 2027 »."
+        ]
+      ],
+      "whatsapp_testers": "Message WhatsApp prêt à envoyer à tes 10 premiers testeurs :\n« Salut [Prénom] ! Je viens de finaliser mon tout premier ebook pratique : \"500 Idées de Business à Lancer en Afrique en 2027\" (20 secteurs + méthode pour valider en 48h et lancer en 7 jours). Comme ton avis compte beaucoup pour moi, je t'envoie le PDF en avant-première. Tu peux me dire d'ici 48h : 1) quelle idée t'a le plus marqué, et 2) ce que tu aimerais voir approfondi dans la version 2.0 ? Un grand merci d'avance ! »",
+      "closing": "Le succès n'est pas une destination, c'est un voyage. Bonne continuation dans la communauté des créateurs de produits digitaux !"
+    }
+  }
+}

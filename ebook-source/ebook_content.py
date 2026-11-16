@@ -151,7 +151,7 @@ PART_02_ERRORS = {
 PART_04_VALIDATION = {
     "num": "04",
     "kicker": "PARTIE 04 • ÉTAPE 2",
-    "title": "Valide ton Top 3 en 48 heures avant de dépenser 1 FCFA",
+    "title": "Valide ton Top 3 en 48 heures avant de dépenser 1\u00A0FCFA",
     "workbook_question": "Réponse à la section 04 du Workbook : Deuxième action concrète — Filtrer et prouver la demande réelle.",
     "intro": (
         "Tu viens de repérer 3 à 5 idées prometteuses dans les 500 fiches de la Partie 03 ? "
@@ -380,7 +380,7 @@ def get_workbook_pages_data(config, ebook_pages=None):
                 ("01", "Introduction", "Le problème du manque de filtre entrepreneurial en Afrique et pourquoi les 5 vagues économiques de 2027 créent une opportunité historique (+ guide des budgets)."),
                 ("02", "Erreurs à éviter", "Les 7 erreurs fatales qui ruinent les débutants (copier sans se différencier, tout mettre dans le local, mélanger les caisses, vendre à crédit, attendre la perfection)."),
                 ("03", "Étape 1", "Sélectionner son idée : catalogue complet des 500 idées classées en 20 secteurs porteurs Afrique 2027 (25 idées/secteur avec budget Petit, Moyen ou Structuré)."),
-                ("04", "Étape 2", "Valider son Top 3 en 48 heures avant d'investir 1 FCFA grâce à la grille de notation /30, la méthode VIN et le test des 5 vraies conversations."),
+                ("04", "Étape 2", "Valider son Top 3 en 48 heures avant d'investir 1\u00A0FCFA grâce à la grille de notation /30, la méthode VIN et le test des 5 vraies conversations."),
                 ("05", "Étape 3", "Lancer son business en 7 jours : feuille de route jour par jour (J1 à J7), 3 scripts WhatsApp/Facebook, calcul du prix juste et règle des 3 enveloppes."),
                 ("End", "Conclusion", "Engagement écrit du lecteur sur 48h, passage à l'action imparfait mais immédiat, puis page auteur personnalisable et prise de contact."),
             ],
