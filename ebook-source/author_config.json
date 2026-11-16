@@ -1,0 +1,13 @@
+{
+  "ebook_title": "500 Idées de Business à Lancer en Afrique en 2027",
+  "ebook_subtitle": "Le guide pratique pour choisir, valider et lancer ton activité rentable en 7 jours — même avec un petit budget",
+  "promise_formula": "Comment choisir, valider et lancer ton business rentable en Afrique en 2027 en 7 jours sans gros capital ni peur de te tromper.",
+  "edition": "Édition 2027 • Guide Pratique & Catalogue Complet",
+  "author_name": "[Ton Nom / Ta Marque]",
+  "author_role": "Entrepreneur(e) & Créateur(rice) de Produits Digitaux",
+  "author_bio": "Ajoute ici 3 à 4 lignes sur ton parcours, ta ville et pourquoi tu aides les entrepreneurs africains à passer à l'action en 2027. (Modifie ebook-source/author_config.json puis relance build_pdfs.py !)",
+  "contact_whatsapp": "+2XX XX XX XX XX (À personnaliser)",
+  "contact_social": "@toncompte (Facebook / Instagram / TikTok)",
+  "contact_email": "contact@tondomaine.com",
+  "date_creation": "16 novembre 2026"
+}
