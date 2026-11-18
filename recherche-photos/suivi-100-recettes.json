@@ -1,0 +1,841 @@
+{
+  "date": "2026-11-18",
+  "policy": "Photographies réelles uniquement. Une page photo avant chaque recette.",
+  "recipes": [
+    {
+      "recipe_id": 1,
+      "title": "Pastels au poisson",
+      "search_query": "Pastels au poisson photographie réelle plat terminé licence commerciale",
+      "status": "source_identified",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Pastels.jpg",
+      "note": "Beignets au poisson ; vérifier dressage, farce et fichier original."
+    },
+    {
+      "recipe_id": 2,
+      "title": "Accras de niébé",
+      "search_query": "Accras de niébé photographie réelle plat terminé licence commerciale",
+      "status": "source_identified",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Akara_balls.jpg",
+      "note": "Bonne famille de plat ; vérifier texture et photographie en grand."
+    },
+    {
+      "recipe_id": 3,
+      "title": "Alloco apéritif",
+      "search_query": "Alloco apéritif photographie réelle plat terminé licence commerciale",
+      "status": "source_identified",
+      "source_page_url": "https://commons.wikimedia.org/wiki/Category:Alloco",
+      "note": "Choisir une photo du plantain seul, sans accompagnements non prévus."
+    },
+    {
+      "recipe_id": 4,
+      "title": "Kelewele au gingembre",
+      "search_query": "Kelewele au gingembre photographie réelle plat terminé licence commerciale",
+      "status": "license_read_visual_pending",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Kelewele,_a_Ghanaian_snack.jpg",
+      "note": "Photo réelle vue : bananes en tranches, plus foncées que notre présentation en dés ; qualité éditoriale à revoir.",
+      "author": "Maame1Yaa",
+      "license": "CC0 1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "width": 2160,
+      "height": 3840,
+      "original": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Kelewele%2C_a_Ghanaian_snack.jpg",
+      "local_preview": "assets/food/previews/recette-004.jpg"
+    },
+    {
+      "recipe_id": 5,
+      "title": "Samoussas de bœuf",
+      "search_query": "Samoussas de bœuf photographie réelle plat terminé licence commerciale",
+      "status": "not_searched",
+      "source_page_url": null,
+      "note": "Recherche à effectuer ; aucune photo trouvée n’est revendiquée."
+    },
+    {
+      "recipe_id": 6,
+      "title": "Salade d’attiéké aux crudités",
+      "search_query": "Salade d’attiéké aux crudités photographie réelle plat terminé licence commerciale",
+      "status": "not_searched",
+      "source_page_url": null,
+      "note": "Recherche à effectuer ; aucune photo trouvée n’est revendiquée."
+    },
+    {
+      "recipe_id": 7,
+      "title": "Salade d’avocat, mangue et citron vert",
+      "search_query": "Salade d’avocat, mangue et citron vert photographie réelle plat terminé licence commerciale",
+      "status": "not_searched",
+      "source_page_url": null,
+      "note": "Recherche à effectuer ; aucune photo trouvée n’est revendiquée."
+    },
+    {
+      "recipe_id": 8,
+      "title": "Salade méchouia douce",
+      "search_query": "Salade méchouia douce photographie réelle plat terminé licence commerciale",
+      "status": "not_searched",
+      "source_page_url": null,
+      "note": "Recherche à effectuer ; aucune photo trouvée n’est revendiquée."
+    },
+    {
+      "recipe_id": 9,
+      "title": "Carottes au cumin",
+      "search_query": "Carottes au cumin photographie réelle plat terminé licence commerciale",
+      "status": "not_searched",
+      "source_page_url": null,
+      "note": "Recherche à effectuer ; aucune photo trouvée n’est revendiquée."
+    },
+    {
+      "recipe_id": 10,
+      "title": "Soupe de potiron à l’arachide",
+      "search_query": "Soupe de potiron à l’arachide photographie réelle plat terminé licence commerciale",
+      "status": "not_searched",
+      "source_page_url": null,
+      "note": "Recherche à effectuer ; aucune photo trouvée n’est revendiquée."
+    },
+    {
+      "recipe_id": 11,
+      "title": "Amiwo rouge",
+      "search_query": "Amiwo rouge photographie réelle plat terminé licence commerciale",
+      "status": "license_read_visual_pending",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Amiw%C3%B4_accompagn%C3%A9_de_la_viande_de_poulet.jpg",
+      "note": "Photo réelle vue : amiwo accompagné de poulet ; légender cet accompagnement, non inclus dans la fiche 11 seule.",
+      "author": "Aimeabibis",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "width": 4608,
+      "height": 3456,
+      "original": "https://upload.wikimedia.org/wikipedia/commons/2/28/Amiw%C3%B4_accompagn%C3%A9_de_la_viande_de_poulet.jpg",
+      "local_preview": "assets/food/previews/recette-011.jpg"
+    },
+    {
+      "recipe_id": 12,
+      "title": "Atassi, riz et niébé",
+      "search_query": "Atassi, riz et niébé photographie réelle plat terminé licence commerciale",
+      "status": "source_identified",
+      "source_page_url": "https://fr.wikipedia.org/wiki/Atassi",
+      "note": "Article repéré ; rechercher la page du fichier et sa licence. Pas encore de fichier sélectionné."
+    },
+    {
+      "recipe_id": 13,
+      "title": "Wagassi en sauce tomate",
+      "search_query": "Wagassi en sauce tomate photographie réelle plat terminé licence commerciale",
+      "status": "source_identified",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Waagashi.jpg",
+      "note": "Fromage comme ingrédient, pas wagassi en sauce tomate : ne pas utiliser comme résultat final."
+    },
+    {
+      "recipe_id": 14,
+      "title": "Sauce gombo au poisson",
+      "search_query": "Sauce gombo au poisson photographie réelle plat terminé licence commerciale",
+      "status": "not_searched",
+      "source_page_url": null,
+      "note": "Recherche à effectuer ; aucune photo trouvée n’est revendiquée."
+    },
+    {
+      "recipe_id": 15,
+      "title": "Sauce crincrin aux crevettes",
+      "search_query": "Sauce crincrin aux crevettes photographie réelle plat terminé licence commerciale",
+      "status": "not_searched",
+      "source_page_url": null,
+      "note": "Recherche à effectuer ; aucune photo trouvée n’est revendiquée."
+    },
+    {
+      "recipe_id": 16,
+      "title": "Pâte blanche de maïs",
+      "search_query": "Pâte blanche de maïs photographie réelle plat terminé licence commerciale",
+      "status": "not_searched",
+      "source_page_url": null,
+      "note": "Recherche à effectuer ; aucune photo trouvée n’est revendiquée."
+    },
+    {
+      "recipe_id": 17,
+      "title": "Igname pilée",
+      "search_query": "Igname pilée photographie réelle plat terminé licence commerciale",
+      "status": "not_searched",
+      "source_page_url": null,
+      "note": "Recherche à effectuer ; aucune photo trouvée n’est revendiquée."
+    },
+    {
+      "recipe_id": 18,
+      "title": "Ablo simplifiés à la vapeur",
+      "search_query": "Ablo simplifiés à la vapeur photographie réelle plat terminé licence commerciale",
+      "status": "license_read_visual_pending",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Ablo.jpg",
+      "note": "La source décrit des ablos de maïs ; notre adaptation contient du riz et du maïs. À signaler comme variante.",
+      "author": "Rayman3640",
+      "license": "CC BY-SA 3.0 (parmi les licences proposées)",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "width": 3072,
+      "height": 2304,
+      "original": "https://upload.wikimedia.org/wikipedia/commons/7/70/Ablo.jpg",
+      "local_preview": "assets/food/previews/recette-018.jpg"
+    },
+    {
+      "recipe_id": 19,
+      "title": "Akassa à partir de pâte prête",
+      "search_query": "Akassa à partir de pâte prête photographie réelle plat terminé licence commerciale",
+      "status": "source_identified",
+      "source_page_url": "https://commons.wikimedia.org/wiki/Category:Akassa",
+      "note": "Page de désambiguïsation repérée ; ouvrir la catégorie du plat. Aucun fichier choisi."
+    },
+    {
+      "recipe_id": 20,
+      "title": "Igname frite",
+      "search_query": "Igname frite photographie réelle plat terminé licence commerciale",
+      "status": "not_searched",
+      "source_page_url": null,
+      "note": "Recherche à effectuer ; aucune photo trouvée n’est revendiquée."
+    },
+    {
+      "recipe_id": 21,
+      "title": "Poulet bicyclette braisé au gingembre",
+      "search_query": "Poulet bicyclette braisé au gingembre photographie réelle plat terminé licence commerciale",
+      "status": "not_searched",
+      "source_page_url": null,
+      "note": "Recherche à effectuer ; aucune photo trouvée n’est revendiquée."
+    },
+    {
+      "recipe_id": 22,
+      "title": "Poulet yassa",
+      "search_query": "Poulet yassa photographie réelle plat terminé licence commerciale",
+      "status": "license_read_visual_pending",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Yassapoulet.JPG",
+      "note": "Photo réelle vue : poulet aux oignons et riz à côté ; présentation familiale, qualité éditoriale à revoir.",
+      "author": "KVDP",
+      "license": "Domaine public, cession par l’auteur",
+      "license_url": "https://commons.wikimedia.org/wiki/File:Yassapoulet.JPG#Licensing",
+      "width": 2816,
+      "height": 2112,
+      "original": "https://upload.wikimedia.org/wikipedia/commons/f/fc/Yassapoulet.JPG",
+      "local_preview": "assets/food/previews/recette-022.jpg"
+    },
+    {
+      "recipe_id": 23,
+      "title": "Poulet sauce arachide",
+      "search_query": "Poulet sauce arachide photographie réelle plat terminé licence commerciale",
+      "status": "not_searched",
+      "source_page_url": null,
+      "note": "Recherche à effectuer ; aucune photo trouvée n’est revendiquée."
+    },
+    {
+      "recipe_id": 24,
+      "title": "Poulet kedjenou en cocotte",
+      "search_query": "Poulet kedjenou en cocotte photographie réelle plat terminé licence commerciale",
+      "status": "source_identified",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Kedjenou.JPG",
+      "note": "Source décrit un kedjenou de poulet ; vérifier la photo et sa résolution finale."
+    },
+    {
+      "recipe_id": 25,
+      "title": "Poulet DG",
+      "search_query": "Poulet DG photographie réelle plat terminé licence commerciale",
+      "status": "source_identified",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Poulet_DG.JPG",
+      "note": "Candidate du bon plat ; licence et correspondance détaillée à contrôler."
+    },
+    {
+      "recipe_id": 26,
+      "title": "Poulet moambé simplifié",
+      "search_query": "Poulet moambé simplifié photographie réelle plat terminé licence commerciale",
+      "status": "not_searched",
+      "source_page_url": null,
+      "note": "Recherche à effectuer ; aucune photo trouvée n’est revendiquée."
+    },
+    {
+      "recipe_id": 27,
+      "title": "Poulet coco au citron vert",
+      "search_query": "Poulet coco au citron vert photographie réelle plat terminé licence commerciale",
+      "status": "not_searched",
+      "source_page_url": null,
+      "note": "Recherche à effectuer ; aucune photo trouvée n’est revendiquée."
+    },
+    {
+      "recipe_id": 28,
+      "title": "Poulet peri-peri au four",
+      "search_query": "Poulet peri-peri au four photographie réelle plat terminé licence commerciale",
+      "status": "not_searched",
+      "source_page_url": null,
+      "note": "Recherche à effectuer ; aucune photo trouvée n’est revendiquée."
+    },
+    {
+      "recipe_id": 29,
+      "title": "Pintade mijotée aux oignons",
+      "search_query": "Pintade mijotée aux oignons photographie réelle plat terminé licence commerciale",
+      "status": "not_searched",
+      "source_page_url": null,
+      "note": "Recherche à effectuer ; aucune photo trouvée n’est revendiquée."
+    },
+    {
+      "recipe_id": 30,
+      "title": "Dinde rôtie aux épices douces",
+      "search_query": "Dinde rôtie aux épices douces photographie réelle plat terminé licence commerciale",
+      "status": "not_searched",
+      "source_page_url": null,
+      "note": "Recherche à effectuer ; aucune photo trouvée n’est revendiquée."
+    },
+    {
+      "recipe_id": 31,
+      "title": "Mafé de bœuf",
+      "search_query": "Mafé de bœuf photographie réelle plat terminé licence commerciale",
+      "status": "source_identified",
+      "source_page_url": "https://commons.wikimedia.org/wiki/Category:Maafe",
+      "note": "Plusieurs variantes ; choisir un mafé de bœuf, pas de poisson."
+    },
+    {
+      "recipe_id": 32,
+      "title": "Bœuf aux oignons et au gingembre",
+      "search_query": "Bœuf aux oignons et au gingembre photographie réelle plat terminé licence commerciale",
+      "status": "not_searched",
+      "source_page_url": null,
+      "note": "Recherche à effectuer ; aucune photo trouvée n’est revendiquée."
+    },
+    {
+      "recipe_id": 33,
+      "title": "Brochettes de bœuf façon suya",
+      "search_query": "Brochettes de bœuf façon suya photographie réelle plat terminé licence commerciale",
+      "status": "source_identified",
+      "source_page_url": "https://commons.wikimedia.org/wiki/Category:Suya",
+      "note": "Choisir bœuf en brochettes, sans confondre morceaux grillés et abats."
+    },
+    {
+      "recipe_id": 34,
+      "title": "Boulettes de bœuf à la tomate",
+      "search_query": "Boulettes de bœuf à la tomate photographie réelle plat terminé licence commerciale",
+      "status": "not_searched",
+      "source_page_url": null,
+      "note": "Recherche à effectuer ; aucune photo trouvée n’est revendiquée."
+    },
+    {
+      "recipe_id": 35,
+      "title": "Agneau aux pruneaux",
+      "search_query": "Agneau aux pruneaux photographie réelle plat terminé licence commerciale",
+      "status": "not_searched",
+      "source_page_url": null,
+      "note": "Recherche à effectuer ; aucune photo trouvée n’est revendiquée."
+    },
+    {
+      "recipe_id": 36,
+      "title": "Mouton aux carottes et pommes de terre",
+      "search_query": "Mouton aux carottes et pommes de terre photographie réelle plat terminé licence commerciale",
+      "status": "not_searched",
+      "source_page_url": null,
+      "note": "Recherche à effectuer ; aucune photo trouvée n’est revendiquée."
+    },
+    {
+      "recipe_id": 37,
+      "title": "Chèvre mijotée à la tomate",
+      "search_query": "Chèvre mijotée à la tomate photographie réelle plat terminé licence commerciale",
+      "status": "not_searched",
+      "source_page_url": null,
+      "note": "Recherche à effectuer ; aucune photo trouvée n’est revendiquée."
+    },
+    {
+      "recipe_id": 38,
+      "title": "Porc braisé au citron et à l’ail",
+      "search_query": "Porc braisé au citron et à l’ail photographie réelle plat terminé licence commerciale",
+      "status": "not_searched",
+      "source_page_url": null,
+      "note": "Recherche à effectuer ; aucune photo trouvée n’est revendiquée."
+    },
+    {
+      "recipe_id": 39,
+      "title": "Bobotie simplifié",
+      "search_query": "Bobotie simplifié photographie réelle plat terminé licence commerciale",
+      "status": "source_identified",
+      "source_page_url": "https://commons.wikimedia.org/wiki/Category:Bobotie",
+      "note": "Choisir le plat terminé avec couverture aux œufs, pas la farce crue."
+    },
+    {
+      "recipe_id": 40,
+      "title": "Bœuf au berbéré doux",
+      "search_query": "Bœuf au berbéré doux photographie réelle plat terminé licence commerciale",
+      "status": "not_searched",
+      "source_page_url": null,
+      "note": "Recherche à effectuer ; aucune photo trouvée n’est revendiquée."
+    },
+    {
+      "recipe_id": 41,
+      "title": "Tilapia braisé au citron",
+      "search_query": "Tilapia braisé au citron photographie réelle plat terminé licence commerciale",
+      "status": "not_searched",
+      "source_page_url": null,
+      "note": "Recherche à effectuer ; aucune photo trouvée n’est revendiquée."
+    },
+    {
+      "recipe_id": 42,
+      "title": "Poisson à la sauce tomate",
+      "search_query": "Poisson à la sauce tomate photographie réelle plat terminé licence commerciale",
+      "status": "not_searched",
+      "source_page_url": null,
+      "note": "Recherche à effectuer ; aucune photo trouvée n’est revendiquée."
+    },
+    {
+      "recipe_id": 43,
+      "title": "Poisson yassa",
+      "search_query": "Poisson yassa photographie réelle plat terminé licence commerciale",
+      "status": "not_searched",
+      "source_page_url": null,
+      "note": "Recherche à effectuer ; aucune photo trouvée n’est revendiquée."
+    },
+    {
+      "recipe_id": 44,
+      "title": "Thieboudienne simplifié",
+      "search_query": "Thieboudienne simplifié photographie réelle plat terminé licence commerciale",
+      "status": "source_identified",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Thieboudienne.JPG",
+      "note": "Fichier du plat repéré ; comparer légumes et couleur avec notre adaptation."
+    },
+    {
+      "recipe_id": 45,
+      "title": "Crevettes ail et gingembre",
+      "search_query": "Crevettes ail et gingembre photographie réelle plat terminé licence commerciale",
+      "status": "not_searched",
+      "source_page_url": null,
+      "note": "Recherche à effectuer ; aucune photo trouvée n’est revendiquée."
+    },
+    {
+      "recipe_id": 46,
+      "title": "Crevettes au lait de coco",
+      "search_query": "Crevettes au lait de coco photographie réelle plat terminé licence commerciale",
+      "status": "not_searched",
+      "source_page_url": null,
+      "note": "Recherche à effectuer ; aucune photo trouvée n’est revendiquée."
+    },
+    {
+      "recipe_id": 47,
+      "title": "Poisson à la chermoula",
+      "search_query": "Poisson à la chermoula photographie réelle plat terminé licence commerciale",
+      "status": "not_searched",
+      "source_page_url": null,
+      "note": "Recherche à effectuer ; aucune photo trouvée n’est revendiquée."
+    },
+    {
+      "recipe_id": 48,
+      "title": "Calamars à la tomate",
+      "search_query": "Calamars à la tomate photographie réelle plat terminé licence commerciale",
+      "status": "not_searched",
+      "source_page_url": null,
+      "note": "Recherche à effectuer ; aucune photo trouvée n’est revendiquée."
+    },
+    {
+      "recipe_id": 49,
+      "title": "Maquereau au four et oignons",
+      "search_query": "Maquereau au four et oignons photographie réelle plat terminé licence commerciale",
+      "status": "not_searched",
+      "source_page_url": null,
+      "note": "Recherche à effectuer ; aucune photo trouvée n’est revendiquée."
+    },
+    {
+      "recipe_id": 50,
+      "title": "Poisson aux épinards et coco",
+      "search_query": "Poisson aux épinards et coco photographie réelle plat terminé licence commerciale",
+      "status": "not_searched",
+      "source_page_url": null,
+      "note": "Recherche à effectuer ; aucune photo trouvée n’est revendiquée."
+    },
+    {
+      "recipe_id": 51,
+      "title": "Riz au gras au poulet",
+      "search_query": "Riz au gras au poulet photographie réelle plat terminé licence commerciale",
+      "status": "not_searched",
+      "source_page_url": null,
+      "note": "Recherche à effectuer ; aucune photo trouvée n’est revendiquée."
+    },
+    {
+      "recipe_id": 52,
+      "title": "Jollof rice simplifié",
+      "search_query": "Jollof rice simplifié photographie réelle plat terminé licence commerciale",
+      "status": "source_identified",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Jollof_rice.jpg",
+      "note": "Fichier de riz jollof repéré ; vérifier les garnitures visibles."
+    },
+    {
+      "recipe_id": 53,
+      "title": "Waakye simplifié",
+      "search_query": "Waakye simplifié photographie réelle plat terminé licence commerciale",
+      "status": "source_identified",
+      "source_page_url": "https://commons.wikimedia.org/wiki/Category:Waakye",
+      "note": "Attention : notre version sans feuilles de sorgho est moins colorée. Ne pas présenter un résultat identique garanti."
+    },
+    {
+      "recipe_id": 54,
+      "title": "Riz coco swahili",
+      "search_query": "Riz coco swahili photographie réelle plat terminé licence commerciale",
+      "status": "not_searched",
+      "source_page_url": null,
+      "note": "Recherche à effectuer ; aucune photo trouvée n’est revendiquée."
+    },
+    {
+      "recipe_id": 55,
+      "title": "Pilau aux légumes",
+      "search_query": "Pilau aux légumes photographie réelle plat terminé licence commerciale",
+      "status": "not_searched",
+      "source_page_url": null,
+      "note": "Recherche à effectuer ; aucune photo trouvée n’est revendiquée."
+    },
+    {
+      "recipe_id": 56,
+      "title": "Couscous aux sept légumes",
+      "search_query": "Couscous aux sept légumes photographie réelle plat terminé licence commerciale",
+      "status": "not_searched",
+      "source_page_url": null,
+      "note": "Recherche à effectuer ; aucune photo trouvée n’est revendiquée."
+    },
+    {
+      "recipe_id": 57,
+      "title": "Thiéré aux légumes",
+      "search_query": "Thiéré aux légumes photographie réelle plat terminé licence commerciale",
+      "status": "not_searched",
+      "source_page_url": null,
+      "note": "Recherche à effectuer ; aucune photo trouvée n’est revendiquée."
+    },
+    {
+      "recipe_id": 58,
+      "title": "Fonio aux légumes",
+      "search_query": "Fonio aux légumes photographie réelle plat terminé licence commerciale",
+      "status": "not_searched",
+      "source_page_url": null,
+      "note": "Recherche à effectuer ; aucune photo trouvée n’est revendiquée."
+    },
+    {
+      "recipe_id": 59,
+      "title": "Riz sauté festif aux légumes",
+      "search_query": "Riz sauté festif aux légumes photographie réelle plat terminé licence commerciale",
+      "status": "not_searched",
+      "source_page_url": null,
+      "note": "Recherche à effectuer ; aucune photo trouvée n’est revendiquée."
+    },
+    {
+      "recipe_id": 60,
+      "title": "Riz tomate aux haricots rouges",
+      "search_query": "Riz tomate aux haricots rouges photographie réelle plat terminé licence commerciale",
+      "status": "not_searched",
+      "source_page_url": null,
+      "note": "Recherche à effectuer ; aucune photo trouvée n’est revendiquée."
+    },
+    {
+      "recipe_id": 61,
+      "title": "Red red sans poisson",
+      "search_query": "Red red sans poisson photographie réelle plat terminé licence commerciale",
+      "status": "source_identified",
+      "source_page_url": "https://commons.wikimedia.org/wiki/Category:Red_red",
+      "note": "Écarter les versions avec poisson ou poulet pour notre recette végétale."
+    },
+    {
+      "recipe_id": 62,
+      "title": "Ewa riro simplifié",
+      "search_query": "Ewa riro simplifié photographie réelle plat terminé licence commerciale",
+      "status": "not_searched",
+      "source_page_url": null,
+      "note": "Recherche à effectuer ; aucune photo trouvée n’est revendiquée."
+    },
+    {
+      "recipe_id": 63,
+      "title": "Moi-moi simplifiés au four",
+      "search_query": "Moi-moi simplifiés au four photographie réelle plat terminé licence commerciale",
+      "status": "source_identified",
+      "source_page_url": "https://commons.wikimedia.org/wiki/Category:Moin_moin",
+      "note": "Écarter les pièces avec poisson ou œuf visibles, absents de notre version."
+    },
+    {
+      "recipe_id": 64,
+      "title": "Misir wat doux",
+      "search_query": "Misir wat doux photographie réelle plat terminé licence commerciale",
+      "status": "not_searched",
+      "source_page_url": null,
+      "note": "Recherche à effectuer ; aucune photo trouvée n’est revendiquée."
+    },
+    {
+      "recipe_id": 65,
+      "title": "Shiro simplifié",
+      "search_query": "Shiro simplifié photographie réelle plat terminé licence commerciale",
+      "status": "not_searched",
+      "source_page_url": null,
+      "note": "Recherche à effectuer ; aucune photo trouvée n’est revendiquée."
+    },
+    {
+      "recipe_id": 66,
+      "title": "Gomen aux épinards",
+      "search_query": "Gomen aux épinards photographie réelle plat terminé licence commerciale",
+      "status": "not_searched",
+      "source_page_url": null,
+      "note": "Recherche à effectuer ; aucune photo trouvée n’est revendiquée."
+    },
+    {
+      "recipe_id": 67,
+      "title": "Chakalaka doux",
+      "search_query": "Chakalaka doux photographie réelle plat terminé licence commerciale",
+      "status": "source_identified",
+      "source_page_url": "https://commons.wikimedia.org/wiki/Category:Chakalaka",
+      "note": "Choisir légumes terminés ; vérifier que les haricots sont cohérents."
+    },
+    {
+      "recipe_id": 68,
+      "title": "Sukuma wiki au chou vert",
+      "search_query": "Sukuma wiki au chou vert photographie réelle plat terminé licence commerciale",
+      "status": "not_searched",
+      "source_page_url": null,
+      "note": "Recherche à effectuer ; aucune photo trouvée n’est revendiquée."
+    },
+    {
+      "recipe_id": 69,
+      "title": "Efo riro simplifié sans viande",
+      "search_query": "Efo riro simplifié sans viande photographie réelle plat terminé licence commerciale",
+      "status": "not_searched",
+      "source_page_url": null,
+      "note": "Recherche à effectuer ; aucune photo trouvée n’est revendiquée."
+    },
+    {
+      "recipe_id": 70,
+      "title": "Aubergines à la tomate et aux pois chiches",
+      "search_query": "Aubergines à la tomate et aux pois chiches photographie réelle plat terminé licence commerciale",
+      "status": "not_searched",
+      "source_page_url": null,
+      "note": "Recherche à effectuer ; aucune photo trouvée n’est revendiquée."
+    },
+    {
+      "recipe_id": 71,
+      "title": "Dambou simplifié au couscous",
+      "search_query": "Dambou simplifié au couscous photographie réelle plat terminé licence commerciale",
+      "status": "not_searched",
+      "source_page_url": null,
+      "note": "Recherche à effectuer ; aucune photo trouvée n’est revendiquée."
+    },
+    {
+      "recipe_id": 72,
+      "title": "Plantains bouillis",
+      "search_query": "Plantains bouillis photographie réelle plat terminé licence commerciale",
+      "status": "not_searched",
+      "source_page_url": null,
+      "note": "Recherche à effectuer ; aucune photo trouvée n’est revendiquée."
+    },
+    {
+      "recipe_id": 73,
+      "title": "Plantains rôtis au gingembre",
+      "search_query": "Plantains rôtis au gingembre photographie réelle plat terminé licence commerciale",
+      "status": "not_searched",
+      "source_page_url": null,
+      "note": "Recherche à effectuer ; aucune photo trouvée n’est revendiquée."
+    },
+    {
+      "recipe_id": 74,
+      "title": "Purée de patate douce au coco",
+      "search_query": "Purée de patate douce au coco photographie réelle plat terminé licence commerciale",
+      "status": "not_searched",
+      "source_page_url": null,
+      "note": "Recherche à effectuer ; aucune photo trouvée n’est revendiquée."
+    },
+    {
+      "recipe_id": 75,
+      "title": "Miondo poêlé aux oignons",
+      "search_query": "Miondo poêlé aux oignons photographie réelle plat terminé licence commerciale",
+      "status": "not_searched",
+      "source_page_url": null,
+      "note": "Recherche à effectuer ; aucune photo trouvée n’est revendiquée."
+    },
+    {
+      "recipe_id": 76,
+      "title": "Ugali de maïs",
+      "search_query": "Ugali de maïs photographie réelle plat terminé licence commerciale",
+      "status": "not_searched",
+      "source_page_url": null,
+      "note": "Recherche à effectuer ; aucune photo trouvée n’est revendiquée."
+    },
+    {
+      "recipe_id": 77,
+      "title": "Chapatis simples",
+      "search_query": "Chapatis simples photographie réelle plat terminé licence commerciale",
+      "status": "not_searched",
+      "source_page_url": null,
+      "note": "Recherche à effectuer ; aucune photo trouvée n’est revendiquée."
+    },
+    {
+      "recipe_id": 78,
+      "title": "Pain de semoule à la poêle",
+      "search_query": "Pain de semoule à la poêle photographie réelle plat terminé licence commerciale",
+      "status": "not_searched",
+      "source_page_url": null,
+      "note": "Recherche à effectuer ; aucune photo trouvée n’est revendiquée."
+    },
+    {
+      "recipe_id": 79,
+      "title": "Sauce tomate-oignons de fête",
+      "search_query": "Sauce tomate-oignons de fête photographie réelle plat terminé licence commerciale",
+      "status": "not_searched",
+      "source_page_url": null,
+      "note": "Recherche à effectuer ; aucune photo trouvée n’est revendiquée."
+    },
+    {
+      "recipe_id": 80,
+      "title": "Condiment oignon-citron sans piment",
+      "search_query": "Condiment oignon-citron sans piment photographie réelle plat terminé licence commerciale",
+      "status": "not_searched",
+      "source_page_url": null,
+      "note": "Recherche à effectuer ; aucune photo trouvée n’est revendiquée."
+    },
+    {
+      "recipe_id": 81,
+      "title": "Dèguè au mil et au yaourt",
+      "search_query": "Dèguè au mil et au yaourt photographie réelle plat terminé licence commerciale",
+      "status": "license_read_visual_pending",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Du_d%C3%AAgu%C3%AA.jpg",
+      "note": "La source décrit lait caillé et semoule de mil, pas exactement notre yaourt vanillé : variante à légender.",
+      "author": "BeraDigle",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "width": 3024,
+      "height": 4032,
+      "original": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Du_d%C3%AAgu%C3%AA.jpg",
+      "local_preview": null
+    },
+    {
+      "recipe_id": 82,
+      "title": "Thiakry coco",
+      "search_query": "Thiakry coco photographie réelle plat terminé licence commerciale",
+      "status": "source_identified",
+      "source_page_url": "https://commons.wikimedia.org/wiki/Category:Chakery",
+      "note": "La coco doit correspondre à la variante ; aucune photo exacte sélectionnée."
+    },
+    {
+      "recipe_id": 83,
+      "title": "Bouillie de mil sucrée",
+      "search_query": "Bouillie de mil sucrée photographie réelle plat terminé licence commerciale",
+      "status": "not_searched",
+      "source_page_url": null,
+      "note": "Recherche à effectuer ; aucune photo trouvée n’est revendiquée."
+    },
+    {
+      "recipe_id": 84,
+      "title": "Yovo doko, beignets sucrés",
+      "search_query": "Yovo doko, beignets sucrés photographie réelle plat terminé licence commerciale",
+      "status": "source_identified",
+      "source_page_url": "https://commons.wikimedia.org/wiki/Category:Nourriture_terrestre_LSP",
+      "note": "Une photo de pause au yovo doko a été repérée ; risque de scène de groupe, chercher un gros plan du plat."
+    },
+    {
+      "recipe_id": 85,
+      "title": "Mandazi au coco",
+      "search_query": "Mandazi au coco photographie réelle plat terminé licence commerciale",
+      "status": "source_identified",
+      "source_page_url": "https://commons.wikimedia.org/wiki/Category:Mandazi",
+      "note": "Choisir des pièces triangulaires finies et vérifier variante coco."
+    },
+    {
+      "recipe_id": 86,
+      "title": "Chin-chin croustillants",
+      "search_query": "Chin-chin croustillants photographie réelle plat terminé licence commerciale",
+      "status": "source_identified",
+      "source_page_url": "https://commons.wikimedia.org/wiki/Category:Chin_chin",
+      "note": "Ne pas sélectionner le fichier Unfried chin chin, qui montre un produit cru."
+    },
+    {
+      "recipe_id": 87,
+      "title": "Mikaté, petits beignets",
+      "search_query": "Mikaté, petits beignets photographie réelle plat terminé licence commerciale",
+      "status": "not_searched",
+      "source_page_url": null,
+      "note": "Recherche à effectuer ; aucune photo trouvée n’est revendiquée."
+    },
+    {
+      "recipe_id": 88,
+      "title": "Malva pudding simplifié",
+      "search_query": "Malva pudding simplifié photographie réelle plat terminé licence commerciale",
+      "status": "source_identified",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Malva_Pudding.jpg",
+      "note": "Fichier du dessert terminé repéré ; droits et dressage à vérifier."
+    },
+    {
+      "recipe_id": 89,
+      "title": "Mhalbi, crème de riz",
+      "search_query": "Mhalbi, crème de riz photographie réelle plat terminé licence commerciale",
+      "status": "not_searched",
+      "source_page_url": null,
+      "note": "Recherche à effectuer ; aucune photo trouvée n’est revendiquée."
+    },
+    {
+      "recipe_id": 90,
+      "title": "Salade de fruits tropicaux au gingembre",
+      "search_query": "Salade de fruits tropicaux au gingembre photographie réelle plat terminé licence commerciale",
+      "status": "not_searched",
+      "source_page_url": null,
+      "note": "Recherche à effectuer ; aucune photo trouvée n’est revendiquée."
+    },
+    {
+      "recipe_id": 91,
+      "title": "Bissap rouge à la menthe",
+      "search_query": "Bissap rouge à la menthe photographie réelle plat terminé licence commerciale",
+      "status": "source_identified",
+      "source_page_url": "https://commons.wikimedia.org/wiki/Category:Bissap",
+      "note": "Choisir un verre de boisson rouge terminée, pas les fleurs sèches ni une bouteille de sirop."
+    },
+    {
+      "recipe_id": 92,
+      "title": "Bissap blanc au citron vert",
+      "search_query": "Bissap blanc au citron vert photographie réelle plat terminé licence commerciale",
+      "status": "not_searched",
+      "source_page_url": null,
+      "note": "Recherche à effectuer ; aucune photo trouvée n’est revendiquée."
+    },
+    {
+      "recipe_id": 93,
+      "title": "Gnamakoudji, jus de gingembre",
+      "search_query": "Gnamakoudji, jus de gingembre photographie réelle plat terminé licence commerciale",
+      "status": "not_searched",
+      "source_page_url": null,
+      "note": "Recherche à effectuer ; aucune photo trouvée n’est revendiquée."
+    },
+    {
+      "recipe_id": 94,
+      "title": "Jus de tamarin",
+      "search_query": "Jus de tamarin photographie réelle plat terminé licence commerciale",
+      "status": "not_searched",
+      "source_page_url": null,
+      "note": "Recherche à effectuer ; aucune photo trouvée n’est revendiquée."
+    },
+    {
+      "recipe_id": 95,
+      "title": "Boisson au pain de singe",
+      "search_query": "Boisson au pain de singe photographie réelle plat terminé licence commerciale",
+      "status": "source_identified",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Baobab_juice_-_final_straining_with_sieve.jpg",
+      "note": "Photo d’étape de filtration, non du service final : impropre à la page résultat, chercher mieux."
+    },
+    {
+      "recipe_id": 96,
+      "title": "Jus d’ananas à la menthe",
+      "search_query": "Jus d’ananas à la menthe photographie réelle plat terminé licence commerciale",
+      "status": "not_searched",
+      "source_page_url": null,
+      "note": "Recherche à effectuer ; aucune photo trouvée n’est revendiquée."
+    },
+    {
+      "recipe_id": 97,
+      "title": "Limonade au citron vert et gingembre",
+      "search_query": "Limonade au citron vert et gingembre photographie réelle plat terminé licence commerciale",
+      "status": "not_searched",
+      "source_page_url": null,
+      "note": "Recherche à effectuer ; aucune photo trouvée n’est revendiquée."
+    },
+    {
+      "recipe_id": 98,
+      "title": "Arachides caramélisées",
+      "search_query": "Arachides caramélisées photographie réelle plat terminé licence commerciale",
+      "status": "not_searched",
+      "source_page_url": null,
+      "note": "Recherche à effectuer ; aucune photo trouvée n’est revendiquée."
+    },
+    {
+      "recipe_id": 99,
+      "title": "Kokada simplifiée, bouchées coco",
+      "search_query": "Kokada simplifiée, bouchées coco photographie réelle plat terminé licence commerciale",
+      "status": "not_searched",
+      "source_page_url": null,
+      "note": "Recherche à effectuer ; aucune photo trouvée n’est revendiquée."
+    },
+    {
+      "recipe_id": 100,
+      "title": "Banane rôtie au coco et citron vert",
+      "search_query": "Banane rôtie au coco et citron vert photographie réelle plat terminé licence commerciale",
+      "status": "not_searched",
+      "source_page_url": null,
+      "note": "Recherche à effectuer ; aucune photo trouvée n’est revendiquée."
+    }
+  ]
+}

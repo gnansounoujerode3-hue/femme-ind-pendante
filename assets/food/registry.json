@@ -1,0 +1,143 @@
+{
+  "schema_version": 1,
+  "description": "Photographies uniquement pour les futures éditions. Illustration IA exclue. Cinq pages de licence consultées, aucune photo approuvée pour publication finale.",
+  "images": [
+    {
+      "id": "table-festive-ia-01",
+      "recipe_id": null,
+      "local_path": "assets/food/table-festive-illustration.png",
+      "source_page_url": null,
+      "author": "Illustration générée par IA via l’outil de génération d’images de la session Arena",
+      "license": "Conditions du service de génération à vérifier avant commercialisation",
+      "license_evidence": "Génération effectuée dans cette session ; aucune licence commerciale vérifiée ou archivée",
+      "verified_on": null,
+      "created_on": "2026-11-18",
+      "attribution": "Illustration générée par IA — ambiance culinaire, non photo de recette testée",
+      "commercial_use": null,
+      "modifications_allowed": null,
+      "modifications": "Recadrages pour couverture et ouverture de chapitre ; aucune retouche du plat",
+      "status": "rejected",
+      "usage": "Exclue par demande explicite : aucune image générée par IA autorisée dans les prochaines éditions."
+    },
+    {
+      "id": "photo-recherche-004",
+      "recipe_id": 4,
+      "local_path": "assets/food/previews/recette-004.jpg",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Kelewele,_a_Ghanaian_snack.jpg",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Kelewele%2C_a_Ghanaian_snack.jpg",
+      "author": "Maame1Yaa",
+      "license": "CC0 1.0",
+      "license_evidence": "https://commons.wikimedia.org/wiki/File:Kelewele,_a_Ghanaian_snack.jpg#Licensing",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "verified_on": "2026-11-18",
+      "attribution": "Maame1Yaa — CC0 1.0 — Wikimedia Commons",
+      "commercial_use": true,
+      "modifications_allowed": true,
+      "modifications": "Aucune retouche ; miniature du moteur de recherche pour revue uniquement si disponible.",
+      "status": "pending",
+      "image_kind": "photograph",
+      "usage": "Candidate de recherche seulement ; télécharger et contrôler l’original avant mise en page.",
+      "original_dimensions": [
+        2160,
+        3840
+      ],
+      "editorial_note": "Photo réelle vue : bananes en tranches, plus foncées que notre présentation en dés ; qualité éditoriale à revoir."
+    },
+    {
+      "id": "photo-recherche-011",
+      "recipe_id": 11,
+      "local_path": "assets/food/previews/recette-011.jpg",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Amiw%C3%B4_accompagn%C3%A9_de_la_viande_de_poulet.jpg",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/2/28/Amiw%C3%B4_accompagn%C3%A9_de_la_viande_de_poulet.jpg",
+      "author": "Aimeabibis",
+      "license": "CC BY-SA 4.0",
+      "license_evidence": "https://commons.wikimedia.org/wiki/File:Amiw%C3%B4_accompagn%C3%A9_de_la_viande_de_poulet.jpg#Licensing",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "verified_on": "2026-11-18",
+      "attribution": "Aimeabibis — CC BY-SA 4.0 — Wikimedia Commons",
+      "commercial_use": true,
+      "modifications_allowed": true,
+      "modifications": "Aucune retouche ; miniature du moteur de recherche pour revue uniquement si disponible.",
+      "status": "pending",
+      "image_kind": "photograph",
+      "usage": "Candidate de recherche seulement ; télécharger et contrôler l’original avant mise en page.",
+      "original_dimensions": [
+        4608,
+        3456
+      ],
+      "editorial_note": "Photo réelle vue : amiwo accompagné de poulet ; légender cet accompagnement, non inclus dans la fiche 11 seule."
+    },
+    {
+      "id": "photo-recherche-018",
+      "recipe_id": 18,
+      "local_path": "assets/food/previews/recette-018.jpg",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Ablo.jpg",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/7/70/Ablo.jpg",
+      "author": "Rayman3640",
+      "license": "CC BY-SA 3.0 (parmi les licences proposées)",
+      "license_evidence": "https://commons.wikimedia.org/wiki/File:Ablo.jpg#Licensing",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "verified_on": "2026-11-18",
+      "attribution": "Rayman3640 — CC BY-SA 3.0 (parmi les licences proposées) — Wikimedia Commons",
+      "commercial_use": true,
+      "modifications_allowed": true,
+      "modifications": "Aucune retouche ; miniature du moteur de recherche pour revue uniquement si disponible.",
+      "status": "pending",
+      "image_kind": "photograph",
+      "usage": "Candidate de recherche seulement ; télécharger et contrôler l’original avant mise en page.",
+      "original_dimensions": [
+        3072,
+        2304
+      ],
+      "editorial_note": "La source décrit des ablos de maïs ; notre adaptation contient du riz et du maïs. À signaler comme variante."
+    },
+    {
+      "id": "photo-recherche-022",
+      "recipe_id": 22,
+      "local_path": "assets/food/previews/recette-022.jpg",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Yassapoulet.JPG",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/f/fc/Yassapoulet.JPG",
+      "author": "KVDP",
+      "license": "Domaine public, cession par l’auteur",
+      "license_evidence": "https://commons.wikimedia.org/wiki/File:Yassapoulet.JPG#Licensing",
+      "license_url": "https://commons.wikimedia.org/wiki/File:Yassapoulet.JPG#Licensing",
+      "verified_on": "2026-11-18",
+      "attribution": "KVDP — Domaine public, cession par l’auteur — Wikimedia Commons",
+      "commercial_use": true,
+      "modifications_allowed": true,
+      "modifications": "Aucune retouche ; miniature du moteur de recherche pour revue uniquement si disponible.",
+      "status": "pending",
+      "image_kind": "photograph",
+      "usage": "Candidate de recherche seulement ; télécharger et contrôler l’original avant mise en page.",
+      "original_dimensions": [
+        2816,
+        2112
+      ],
+      "editorial_note": "Photo réelle vue : poulet aux oignons et riz à côté ; présentation familiale, qualité éditoriale à revoir."
+    },
+    {
+      "id": "photo-recherche-081",
+      "recipe_id": 81,
+      "local_path": null,
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Du_d%C3%AAgu%C3%AA.jpg",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Du_d%C3%AAgu%C3%AA.jpg",
+      "author": "BeraDigle",
+      "license": "CC BY-SA 4.0",
+      "license_evidence": "https://commons.wikimedia.org/wiki/File:Du_d%C3%AAgu%C3%AA.jpg#Licensing",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "verified_on": "2026-11-18",
+      "attribution": "BeraDigle — CC BY-SA 4.0 — Wikimedia Commons",
+      "commercial_use": true,
+      "modifications_allowed": true,
+      "modifications": "Aucune retouche ; miniature du moteur de recherche pour revue uniquement si disponible.",
+      "status": "pending",
+      "image_kind": "photograph",
+      "usage": "Candidate de recherche seulement ; télécharger et contrôler l’original avant mise en page.",
+      "original_dimensions": [
+        3024,
+        4032
+      ],
+      "editorial_note": "La source décrit lait caillé et semoule de mil, pas exactement notre yaourt vanillé : variante à légender."
+    }
+  ]
+}

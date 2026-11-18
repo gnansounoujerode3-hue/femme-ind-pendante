@@ -1,0 +1,6 @@
+# Outils locaux pour génération, images, audit et préparation EPUB.
+reportlab==5.1.0
+pypdf==7.1.1
+Pillow==13.0.0
+PyMuPDF==2.1
+EbookLib==0.21
