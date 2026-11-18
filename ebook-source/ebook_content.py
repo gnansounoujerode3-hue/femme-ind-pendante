@@ -1,262 +1,261 @@
 # -*- coding: utf-8 -*-
-"""Contenu éditorial structuré de l'ebook et du Workbook Jour 2 rempli,
-strictement aligné sur WORKBOOK-OFFICIEL-JOUR-2-CREE-TON-PREMIER-PRODUIT-DIGITAL.pdf.
+"""Contenu éditorial structuré de l'ebook et du Workbook Jour 2 rempli.
+Rédaction naturelle destinée au lecteur final pour l'ebook, et correspondance
+exacte page par page avec le Workbook Jour 2 officiel pour le dossier d'atelier.
 """
 
 BUDGET_GUIDE = [
     {
         "tier": "Petit",
         "label": "Petit budget",
-        "range": "Moins de 50 000 FCFA (environ 0 à 80 $ USD)",
+        "range": "Moins de 50 000 FCFA (0 à 80 USD)",
         "desc": (
-            "Activités démarrables depuis chez soi avec un smartphone, une compétence "
-            "ou un petit kit de base. Zéro local commercial exigé au départ : idéal "
-            "pour tester le marché dès cette semaine."
+            "Activités démarrables depuis chez soi avec un smartphone, un savoir-faire "
+            "ou un outillage simple. Aucun local commercial requis au départ : idéal pour "
+            "tester la demande dès cette semaine."
         ),
     },
     {
         "tier": "Moyen",
         "label": "Budget moyen",
-        "range": "50 000 à 300 000 FCFA (environ 80 à 500 $ USD)",
+        "range": "50 000 à 300 000 FCFA (80 à 500 USD)",
         "desc": (
-            "Nécessite un premier stock ciblé, un équipement semi-pro (moulin, machine "
-            "à coudre, kit solaire, congélateur, outillage) ou une petite enveloppe "
-            "de mise en marché locale."
+            "Demande un premier stock ciblé, un équipement semi-professionnel (moulin, "
+            "machine à coudre, kit solaire, congélateur, outillage) ou une petite "
+            "enveloppe de mise sur le marché locale."
         ),
     },
     {
         "tier": "Structuré",
         "label": "Budget structuré",
-        "range": "300 000 FCFA et plus (500 $ USD et +)",
+        "range": "300 000 FCFA et plus (500 USD et plus)",
         "desc": (
-            "Projets à forte barrière d'entrée (atelier équipé, chambres froides, "
-            "véhicule utilitaire, laboratoire agréé ou équipe salariée) accessibles "
-            "via épargne, association, tontine business ou co-investissement diaspora."
+            "Activités à barrière d'entrée plus élevée (atelier équipé, chambre froide, "
+            "véhicule utilitaire, laboratoire ou équipe dédiée) finançables par épargne, "
+            "association locale ou partenariat avec la diaspora."
         ),
     },
 ]
 
 PART_01_INTRO = {
     "num": "01",
-    "kicker": "PARTIE 01 • INTRODUCTION",
-    "title": "Pourquoi 2027 est le meilleur moment pour lancer ton business en Afrique",
-    "workbook_question": "Réponse à la section 01 du Workbook : Quel est le problème et pourquoi est-il important ?",
+    "kicker": "Première partie · Introduction",
+    "title": "Pourquoi 2027 est le moment idéal pour lancer un business en Afrique",
+    "epigraph": "Comprendre les blocages réels du terrain et s'appuyer sur cinq lames de fond économiques déjà à l'œuvre sur le continent.",
     "lead": (
-        "Chaque jour, des milliers de jeunes diplômés, de salariés, de femmes actives "
-        "et de membres de la diaspora africaine rêvent d'indépendance financière. "
-        "Pourtant, la majorité reste bloquée au point de départ pour deux raisons très "
-        "simples : soit ils ne savent pas quelle idée rentable choisir face aux réalités "
-        "locales, soit ils copient un business saturé et perdent leurs économies faute de méthode."
+        "Chaque jour, des milliers de jeunes diplômés, de salariés, de femmes actives et "
+        "de membres de la diaspora souhaitent bâtir une source de revenus indépendante. "
+        "Pourtant, la majorité reste bloquée avant même de vendre : soit faute d'identifier "
+        "une idée adaptée au pouvoir d'achat réel autour d'eux, soit après avoir imité un "
+        "commerce déjà saturé sans vérifier la demande."
     ),
     "problem_blocks": [
         (
-            "Le vrai blocage n'est pas le manque de courage, mais le manque de filtre",
-            "En Afrique francophone, l'envie d'entreprendre est immense. Mais entre les idées "
-            "importées d'Europe qui ne collent pas au pouvoir d'achat local et les projets "
-            "qui demandent des millions de FCFA avant même le premier client, beaucoup "
-            "finissent par abandonner avant d'avoir essayé."
+            "Le vrai frein n'est pas le manque de courage, mais l'absence de filtre",
+            "En Afrique francophone, l'énergie entrepreneuriale est immense. Entre des "
+            "concepts importés qui supposent une logistique absente et des projets lourds "
+            "qui immobilisent des millions de FCFA avant la première vente, beaucoup "
+            "s'épuisent avant d'avoir encaissé un seul client."
         ),
         (
-            "Pourquoi agir maintenant pour 2027 ?",
-            "L'année 2027 marque l'accélération de cinq vagues économiques majeures sur le "
-            "continent. Ceux qui se positionnent aujourd'hui avec une offre simple, locale "
-            "et validée rapidement prendront une longueur d'avance décisive."
+            "Cinq vagues économiques qui favorisent les projets agiles",
+            "En 2027, démarrer léger avec une offre simple, locale et testée en quelques "
+            "jours offre un avantage décisif sur les structures lentes et coûteuses."
         ),
     ],
     "trends_2027": [
         (
-            "1. L'explosion des paiements mobiles et du commerce WhatsApp",
+            "Paiements mobiles et commerce conversationnel",
             "Du Bénin au Sénégal, de la Côte d'Ivoire au Cameroun, vendre sans boutique "
-            "physique via WhatsApp Business, Facebook, TikTok et Mobile Money est devenu la norme."
+            "physique grâce à WhatsApp Business, Facebook, TikTok et Mobile Money fait partie des usages quotidiens."
         ),
         (
-            "2. Le virage du « Consommons Local » et de la transformation alimentaire",
-            "Face à la hausse des prix des produits importés, les ménages et la diaspora "
-            "plébiscitent les farines, jus, épices, cosmétiques et textiles fabriqués localement avec hygiène et bel emballage."
+            "Essor du « Consommons local » transformé",
+            "Face au prix des importations, les ménages et la diaspora recherchent des "
+            "farines infantiles, jus, épices, soins naturels et textiles locaux présentés proprement."
         ),
         (
-            "3. L'intelligence artificielle accessible sur simple smartphone",
-            "Un indépendant équipé d'IA produit désormais en 2 heures des visuels, scripts, "
-            "devis, formations ou contenus clients qui demandaient autrefois une agence entière."
+            "Outils numériques accessibles sur téléphone",
+            "Un prestataire indépendant équipé d'un smartphone produit en deux heures des "
+            "visuels, devis, catalogues, supports de formation et contenus qui exigeaient autrefois toute une agence."
         ),
         (
-            "4. L'urgence énergétique et l'économie verte",
-            "Le coût élevé du réseau électrique pousse commerces, exploitations agricoles et "
-            "ménages vers les kits solaires, le froid solaire, le recyclage et l'eau potable de proximité."
+            "Transition énergétique et sobriété",
+            "Le coût du réseau pousse commerces, ateliers agricoles et foyers vers les kits "
+            "solaires, le froid autonome, le recyclage utile et l'eau potable de proximité."
         ),
         (
-            "5. L'externalisation de services vers la diaspora et les PME locales",
-            "Les PME africaines cherchent à externaliser comptabilité, recrutement, livraison "
-            "et relation client ; la diaspora paie volontiers des prestataires fiables restés au pays."
+            "Externalisation pour PME locales et diaspora",
+            "Les petites entreprises préfèrent déléguer comptabilité, prospection, livraison "
+            "et accueil client ; la diaspora rémunère volontiers des relais fiables restés au pays."
         ),
     ],
     "profiles": [
-        ("Étudiant / Jeune diplômé", "Petit budget (< 50 000 FCFA)", "Secteurs 04 (Digital/IA), 05 (EdTech), 03 (Social commerce), 12 (Contenu)"),
-        ("Salarié en quête d'un revenu bis", "Petit à Moyen budget", "Secteurs 02 (Livraison weekend), 08 (Immobilier), 16 (B2B), 17 (Fintech)"),
-        ("Femme active / Maman entrepreneure", "Petit à Moyen budget", "Secteurs 01 (Agro-transfo), 06 (Beauté), 07 (Mode), 18 (Enfance)"),
-        ("Artisan / Technicien qualifié", "Moyen budget", "Secteurs 10 (Solaire), 15 (Artisanat), 20 (BTP & Réparation)"),
-        ("Investisseur / Diaspora en partenariat", "Budget Structuré", "Secteurs 09 (Logistique), 13 (Tourisme), 14 (Élevage/Pisciculture), 01 (Unités)"),
+        ("Étudiant ou jeune diplômé", "Petit budget (moins de 50 000 FCFA)", "Secteurs 04 (Digital), 05 (Formation), 03 (Social commerce), 12 (Contenu)"),
+        ("Salarié cherchant un revenu d'appoint", "Petit à moyen budget", "Secteurs 02 (Livraison week-end), 08 (Immobilier), 16 (Services B2B), 17 (Fintech)"),
+        ("Femme active ou mère entrepreneure", "Petit à moyen budget", "Secteurs 01 (Agro-transformation), 06 (Beauté), 07 (Mode), 18 (Enfance)"),
+        ("Artisan ou technicien qualifié", "Budget moyen", "Secteurs 10 (Solaire), 15 (Artisanat), 20 (BTP et réparation)"),
+        ("Investisseur ou diaspora en partenariat", "Budget structuré", "Secteurs 09 (Logistique), 13 (Tourisme), 14 (Élevage et pisciculture), 01 (Unités)"),
     ],
 }
 
 PART_02_ERRORS = {
     "num": "02",
-    "kicker": "PARTIE 02 • ERREURS À ÉVITER",
-    "title": "Les 7 erreurs fatales qui tuent 80 % des nouveaux business en Afrique",
-    "workbook_question": "Réponse à la section 02 du Workbook : Quelles sont les erreurs fréquentes que les gens font ?",
+    "kicker": "Deuxième partie · Erreurs à éviter",
+    "title": "Les sept erreurs qui coûtent le plus cher aux nouveaux projets",
+    "epigraph": "Avant d'engager ton énergie ou ton épargne, évite ces pièges observés sur le terrain et adopte d'emblée l'alternative économe.",
     "intro": (
-        "Avant même de choisir ton idée parmi les 500 de ce catalogue, protège ton énergie "
-        "et ton capital. Ces 7 erreurs reviennent dans presque tous les échecs évitables "
-        "observés sur le terrain."
+        "La plupart des échecs précoces ne viennent pas d'un manque d'ardeur au travail, "
+        "mais de décisions prises dans les deux premières semaines. Voici les sept écueils "
+        "les plus fréquents et le réflexe pragmatique qui les neutralise."
     ),
     "errors": [
         (
-            "Erreur 1 : Lancer sur un « coup de cœur » sans vérifier la douleur client",
-            "Conséquence : Tu fabriques un beau produit ou ouvres un service dont personne n'a besoin en urgence.",
-            "Réflexe 2027 : Applique la méthode VIN (Valeur, Intensité, Nombre) et parle à 5 vrais clients avant d'acheter du stock."
+            "Lancer sur un coup de cœur sans vérifier le besoin",
+            "Tu produis un bel article ou ouvres un service dont personne ne ressent l'urgence autour de toi.",
+            "Applique le test terrain en trois critères (Valeur, Intensité, Nombre) auprès de cinq clients potentiels avant tout achat de stock."
         ),
         (
-            "Erreur 2 : Copier le voisin exactement à l'identique",
-            "Conséquence : Quand trois boutiques vendent le même produit au même carrefour, la seule arme restante est de casser les prix — et tout le monde perd.",
-            "Réflexe 2027 : Change au moins un angle fort : qualité d'emballage, livraison à domicile, horaire tardif, abonnement ou cible précise."
+            "Copier le voisin à l'identique",
+            "Lorsque trois étals vendent la même chose au même carrefour, il ne reste qu'à casser les prix, et chacun travaille à perte.",
+            "Différencie au moins un axe concret : emballage soigné, livraison à domicile, horaire tardif, abonnement ou clientèle précise."
         ),
         (
-            "Erreur 3 : Immobiliser 80 % de son capital dans le décor ou un local",
-            "Conséquence : Loyer, caution, enseigne et meubles engloutissent ta trésorerie avant que tu n'aies encaissé ton 10e client.",
-            "Réflexe 2027 : Démarre depuis chez toi, sur commande, en kiosque mobile ou en partenariat avec un point déjà existant."
+            "Immobiliser l'essentiel du capital dans un local",
+            "Caution, loyer d'avance, enseigne et mobilier assèchent ta trésorerie bien avant l'arrivée du dixième client.",
+            "Démarre depuis chez toi, sur précommande, en point relais partagé ou avec un kiosque léger."
         ),
         (
-            "Erreur 4 : Mélanger la caisse du business et les dépenses personnelles",
-            "Conséquence : Tu as l'impression de bien vendre, mais impossible de renouveler le stock le mois suivant parce que l'argent a payé loyer, cérémonies et imprévus familiaux.",
-            "Réflexe 2027 : Deux portefeuilles / comptes Mobile Money strictement séparés dès le Jour 1, et verse-toi un salaire fixe ou un pourcentage clair."
+            "Confondre la caisse du business et les dépenses personnelles",
+            "Tu as le sentiment de bien vendre, puis impossible de renouveler le stock parce que l'argent a servi aux imprévus familiaux.",
+            "Sépare dès le premier jour deux comptes Mobile Money distincts et verse-toi une part fixe définie à l'avance."
         ),
         (
-            "Erreur 5 : Vendre à crédit « aux connaissances » sans règles écrites",
-            "Conséquence : Ton fonds de roulement reste bloqué chez des clients qui disparaissent quand il faut payer, et tu perds à la fois l'argent et la relation.",
-            "Réflexe 2027 : Paiement comptant ou acompte minimum de 50 % à la commande, relance automatique par WhatsApp avant livraison."
+            "Accorder du crédit aux proches sans cadre écrit",
+            "Ton fonds de roulement reste bloqué chez des connaissances difficiles à relancer, et tu abîmes à la fois ta trésorerie et le lien.",
+            "Travaille au comptant ou demande un acompte de 50 % à la commande, avec confirmation claire avant la livraison."
         ),
         (
-            "Erreur 6 : Fixer ses prix sans calculer les coûts cachés",
-            "Conséquence : Tu oublies les frais de transport, pertes/invendus, emballages, données internet, frais de retrait Mobile Money et ton propre temps : tu travailles à perte.",
-            "Réflexe 2027 : Additionne TOUS les coûts directs, ajoute 15 % d'imprévus puis ta marge nette avant d'annoncer ton tarif."
+            "Fixer ses tarifs sans compter les frais invisibles",
+            "Transport, pertes, emballages, données mobiles, frais de retrait et temps passé grignotent la marge sans que tu t'en aperçoives.",
+            "Additionne tous les coûts directs, ajoute 15 % pour les aléas puis ta marge nette avant d'annoncer un prix."
         ),
         (
-            "Erreur 7 : Attendre la perfection absolue avant de se lancer",
-            "Conséquence : Pendant que tu peaufines ton logo, tes statuts ou ton site pendant 6 mois, un concurrent imparfait mais rapide prend déjà le marché.",
-            "Réflexe 2027 : Comme le rappelle le Workbook Jour 2, oublie la perfection. Sors une version simple, encaisse tes 10 premiers clients et améliore en V2.0."
+            "Attendre une version parfaite avant d'exister",
+            "Pendant des mois passés à peaufiner un logo ou des statuts, un concurrent plus simple et plus rapide prend les premiers clients.",
+            "Mets sur le marché une première offre sobre dès cette semaine, encaisse tes dix premières ventes, puis améliore en version 2."
         ),
     ],
 }
 
 PART_04_VALIDATION = {
     "num": "04",
-    "kicker": "PARTIE 04 • ÉTAPE 2",
-    "title": "Valide ton Top 3 en 48 heures avant de dépenser 1\u00A0FCFA",
-    "workbook_question": "Réponse à la section 04 du Workbook : Deuxième action concrète — Filtrer et prouver la demande réelle.",
+    "kicker": "Quatrième partie · Validation en 48 heures",
+    "title": "Valider ton Top 3 en 48 heures avant de dépenser le moindre franc",
+    "epigraph": "Une méthode simple pour confronter tes trois meilleures pistes à de vrais acheteurs avant d'acheter du matériel ou du stock.",
     "intro": (
-        "Tu viens de repérer 3 à 5 idées prometteuses dans les 500 fiches de la Partie 03 ? "
-        "Ne te lance pas encore à l'aveugle. En moins de 48 heures et avec zéro dépense "
-        "de production, tu vas soumettre ton Top 3 au filtre implacable de la méthode VIN "
-        "et du terrain."
+        "Une fois trois à cinq pistes repérées dans le répertoire, résiste à l'envie de "
+        "produire tout de suite. Consacre quarante-huit heures et zéro franc de fabrication "
+        "à mesurer la demande réelle grâce aux trois filtres VIN et à cinq conversations."
     ),
     "vin_reminders": [
-        ("V — Valeur (Problème précis)", "En une phrase : quelle douleur ou envie précise ton client paie-t-il pour résoudre ? (Ex. : gagner du temps, manger sain, augmenter ses ventes, réparer vite)."),
-        ("I — Intensité (/10)", "Le problème est-il urgent ou secondaire ? Vise au moins 7/10 : si le client peut attendre 6 mois sans agir, il reportera son achat."),
-        ("N — Nombre (Volume solvable)", "Combien de clients capables de payer vivent ce problème dans ton quartier, ta ville ou ta communauté en ligne chaque semaine ?"),
+        ("Valeur · Le problème précis", "En une phrase : quelle contrainte ou envie précise le client accepte-t-il de payer pour résoudre dès cette semaine ?"),
+        ("Intensité · L'urgence ressentie (/10)", "Le besoin est-il pressant ou accessoire ? Vise au moins 7 sur 10 : si l'acheteur peut attendre six mois, il différera sa dépense."),
+        ("Nombre · Le volume solvable", "Combien de personnes prêtes à payer rencontrent ce problème chaque semaine dans ton quartier, ta ville ou ton réseau ?"),
     ],
     "steps_48h": [
-        ("Heure 0 à 4 : Sélectionne 3 idées finalistes", "Une idée en « Petit budget » (démarrage immédiat), une qui exploite tes contacts actuels, et ton coup de cœur rentable."),
-        ("Heure 4 à 18 : Remplis la grille de score ci-dessous", "Note chaque idée de 1 à 5 sur 6 critères concrets (/30). Élimine immédiatement toute idée en dessous de 20/30."),
-        ("Heure 18 à 36 : Le test des 5 vraies conversations", "Appelle ou rencontre 5 personnes correspondant à ta cible. Ne demande pas « Est-ce que tu aimes mon idée ? » (tout le monde dit oui par politesse), demande : « Combien as-tu dépensé pour ce besoin le mois dernier ? Et si je te livre tel résultat vendredi pour X FCFA, tu commandes ? »."),
-        ("Heure 36 à 48 : Preuve par l'engagement", "Une idée est officiellement validée lorsque au moins 2 personnes sur 5 acceptent de précommander, verser un petit acompte ou réserver un créneau daté."),
+        ("Heures 0 à 4 · Retenir trois finalistes", "Sélectionne une piste à petit budget démarrable aussitôt, une piste appuyée sur ton réseau actuel et ton choix prioritaire."),
+        ("Heures 4 à 18 · Noter sur 30 points", "Évalue chaque piste de 1 à 5 sur les six critères ci-dessous. Écarte sans hésiter tout projet en dessous de 20 sur 30."),
+        ("Heures 18 à 36 · Mener cinq vrais échanges", "Appelle ou rencontre cinq clients potentiels. Évite « Aimerais-tu ce produit ? », demande plutôt : « Combien as-tu dépensé pour cela le mois dernier, et commandes-tu si je te livre vendredi à tel prix ? »."),
+        ("Heures 36 à 48 · Obtenir un engagement daté", "Une idée est validée lorsque deux personnes sur cinq au moins réservent, précommandent ou versent un premier acompte."),
     ],
     "scoring_criteria": [
-        ("1. Besoin urgent et prouvé (méthode VIN)", "Les clients cherchent déjà une solution et dépensent de l'argent pour cela."),
-        ("2. Budget de départ accessible tout de suite", "Tu disposes déjà du capital nécessaire sans t'endetter dangereusement."),
-        ("3. Compétence ou apprentissage rapide (< 7 jours)", "Tu sais faire, ou tu peux t'associer / te former en quelques jours."),
-        ("4. Cycle de vente court (< 7 jours)", "Tu peux produire, livrer et encaisser dans la même semaine."),
-        ("5. Marge nette saine (>= 30 %)", "Après transport, emballage et frais Mobile Money, il te reste un vrai bénéfice."),
-        ("6. Récurrence possible", "Le même client peut racheter chaque semaine, chaque mois ou recommander 3 proches."),
+        ("1. Besoin urgent et vérifié", "Des clients cherchent déjà une réponse et dépensent de l'argent pour l'obtenir."),
+        ("2. Capital disponible tout de suite", "Tu réunis le budget nécessaire sans recourir à un endettement risqué."),
+        ("3. Savoir-faire accessible en moins de 7 jours", "Tu maîtrises déjà le geste, ou tu peux te former ou t'associer rapidement."),
+        ("4. Cycle de vente court (moins de 7 jours)", "Tu produis, livres et encaisses au cours de la même semaine."),
+        ("5. Marge nette saine (30 % et plus)", "Une fois transport, emballage et frais déduits, un bénéfice clair subsiste."),
+        ("6. Répétition d'achat ou recommandation", "Un même client revient régulièrement ou t'adresse des contacts proches."),
     ],
-    "example_box_title": "Exemple concret rempli : Idée #002 — Chips de banane plantain aromatisées",
+    "example_box_title": "Cas d'application · Idée #002 : Chips de banane plantain aromatisées",
     "example_box_lines": [
-        "• Méthode VIN : V = Offrir un snack croquant, propre et bien emballé pour les pauses bureau/écoles • I = 8/10 (demande quotidienne immédiate) • N = Massif (bureaux, supérettes, campus, feux tricolores).",
-        "• Score sur 30 : Besoin (5/5) + Budget < 50k FCFA (5/5) + Apprentissage rapide (5/5) + Cycle de vente 24h (5/5) + Marge > 40 % (4/5) + Réachat hebdo (5/5) = 29 / 30 → Feu vert immédiat !",
-        "• Test 48h réussi : 2 lots tests préparés le soir, proposés le lendemain à 10 collègues et 2 supérettes de quartier → 8 sachets vendus comptant + 1 commande hebdomadaire confirmée avant d'acheter la friteuse pro.",
+        "Filtre VIN : besoin d'un en-cas croquant et propre au bureau ou à l'école (Valeur), envie quotidienne immédiate notée 8/10 (Intensité) auprès de milliers de salariés, étudiants et supérettes (Nombre).",
+        "Note sur 30 : besoin (5/5), petit budget inférieur à 50 000 FCFA (5/5), prise en main rapide (5/5), vente en 24 heures (5/5), marge supérieure à 40 % (4/5), réachat hebdomadaire (5/5), soit 29/30.",
+        "Test en 48 heures : deux lots préparés en cuisine puis proposés à dix collègues et deux épiceries de quartier. Huit sachets réglés comptant et une commande hebdomadaire confirmée avant même d'investir dans du matériel.",
     ],
 }
 
 PART_05_LAUNCH = {
     "num": "05",
-    "kicker": "PARTIE 05 • ÉTAPE 3",
-    "title": "Plan d'action en 7 jours pour lancer et encaisser tes premiers clients",
-    "workbook_question": "Réponse à la section 05 du Workbook : Troisième action concrète — Passer de l'idée validée au premier encaissement.",
+    "kicker": "Cinquième partie · Plan d'action en 7 jours",
+    "title": "Lancer ton activité en sept jours et encaisser tes premières ventes",
+    "epigraph": "Une progression jour par jour pour passer de l'idée validée au premier encaissement sans site complexe ni local coûteux.",
     "intro": (
-        "Ton idée n°1 est validée. Voici la feuille de route exacte sur 7 jours pour "
-        "transformer cette décision en premières ventes réelles — sans site web coûteux, "
-        "sans bureau et sans attendre des mois."
+        "Une fois l'idée la mieux notée validée, l'objectif n'est plus de planifier mais "
+        "d'obtenir tes premières ventes réelles en une semaine. Suis ces sept étapes "
+        "dans l'ordre."
     ),
     "days": [
-        ("Jour 1", "Verrouille ton offre et ton prix", "Définis 1 offre d'entrée simple (format découverte + offre standard), calcule tes coûts complets et rédige ta promesse en 1 phrase claire."),
-        ("Jour 2", "Prépare ton « minimum vendable »", "Crée 3 photos propres à la lumière du jour (ou une fiche PDF/Canva claire), configure ton profil WhatsApp Business (catalogue + numéro Mobile Money prêt)."),
-        ("Jour 3", "Liste tes 30 premiers acheteurs probables", "Note 10 connaissances directes, 10 contacts professionnels/quartier et 10 groupes Facebook/WhatsApp pertinents où ta cible se trouve déjà."),
-        ("Jour 4", "Lance l'offensive directe (30 messages)", "Envoie le Script 1 personnalisé aux 20 premiers contacts et publie 1 statut WhatsApp + 1 post Facebook avec une offre de lancement limitée aux 5 premiers."),
-        ("Jour 5", "Convertis, encaisse et livre impeccablement", "Encaisse un acompte ou paiement à la commande, livre avec 10 minutes d'avance ou un petit mot d'attention qui crée la surprise positive."),
-        ("Jour 6", "Récolte les preuves et active le bouche-à-oreille", "Demande un court avis vocal ou écrit WhatsApp à tes premiers clients + propose « 1 recommandation = 1 petit bonus offert »."),
-        ("Jour 7", "Fais ton bilan cash et prépare la semaine 2", "Applique la règle des 3 enveloppes sur tes encaissements, note ce qui a le mieux marché et double l'action sur le canal le plus rentable."),
+        ("Jour 1", "Clarifier une offre simple et son prix", "Définis une formule découverte claire et un format standard, vérifie tes coûts complets et rédige ta promesse en une phrase."),
+        ("Jour 2", "Préparer le minimum présentable", "Réalise trois photos nettes à la lumière du jour (ou une fiche PDF lisible), puis règle ton profil WhatsApp Business et ton compte Mobile Money."),
+        ("Jour 3", "Lister trente acheteurs probables", "Note dix connaissances directes, dix contacts professionnels ou de quartier et dix groupes locaux où se trouve déjà ta clientèle."),
+        ("Jour 4", "Envoyer les trente premiers messages", "Adresse le premier message ci-contre à vingt contacts ciblés et publie un statut WhatsApp accompagné d'une offre limitée aux cinq premiers clients."),
+        ("Jour 5", "Encaisser et livrer avec soin", "Demande un acompte ou un règlement à la commande, livre à l'heure convenue avec une présentation propre et un mot personnalisé."),
+        ("Jour 6", "Recueillir les premiers retours", "Demande un court avis écrit ou vocal à tes premiers acheteurs et propose un avantage simple à ceux qui te recommandent un proche."),
+        ("Jour 7", "Faire les comptes et préparer la semaine suivante", "Répartis tes recettes selon la règle des trois enveloppes, relève le canal le plus efficace et concentre tes efforts dessus."),
     ],
     "scripts": [
         (
-            "Script 1 — Message WhatsApp cercle proche / réseau tiède",
-            "« Bonjour [Prénom], j'espère que tu vas bien ! Je lance cette semaine [nom de ton service/produit] pour aider [cible] à [bénéfice concret] en [délai], sans [principal blocage]. Pour mes 5 premiers clients de lancement d'ici samedi, je propose le pack à [Prix] au lieu de [Prix normal]. Est-ce que ça t'intéresse, ou connais-tu quelqu'un autour de toi qui en a besoin en ce moment ? »"
+            "Message WhatsApp pour le premier cercle",
+            "« Bonjour [Prénom], j'espère que tu vas bien. Je lance cette semaine [nom de ton service ou produit] pour aider [cible] à [résultat concret] en [délai], sans [principal frein]. Pour mes cinq premiers clients d'ici samedi, je propose l'offre à [Prix] au lieu de [Prix habituel]. Est-ce utile pour toi ou pour quelqu'un autour de toi en ce moment ? »"
         ),
         (
-            "Script 2 — Post Facebook / Statut WhatsApp à fort impact",
-            "« Vous cherchez [résultat concret] à [Ville/Quartier] sans [galère habituelle] ? Dès cette semaine, nous lançons [Nom de l'offre] : [2 avantages simples + délai de livraison]. Offre de lancement valable jusqu'à dimanche pour les 10 premières commandes. Écrivez « INFOS » en commentaire ou envoyez un message direct sur WhatsApp au [Numéro] pour réserver votre place. »"
+            "Publication Facebook ou statut WhatsApp",
+            "« Vous cherchez [résultat concret] à [Ville/Quartier] sans [difficulté courante] ? Nous ouvrons cette semaine [Nom de l'offre] avec [deux avantages précis et délai de livraison]. Offre d'ouverture valable jusqu'à dimanche pour les dix premières demandes. Écrivez INFOS en commentaire ou envoyez un message WhatsApp au [Numéro]. »"
         ),
         (
-            "Script 3 — Répondre à l'objection « C'est un peu cher »",
-            "« Je comprends tout à fait ! C'est justement pour éviter les mauvaises surprises que ce tarif inclut [élément de qualité/garantie/service inclus]. Pour démarrer plus léger aujourd'hui, on peut commencer par notre formule Essentiel à [Prix réduit / petit format] afin que tu testes la qualité par toi-même dès cette semaine. On part sur celle-ci ? »"
+            "Réponse sereine à l'objection sur le prix",
+            "« Je comprends tout à fait. Ce tarif inclut justement [élément de qualité, garantie ou livraison comprise] pour éviter toute mauvaise surprise. Si tu préfères démarrer plus léger cette semaine, nous avons aussi la formule Essentiel à [Prix d'entrée] pour que tu testes par toi-même. Souhaites-tu essayer celle-ci ? »"
         ),
     ],
     "pricing_formula": [
-        "1. Additionne tous tes coûts directs (matière première, emballage, livraison, électricité/gaz, frais Mobile Money).",
-        "2. Ajoute la valeur de ton temps (même modeste au début) + 10 à 15 % pour les imprévus et pertes.",
-        "3. Ajoute ta marge bénéficiaire cible (minimum 30 % sur les produits, 50 %+ sur les services) pour obtenir ton Prix Plancher.",
+        "1. Additionne tous les coûts directs : matière première, emballage, livraison, énergie et frais Mobile Money.",
+        "2. Ajoute une juste rétribution pour ton temps de travail ainsi qu'une marge de 10 à 15 % pour les pertes ou imprévus.",
+        "3. Applique ta marge nette cible (au moins 30 % sur un produit physique, 50 % ou plus sur une prestation de service) afin de fixer ton prix plancher.",
     ],
     "envelopes": [
-        ("Enveloppe 1 — 50 % Réinvestissement & Stock", "Reste intouchable dans le compte pro pour racheter les matières premières, améliorer l'emballage et faire grandir l'activité."),
-        ("Enveloppe 2 — 30 % Charges, Réserve & Imprévus", "Couvre transport, crédit internet, marketing, impôts/formalisation et coussin de sécurité en cas de semaine creuse."),
-        ("Enveloppe 3 — 20 % Rémunération du Fondateur", "Ton salaire clair et officiel. C'est uniquement cette enveloppe qui finance tes dépenses personnelles : jamais la caisse brute !"),
+        ("Enveloppe 1 · 50 % Réinvestissement", "Reste sur le compte professionnel pour reconstituer le stock, soigner le conditionnement et faire croître l'outil de travail."),
+        ("Enveloppe 2 · 30 % Charges et réserve", "Couvre transport, crédit internet, communication, démarches légales et coussin de sécurité pour les semaines plus calmes."),
+        ("Enveloppe 3 · 20 % Rémunération personnelle", "Constitue ta paie officielle. Seule cette enveloppe règle tes dépenses privées, jamais le chiffre d'affaires brut."),
     ],
 }
 
 CONCLUSION_CONTENT = {
-    "kicker": "CONCLUSION • PROCHAIN PAS",
-    "title": "Oublie la perfection, passe à l'action dès les 48 prochaines heures",
-    "workbook_question": "Réponse à la section Conclusion du Workbook : Quel est le prochain pas pour le lecteur ?",
+    "kicker": "Conclusion · Passage à l'action",
+    "title": "Oublie la perfection, agis dans les quarante-huit heures",
+    "epigraph": "Un livre de business ne change rien tant qu'il reste fermé : tout se joue dans les deux prochaines journées.",
     "message": (
-        "Tu as maintenant entre les mains 500 idées concrètes adaptées aux réalités africaines "
-        "de 2027, la grille pour éviter les pièges qui coûtent cher, la méthode VIN pour "
-        "valider en 48 heures et le plan exact sur 7 jours pour encaisser tes premiers clients. "
-        "Mais la différence entre un lecteur qui rêve et un entrepreneur qui encaisse tient "
-        "en une seule chose : l'action immédiate."
+        "Tu disposes désormais de cinq cents pistes adaptées aux marchés africains de 2027, "
+        "d'une grille claire pour éviter les erreurs coûteuses, d'une méthode de validation en "
+        "quarante-huit heures et d'une feuille de route sur sept jours. Ce qui sépare un projet "
+        "qui reste dans un carnet d'une activité qui encaisse tient à la rapidité de ton premier pas."
     ),
-    "mantra": "« Ton premier jour de vente ne sera pas parfait, et c'est normal. L'important est de lancer une version simple, d'encaisser ton premier client réel et d'améliorer en version 2.0. »",
+    "mantra": "« Ton premier jour de vente ne sera pas parfait, et c'est normal. Lance une version simple, encaisse ton premier client réel, puis améliore en version 2.0. »",
     "action_sheet": [
-        "Mon secteur retenu (01 à 20) : ________________________________________________",
-        "Mon idée choisie (#___) : _____________________________________________________",
-        "Mon budget de départ réaliste : _______________________ FCFA",
-        "Ma promesse en 1 phrase (Comment ___ en ___ sans ___) : _______________________",
-        "Mes 5 premiers prospects à contacter demain matin : ___________________________",
-        "Date de mon premier encaissement cible : ______________________________________",
+        "Secteur retenu (01 à 20) :",
+        "Idée sélectionnée (numéro et intitulé) :",
+        "Budget réaliste disponible au départ (FCFA) :",
+        "Promesse en une phrase (Pour qui, quel résultat, en quel délai) :",
+        "Cinq premiers prospects à contacter demain matin :",
+        "Date visée pour le premier encaissement :",
     ],
     "next_steps_reader": [
-        "1. Dans les 2 prochaines heures : choisis 1 seule idée parmi tes 3 finalistes (commence par celle que tu peux tester au moindre coût).",
-        "2. Dans les 48 prochaines heures : réalise les 5 conversations terrain et publie ta première offre test auprès de 10 proches.",
-        "3. À J+7 : récolte les avis de tes premiers acheteurs et passe directement à ta version 2.0 améliorée.",
+        "1. Dans les deux prochaines heures, arrête ton choix sur une seule idée parmi tes finalistes, en privilégiant celle qui demande le moindre capital initial.",
+        "2. Dans les quarante-huit heures, mène cinq entretiens de terrain et propose une première offre test à dix personnes de ton entourage.",
+        "3. Au bout de sept jours, rassemble les remarques de tes premiers clients et ajuste ton offre pour passer en version améliorée.",
     ],
 }
+
 
 def get_workbook_pages_data(config, ebook_pages=None):
     """Retourne les données exactes pour les 10 pages du Workbook Jour 2 rempli."""
@@ -267,35 +266,35 @@ def get_workbook_pages_data(config, ebook_pages=None):
         "promise_formula",
         "Comment choisir, valider et lancer ton business rentable en Afrique en 2027 en 7 jours sans gros capital ni peur de te tromper."
     )
-    pages_txt = f"{ebook_pages} pages" if ebook_pages else "environ 60 pages"
+    pages_txt = f"{ebook_pages} pages" if ebook_pages else "environ 50 pages"
     return {
         "author": author,
         "date": date_str,
         "title": title,
         "promise": promise,
         "page1": {
-            "badge": "WORKBOOK OFFICIEL – JOUR 2",
-            "title": "CRÉE TON PREMIER PRODUIT DIGITAL",
-            "subtitle": f"Dossier d'application complété pour le projet : « {title} »",
+            "badge": "Workbook Officiel · Jour 2",
+            "title": "Crée ton premier produit digital",
+            "subtitle": f"Dossier d'application complété pour l'ouvrage « {title} »",
             "welcome": (
                 "Bienvenue dans ton guide pratique pour transformer ton idée en un véritable produit "
                 "digital. Ce workbook est conçu spécialement pour toi, entrepreneur africain francophone, "
                 "qui souhaites passer à l'action dès aujourd'hui. Pas besoin d'être expert en technologie "
                 "ou d'avoir des années d'expérience. Ce qui compte, c'est ta volonté d'avancer et de créer "
                 "quelque chose de concret qui aide les autres. Dans les pages suivantes, la méthode exacte "
-                "du Workbook Jour 2 (valider → structurer → créer étape par étape) est appliquée de bout "
+                "du Workbook Jour 2 (valider, structurer, créer étape par étape) est appliquée de bout "
                 "en bout à ton ebook sur les 500 idées de business en Afrique en 2027."
             ),
             "summary_rows": [
                 ("Produit créé", title),
-                ("Cible prioritaire", "Entrepreneurs & porteurs de projets en Afrique francophone + diaspora"),
-                ("Format retenu", "PDF professionnel prêt à diffuser + sources éditables"),
-                ("Créateur / Marque", author),
+                ("Cible prioritaire", "Entrepreneurs et porteurs de projets en Afrique francophone et diaspora"),
+                ("Format retenu", "Livre PDF prêt à diffuser et sources éditables"),
+                ("Auteur ou marque", author),
                 ("Date de réalisation", date_str),
             ],
         },
         "page2": {
-            "kicker": "PAGE 2 • OBJECTIF",
+            "kicker": "Objectif · Page 2",
             "title": "À la fin de ce workbook, tu as un produit",
             "intro": (
                 "Oublie la perfection. Ton premier produit ne sera pas parfait, et c'est normal. "
@@ -303,16 +302,16 @@ def get_workbook_pages_data(config, ebook_pages=None):
                 "de réel que tu pourras améliorer avec le temps. Chaque page contient des exercices "
                 "concrets appliqués ici directement à ton ebook."
             ),
-            "quote": "→ À la fin, tu pourras écrire : « J'ai créé mon premier produit digital. »",
+            "quote": "À la fin, tu pourras écrire : « J'ai créé mon premier produit digital. »",
             "commitment": [
                 ("Nom / Marque", author),
                 ("Date", date_str),
-                ("Signature / Statut", f"Validé — Engagement tenu pour « {title} »"),
+                ("Statut de l'engagement", f"Validé pour « {title} »"),
             ],
         },
         "page3": {
-            "kicker": "PAGE 3 • VALIDATION",
-            "title": "Validation Express de ton Idée (Méthode VIN)",
+            "kicker": "Validation · Page 3",
+            "title": "Validation express de ton idée (Méthode VIN)",
             "intro": (
                 "Avant de créer ton produit, assure-toi que ton idée répond à un vrai besoin. "
                 "VIN signifie Valeur, Intensité et Nombre. Si ces trois éléments sont élevés, "
@@ -335,24 +334,24 @@ def get_workbook_pages_data(config, ebook_pages=None):
                 "et Centrale (Bénin, Côte d'Ivoire, Sénégal, Togo, Cameroun, Burkina Faso, Mali, RDC, "
                 "Guinée, Gabon...) et dans la diaspora cherchent ce type de feuille de route chaque mois."
             ),
-            "conclusion": "Mini-conclusion : V (problème réel) + I (9/10) + N (marché massif) sont élevés → Idée 100 % validée !",
+            "conclusion": "Verdict : Valeur (problème réel) + Intensité (9/10) + Nombre (marché massif) sont élevés, l'idée est validée.",
         },
         "page4": {
-            "kicker": "PAGE 4 • PROMESSE",
-            "title": "Transformation de ton Idée en Promesse Claire",
+            "kicker": "Promesse · Page 4",
+            "title": "Transformation de ton idée en promesse claire",
             "intro": (
                 "Ton produit doit offrir une transformation concrète à tes lecteurs. Plus ta promesse "
                 "est précise (pour qui, quel résultat, en combien de temps), plus elle est convaincante."
             ),
             "q1": "Les futurs entrepreneurs africains francophones (étudiants, salariés, femmes actives, commerçants et diaspora) cherchant un business rentable et réaliste pour 2027.",
             "q2": "Choisir une activité adaptée à son budget réel (Petit, Moyen ou Structuré), la valider en 48 heures sur le terrain et lancer les premières ventes concrètes.",
-            "q3": "En 7 jours (48 heures de filtrage et validation terrain + 5 jours de lancement commercial).",
+            "q3": "En 7 jours (48 heures de filtrage et validation terrain, puis 5 jours de lancement commercial).",
             "formula_template": "« Comment _________________ en _________________ sans _________________. »",
             "formula_filled": f"« {promise} »",
         },
         "page5": {
-            "kicker": "PAGE 5 • FORMAT",
-            "title": "Choisis ton Format (Simple et Rapide)",
+            "kicker": "Format · Page 5",
+            "title": "Choisis ton format (simple et rapide)",
             "reasons_pdf": [
                 "Facile à créer et mettre à jour avec des outils accessibles",
                 "Compatible avec tous les appareils (téléphones Android/iPhone, tablettes, PC)",
@@ -369,25 +368,25 @@ def get_workbook_pages_data(config, ebook_pages=None):
                 "Recommandation de base du workbook : 5 à 15 pages pour un premier mini-guide. "
                 f"Pour honorer la promesse réelle de « 500 idées détaillées », l'édition finale publiée "
                 f"compte exactement {pages_txt} structurées en 20 secteurs, accompagnée d'un extrait gratuit "
-                "idéal de 10 pages (Couverture + Parties 01, 02 et début Secteur 01) conforme au format court."
+                "de 10 pages (Couverture, Introduction, Erreurs et début du Secteur 01) conforme au format court."
             ),
             "provisional_title": title,
         },
         "page6": {
-            "kicker": "PAGE 6 • STRUCTURE",
-            "title": "Structure Ton Produit en 5 Parties + Conclusion",
+            "kicker": "Structure · Page 6",
+            "title": "Structure ton produit en 5 parties + Conclusion",
             "parts": [
-                ("01", "Introduction", "Le problème du manque de filtre entrepreneurial en Afrique et pourquoi les 5 vagues économiques de 2027 créent une opportunité historique (+ guide des budgets)."),
-                ("02", "Erreurs à éviter", "Les 7 erreurs fatales qui ruinent les débutants (copier sans se différencier, tout mettre dans le local, mélanger les caisses, vendre à crédit, attendre la perfection)."),
-                ("03", "Étape 1", "Sélectionner son idée : catalogue complet des 500 idées classées en 20 secteurs porteurs Afrique 2027 (25 idées/secteur avec budget Petit, Moyen ou Structuré)."),
+                ("01", "Introduction", "Le problème du manque de filtre entrepreneurial en Afrique et pourquoi les cinq dynamiques de 2027 créent une opportunité claire (+ guide des budgets)."),
+                ("02", "Erreurs à éviter", "Les 7 erreurs fatales qui fragilisent les débutants (copier sans se différencier, tout mettre dans le local, mélanger les caisses, vendre à crédit, attendre la perfection)."),
+                ("03", "Étape 1", "Sélectionner son idée : répertoire complet des 500 idées classées en 20 secteurs porteurs Afrique 2027 (25 idées/secteur avec budget Petit, Moyen ou Structuré)."),
                 ("04", "Étape 2", "Valider son Top 3 en 48 heures avant d'investir 1\u00A0FCFA grâce à la grille de notation /30, la méthode VIN et le test des 5 vraies conversations."),
                 ("05", "Étape 3", "Lancer son business en 7 jours : feuille de route jour par jour (J1 à J7), 3 scripts WhatsApp/Facebook, calcul du prix juste et règle des 3 enveloppes."),
                 ("End", "Conclusion", "Engagement écrit du lecteur sur 48h, passage à l'action imparfait mais immédiat, puis page auteur personnalisable et prise de contact."),
             ],
         },
         "page7": {
-            "kicker": "PAGE 7 • IA & CHECKLIST",
-            "title": "Utilise l'IA pour Générer Ton Contenu Rapidement",
+            "kicker": "Rédaction & Checklist · Page 7",
+            "title": "Utilise l'IA pour générer ton contenu rapidement",
             "prompt_template": (
                 "Agis comme un expert pédagogique. Crée un guide structuré sur [sujet] destiné "
                 "à [type de personne]. Le guide doit être clair, simple, pratique et structuré en "
@@ -403,83 +402,82 @@ def get_workbook_pages_data(config, ebook_pages=None):
                 "(Choisir, Valider, Lancer) et une conclusion actionnable. »"
             ),
             "how_to_use": [
-                "1. Prompt copié et adapté avec le sujet précis et la cible Afrique 2027",
-                "2. Génération structurée en 20 secteurs × 25 fiches uniques (500 idées sans doublon)",
-                "3. Adaptation locale : montants en FCFA & USD, Mobile Money, réalités terrain 2027",
-                "4. Révision linguistique et cohérence éditoriale complète",
-                "5. Mise en page professionnelle avec couverture originale et typographie dédiée",
-                "6. Export en PDF final vérifié + fichiers sources éditables pour personnalisation",
+                "1. Prompt copié et adapté avec le sujet précis et le lectorat Afrique 2027",
+                "2. Structuration en 20 secteurs × 25 fiches uniques (500 idées sans doublon)",
+                "3. Adaptation locale : montants en FCFA et USD, Mobile Money, réalités terrain 2027",
+                "4. Relecture linguistique complète et suppression de toute formulation artificielle",
+                "5. Mise en page de livre soignée avec couverture illustrée, sommaire et folios",
+                "6. Export en PDF final vérifié et conservation des sources éditables pour personnalisation",
             ],
             "checklist": [
-                ("J'ai généré le contenu avec l'IA", True),
-                ("J'ai relu et corrigé (500 idées uniques vérifiées, français soigné)", True),
-                ("J'ai simplifié le langage (phrases courtes, actionnables)", True),
-                ("J'ai personnalisé avec mes exemples (réalités Afrique francophone 2027)", True),
-                ("J'ai mis en page dans un gabarit éditorial soigné (couverture + sommaire)", True),
+                ("J'ai généré la base de contenu avec l'IA", True),
+                ("J'ai relu et corrigé (500 idées uniques vérifiées, français naturel)", True),
+                ("J'ai simplifié le langage (phrases directes, sans jargon inutile)", True),
+                ("J'ai personnalisé avec des exemples locaux (réalités Afrique francophone 2027)", True),
+                ("J'ai mis en page dans un vrai gabarit éditorial de livre (couverture + sommaire)", True),
                 ("J'ai enregistré en format PDF (500-Idees-de-Business-a-Lancer-en-Afrique-en-2027.pdf)", True),
-                ("J'ai testé l'ouverture du fichier (inspection visuelle de contrôle)", True),
+                ("J'ai vérifié l'ouverture et le rendu visuel de chaque page", True),
             ],
             "important_note": (
-                "Important : Personnalise ebook-source/author_config.json avec ton vrai nom, ton "
-                "histoire (3-4 lignes) et ton numéro WhatsApp, puis relance le script pour obtenir "
-                "ta version signée à 100 % !"
+                "Personnalisation avant diffusion : remplace le nom provisoire, la courte biographie "
+                "et tes coordonnées de contact par les tiens afin de signer pleinement ton ouvrage."
             ),
         },
         "page8": {
-            "kicker": "PAGE 8 • RÉCAPITULATIF",
+            "kicker": "Récapitulatif · Page 8",
             "title": "Félicitations ! Tu es presque au bout",
             "intro": (
                 "Beaucoup parlent de créer un produit digital, mais peu passent réellement à l'action. "
                 "Voici le bilan exact des 5 étapes du Workbook Jour 2 validées pour ton ebook :"
             ),
             "recap_cards": [
-                ("1. Tu as validé ton idée", "Méthode VIN appliquée (Valeur claire, Intensité 9/10, Nombre massif)", "VALIDÉ"),
-                ("2. Tu as défini ta promesse", "Formule claire en 7 jours sans gros capital ni peur de se tromper", "VALIDÉ"),
-                ("3. Tu as choisi ton format", "PDF haute lisibilité mobile + sources Markdown & JSON éditables", "VALIDÉ"),
-                ("4. Tu as structuré ton contenu", "5 parties exactes (Intro, Erreurs, 500 Idées, Validation, Lancement) + Conclusion", "VALIDÉ"),
-                ("5. Tu as créé et mis en page", "Ebook complet produit, vérifié et prêt à diffuser dès aujourd'hui", "VALIDÉ"),
+                ("1. Tu as validé ton idée", "Méthode VIN appliquée (Valeur claire, Intensité 9/10, Nombre massif)", "Accompli"),
+                ("2. Tu as défini ta promesse", "Formule claire en 7 jours sans gros capital ni peur de se tromper", "Accompli"),
+                ("3. Tu as choisi ton format", "PDF haute lisibilité mobile et fichiers sources éditables", "Accompli"),
+                ("4. Tu as structuré ton contenu", "5 parties exactes (Intro, Erreurs, 500 Idées, Validation, Lancement) et Conclusion", "Accompli"),
+                ("5. Tu as créé et mis en page", "Ebook complet produit, relu, composé en gabarit d'édition et prêt à diffuser", "Accompli"),
             ],
         },
         "page9": {
-            "kicker": "PAGE 9 • DÉCLARATION OFFICIELLE",
+            "kicker": "Déclaration officielle · Page 9",
             "title": "Je confirme avoir créé mon premier produit digital",
             "declaration": [
                 ("Nom / Marque", author),
-                ("Signature", "____________________________________ (À parapher après personnalisation)"),
+                ("Signature", "À parapher après personnalisation"),
                 ("Date", date_str),
                 ("Titre de mon produit", title),
             ],
-            "fb_action": "Action immédiate : Publie dans le groupe Facebook avec une capture de la couverture de ton ebook !",
+            "fb_action": "Action immédiate : publie dans le groupe Facebook avec une capture de la couverture de ton ebook.",
             "social_posts": [
                 (
-                    "Modèle 1 — Victoire communautaire (Workbook Jour 2)",
+                    "Modèle 1 · Victoire communautaire (Workbook Jour 2)",
                     "« J'ai créé mon premier produit digital ! [Photo de couverture] Après avoir appliqué étape par étape la méthode VIN, défini ma promesse et structuré les 5 parties, voici enfin mon ebook : \"500 Idées de Business à Lancer en Afrique en 2027\". Pas besoin d'attendre la perfection pour passer à l'action. Merci à la communauté pour l'élan ! »"
                 ),
                 (
-                    "Modèle 2 — Publication valeur & autorité",
+                    "Modèle 2 · Publication valeur & autorité",
                     "« Tu veux entreprendre en 2027 mais tu te demandes par quel business commencer avec ton budget actuel ? J'ai réuni 500 idées concrètes réparties en 20 secteurs africains (du petit budget < 50 000 FCFA aux projets structurés) + une méthode en 48h pour tester avant d'investir. Commente \"2027\" si tu veux découvrir le sommaire ! »"
                 ),
                 (
-                    "Modèle 3 — Appel à l'action lancement / précommande",
+                    "Modèle 3 · Lancement et précommande",
                     "« OFFRE DE LANCEMENT : Mon nouveau guide \"500 Idées de Business à Lancer en Afrique en 2027\" est disponible en PDF instantané sur téléphone. En bonus : les 7 erreurs à éviter et le plan exact des 7 premiers jours avec scripts WhatsApp. Écris-moi en privé ou sur WhatsApp pour recevoir ton exemplaire dès aujourd'hui. »"
                 ),
             ],
         },
         "page10": {
-            "kicker": "PAGE 10 • PROCHAINS PAS",
+            "kicker": "Prochains pas · Page 10",
             "title": "Et maintenant ? Tes prochains pas",
             "steps": [
                 (
-                    "1. Lance ton produit (10 personnes de ton entourage)",
-                    "Partage dès aujourd'hui le PDF (ou les 10 premières pages en extrait gratuit) à 10 personnes ciblées pour récolter leurs vrais retours en 48 heures."
+                    "1. Lance ton produit auprès de dix proches",
+                    "Partage dès aujourd'hui le PDF (ou les dix premières pages en extrait gratuit) à dix personnes ciblées pour récolter leurs vrais retours en quarante-huit heures."
                 ),
                 (
-                    "2. Améliore-le (Version 2.0)",
-                    "Note quelles idées ont reçu le plus de questions. Pour la V2.0, ajoute par exemple des fiches chiffrées détaillées sur les 20 idées favorites de tes premiers lecteurs."
+                    "2. Améliore-le en version 2.0",
+                    "Note quelles idées suscitent le plus de questions. Pour la version suivante, ajoute des fiches chiffrées détaillées sur les vingt idées favorites de tes premiers lecteurs."
                 ),
                 (
                     "3. Crée le suivant avec la même méthode",
-                    "Produits dérivés faciles à lancer ensuite : (a) « 50 Business à lancer avec moins de 25 000 FCFA », (b) « Modèles de business plan simplifiés sur WhatsApp & Excel », (c) « Pack scripts de vente Afrique 2027 »."
+                    "Suites naturelles faciles à décliner ensuite : « 50 Business à lancer avec moins de 25 000 FCFA », « Modèles de budget sur WhatsApp et tableur » ou « Scripts de vente Afrique 2027 »."
                 ),
             ],
             "whatsapp_testers": (

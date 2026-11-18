@@ -1,34 +1,19 @@
-# Philosophie Éditoriale & Système Design : « Savane Solaire & Papier Ivoire »
+# Système Éditorial « Savane Sobre & Papier Munken » (Anti-AI-Slop)
 
-Conçu à partir des meilleurs standards éditoriaux installés dans `.agents/skills/` (`canvas-design`, `top-design`, `web-typography`, `editorial`, `terracotta`, `paper`, `refined`, `editorial-package`, `hallmark` et `pdf`), propulsé par le moteur typographique **Typst 0.15**.
+Ce document définit les règles typographiques et de mise en page inspirées des maisons d'édition contemporaines (*Gallimard*, *Eyrolles*, *Monocle*, *Anthropic Press*) et des référentiels `.agents/skills/impeccable`, `book-design`, `editorial`, `web-typography` et `anti-ai-slop-writing`.
 
-## 1. Mouvement Esthétique : « Monocle Afro-Moderniste »
+## Principes anti-IA appliqués au livre
 
-Un livre pratique d'entrepreneuriat africain ne doit ni ressembler à un rapport administratif généré, ni à un fichier Word empilé de cadres gris. Il doit porter la présence tactile d'un beau livre imprimé **Taschen / Monocle / Stripe Press** : papier ivoire chaud, encre vert-forêt profonde, titres sculpturaux à fort contraste d'échelle, filets architecturaux fins et respiration spatiale maîtrisée.
+1. **Aucune carte ni boîte pastel répétitive** : zéro encadré à grosse bordure latérale colorée (`border-left: 2.5pt`), zéro coin arrondi logiciel, zéro fond vert/jaune/rose alterné sur les fiches ou les tableaux.
+2. **Aucun sur-titre monospace majuscule (« kicker/eyebrow »)** au-dessus des sous-titres : les titres parlent d'eux-mêmes par l'échelle typographique, la graisse et les blancs.
+3. **Zéro bannière sombre Notion/Canva en ouverture de chapitre** : chaque partie s'ouvre sur le papier pur par une mention discrète de partie, un grand titre en `Instrument Serif`, un filet capillaire net et une épigraphe naturelle destinée au lecteur (zéro mention méta du prompt ou du cahier d'atelier dans le corps de l'ebook).
+4. **Zéro badge pilule ni widget graphique de tableau de bord** : les 500 idées s'affichent comme un véritable répertoire imprimé en deux colonnes à filets fins, avec une indication budgétaire typographique discrète sans boîte encadrée.
+5. **Tableaux de livre authentiques** : aucune barre verticale ni zébrage alterné ; uniquement un filet net sous la ligne d'en-tête et des filets horizontaux fins entre entrées.
+6. **Typographie unifiée** : `Instrument Serif` (titrage, exergues, folios de chapitres) et `Instrument Sans` (texte courant, tableaux, en-têtes courants, notes), avec coches vectorielles dessinées et zéro caractère fallback.
 
-## 2. Système Typographique (3 Rôles Disciplinés)
+## Jetons typographiques & couleurs
 
-1. **Display & Titres Monumentaux** — `Instrument Serif` (*Regular & Italic*) : lettrines de chapitres, numéros de parties (`01`–`05`), couverture, titres de secteurs et citations d'accroche. Contraste d'échelle > 6:1 sur les ouvertures.
-2. **Corps de Texte & Fiches Catalogue** — `Instrument Sans` (*Regular, Bold, Italic, BoldItalic*, avec repli `Source Sans Pro`) : dessinée pour s'accorder avec `Instrument Serif` (harmonie de fonderie), optimisée pour une mesure de 48 à 55 caractères par colonne en grille suisse à 2 colonnes.
-3. **Indices Techniques & Télémétrie** — `JetBrains Mono` (*Regular & Bold*) : codes `#001` à `#500`, étiquettes `SECTEUR 01 / 20`, badges budgets `PETIT` / `MOYEN` / `STRUCTURÉ`, chronologie `J1`–`J7` et grille `VIN`.
-
-## 3. Palette Tactile (Zéro `#000000` ni `#FFFFFF` stérile)
-
-| Rôle | Token | Hex | Usage |
-|---|---|---|---|
-| Papier principal | `paper` | `#FAF7F2` | Fond chaud ivoire sur toutes les pages intérieures |
-| Papier secondaire | `paper-alt` | `#F2ECE1` | Encadrés éditoriaux, colophon, lignes paires |
-| Papier sauge | `paper-sage` | `#EBF2EE` | Blocs action & validation terrain |
-| Encre primaire | `ink` | `#12201C` | Texte principal haute lisibilité |
-| Encre secondaire | `ink-2` | `#46544F` | Descriptions et sous-titres |
-| Émeraude profonde | `emerald` / `deep` | `#0B3B31` / `#07241D` | Ouvertures de chapitres, couverture, titres majeurs |
-| Or solaire | `gold` / `gold-hi` | `#C5881E` / `#E9AF43` | Filets, accents de promesse, numéros clés |
-| Terre cuite | `terracotta` | `#B8532A` | Alertes erreurs, budgets structurés, repères terrain |
-| Filets | `rule` | `#DDD5C7` | Lignes de séparation éditoriales 0.45pt |
-
-## 4. Règles d'Artisanat Anti-Slop
-
-- **Zéro carte répétitive dans une carte** : le catalogue des 500 idées adopte une grille éditoriale suisse à **2 colonnes séparées par de fins filets typographiques** (aucune bordure lourde répétitive).
-- **Atomicité absolue** : aucune fiche idée, aucun bandeau de chapitre, aucune table d'erreur ne peut être coupé entre deux pages.
-- **Navigation active** : le Sommaire utilise des liens internes PDF cliquables et des numéros de pages calculés nativement par Typst.
-- **Cohérence 1-pour-1** : les 10 pages du Workbook Jour 2 rempli et les 5 parties + Conclusion de l'ebook partagent exactement le même langage visuel et les données dynamiques de `ebook-source/author_config.json`.
+- **Papier** : `#FCFBF8` (ivoire naturel mat)
+- **Encre principale** : `#161B19` · **Encre secondaire** : `#555E5A` · **Encre discrète** : `#7C8480`
+- **Filets** : `#DDD6CA` (capillaire) · `#103E33` (structure)
+- **Accent éditorial unique** : Vert forêt profond `#103E33` (avec repères sémantiques discrets `#8A5808` / `#8E3C1D` en texte pur uniquement pour les niveaux de budget)

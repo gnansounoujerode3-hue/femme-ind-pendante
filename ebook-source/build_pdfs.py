@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
-"""Générateur éditorial Typst 0.15 des livrables PDF + exports Markdown éditables :
+"""Générateur éditorial Typst 0.15 des livrables PDF et exports Markdown :
 - 500-Idees-de-Business-a-Lancer-en-Afrique-en-2027.pdf
 - Workbook-Jour-2-Rempli-500-Idees-Business-Afrique-2027.pdf
-Basé sur le système design « Savane Solaire & Papier Ivoire » (.agents/skills/).
+Système éditorial sobre « Savane Sobre & Papier Munken » (.agents/skills/).
 """
 
 import json
@@ -36,8 +36,6 @@ WORKBOOK_TYP_PATH = SOURCE_DIR / "workbook.typ"
 
 FONT_PATHS = [
     str(ROOT_DIR / ".agents" / "skills" / "canvas-design" / "canvas-fonts"),
-    str(next((ROOT_DIR / ".venv" / "lib").glob("python*/site-packages")) / "font_source_sans_pro" / "files"),
-    str(next((ROOT_DIR / ".venv" / "lib").glob("python*/site-packages")) / "font_source_serif_pro" / "files"),
 ]
 
 
@@ -46,87 +44,72 @@ EBOOK_TYP = r'''
 #let cfg = data.config
 #let sectors = data.sectors
 
-// Palette « Savane Solaire & Papier Ivoire »
-#let c_paper      = rgb("#FAF7F2")
-#let c_paper_alt  = rgb("#F2ECE1")
-#let c_paper_sage = rgb("#EBF2EE")
-#let c_paper_clay = rgb("#F9ECE6")
-#let c_ink        = rgb("#12201C")
-#let c_ink2       = rgb("#46544F")
-#let c_muted      = rgb("#7A857E")
-#let c_emerald    = rgb("#0B3B31")
-#let c_deep       = rgb("#07241D")
-#let c_gold       = rgb("#C5881E")
-#let c_gold_hi    = rgb("#E9AF43")
-#let c_gold_ink   = rgb("#7A4E04")
-#let c_clay       = rgb("#B8532A")
-#let c_clay_ink   = rgb("#843212")
-#let c_rule       = rgb("#DDD5C7")
-#let c_sage_rule  = rgb("#C7D7CF")
+// Palette éditoriale sobre — Papier Munken, encre charbon, vert forêt profond
+#let c_paper    = rgb("#FCFBF8")
+#let c_tint     = rgb("#F5F2EC")
+#let c_ink      = rgb("#161B19")
+#let c_ink2     = rgb("#4B5450")
+#let c_muted    = rgb("#78807C")
+#let c_accent   = rgb("#103E33")
+#let c_deep     = rgb("#07221B")
+#let c_ocre     = rgb("#8A5808")
+#let c_clay     = rgb("#8E3C1D")
+#let c_gold_hi  = rgb("#E9AF43")
+#let c_rule     = rgb("#DDD6CA")
+#let c_hair     = rgb("#EAE4DA")
 
 #let set_sec(name) = [#metadata(name)<sec-marker>]
 
-#let checkbox(checked: false, accent: c_emerald) = box(
-  width: 8.5pt, height: 8.5pt, radius: 1.5pt,
-  fill: if checked { accent } else { c_paper },
-  stroke: 0.8pt + accent,
-  baseline: 1.2pt,
-  align(center + horizon)[
-    #if checked {
-      text(font: "Source Sans Pro", size: 6.5pt, weight: "bold", fill: c_paper)[✓]
-    }
-  ]
+// Case à cocher dessinée vectoriellement (zéro glyphe fallback ni emoji)
+#let checkbox(checked: false, accent: c_accent) = box(
+  width: 8pt, height: 8pt,
+  fill: if checked { accent } else { none },
+  stroke: 0.7pt + accent,
+  baseline: 1pt,
+  if checked {
+    place(center + horizon)[
+      #curve(
+        stroke: (paint: c_paper, thickness: 1.1pt, cap: "round", join: "round"),
+        curve.move((1.4pt, 4.1pt)),
+        curve.line((3.2pt, 5.9pt)),
+        curve.line((6.6pt, 2.2pt)),
+      )
+    ]
+  }
 )
 
-#let pill_budget(tier) = {
-  let bg = if tier == "Petit" { c_paper_sage } else if tier == "Moyen" { rgb("#FBF1DC") } else { c_paper_clay }
-  let fg = if tier == "Petit" { c_emerald } else if tier == "Moyen" { c_gold_ink } else { c_clay_ink }
-  let bd = if tier == "Petit" { rgb("#B7D3C7") } else if tier == "Moyen" { rgb("#E4C98C") } else { rgb("#E3B4A1") }
-  let lbl = if tier == "Petit" { "PETIT <50K" } else if tier == "Moyen" { "MOYEN 50-300K" } else { "STRUCTURÉ 300K+" }
-  box(
-    fill: bg, stroke: 0.45pt + bd, radius: 2pt,
-    inset: (x: 4.5pt, y: 2pt),
-    text(font: "JetBrains Mono", size: 6.3pt, weight: "bold", fill: fg, tracking: 0.04em)[#lbl]
-  )
+// Indication discrète du budget sans pilule ni boîte répétitive
+#let budget_label(tier) = {
+  let col = if tier == "Petit" { c_accent } else if tier == "Moyen" { c_ocre } else { c_clay }
+  let lbl = if tier == "Petit" { "Petit budget" } else if tier == "Moyen" { "Budget moyen" } else { "Structuré" }
+  text(size: 7.3pt, weight: "semibold", fill: col)[#lbl]
 }
 
-#let chapter_opener(num, kicker, title, question, lbl_name) = {
+// Ouverture de chapitre authentique de maison d'édition (sur fond papier pur)
+#let chapter_opener(kicker, title, epigraph, lbl_name) = {
   set_sec(kicker)
   [#metadata(kicker)#label(lbl_name)]
-  box(
-    width: 100%,
-    fill: c_deep,
-    radius: 3pt,
-    inset: (x: 16pt, y: 12pt),
-    stroke: (bottom: 2.2pt + c_gold),
-  )[
-    #place(
-      right + horizon,
-      dx: 4pt,
-      text(font: "Instrument Serif", size: 62pt, fill: rgb("#E9AF4330"))[#num]
-    )
-    #block(width: 84%)[
-      #text(font: "JetBrains Mono", size: 7.3pt, weight: "bold", fill: c_gold_hi, tracking: 0.14em)[#upper(kicker)]
-      #v(3pt)
-      #text(font: "Instrument Serif", size: 21.5pt, fill: c_paper, weight: "regular")[#title]
-      #v(4pt)
-      #line(length: 34pt, stroke: 1.1pt + c_gold)
-      #v(4pt)
-      #text(font: ("Instrument Sans", "Source Sans Pro"), size: 8.4pt, style: "italic", fill: rgb("#DCE6E1"))[#question]
-    ]
+  block(width: 100%, below: 11pt)[
+    #text(size: 8.3pt, weight: "semibold", fill: c_accent, tracking: 0.06em)[#kicker]
+    #v(4pt)
+    #text(font: "Instrument Serif", size: 24.5pt, fill: c_ink, weight: "regular")[#title]
+    #v(7pt)
+    #line(length: 44pt, stroke: 0.9pt + c_accent)
+    #v(6pt)
+    #text(size: 9.2pt, style: "italic", fill: c_ink2)[#epigraph]
+    #v(9pt)
+    #line(length: 100%, stroke: 0.4pt + c_rule)
   ]
 }
 
-#let section_subhead(kicker, title) = {
-  v(7pt)
-  block(breakable: false, sticky: true)[
-    #text(font: "JetBrains Mono", size: 7pt, weight: "bold", fill: c_gold_ink, tracking: 0.12em)[#upper(kicker)]
-    #v(2pt)
-    #text(font: "Instrument Serif", size: 15.5pt, fill: c_emerald)[#title]
-    #v(2pt)
-    #line(length: 100%, stroke: 0.5pt + c_rule)
+// Intertitre sans sur-titre mécanique au-dessus
+#let section_head(title) = {
+  v(11pt)
+  block(breakable: false, sticky: true, below: 6pt)[
+    #text(font: "Instrument Serif", size: 15.5pt, fill: c_ink)[#title]
+    #v(3pt)
+    #line(length: 100%, stroke: 0.45pt + c_rule)
   ]
-  v(4pt)
 }
 
 #set document(
@@ -135,17 +118,17 @@ EBOOK_TYP = r'''
 )
 
 #set text(
-  font: ("Instrument Sans", "Source Sans Pro"),
-  size: 9.4pt,
+  font: "Instrument Sans",
+  size: 9.3pt,
   fill: c_ink,
   lang: "fr",
   region: "FR",
 )
 
-#set par(leading: 0.62em, justify: false)
+#set par(leading: 0.64em, justify: false)
 
 // ============================================================================
-// PAGE 1 : COUVERTURE TASCHEN / MONOCLE FULL-BLEED
+// PAGE 1 : COUVERTURE D'ÉDITION ÉPURÉE (SANS CADRE NI WIDGETS)
 // ============================================================================
 #page(
   paper: "a4",
@@ -154,137 +137,94 @@ EBOOK_TYP = r'''
   header: none,
   footer: none,
 )[
-  // Artwork plein cadre
   #place(top + left, image("cover_art.png", width: 210mm, height: 297mm, fit: "cover"))
 
-  // Dégradé doux supérieur & inférieur pour contraste typographique maximal
+  // Dégradés doux assurant un contraste naturel du texte sur l'illustration
   #place(top + left, rect(
-    width: 210mm, height: 118mm,
+    width: 210mm, height: 126mm,
     fill: gradient.linear(
-      rgb("#061E18F5"), rgb("#061E18DC"), rgb("#061E1885"), rgb("#061E1800"),
+      rgb("#061E18F5"), rgb("#061E18E0"), rgb("#061E1894"), rgb("#061E1800"),
       angle: 90deg,
     )
   ))
   #place(bottom + left, rect(
-    width: 210mm, height: 90mm,
+    width: 210mm, height: 84mm,
     fill: gradient.linear(
-      rgb("#061E1800"), rgb("#061E18B5"), rgb("#061E18EE"), rgb("#061E18F6"),
+      rgb("#061E1800"), rgb("#061E18AD"), rgb("#061E18EB"), rgb("#061E18F5"),
       angle: 90deg,
     )
   ))
 
-  // Cadre architectural doré fin
-  #place(top + left, dx: 9mm, dy: 9mm, rect(
-    width: 192mm, height: 279mm,
-    stroke: 0.6pt + rgb("#C5881E99"),
-    fill: none,
-  ))
-
-  // Masthead supérieur (zéro pill criard — pure typographie éditoriale)
-  #place(top + left, dx: 17mm, dy: 16mm, box(width: 176mm)[
-    #grid(
-      columns: (1fr, 1fr),
-      align(left)[
-        #text(font: "JetBrains Mono", size: 7.4pt, weight: "bold", fill: c_gold_hi, tracking: 0.16em)[ÉDITION 2027 · COLLECTION AFRIQUE]
-      ],
-      align(right)[
-        #text(font: "JetBrains Mono", size: 7.4pt, fill: rgb("#DCE5E0"), tracking: 0.14em)[GUIDE PRATIQUE & CATALOGUE]
-      ]
-    )
-    #v(5pt)
-    #line(length: 100%, stroke: 0.5pt + rgb("#C5881E77"))
+  // En-tête éditorial léger en tête de couverture
+  #place(top + left, dx: 20mm, dy: 14mm, box(width: 170mm)[
+    #text(size: 8.2pt, fill: rgb("#DCE3DF"), tracking: 0.14em)[#upper(cfg.edition)]
   ])
 
-  // Bloc Titre Sculptural à fort contraste d'échelle (Instrument Serif)
-  #place(top + left, dx: 17mm, dy: 27mm, box(width: 176mm)[
-    #grid(
-      columns: (auto, 1fr),
-      column-gutter: 12pt,
-      align: bottom,
-      box(
-        inset: (right: 11pt, top: 2pt, bottom: 2pt),
-        stroke: (right: 1.4pt + c_gold),
-      )[
-        #text(font: "Instrument Serif", size: 70pt, fill: c_gold_hi, tracking: -0.02em)[500]
-      ],
-      block(inset: (bottom: 4pt))[
-        #text(font: "Instrument Serif", size: 28pt, fill: c_paper, tracking: -0.01em)[Idées de Business]
-        #v(-4pt)
-        #text(font: "Instrument Serif", size: 28pt, fill: c_paper, tracking: -0.01em)[à lancer en Afrique]
-      ]
-    )
-    #v(6pt)
-    #text(font: "JetBrains Mono", size: 10.5pt, weight: "bold", fill: c_gold_hi, tracking: 0.22em)[HORIZON 2027]
+  // Titre sculptural avec hiérarchie pure, entièrement au-dessus des rayons solaires
+  #place(top + left, dx: 20mm, dy: 23mm, box(width: 170mm)[
+    #text(font: "Instrument Serif", size: 40pt, fill: rgb("#FAF7F2"), tracking: -0.01em)[
+      500 Idées de Business
+    ]
+    #v(-4pt)
+    #text(font: "Instrument Serif", size: 30pt, fill: c_gold_hi, tracking: -0.01em)[
+      à lancer en Afrique en 2027
+    ]
     #v(7pt)
-    #text(font: ("Instrument Sans", "Source Sans Pro"), size: 10pt, fill: rgb("#F6F2EA"))[
-      #cfg.ebook_subtitle
-    ]
+    #line(length: 40pt, stroke: 0.9pt + c_gold_hi)
+    #v(6pt)
+    #text(size: 10.0pt, fill: rgb("#F3EFE6"))[#cfg.ebook_subtitle]
   ])
 
-  // Zone Basse : Promesse du Workbook + Colophon Auteur
-  #place(bottom + left, dx: 17mm, dy: -16mm, box(width: 176mm)[
-    #box(
-      width: 100%,
-      fill: rgb("#07241DD6"),
-      stroke: (left: 2.2pt + c_gold, rest: 0.5pt + rgb("#C5881E66")),
-      radius: 2.5pt,
-      inset: (x: 14pt, y: 11pt),
-    )[
-      #text(font: "JetBrains Mono", size: 6.8pt, weight: "bold", fill: c_gold_hi, tracking: 0.14em)[PROMESSE DU GUIDE · MÉTHODE WORKBOOK JOUR 2]
-      #v(4pt)
-      #text(font: "Instrument Serif", size: 13.5pt, style: "italic", fill: c_paper)[
-        « #cfg.promise_formula »
-      ]
+  // Zone inférieure : promesse librement posée + mention auteur sobre
+  #place(bottom + left, dx: 20mm, dy: -16mm, box(width: 170mm)[
+    #text(font: "Instrument Serif", size: 13.8pt, style: "italic", fill: rgb("#FAF7F2"))[
+      « #cfg.promise_formula »
     ]
-    #v(11pt)
-    #line(length: 100%, stroke: 0.45pt + rgb("#C5881E66"))
-    #v(6pt)
+    #v(12pt)
+    #line(length: 100%, stroke: 0.4pt + rgb("#FAF7F244"))
+    #v(7pt)
     #grid(
       columns: (1fr, auto),
-      align(left)[
-        #text(font: ("Instrument Sans", "Source Sans Pro"), size: 9.2pt, weight: "bold", fill: c_paper)[Par #cfg.author_name]
-      ],
-      align(right)[
-        #text(font: "JetBrains Mono", size: 7.4pt, fill: c_gold_hi, tracking: 0.08em)[20 SECTEURS · 500 FICHES · PLAN 7 JOURS]
-      ]
+      text(size: 9.2pt, weight: "semibold", fill: rgb("#FAF7F2"))[#cfg.author_name],
+      text(size: 8.4pt, fill: rgb("#D5DED9"))[Vingt secteurs · Cinq cents fiches pratiques]
     )
   ])
 ]
 
 // ============================================================================
-// CONFIGURATION DES PAGES INTÉRIEURES (PAPIER IVOIRE & FOLIOS ÉDITORIAUX)
+// PAGES INTÉRIEURES : PAPIER MUNKEN, FOLIOS DISCRETS, EN-TÊTE COURANT SOBRE
 // ============================================================================
 #set page(
   paper: "a4",
   fill: c_paper,
-  margin: (top: 20mm, bottom: 18mm, left: 15mm, right: 15mm),
+  margin: (top: 21mm, bottom: 20mm, left: 17mm, right: 17mm),
   header: context {
     let pg = here().page()
     let markers = query(selector(<sec-marker>)).filter(m => m.location().page() <= pg)
     let sec = if markers.len() > 0 { markers.last().value } else { "Avant-propos" }
-    box(width: 100%, inset: (bottom: 4pt), stroke: (bottom: 0.45pt + c_rule))[
+    box(width: 100%, inset: (bottom: 5pt), stroke: (bottom: 0.35pt + c_rule))[
       #grid(
         columns: (auto, 1fr),
         column-gutter: 12pt,
         align(left)[
-          #text(font: "JetBrains Mono", size: 6.7pt, fill: c_muted, tracking: 0.05em)[500 IDÉES DE BUSINESS · AFRIQUE 2027]
+          #text(size: 7.6pt, fill: c_muted)[500 Idées de Business à Lancer en Afrique en 2027]
         ],
         align(right)[
-          #text(font: ("Instrument Sans", "Source Sans Pro"), size: 7.4pt, weight: "bold", fill: c_emerald)[#sec]
+          #text(size: 7.6pt, weight: "semibold", fill: c_accent)[#sec]
         ]
       )
     ]
   },
   footer: context {
     let pg = counter(page).get().first()
-    box(width: 100%, inset: (top: 4pt), stroke: (top: 0.45pt + c_rule))[
+    box(width: 100%, inset: (top: 5pt), stroke: (top: 0.35pt + c_rule))[
       #grid(
         columns: (1fr, auto),
         align(left)[
-          #text(font: ("Instrument Sans", "Source Sans Pro"), size: 7.3pt, fill: c_muted)[Édition 2027 · Afrique Francophone · Guide Pratique & Catalogue]
+          #text(size: 7.4pt, fill: c_muted)[Guide pratique & répertoire · Afrique francophone]
         ],
         align(right)[
-          #text(font: "JetBrains Mono", size: 7.5pt, weight: "bold", fill: c_emerald)[#pg]
+          #text(size: 8.2pt, weight: "semibold", fill: c_ink)[#pg]
         ]
       )
     ]
@@ -292,145 +232,113 @@ EBOOK_TYP = r'''
 )
 
 // ============================================================================
-// PAGE 2 : FAUX-TITRE, COLOPHON & MATRICE DES 3 BUDGETS
+// PAGE 2 : PAGE DE TITRE INTÉRIEURE, AVANT-PROPOS & NIVEAUX DE BUDGET
 // ============================================================================
-#set_sec("Avant-propos · Mode d'emploi & Budgets")
+#set_sec("Avant-propos")
 #metadata("garde") <p-garde>
 
-#text(font: "JetBrains Mono", size: 7.4pt, weight: "bold", fill: c_gold_ink, tracking: 0.14em)[AVANT-PROPOS ÉDITORIAL · ÉDITION 2027]
 #v(4pt)
-#text(font: "Instrument Serif", size: 28pt, fill: c_deep)[#cfg.ebook_title]
-#v(4pt)
-#text(font: ("Instrument Sans", "Source Sans Pro"), size: 10.5pt, style: "italic", fill: c_ink2)[#cfg.ebook_subtitle]
-#v(8pt)
-#line(length: 40pt, stroke: 1.4pt + c_clay)
-#v(12pt)
+#text(font: "Instrument Serif", size: 28pt, fill: c_ink)[#cfg.ebook_title]
+#v(6pt)
+#text(size: 10.4pt, style: "italic", fill: c_ink2)[#cfg.ebook_subtitle]
+#v(11pt)
+#line(length: 44pt, stroke: 0.9pt + c_accent)
+#v(16pt)
 
-// Pull-quote monumentale
+// Exergue ouverte (zéro boîte fermée ni fond coloré)
 #box(
   width: 100%,
-  fill: c_paper_alt,
-  stroke: (left: 2.5pt + c_gold),
-  inset: (x: 16pt, y: 11pt),
+  stroke: (left: 1pt + c_accent),
+  inset: (left: 13pt, y: 4pt),
 )[
-  #grid(
-    columns: (auto, 1fr),
-    column-gutter: 10pt,
-    align: top,
-    text(font: "Instrument Serif", size: 32pt, fill: c_gold, weight: "regular")[«],
-    block[
-      #text(font: "JetBrains Mono", size: 6.8pt, weight: "bold", fill: c_gold_ink, tracking: 0.12em)[LA PROMESSE DE CE LIVRE]
-      #v(3pt)
-      #text(font: "Instrument Serif", size: 14pt, style: "italic", fill: c_deep)[
-        #cfg.promise_formula
-      ]
-    ]
-  )
+  #text(font: "Instrument Serif", size: 14.2pt, style: "italic", fill: c_ink)[
+    « #cfg.promise_formula »
+  ]
 ]
 
-#section_subhead("CLÉ DE LECTURE", "Les 3 niveaux de budget utilisés dans ce catalogue")
+#section_head("Les trois niveaux de budget utilisés dans ce catalogue")
 #text(size: 9.2pt, fill: c_ink2)[
-  Chaque idée parmi les 500 fiches indique le capital réaliste requis pour lancer une première version testable dès cette semaine en Afrique francophone :
+  Chaque fiche du répertoire précise le capital réaliste requis pour lancer une première version vérifiable sur le terrain dès cette semaine :
 ]
-#v(7pt)
+#v(10pt)
 
 #grid(
   columns: (1fr, 1fr, 1fr),
-  column-gutter: 8pt,
+  column-gutter: 12pt,
   ..data.budget_guide.enumerate().map(((idx, b)) => {
-    let accent = if idx == 0 { c_emerald } else if idx == 1 { c_gold } else { c_clay }
-    let tint = if idx == 0 { c_paper_sage } else if idx == 1 { rgb("#FBF1DC") } else { c_paper_clay }
+    let accent = if idx == 0 { c_accent } else if idx == 1 { c_ocre } else { c_clay }
     grid.cell(
-      fill: tint,
-      stroke: (top: 2.2pt + accent, rest: 0.45pt + c_rule),
-      inset: 9.5pt,
+      stroke: (top: 1.2pt + accent, bottom: 0.35pt + c_rule),
+      inset: (top: 8pt, bottom: 9pt),
     )[
-      #text(font: "JetBrains Mono", size: 7.2pt, weight: "bold", fill: accent, tracking: 0.08em)[NIVEAU 0#(idx + 1)]
-      #v(3pt)
-      #text(font: "Instrument Serif", size: 14pt, fill: c_deep)[#b.label]
+      #text(size: 7.4pt, weight: "semibold", fill: accent)[Niveau 0#(idx + 1)]
       #v(2pt)
-      #text(font: "JetBrains Mono", size: 7.1pt, weight: "bold", fill: c_ink)[#b.range]
-      #v(4pt)
-      #line(length: 100%, stroke: 0.4pt + c_rule)
-      #v(4pt)
-      #text(size: 8.0pt, fill: c_ink2)[#b.desc]
+      #text(font: "Instrument Serif", size: 15pt, fill: c_ink)[#b.label]
+      #v(3pt)
+      #text(size: 8.0pt, weight: "semibold", fill: c_ink)[#b.range]
+      #v(5pt)
+      #text(size: 8.2pt, fill: c_ink2)[#b.desc]
     ]
   })
 )
 
-#v(14pt)
-#box(
-  width: 100%,
-  fill: c_paper_alt,
-  stroke: 0.5pt + c_rule,
-  radius: 2pt,
-  inset: 12pt,
-)[
-  #text(font: "JetBrains Mono", size: 7pt, weight: "bold", fill: c_emerald, tracking: 0.12em)[ARCHITECTURE WORKBOOK OFFICIEL JOUR 2]
-  #v(4pt)
-  #text(size: 8.6pt, fill: c_ink)[
-    Ce livre applique rigoureusement le plan en *5 parties + Conclusion* : *01 Introduction* · *02 Les 7 erreurs à éviter* · *03 Étape 1 (500 idées en 20 secteurs)* · *04 Étape 2 (Validation Express 48h par méthode VIN)* · *05 Étape 3 (Plan de lancement 7 jours)* · *Conclusion & engagement terrain*.
-  ]
-  #v(5pt)
-  #text(size: 8.2pt, style: "italic", fill: c_ink2)[
-    Astuce diffusion : les 10 premières pages de ce livre forment un extrait gratuit autonome idéal pour attirer tes premiers lecteurs.
-  ]
+#section_head("Comment lire et exploiter cet ouvrage")
+#text(size: 9.0pt, fill: c_ink)[
+  Ce livre suit une progression volontairement pragmatique en cinq parties : comprendre pourquoi 2027 favorise les lancements légers (*Première partie*), éviter les sept fautes qui immobilisent les débutants (*Deuxième partie*), explorer vingt secteurs regroupant cinq cents activités concrètes (*Troisième partie*), vérifier la demande réelle en quarante-huit heures sans engager de stock (*Quatrième partie*) puis encaisser ses premiers clients en sept jours (*Cinquième partie*).
 ]
 
 #v(1fr)
-#line(length: 100%, stroke: 0.5pt + c_rule)
-#v(5pt)
+#line(length: 100%, stroke: 0.45pt + c_rule)
+#v(6pt)
 #grid(
   columns: (1fr, auto),
-  text(size: 8pt, fill: c_ink2)[*Éditeur / Auteur :* #cfg.author_name · *Date :* #cfg.date_creation],
-  text(font: "JetBrains Mono", size: 7.5pt, fill: c_emerald)[#cfg.contact_whatsapp]
+  text(size: 8.1pt, fill: c_ink2)[*Édition :* #cfg.author_name · #cfg.date_creation],
+  text(size: 8.1pt, fill: c_accent)[#cfg.contact_email]
 )
 
 #pagebreak()
 
 // ============================================================================
-// PAGE 3 : SOMMAIRE ARCHITECTURAL CLICABLE (1 PAGE COMPLÈTE)
+// PAGE 3 : SOMMAIRE ÉDITORIAL CLICABLE (1 PAGE)
 // ============================================================================
-#set_sec("Sommaire architectural")
+#set_sec("Sommaire")
 #metadata("sommaire") <p-sommaire>
 
-#text(font: "JetBrains Mono", size: 7.0pt, weight: "bold", fill: c_gold_ink, tracking: 0.14em)[NAVIGATION COMPLÈTE DU GUIDE]
-#v(1pt)
-#text(font: "Instrument Serif", size: 22.5pt, fill: c_deep)[Sommaire architectural]
-#v(3pt)
-#line(length: 100%, stroke: 1.2pt + c_emerald)
+#text(font: "Instrument Serif", size: 24pt, fill: c_ink)[Sommaire]
 #v(5pt)
+#line(length: 100%, stroke: 0.9pt + c_ink)
+#v(8pt)
 
 #let toc_part_row(num, title, target_lbl) = context {
   let pg = counter(page).at(target_lbl).first()
   link(target_lbl)[
-    #box(width: 100%, inset: (y: 3.0pt), stroke: (bottom: 0.45pt + c_rule))[
+    #box(width: 100%, inset: (y: 3.4pt), stroke: (bottom: 0.35pt + c_hair))[
       #grid(
-        columns: (24pt, 1fr, auto, auto),
+        columns: (28pt, 1fr, 44pt, 20pt),
         column-gutter: 6pt,
         align: horizon,
-        text(font: "JetBrains Mono", size: 8.2pt, weight: "bold", fill: c_gold_ink)[#num],
-        text(font: "Instrument Serif", size: 11.4pt, fill: c_deep)[#title],
-        box(width: 34pt, align(right, line(length: 100%, stroke: (paint: c_rule, thickness: 0.6pt, dash: "dotted")))),
-        box(fill: c_paper_sage, radius: 2pt, inset: (x: 4.5pt, y: 1pt),
-          text(font: "JetBrains Mono", size: 7.6pt, weight: "bold", fill: c_emerald)[p. #pg]
-        )
+        text(size: 8.2pt, weight: "semibold", fill: c_accent)[#num],
+        text(font: "Instrument Serif", size: 11.6pt, fill: c_ink)[#title],
+        line(length: 100%, stroke: (paint: c_rule, thickness: 0.5pt, dash: "dotted")),
+        align(right, text(size: 8.6pt, weight: "semibold", fill: c_ink)[#pg])
       )
     ]
   ]
 }
 
-#toc_part_row("00", "Mode d'emploi & Matrice des 3 budgets", <p-garde>)
-#toc_part_row("01", "Introduction — Pourquoi entreprendre en Afrique en 2027", <p-01>)
-#toc_part_row("02", "Erreurs à éviter — Les 7 pièges qui tuent 80 % des projets", <p-02>)
-#toc_part_row("03", "Étape 1 — Catalogue des 500 idées rentables (20 secteurs)", <p-03>)
-#toc_part_row("04", "Étape 2 — Validation Express en 48h (Méthode VIN & Grille /30)", <p-04>)
-#toc_part_row("05", "Étape 3 — Plan d'action 7 jours, Scripts & 3 Enveloppes", <p-05>)
-#toc_part_row("∞", "Conclusion — Fiche d'engagement 48h & À propos de l'auteur", <p-conc>)
+#toc_part_row("00", "Avant-propos et niveaux de budget", <p-garde>)
+#toc_part_row("01", "Première partie · Pourquoi entreprendre en Afrique en 2027", <p-01>)
+#toc_part_row("02", "Deuxième partie · Les sept erreurs à éviter", <p-02>)
+#toc_part_row("03", "Troisième partie · Catalogue des 500 idées (20 secteurs)", <p-03>)
+#toc_part_row("04", "Quatrième partie · Validation express en 48 heures (Méthode VIN)", <p-04>)
+#toc_part_row("05", "Cinquième partie · Plan d'action en 7 jours et gestion du cash", <p-05>)
+#toc_part_row("Fin", "Conclusion · Fiche d'engagement et à propos de l'auteur", <p-conc>)
 
-#v(8pt)
-#text(font: "JetBrains Mono", size: 7.0pt, weight: "bold", fill: c_emerald, tracking: 0.14em)[INDEX DES 20 SECTEURS · 25 IDÉES PAR SECTEUR (CLIQUER POUR ACCÉDER)]
-#v(4pt)
+#v(12pt)
+#text(font: "Instrument Serif", size: 14pt, fill: c_ink)[Répertoire des vingt secteurs]
+#h(8pt)
+#text(size: 8.1pt, style: "italic", fill: c_muted)[(25 idées par secteur · cliquer sur un secteur pour y accéder)]
+#v(6pt)
 
 #let sec_toc_cell(s) = context {
   let lbl = label("sec-" + str(s.num))
@@ -438,21 +346,20 @@ EBOOK_TYP = r'''
   link(lbl)[
     #box(
       width: 100%,
-      fill: if calc.rem(s.num, 2) == 1 { c_paper_alt } else { c_paper },
-      stroke: (bottom: 0.45pt + c_rule),
-      inset: (x: 5.5pt, y: 3.1pt),
+      stroke: (bottom: 0.35pt + c_hair),
+      inset: (y: 3.2pt),
     )[
       #grid(
-        columns: (24pt, 1fr, auto),
-        column-gutter: 5pt,
+        columns: (20pt, 1fr, auto),
+        column-gutter: 6pt,
         align: top,
-        text(font: "JetBrains Mono", size: 7.6pt, weight: "bold", fill: c_emerald)[S#if s.num < 10 [0] else []#s.num],
+        text(size: 8.0pt, weight: "semibold", fill: c_accent)[#if s.num < 10 [0] else []#s.num],
         block[
-          #text(size: 7.85pt, weight: "bold", fill: c_ink)[#s.title]
+          #text(size: 7.95pt, weight: "semibold", fill: c_ink)[#s.title]
           #v(0.5pt)
-          #text(font: "JetBrains Mono", size: 6.2pt, fill: c_muted)[Idées #s.start_code–#s.end_code]
+          #text(size: 7.0pt, fill: c_muted)[Idées #s.start_code à #s.end_code]
         ],
-        text(font: "JetBrains Mono", size: 7.8pt, weight: "bold", fill: c_clay)[#pg]
+        text(size: 8.1pt, weight: "semibold", fill: c_ink2)[#pg]
       )
     ]
   ]
@@ -460,13 +367,9 @@ EBOOK_TYP = r'''
 
 #grid(
   columns: (1fr, 1fr),
-  column-gutter: 10pt,
-  block(
-    stroke: (top: 1.2pt + c_emerald),
-  )[#for s in sectors.slice(0, 10) [#sec_toc_cell(s)]],
-  block(
-    stroke: (top: 1.2pt + c_gold),
-  )[#for s in sectors.slice(10, 20) [#sec_toc_cell(s)]]
+  column-gutter: 16pt,
+  block(stroke: (top: 0.8pt + c_accent))[#for s in sectors.slice(0, 10) [#sec_toc_cell(s)]],
+  block(stroke: (top: 0.8pt + c_accent))[#for s in sectors.slice(10, 20) [#sec_toc_cell(s)]]
 )
 
 #pagebreak()
@@ -474,56 +377,53 @@ EBOOK_TYP = r'''
 // ============================================================================
 // PARTIE 01 : INTRODUCTION
 // ============================================================================
-#chapter_opener("01", data.part01.kicker, data.part01.title, data.part01.workbook_question, "p-01")
-#v(9pt)
+#chapter_opener(data.part01.kicker, data.part01.title, data.part01.epigraph, "p-01")
 
-// Deck asymétrique éditorial
 #grid(
-  columns: (33%, 1fr),
-  column-gutter: 13pt,
+  columns: (32%, 1fr),
+  column-gutter: 16pt,
   box(
     width: 100%,
-    stroke: (top: 1.5pt + c_gold, bottom: 0.5pt + c_rule),
-    inset: (y: 7pt),
+    stroke: (top: 0.9pt + c_accent),
+    inset: (top: 8pt),
   )[
-    #text(font: "Instrument Serif", size: 12.2pt, style: "italic", fill: c_emerald)[
-      « Le vrai blocage n'est pas le manque de courage, mais l'absence de filtre adapté au terrain. »
+    #text(font: "Instrument Serif", size: 13pt, style: "italic", fill: c_accent)[
+      « L'envie d'entreprendre est immense ; ce qui manque le plus souvent, c'est un filtre adapté aux réalités du terrain. »
     ]
   ],
   block[
     #text(size: 9.1pt, fill: c_ink)[#data.part01.lead]
-    #v(4pt)
+    #v(6pt)
     #for pb in data.part01.problem_blocks [
-      #text(size: 8.9pt, weight: "bold", fill: c_deep)[#pb.title]
-      #v(1.5pt)
-      #text(size: 8.4pt, fill: c_ink2)[#pb.body]
-      #v(4pt)
+      #text(size: 9.0pt, weight: "bold", fill: c_ink)[#pb.title]
+      #v(2pt)
+      #text(size: 8.6pt, fill: c_ink2)[#pb.body]
+      #v(5pt)
     ]
   ]
 )
 
-#section_subhead("DYNAMIQUES 2027", "Les 5 méga-tendances qui créent les gagnants")
+#section_head("Cinq dynamiques porteuses en 2027")
 
 #grid(
   columns: (1fr, 1fr),
-  column-gutter: 10pt,
+  column-gutter: 16pt,
   row-gutter: 6pt,
   ..data.part01.trends.enumerate().map(((i, t)) => {
     let span_full = (i == 4)
     grid.cell(
       colspan: if span_full { 2 } else { 1 },
-      fill: if span_full { c_paper_sage } else { c_paper_alt },
-      stroke: (left: 2pt + if i < 2 { c_emerald } else { c_gold }),
-      inset: (x: 9pt, y: 5.5pt),
+      stroke: (bottom: 0.35pt + c_rule),
+      inset: (top: 4pt, bottom: 7pt),
     )[
       #grid(
-        columns: (20pt, 1fr),
+        columns: (22pt, 1fr),
         column-gutter: 6pt,
-        text(font: "Instrument Serif", size: 16pt, fill: c_gold_ink)[0#(i + 1)],
+        text(font: "Instrument Serif", size: 17pt, fill: c_accent)[0#(i + 1)],
         block[
-          #text(size: 8.5pt, weight: "bold", fill: c_deep)[#t.title]
-          #v(1.5pt)
-          #text(size: 7.9pt, fill: c_ink2)[#t.body]
+          #text(size: 8.8pt, weight: "bold", fill: c_ink)[#t.title]
+          #v(2pt)
+          #text(size: 8.2pt, fill: c_ink2)[#t.body]
         ]
       )
     ]
@@ -532,50 +432,49 @@ EBOOK_TYP = r'''
 
 #pagebreak()
 
-#section_subhead("ORIENTATION RAPIDE", "Par quel secteur commencer selon ton profil ?")
+#section_head("Par quel secteur commencer selon ton profil ?")
 #table(
-  columns: (28%, 22%, 50%),
-  stroke: (x: none, y: 0.45pt + c_rule),
-  fill: (_, row) => if row == 0 { c_deep } else if calc.odd(row) { c_paper } else { c_paper_alt },
-  inset: (x: 8pt, y: 7pt),
+  columns: (28%, 25%, 47%),
+  stroke: (x, y) => (bottom: if y == 0 { 0.9pt + c_ink } else { 0.35pt + c_hair }),
+  fill: none,
+  inset: (x: 4pt, y: 8pt),
   table.header(
-    text(font: "JetBrains Mono", size: 7.5pt, weight: "bold", fill: c_gold_hi)[PROFIL],
-    text(font: "JetBrains Mono", size: 7.5pt, weight: "bold", fill: c_gold_hi)[BUDGET RÉALISTE],
-    text(font: "JetBrains Mono", size: 7.5pt, weight: "bold", fill: c_gold_hi)[SECTEURS PRIORITAIRES],
+    text(size: 8.0pt, weight: "bold", fill: c_accent)[Profil],
+    text(size: 8.0pt, weight: "bold", fill: c_accent)[Budget réaliste],
+    text(size: 8.0pt, weight: "bold", fill: c_accent)[Secteurs prioritaires],
   ),
   ..data.part01.profiles.map(p => (
-    text(size: 8.7pt, weight: "bold", fill: c_deep)[#p.profile],
-    text(font: "JetBrains Mono", size: 7.6pt, fill: c_clay_ink)[#p.budget],
-    text(size: 8.5pt, fill: c_ink)[#p.sectors],
+    text(size: 8.8pt, weight: "semibold", fill: c_ink)[#p.profile],
+    text(size: 8.3pt, fill: c_clay)[#p.budget],
+    text(size: 8.6pt, fill: c_ink2)[#p.sectors],
   )).flatten()
 )
 
-#v(14pt)
+#v(18pt)
 #box(
   width: 100%,
-  fill: c_paper_sage,
-  stroke: (left: 2.5pt + c_emerald, rest: 0.5pt + c_sage_rule),
-  inset: 12pt,
+  stroke: (top: 0.8pt + c_accent, bottom: 0.45pt + c_rule),
+  inset: (y: 12pt),
 )[
-  #text(font: "JetBrains Mono", size: 7.2pt, weight: "bold", fill: c_emerald, tracking: 0.10em)[MODE D'EMPLOI EN 3 TEMPS (WORKBOOK JOUR 2)]
-  #v(5pt)
+  #text(font: "Instrument Serif", size: 14.5pt, fill: c_ink)[La progression recommandée en trois étapes]
+  #v(8pt)
   #grid(
     columns: (1fr, 1fr, 1fr),
-    column-gutter: 10pt,
+    column-gutter: 14pt,
     block[
-      #text(font: "Instrument Serif", size: 15pt, fill: c_emerald)[1. Filtrer]
+      #text(size: 8.6pt, weight: "bold", fill: c_accent)[1. Filtrer]
       #v(2pt)
-      #text(size: 8.3pt, fill: c_ink2)[Repère 3 idées dans tes secteurs prioritaires en Partie 03.]
+      #text(size: 8.3pt, fill: c_ink2)[Repère trois idées dans tes secteurs prioritaires au fil du catalogue.]
     ],
     block[
-      #text(font: "Instrument Serif", size: 15pt, fill: c_gold_ink)[2. Valider (48h)]
+      #text(size: 8.6pt, weight: "bold", fill: c_ocre)[2. Valider en 48 heures]
       #v(2pt)
-      #text(size: 8.3pt, fill: c_ink2)[Applique le score VIN /30 en Partie 04 avant d'acheter du stock.]
+      #text(size: 8.3pt, fill: c_ink2)[Applique le score sur 30 points avant tout achat de stock ou de matériel.]
     ],
     block[
-      #text(font: "Instrument Serif", size: 15pt, fill: c_clay_ink)[3. Encaisser (7j)]
+      #text(size: 8.6pt, weight: "bold", fill: c_clay)[3. Encaisser en 7 jours]
       #v(2pt)
-      #text(size: 8.3pt, fill: c_ink2)[Exécute le plan Jour 1 à Jour 7 et signe ton engagement en Conclusion.]
+      #text(size: 8.3pt, fill: c_ink2)[Suis le plan jour par jour et signe ton engagement écrit en fin d'ouvrage.]
     ],
   )
 ]
@@ -583,163 +482,115 @@ EBOOK_TYP = r'''
 #pagebreak()
 
 // ============================================================================
-// PARTIE 02 : LES 7 ERREURS FATALES (SPREAD TABLEAU DIAGNOSTIC)
+// PARTIE 02 : LES SEPT ERREURS
 // ============================================================================
-#chapter_opener("02", data.part02.kicker, data.part02.title, data.part02.workbook_question, "p-02")
-#v(8pt)
-#text(size: 9pt, style: "italic", fill: c_ink2)[#data.part02.intro]
+#chapter_opener(data.part02.kicker, data.part02.title, data.part02.epigraph, "p-02")
+#text(size: 9.1pt, fill: c_ink)[#data.part02.intro]
 #v(8pt)
 
 #table(
-  columns: (28pt, 46%, 1fr),
-  stroke: (x: none, y: 0.5pt + c_rule),
-  fill: (_, row) => if row == 0 { c_paper_alt } else if calc.odd(row) { c_paper } else { rgb("#F6F1E9") },
-  inset: (x: 6pt, y: 6.2pt),
+  columns: (24pt, 46%, 1fr),
+  stroke: (x, y) => (bottom: if y == 0 { 0.9pt + c_ink } else { 0.35pt + c_hair }),
+  fill: none,
+  inset: (x: 4pt, y: 7.5pt),
   table.header(
-    text(font: "JetBrains Mono", size: 7pt, weight: "bold", fill: c_muted)[N°],
-    text(font: "JetBrains Mono", size: 7pt, weight: "bold", fill: c_clay_ink)[PIÈGE FRÉQUENT & CONSÉQUENCE],
-    text(font: "JetBrains Mono", size: 7pt, weight: "bold", fill: c_emerald)[RÉFLEXE GAGNANT 2027],
+    text(size: 7.8pt, weight: "bold", fill: c_muted)[N°],
+    text(size: 7.8pt, weight: "bold", fill: c_clay)[Piège fréquent & conséquence],
+    text(size: 7.8pt, weight: "bold", fill: c_accent)[Alternative rentable],
   ),
   ..data.part02.errors.enumerate().map(((idx, err)) => (
     align(top)[
-      #text(font: "Instrument Serif", size: 17pt, fill: c_clay)[0#(idx + 1)]
+      #text(font: "Instrument Serif", size: 16pt, fill: c_clay)[0#(idx + 1)]
     ],
     block[
-      #text(size: 8.7pt, weight: "bold", fill: c_deep)[#err.title]
+      #text(size: 8.8pt, weight: "bold", fill: c_ink)[#err.title]
       #v(2pt)
-      #text(size: 8pt, fill: c_clay_ink)[#err.consequence]
+      #text(size: 8.1pt, fill: c_ink2)[#err.consequence]
     ],
-    block[
-      #text(size: 8.2pt, weight: "bold", fill: c_emerald)[→ ]
-      #text(size: 8.2pt, fill: c_ink)[#err.fix]
-    ]
+    text(size: 8.3pt, fill: c_ink)[#err.fix]
   )).flatten()
 )
 
 #pagebreak()
 
 // ============================================================================
-// PARTIE 03 : ÉTAPE 1 — LES 500 IDÉES EN 20 SECTEURS (1 SECTEUR = 1 PAGE OU 2?)
+// PARTIE 03 : CATALOGUE DES 500 IDÉES EN 20 SECTEURS
 // ============================================================================
 #chapter_opener(
-  "03",
-  "PARTIE 03 · ÉTAPE 1",
-  "Les 500 idées de business classées en 20 secteurs porteurs",
-  "Réponse à la section 03 du Workbook : Première action concrète — Explorer et sélectionner ton Top 3.",
+  "Troisième partie · Catalogue des 500 idées",
+  "Cinq cents idées classées en vingt secteurs porteurs",
+  "Parcours le sommaire pour cibler trois ou quatre secteurs adaptés à ton budget, retiens cinq pistes, puis soumets ton Top 3 au test des 48 heures.",
   "p-03"
 )
-#v(10pt)
-#box(
-  width: 100%,
-  fill: c_paper_alt,
-  stroke: (left: 2.2pt + c_gold, rest: 0.45pt + c_rule),
-  inset: (x: 12pt, y: 8pt),
-)[
-  #grid(
-    columns: (auto, 1fr),
-    column-gutter: 12pt,
-    align: horizon,
-    text(font: "JetBrains Mono", size: 8pt, weight: "bold", fill: c_gold_ink)[MÉTHODE 30 MIN],
-    text(size: 8.5pt, fill: c_ink)[
-      Ne lis pas les 500 fiches d'un trait : ouvre le *Sommaire* pour cibler 3 à 4 secteurs adaptés à ton budget, coche 5 idées qui résonnent immédiatement, puis soumets ton *Top 3* au test terrain de la *Partie 04*.
-    ]
-  )
-]
-#v(8pt)
 
 #let idea_cell(it) = block(
   breakable: false,
   width: 100%,
-  inset: (top: 4.8pt, bottom: 5.2pt, x: 2pt),
-  stroke: (top: 0.45pt + c_rule),
+  inset: (top: 5.8pt, bottom: 6.4pt),
+  stroke: (top: 0.35pt + c_hair),
 )[
   #grid(
     columns: (auto, 1fr),
     align: horizon,
-    text(font: "JetBrains Mono", size: 7.5pt, weight: "bold", fill: c_emerald)[#("#" + it.code)],
-    align(right)[#pill_budget(it.budget)]
+    text(size: 7.6pt, weight: "bold", fill: c_accent)[#("#" + it.code)],
+    align(right)[#budget_label(it.budget)]
   )
-  #v(2pt)
-  #text(size: 8.9pt, weight: "bold", fill: c_deep)[#it.title]
-  #v(1.5pt)
+  #v(2.2pt)
+  #text(size: 8.9pt, weight: "semibold", fill: c_ink)[#it.title]
+  #v(1.8pt)
   #text(size: 8.0pt, fill: c_ink2)[#it.desc]
 ]
 
 #let sector_masthead(s) = {
-  set_sec("Secteur " + if s.num < 10 { "0" + str(s.num) } else { str(s.num) } + " · " + s.title)
+  set_sec("Secteur " + if s.num < 10 { "0" + str(s.num) } else { str(s.num) } + " — " + s.title)
   [#metadata(s.title)#label("sec-" + str(s.num))]
   let p_cnt = s.counts.Petit
   let m_cnt = s.counts.Moyen
   let st_cnt = s.counts.Structuré
   box(
     width: 100%,
-    fill: c_paper_alt,
-    stroke: (top: 2pt + c_emerald, bottom: 0.8pt + c_gold),
-    inset: (x: 10pt, y: 7pt),
+    stroke: (top: 1.1pt + c_accent, bottom: 0.45pt + c_rule),
+    inset: (top: 9pt, bottom: 9pt),
   )[
     #grid(
-      columns: (38pt, 1fr, 118pt),
+      columns: (32pt, 1fr),
       column-gutter: 10pt,
-      align: horizon,
-      box(
-        width: 38pt, height: 38pt, radius: 2pt, fill: c_deep,
-        align(center + horizon)[
-          #text(font: "Instrument Serif", size: 22pt, fill: c_gold_hi)[#if s.num < 10 [0] else []#s.num]
-        ]
-      ),
+      align: top,
+      text(font: "Instrument Serif", size: 28pt, fill: c_accent)[#if s.num < 10 [0] else []#s.num],
       block[
-        #text(font: "JetBrains Mono", size: 6.8pt, weight: "bold", fill: c_clay_ink, tracking: 0.10em)[
-          SECTEUR #if s.num < 10 [0] else []#s.num / 20  ·  IDÉES #("#" + s.start_code) – #("#" + s.end_code)
-        ]
-        #v(1.5pt)
-        #text(font: "Instrument Serif", size: 16.5pt, fill: c_deep)[#s.title]
-        #v(2pt)
-        #text(size: 8.0pt, fill: c_ink2)[#s.intro]
-      ],
-      block[
-        #text(font: "JetBrains Mono", size: 6.3pt, weight: "bold", fill: c_muted)[RÉPARTITION BUDGETS]
+        #text(font: "Instrument Serif", size: 17.5pt, fill: c_ink)[#s.title]
         #v(3pt)
-        #box(width: 116pt, height: 6pt, radius: 2pt, clip: true)[
-          #grid(
-            columns: (p_cnt * 1fr, m_cnt * 1fr, st_cnt * 1fr),
-            rect(width: 100%, height: 6pt, fill: c_emerald),
-            rect(width: 100%, height: 6pt, fill: c_gold),
-            rect(width: 100%, height: 6pt, fill: c_clay),
-          )
-        ]
-        #v(3pt)
-        #text(font: "JetBrains Mono", size: 6.3pt, fill: c_ink2)[
-          #p_cnt Petit · #m_cnt Moy · #st_cnt Str
+        #text(size: 8.2pt, fill: c_ink2)[#s.intro]
+        #v(3.5pt)
+        #text(size: 7.4pt, style: "italic", fill: c_muted)[
+          Idées #s.start_code à #s.end_code · #p_cnt petit budget, #m_cnt budget moyen, #st_cnt structuré
         ]
       ]
     )
   ]
 }
 
-// Secteur 1 : démarre sous le bandeau Partie 03 puis les suivants chacun sur une page dédiée ou flux aéré !
 #for (idx_s, s) in sectors.enumerate() [
   #if idx_s > 0 { pagebreak() }
   #sector_masthead(s)
-  #v(5pt)
+  #v(6pt)
   #grid(
     columns: (1fr, 1fr),
-    column-gutter: 12pt,
-    row-gutter: 1pt,
+    column-gutter: 14pt,
+    row-gutter: 3pt,
     ..s.ideas.map(it => idea_cell(it)),
-    // 26e cellule : Mini-fiche d'action du secteur pour équilibrer la grille 2 colonnes !
     block(
       breakable: false,
       width: 100%,
-      fill: c_paper_sage,
-      stroke: (top: 1.5pt + c_emerald, rest: 0.4pt + c_sage_rule),
-      inset: 7pt,
+      stroke: (top: 0.6pt + c_accent),
+      inset: (top: 7pt, bottom: 4pt),
     )[
-      #text(font: "JetBrains Mono", size: 6.8pt, weight: "bold", fill: c_emerald, tracking: 0.08em)[SÉLECTION SECTEUR #if s.num < 10 [0] else []#s.num]
+      #text(size: 7.8pt, weight: "semibold", fill: c_accent)[Sélection secteur #if s.num < 10 [0] else []#s.num]
       #v(3pt)
-      #text(size: 7.7pt, fill: c_ink)[Note tes 2 pépites favorites ici avant de passer à la validation 48h :]
-      #v(4pt)
-      #text(font: "JetBrains Mono", size: 7.2pt, fill: c_ink2)[
-        #checkbox() N° \_\_\_\_   #h(8pt) #checkbox() N° \_\_\_\_
+      #text(size: 7.8pt, fill: c_ink2)[Idées retenues pour le test de 48 heures :]
+      #v(5pt)
+      #text(size: 8.0pt, fill: c_ink)[
+        #checkbox() #h(4pt) N° ………… #h(14pt) #checkbox() #h(4pt) N° …………
       ]
     ]
   )
@@ -748,39 +599,35 @@ EBOOK_TYP = r'''
 #pagebreak()
 
 // ============================================================================
-// PARTIE 04 : ÉTAPE 2 — VALIDATION EXPRESS 48H
+// PARTIE 04 : VALIDATION EXPRESS EN 48 HEURES
 // ============================================================================
-#chapter_opener("04", data.part04.kicker, data.part04.title, data.part04.workbook_question, "p-04")
-#v(8pt)
+#chapter_opener(data.part04.kicker, data.part04.title, data.part04.epigraph, "p-04")
 #text(size: 9.2pt, fill: c_ink)[#data.part04.intro]
 
-#section_subhead("MÉTHODE VIN", "Les 3 filtres impératifs avant d'investir")
+#section_head("Les trois filtres VIN avant d'investir")
 #grid(
   columns: (1fr, 1fr, 1fr),
-  column-gutter: 8pt,
+  column-gutter: 12pt,
   ..data.part04.vin.enumerate().map(((i, vin_it)) => {
-    let acc = if i == 0 { c_emerald } else if i == 1 { c_gold } else { c_clay }
-    box(
-      width: 100%,
-      height: 82pt,
-      fill: c_paper_alt,
-      stroke: (top: 2pt + acc, rest: 0.45pt + c_rule),
-      inset: 9pt,
+    let acc = if i == 0 { c_accent } else if i == 1 { c_ocre } else { c_clay }
+    grid.cell(
+      stroke: (top: 1.1pt + acc, bottom: 0.35pt + c_rule),
+      inset: (top: 7pt, bottom: 8pt),
     )[
-      #text(font: "JetBrains Mono", size: 7.2pt, weight: "bold", fill: acc)[#vin_it.title]
+      #text(size: 8.2pt, weight: "bold", fill: acc)[#vin_it.title]
       #v(4pt)
-      #text(size: 8.1pt, fill: c_ink2)[#vin_it.desc]
+      #text(size: 8.2pt, fill: c_ink2)[#vin_it.desc]
     ]
   })
 )
 
-#section_subhead("CHRONOGRAMME", "Le protocole terrain en 48 heures chrono")
+#section_head("Le protocole terrain en quarante-huit heures")
 #for st in data.part04.steps_48h [
-  #box(width: 100%, inset: (y: 3.5pt), stroke: (bottom: 0.4pt + c_rule))[
+  #box(width: 100%, inset: (y: 5pt), stroke: (bottom: 0.35pt + c_hair))[
     #grid(
-      columns: (132pt, 1fr),
-      column-gutter: 8pt,
-      text(font: "JetBrains Mono", size: 7.4pt, weight: "bold", fill: c_emerald)[#st.title],
+      columns: (146pt, 1fr),
+      column-gutter: 10pt,
+      text(size: 8.3pt, weight: "semibold", fill: c_accent)[#st.title],
       text(size: 8.5pt, fill: c_ink)[#st.desc],
     )
   ]
@@ -788,77 +635,72 @@ EBOOK_TYP = r'''
 
 #pagebreak()
 
-#section_subhead("MATRICE COMPARATIVE", "Grille de notation de tes 3 idées finalistes (/30)")
+#section_head("Grille de notation de tes trois idées finalistes (/30)")
 #table(
-  columns: (1fr, 64pt, 64pt, 64pt),
-  stroke: (x: 0.4pt + c_rule, y: 0.45pt + c_rule),
-  fill: (_, row) => if row == 0 { c_deep } else if row == 7 { c_paper_sage } else if calc.odd(row) { c_paper } else { c_paper_alt },
-  inset: (x: 7pt, y: 6pt),
+  columns: (1fr, 58pt, 58pt, 58pt),
+  stroke: (x, y) => (bottom: if y == 0 or y == 6 { 0.8pt + c_ink } else { 0.35pt + c_hair }),
+  fill: none,
+  inset: (x: 5pt, y: 7pt),
   table.header(
-    text(font: "JetBrains Mono", size: 7.2pt, weight: "bold", fill: c_gold_hi)[CRITÈRE (NOTE DE 1 À 5)],
-    align(center, text(font: "JetBrains Mono", size: 7.2pt, weight: "bold", fill: c_gold_hi)[IDÉE A]),
-    align(center, text(font: "JetBrains Mono", size: 7.2pt, weight: "bold", fill: c_gold_hi)[IDÉE B]),
-    align(center, text(font: "JetBrains Mono", size: 7.2pt, weight: "bold", fill: c_gold_hi)[IDÉE C]),
+    text(size: 7.9pt, weight: "bold", fill: c_accent)[Critère (note de 1 à 5)],
+    align(center, text(size: 7.9pt, weight: "bold", fill: c_accent)[Idée A]),
+    align(center, text(size: 7.9pt, weight: "bold", fill: c_accent)[Idée B]),
+    align(center, text(size: 7.9pt, weight: "bold", fill: c_accent)[Idée C]),
   ),
   ..data.part04.scoring.map(c => (
     block[
-      #text(size: 8.5pt, weight: "bold", fill: c_deep)[#c.title]
+      #text(size: 8.6pt, weight: "semibold", fill: c_ink)[#c.title]
       #v(1.5pt)
-      #text(size: 7.8pt, fill: c_ink2)[#c.desc]
+      #text(size: 7.9pt, fill: c_ink2)[#c.desc]
     ],
-    align(center + horizon, text(font: "JetBrains Mono", size: 8.5pt, fill: c_muted)[\_\_\_ / 5]),
-    align(center + horizon, text(font: "JetBrains Mono", size: 8.5pt, fill: c_muted)[\_\_\_ / 5]),
-    align(center + horizon, text(font: "JetBrains Mono", size: 8.5pt, fill: c_muted)[\_\_\_ / 5]),
+    align(center + horizon, text(size: 8.6pt, fill: c_muted)[…… / 5]),
+    align(center + horizon, text(size: 8.6pt, fill: c_muted)[…… / 5]),
+    align(center + horizon, text(size: 8.6pt, fill: c_muted)[…… / 5]),
   )).flatten(),
-  text(size: 8.6pt, weight: "bold", fill: c_emerald)[TOTAL FINAL (/30) — Garde uniquement les idées ≥ 20/30],
-  align(center + horizon, text(font: "JetBrains Mono", size: 8.5pt, weight: "bold", fill: c_emerald)[\_\_\_ / 30]),
-  align(center + horizon, text(font: "JetBrains Mono", size: 8.5pt, weight: "bold", fill: c_emerald)[\_\_\_ / 30]),
-  align(center + horizon, text(font: "JetBrains Mono", size: 8.5pt, weight: "bold", fill: c_emerald)[\_\_\_ / 30]),
+  text(size: 8.6pt, weight: "bold", fill: c_accent)[Total final (/30) — Retenir à partir de 20 / 30],
+  align(center + horizon, text(size: 8.8pt, weight: "bold", fill: c_accent)[…… / 30]),
+  align(center + horizon, text(size: 8.8pt, weight: "bold", fill: c_accent)[…… / 30]),
+  align(center + horizon, text(size: 8.8pt, weight: "bold", fill: c_accent)[…… / 30]),
 )
 
-#v(12pt)
+#v(16pt)
 #box(
   width: 100%,
-  fill: rgb("#FBF1DC"),
-  stroke: (left: 2.5pt + c_gold, rest: 0.45pt + rgb("#E4C98C")),
-  inset: 12pt,
+  stroke: (left: 1pt + c_accent),
+  inset: (left: 13pt, y: 4pt),
 )[
-  #text(font: "JetBrains Mono", size: 7.2pt, weight: "bold", fill: c_gold_ink, tracking: 0.08em)[CAS PRATIQUE COMPLÉTÉ · IDÉE \#002]
-  #v(3pt)
-  #text(font: "Instrument Serif", size: 14pt, fill: c_deep)[#data.part04.example_title]
-  #v(4pt)
+  #text(font: "Instrument Serif", size: 14.5pt, fill: c_ink)[#data.part04.example_title]
+  #v(5pt)
   #for ln in data.part04.example_lines [
-    #text(size: 8.3pt, fill: c_ink)[#ln]
-    #v(2.5pt)
+    #text(size: 8.5pt, fill: c_ink2)[#ln]
+    #v(3pt)
   ]
 ]
 
 #pagebreak()
 
 // ============================================================================
-// PARTIE 05 : ÉTAPE 3 — PLAN DE LANCEMENT 7 JOURS
+// PARTIE 05 : PLAN DE LANCEMENT EN 7 JOURS
 // ============================================================================
-#chapter_opener("05", data.part05.kicker, data.part05.title, data.part05.workbook_question, "p-05")
-#v(8pt)
+#chapter_opener(data.part05.kicker, data.part05.title, data.part05.epigraph, "p-05")
 #text(size: 9.1pt, fill: c_ink)[#data.part05.intro]
 
-#section_subhead("FEUILLE DE ROUTE", "Chronologie d'exécution : Jour 1 à Jour 7")
-#for (idx, d) in data.part05.days.enumerate() [
+#section_head("Chronologie d'exécution : Jour 1 à Jour 7")
+#for d in data.part05.days [
   #box(
     width: 100%,
-    fill: if calc.even(idx) { c_paper_alt } else { c_paper },
-    stroke: (left: 2pt + if idx < 3 { c_emerald } else if idx < 6 { c_gold } else { c_clay }, bottom: 0.4pt + c_rule),
-    inset: (x: 9pt, y: 5.5pt),
+    stroke: (bottom: 0.35pt + c_hair),
+    inset: (y: 5.5pt),
   )[
     #grid(
       columns: (52pt, 1fr),
-      column-gutter: 8pt,
+      column-gutter: 10pt,
       align: top,
-      text(font: "JetBrains Mono", size: 8.2pt, weight: "bold", fill: c_emerald)[#upper(d.day)],
+      text(font: "Instrument Serif", size: 13.5pt, fill: c_accent)[#d.day],
       block[
-        #text(size: 8.8pt, weight: "bold", fill: c_deep)[#d.title]
+        #text(size: 8.9pt, weight: "bold", fill: c_ink)[#d.title]
         #v(1.5pt)
-        #text(size: 8.1pt, fill: c_ink2)[#d.desc]
+        #text(size: 8.2pt, fill: c_ink2)[#d.desc]
       ]
     )
   ]
@@ -866,54 +708,50 @@ EBOOK_TYP = r'''
 
 #pagebreak()
 
-#section_subhead("SCRIPTS DE CONVERSION", "3 messages prêts à copier-coller sur WhatsApp & Facebook")
+#section_head("Trois messages prêts à adapter sur WhatsApp et Facebook")
 #for sc in data.part05.scripts [
   #box(
     width: 100%,
-    fill: c_paper_alt,
-    stroke: (left: 2.2pt + c_gold, rest: 0.45pt + c_rule),
-    inset: (x: 11pt, y: 8pt),
+    stroke: (left: 0.9pt + c_accent),
+    inset: (left: 11pt, y: 3pt),
   )[
-    #text(font: "JetBrains Mono", size: 7.3pt, weight: "bold", fill: c_gold_ink)[#sc.title]
-    #v(3pt)
+    #text(size: 8.4pt, weight: "bold", fill: c_accent)[#sc.title]
+    #v(2.5pt)
     #text(size: 8.4pt, style: "italic", fill: c_ink)[#sc.body]
   ]
-  #v(6pt)
+  #v(8pt)
 ]
 
-#section_subhead("GESTION DU CASH", "Fixer le prix juste & Règle des 3 Enveloppes")
+#section_head("Fixer le prix juste et répartir chaque encaissement")
 #for pf in data.part05.pricing [
-  #text(size: 8.4pt, fill: c_ink)[#pf]
-  #v(2pt)
+  #text(size: 8.5pt, fill: c_ink)[#pf]
+  #v(2.5pt)
 ]
-#v(6pt)
+#v(8pt)
 
-// Barre visuelle des 3 enveloppes (50% / 30% / 20%)
-#box(width: 100%, height: 14pt, radius: 2pt, clip: true)[
+// Barre proportionnelle fine (3pt) + trois colonnes épurées
+#box(width: 100%, height: 4pt)[
   #grid(
     columns: (50%, 30%, 20%),
-    rect(width: 100%, height: 14pt, fill: c_emerald, align(center + horizon, text(font: "JetBrains Mono", size: 7pt, weight: "bold", fill: c_paper)[50 % STOCK])),
-    rect(width: 100%, height: 14pt, fill: c_gold, align(center + horizon, text(font: "JetBrains Mono", size: 7pt, weight: "bold", fill: c_deep)[30 % CHARGES])),
-    rect(width: 100%, height: 14pt, fill: c_clay, align(center + horizon, text(font: "JetBrains Mono", size: 7pt, weight: "bold", fill: c_paper)[20 % TOI])),
+    rect(width: 100%, height: 4pt, fill: c_accent),
+    rect(width: 100%, height: 4pt, fill: c_ocre),
+    rect(width: 100%, height: 4pt, fill: c_clay),
   )
 ]
-#v(7pt)
+#v(8pt)
 
 #grid(
   columns: (1fr, 1fr, 1fr),
-  column-gutter: 8pt,
+  column-gutter: 12pt,
   ..data.part05.envelopes.enumerate().map(((i, env)) => {
-    let acc = if i == 0 { c_emerald } else if i == 1 { c_gold } else { c_clay }
-    box(
-      width: 100%,
-      height: 82pt,
-      fill: c_paper_sage,
-      stroke: (top: 2pt + acc, rest: 0.45pt + c_sage_rule),
-      inset: 8pt,
+    let acc = if i == 0 { c_accent } else if i == 1 { c_ocre } else { c_clay }
+    grid.cell(
+      stroke: (bottom: 0.35pt + c_rule),
+      inset: (bottom: 8pt),
     )[
-      #text(size: 8.2pt, weight: "bold", fill: c_deep)[#env.title]
+      #text(size: 8.5pt, weight: "bold", fill: acc)[#env.title]
       #v(3pt)
-      #text(size: 7.7pt, fill: c_ink2)[#env.desc]
+      #text(size: 8.0pt, fill: c_ink2)[#env.desc]
     ]
   })
 )
@@ -921,75 +759,68 @@ EBOOK_TYP = r'''
 #pagebreak()
 
 // ============================================================================
-// CONCLUSION & FICHE D'ENGAGEMENT TERRAIN
+// CONCLUSION, FICHE D'ENGAGEMENT & À PROPOS DE L'AUTEUR
 // ============================================================================
-#chapter_opener("∞", data.conclusion.kicker, data.conclusion.title, data.conclusion.workbook_question, "p-conc")
-#v(5pt)
-#text(size: 8.7pt, fill: c_ink)[#data.conclusion.message]
-#v(5pt)
+#chapter_opener(data.conclusion.kicker, data.conclusion.title, data.conclusion.epigraph, "p-conc")
+#text(size: 8.9pt, fill: c_ink)[#data.conclusion.message]
+#v(8pt)
 
 #box(
   width: 100%,
-  fill: rgb("#FBF1DC"),
-  stroke: (left: 2.5pt + c_gold),
-  inset: (x: 11pt, y: 5.5pt),
+  stroke: (left: 1pt + c_accent),
+  inset: (left: 12pt, y: 3pt),
 )[
-  #text(font: "JetBrains Mono", size: 6.6pt, weight: "bold", fill: c_gold_ink, tracking: 0.12em)[MANTRA DU WORKBOOK JOUR 2]
-  #v(1.5pt)
-  #text(font: "Instrument Serif", size: 11.6pt, style: "italic", fill: c_deep)[#data.conclusion.mantra]
+  #text(font: "Instrument Serif", size: 12.6pt, style: "italic", fill: c_ink)[#data.conclusion.mantra]
 ]
 
-#v(5pt)
-#text(font: "JetBrains Mono", size: 6.8pt, weight: "bold", fill: c_gold_ink, tracking: 0.12em)[PASSAGE À L'ACTION · TES 3 PROCHAINS PAS]
-#v(2pt)
-#line(length: 100%, stroke: 0.45pt + c_rule)
+#v(9pt)
+#text(font: "Instrument Serif", size: 14.5pt, fill: c_ink)[Trois prochains pas]
 #v(3pt)
+#line(length: 100%, stroke: 0.4pt + c_rule)
+#v(4pt)
 #for ns in data.conclusion.next_steps [
-  #text(size: 8.2pt, fill: c_ink)[#ns]
-  #v(1.5pt)
+  #text(size: 8.4pt, fill: c_ink2)[#ns]
+  #v(2.5pt)
 ]
 
-#v(4pt)
-#text(font: "JetBrains Mono", size: 6.8pt, weight: "bold", fill: c_emerald, tracking: 0.12em)[MA FICHE D'ENGAGEMENT TERRAIN (À COMPLÉTER MAINTENANT)]
+#v(8pt)
+#text(font: "Instrument Serif", size: 14.5pt, fill: c_ink)[Fiche d'engagement terrain]
+#v(3pt)
+#line(length: 100%, stroke: 0.4pt + c_rule)
 #v(2pt)
-#box(
-  width: 100%,
-  fill: c_paper_alt,
-  stroke: 0.7pt + c_gold,
-  radius: 2pt,
-  inset: (x: 10pt, y: 4pt),
-)[
-  #for (idx_a, ln) in data.conclusion.action_sheet.enumerate() [
-    #box(
-      width: 100%,
-      inset: (y: 2.2pt),
-      stroke: if idx_a < data.conclusion.action_sheet.len() - 1 { (bottom: 0.4pt + c_rule) } else { none },
-    )[
-      #checkbox(accent: c_emerald) #h(6pt) #text(size: 7.9pt, fill: c_ink)[#ln]
-    ]
+#for ln in data.conclusion.action_sheet [
+  #box(
+    width: 100%,
+    inset: (y: 4.5pt),
+    stroke: (bottom: 0.35pt + c_hair),
+  )[
+    #grid(
+      columns: (auto, auto, 1fr),
+      column-gutter: 6pt,
+      align: horizon,
+      checkbox(accent: c_accent),
+      text(size: 8.2pt, fill: c_ink)[#ln],
+      align(bottom, line(length: 100%, stroke: (paint: c_muted, thickness: 0.4pt, dash: "dotted")))
+    )
   ]
 ]
 
-#v(6pt)
+#v(1fr)
 #box(
   width: 100%,
-  fill: c_deep,
-  radius: 3pt,
-  inset: (x: 11pt, y: 8pt),
-  stroke: (top: 2pt + c_gold),
+  stroke: (top: 0.9pt + c_accent, bottom: 0.45pt + c_rule),
+  inset: (top: 9pt, bottom: 9pt),
 )[
-  #text(font: "JetBrains Mono", size: 6.6pt, weight: "bold", fill: c_gold_hi, tracking: 0.12em)[À PROPOS DE L'AUTEUR]
-  #v(1.5pt)
-  #text(font: "Instrument Serif", size: 14.5pt, fill: c_paper)[#cfg.author_name]
-  #h(8pt)
-  #text(size: 8.0pt, fill: c_gold_hi)[· #cfg.author_role]
+  #text(size: 7.6pt, weight: "semibold", fill: c_accent)[À propos de l'auteur]
   #v(2pt)
-  #text(size: 7.8pt, fill: rgb("#DCE5E0"))[#cfg.author_bio]
-  #v(4pt)
-  #line(length: 100%, stroke: 0.4pt + rgb("#C5881E55"))
+  #text(font: "Instrument Serif", size: 15.5pt, fill: c_ink)[#cfg.author_name]
+  #h(8pt)
+  #text(size: 8.2pt, style: "italic", fill: c_ink2)[#cfg.author_role]
   #v(3pt)
-  #text(font: "JetBrains Mono", size: 7.0pt, fill: c_gold_hi)[
-    WhatsApp : #cfg.contact_whatsapp  ·  Réseaux : #cfg.contact_social  ·  Email : #cfg.contact_email
+  #text(size: 8.1pt, fill: c_ink2)[#cfg.author_bio]
+  #v(5pt)
+  #text(size: 7.8pt, fill: c_accent)[
+    WhatsApp : #cfg.contact_whatsapp  ·  Réseaux : #cfg.contact_social  ·  Courriel : #cfg.contact_email
   ]
 ]
 '''
@@ -1000,70 +831,52 @@ WORKBOOK_TYP = r'''
 #let cfg = data.config
 #let wb = data.workbook
 
-#let c_paper      = rgb("#FAF7F2")
-#let c_paper_alt  = rgb("#F2ECE1")
-#let c_paper_sage = rgb("#EBF2EE")
-#let c_paper_clay = rgb("#F9ECE6")
-#let c_ink        = rgb("#12201C")
-#let c_ink2       = rgb("#46544F")
-#let c_muted      = rgb("#7A857E")
-#let c_emerald    = rgb("#0B3B31")
-#let c_deep       = rgb("#07241D")
-#let c_gold       = rgb("#C5881E")
-#let c_gold_hi    = rgb("#E9AF43")
-#let c_gold_ink   = rgb("#7A4E04")
-#let c_clay       = rgb("#B8532A")
-#let c_clay_ink   = rgb("#843212")
-#let c_rule       = rgb("#DDD5C7")
+#let c_paper    = rgb("#FCFBF8")
+#let c_tint     = rgb("#F5F2EC")
+#let c_ink      = rgb("#161B19")
+#let c_ink2     = rgb("#4B5450")
+#let c_muted    = rgb("#78807C")
+#let c_accent   = rgb("#103E33")
+#let c_ocre     = rgb("#8A5808")
+#let c_clay     = rgb("#8E3C1D")
+#let c_rule     = rgb("#DDD6CA")
+#let c_hair     = rgb("#EAE4DA")
 
-#let checkbox(checked: true, accent: c_emerald) = box(
-  width: 9pt, height: 9pt, radius: 1.5pt,
-  fill: if checked { accent } else { c_paper },
-  stroke: 0.8pt + accent,
-  baseline: 1.5pt,
-  align(center + horizon)[
-    #if checked {
-      text(font: "Source Sans Pro", size: 7pt, weight: "bold", fill: c_paper)[✓]
-    }
-  ]
+#let checkbox(checked: true, accent: c_accent) = box(
+  width: 8.5pt, height: 8.5pt,
+  fill: if checked { accent } else { none },
+  stroke: 0.7pt + accent,
+  baseline: 1.2pt,
+  if checked {
+    place(center + horizon)[
+      #curve(
+        stroke: (paint: c_paper, thickness: 1.15pt, cap: "round", join: "round"),
+        curve.move((1.5pt, 4.3pt)),
+        curve.line((3.4pt, 6.2pt)),
+        curve.line((7.0pt, 2.3pt)),
+      )
+    ]
+  }
 )
 
-#let wb_masthead(kicker, title, page_num) = {
-  box(
-    width: 100%,
-    fill: c_deep,
-    radius: 3pt,
-    inset: (x: 15pt, y: 12pt),
-    stroke: (bottom: 2.2pt + c_gold),
-  )[
-    #grid(
-      columns: (1fr, auto),
-      column-gutter: 12pt,
-      align: horizon,
-      block[
-        #text(font: "JetBrains Mono", size: 7.2pt, weight: "bold", fill: c_gold_hi, tracking: 0.14em)[#upper(kicker)]
-        #v(3pt)
-        #text(font: "Instrument Serif", size: 20pt, fill: c_paper)[#title]
-      ],
-      box(
-        fill: rgb("#E9AF4322"),
-        stroke: 0.7pt + c_gold,
-        radius: 2pt,
-        inset: (x: 9pt, y: 5pt),
-        text(font: "JetBrains Mono", size: 8.5pt, weight: "bold", fill: c_gold_hi)[PAGE #page_num / 10]
-      )
-    )
+#let wb_masthead(kicker, title) = {
+  block(width: 100%, below: 12pt)[
+    #text(size: 8.2pt, weight: "semibold", fill: c_accent, tracking: 0.05em)[#kicker]
+    #v(4pt)
+    #text(font: "Instrument Serif", size: 22.5pt, fill: c_ink)[#title]
+    #v(7pt)
+    #line(length: 100%, stroke: 0.75pt + c_accent)
   ]
 }
 
-#let kv_sheet(rows, col1: 145pt, fill_alt: c_paper_alt) = table(
+#let kv_sheet(rows, col1: 148pt) = table(
   columns: (col1, 1fr),
-  stroke: (x: 0.45pt + c_rule, y: 0.45pt + c_rule),
-  fill: (_, r) => if calc.even(r) { fill_alt } else { c_paper },
-  inset: (x: 10pt, y: 7.5pt),
+  stroke: (x, y) => (bottom: 0.35pt + c_hair),
+  fill: none,
+  inset: (x: 4pt, y: 7.5pt),
   ..rows.map(r => (
-    text(font: "JetBrains Mono", size: 7.6pt, weight: "bold", fill: c_emerald)[#r.at(0)],
-    text(size: 9.2pt, fill: c_ink)[#r.at(1)],
+    text(size: 8.4pt, weight: "semibold", fill: c_accent)[#r.at(0)],
+    text(size: 9.1pt, fill: c_ink)[#r.at(1)],
   )).flatten()
 )
 
@@ -1073,25 +886,25 @@ WORKBOOK_TYP = r'''
 )
 
 #set text(
-  font: ("Instrument Sans", "Source Sans Pro"),
-  size: 9.4pt,
+  font: "Instrument Sans",
+  size: 9.3pt,
   fill: c_ink,
   lang: "fr",
   region: "FR",
 )
-#set par(leading: 0.62em)
+#set par(leading: 0.64em)
 
 #set page(
   paper: "a4",
   fill: c_paper,
-  margin: (top: 19mm, bottom: 18mm, left: 16mm, right: 16mm),
+  margin: (top: 21mm, bottom: 19mm, left: 17mm, right: 17mm),
   header: context {
     if counter(page).get().first() > 1 {
-      box(width: 100%, inset: (bottom: 4pt), stroke: (bottom: 0.45pt + c_rule))[
+      box(width: 100%, inset: (bottom: 5pt), stroke: (bottom: 0.35pt + c_rule))[
         #grid(
           columns: (1fr, auto),
-          text(font: "JetBrains Mono", size: 6.8pt, fill: c_muted, tracking: 0.08em)[WORKBOOK OFFICIEL – JOUR 2 · DOSSIER COMPLÉTÉ],
-          text(font: ("Instrument Sans", "Source Sans Pro"), size: 7.4pt, weight: "bold", fill: c_emerald)[#cfg.ebook_title]
+          text(size: 7.6pt, fill: c_muted)[Workbook Officiel · Jour 2 · Dossier complété],
+          text(size: 7.6pt, weight: "semibold", fill: c_accent)[#cfg.ebook_title]
         )
       ]
     }
@@ -1099,11 +912,11 @@ WORKBOOK_TYP = r'''
   footer: context {
     let pg = counter(page).get().first()
     if pg > 1 {
-      box(width: 100%, inset: (top: 4pt), stroke: (top: 0.45pt + c_rule))[
+      box(width: 100%, inset: (top: 5pt), stroke: (top: 0.35pt + c_rule))[
         #grid(
           columns: (1fr, auto),
-          text(size: 7.3pt, fill: c_muted)[Méthode exacte appliquée · #cfg.author_name],
-          text(font: "JetBrains Mono", size: 7.5pt, weight: "bold", fill: c_emerald)[Page #pg / 10]
+          text(size: 7.5pt, fill: c_muted)[Méthode appliquée · #cfg.author_name],
+          text(size: 8.0pt, weight: "semibold", fill: c_ink)[Page #pg sur 10]
         )
       ]
     }
@@ -1111,149 +924,130 @@ WORKBOOK_TYP = r'''
 )
 
 // --- PAGE 1 : COUVERTURE / BIENVENUE ---
-#box(
-  width: 100%,
-  fill: c_deep,
-  radius: 3pt,
-  inset: (x: 18pt, y: 18pt),
-  stroke: (bottom: 2.8pt + c_gold),
-)[
-  #place(right + top, dx: 4pt, dy: -4pt, text(font: "Instrument Serif", size: 62pt, fill: rgb("#E9AF4326"))[J2])
-  #text(font: "JetBrains Mono", size: 7.8pt, weight: "bold", fill: c_gold_hi, tracking: 0.16em)[#wb.page1.badge]
-  #v(5pt)
-  #text(font: "Instrument Serif", size: 25pt, fill: c_paper)[#wb.page1.title]
-  #v(5pt)
-  #line(length: 44pt, stroke: 1.2pt + c_gold)
-  #v(5pt)
-  #text(size: 10.2pt, fill: rgb("#EBE6DC"))[#wb.page1.subtitle]
-]
-#v(14pt)
-
-#box(
-  width: 100%,
-  fill: c_paper_sage,
-  stroke: (left: 2.5pt + c_emerald, rest: 0.45pt + c_rule),
-  inset: 12pt,
-)[
-  #text(font: "JetBrains Mono", size: 7.2pt, weight: "bold", fill: c_emerald, tracking: 0.10em)[BIENVENUE — ESPRIT OFFICIEL DU WORKBOOK (PAGE 1)]
-  #v(5pt)
-  #text(size: 9.2pt, fill: c_ink)[#wb.page1.welcome]
-]
-#v(12pt)
-
-#text(font: "Instrument Serif", size: 15.5pt, fill: c_deep)[Fiche d'identité du produit créé grâce à ce workbook]
-#v(6pt)
-#kv_sheet(wb.page1.summary_rows, col1: 150pt)
-#v(14pt)
-
-#box(
-  width: 100%,
-  fill: rgb("#FBF1DC"),
-  stroke: (left: 2.5pt + c_gold, rest: 0.45pt + rgb("#E4C98C")),
-  inset: 12pt,
-)[
-  #text(font: "JetBrains Mono", size: 7.2pt, weight: "bold", fill: c_gold_ink, tracking: 0.10em)[CORRESPONDANCE 1-POUR-1 (PAGES 1 À 10)]
+#block(width: 100%, below: 14pt)[
+  #text(size: 8.2pt, weight: "semibold", fill: c_accent, tracking: 0.05em)[#wb.page1.badge]
   #v(4pt)
-  #text(size: 8.9pt, fill: c_ink)[
-    Chaque page de ce dossier correspond exactement à la page homonyme de *WORKBOOK-OFFICIEL-JOUR-2-CREE-TON-PREMIER-PRODUIT-DIGITAL.pdf*. Tous les exercices sont remplis sur mesure pour ton ebook, puis concrétisés dans *500-Idees-de-Business-a-Lancer-en-Afrique-en-2027.pdf*.
+  #text(font: "Instrument Serif", size: 24pt, fill: c_ink)[#wb.page1.title]
+  #v(5pt)
+  #text(size: 10.2pt, style: "italic", fill: c_ink2)[#wb.page1.subtitle]
+  #v(8pt)
+  #line(length: 100%, stroke: 0.75pt + c_accent)
+]
+
+#box(
+  width: 100%,
+  stroke: (left: 1pt + c_accent),
+  inset: (left: 13pt, y: 4pt),
+)[
+  #text(size: 8.4pt, weight: "bold", fill: c_accent)[Bienvenue (Page 1 du Workbook)]
+  #v(4pt)
+  #text(size: 9.1pt, fill: c_ink)[#wb.page1.welcome]
+]
+#v(16pt)
+
+#text(font: "Instrument Serif", size: 15.5pt, fill: c_ink)[Fiche d'identité du produit créé]
+#v(4pt)
+#line(length: 100%, stroke: 0.5pt + c_rule)
+#kv_sheet(wb.page1.summary_rows, col1: 148pt)
+#v(18pt)
+
+#box(
+  width: 100%,
+  stroke: (top: 0.6pt + c_rule, bottom: 0.6pt + c_rule),
+  inset: (y: 10pt),
+)[
+  #text(size: 8.6pt, fill: c_ink2)[
+    Chaque page de ce dossier correspond page pour page à *WORKBOOK-OFFICIEL-JOUR-2-CREE-TON-PREMIER-PRODUIT-DIGITAL.pdf* (pages 1 à 10), concrétisé dans l'ouvrage *500-Idees-de-Business-a-Lancer-en-Afrique-en-2027.pdf*.
   ]
 ]
 #pagebreak()
 
 // --- PAGE 2 : OBJECTIF ---
-#wb_masthead(wb.page2.kicker, wb.page2.title, 2)
+#wb_masthead(wb.page2.kicker, wb.page2.title)
+#text(size: 9.4pt, fill: c_ink)[#wb.page2.intro]
 #v(14pt)
-#text(size: 9.6pt, fill: c_ink)[#wb.page2.intro]
-#v(12pt)
 
 #box(
   width: 100%,
-  fill: rgb("#FBF1DC"),
-  stroke: (left: 2.8pt + c_gold, rest: 0.45pt + rgb("#E4C98C")),
-  inset: 14pt,
+  stroke: (left: 1.1pt + c_accent),
+  inset: (left: 13pt, y: 5pt),
 )[
-  #text(font: "JetBrains Mono", size: 7pt, weight: "bold", fill: c_gold_ink, tracking: 0.12em)[OBJECTIF CENTRAL DU WORKBOOK]
-  #v(4pt)
-  #text(font: "Instrument Serif", size: 15pt, style: "italic", fill: c_deep)[#wb.page2.quote]
+  #text(font: "Instrument Serif", size: 15pt, style: "italic", fill: c_ink)[#wb.page2.quote]
 ]
-#v(14pt)
+#v(18pt)
 
-#text(font: "Instrument Serif", size: 15.5pt, fill: c_deep)[Ton engagement personnel (Complété)]
-#v(6pt)
-#kv_sheet(wb.page2.commitment, col1: 135pt, fill_alt: c_paper_sage)
-#v(14pt)
+#text(font: "Instrument Serif", size: 15.5pt, fill: c_ink)[Engagement personnel (Complété)]
+#v(4pt)
+#line(length: 100%, stroke: 0.5pt + c_rule)
+#kv_sheet(wb.page2.commitment, col1: 142pt)
+#v(18pt)
 
 #box(
   width: 100%,
-  fill: c_paper_alt,
-  stroke: (left: 2.5pt + c_emerald, rest: 0.45pt + c_rule),
-  inset: 12pt,
+  stroke: (top: 0.45pt + c_rule),
+  inset: (top: 9pt),
 )[
-  #text(font: "JetBrains Mono", size: 7pt, weight: "bold", fill: c_emerald)[RAPPEL D'ACTION IMMÉDIATE]
-  #v(4pt)
-  #text(size: 9pt, fill: c_ink2)[
-    Oublier la perfection signifie livrer dès aujourd'hui un ebook utile, structuré et lisible hors ligne sur smartphone. Tu pourras ensuite enrichir la version 2.0 avec les retours réels de tes 10 premiers lecteurs.
+  #text(size: 8.6pt, weight: "semibold", fill: c_accent)[Rappel de méthode]
+  #v(3pt)
+  #text(size: 8.9pt, fill: c_ink2)[
+    Oublier la perfection signifie livrer dès aujourd'hui un livre utile, structuré et lisible hors ligne sur smartphone, puis enrichir la version suivante grâce aux retours des dix premiers lecteurs.
   ]
 ]
 #pagebreak()
 
 // --- PAGE 3 : VALIDATION VIN ---
-#wb_masthead(wb.page3.kicker, wb.page3.title, 3)
-#v(12pt)
+#wb_masthead(wb.page3.kicker, wb.page3.title)
 #text(size: 9.3pt, fill: c_ink)[#wb.page3.intro]
-#v(12pt)
+#v(14pt)
 
-// Diagramme VIN vectoriel horizontal
 #grid(
   columns: (1fr, 18pt, 1fr, 18pt, 1fr),
   align: horizon,
-  box(width: 100%, fill: c_paper_sage, stroke: 0.6pt + c_emerald, radius: 2pt, inset: 8pt, align(center)[
-    #text(font: "Instrument Serif", size: 22pt, fill: c_emerald)[V] \
-    #text(font: "JetBrains Mono", size: 7pt, weight: "bold", fill: c_emerald)[VALEUR CLAIRE]
+  box(width: 100%, stroke: (top: 1.2pt + c_accent, bottom: 0.4pt + c_rule), inset: (y: 8pt), align(center)[
+    #text(font: "Instrument Serif", size: 22pt, fill: c_accent)[V] \
+    #text(size: 7.8pt, weight: "semibold", fill: c_ink)[Valeur claire]
   ]),
-  align(center, text(font: "JetBrains Mono", size: 11pt, weight: "bold", fill: c_gold)[+]),
-  box(width: 100%, fill: rgb("#FBF1DC"), stroke: 0.6pt + c_gold, radius: 2pt, inset: 8pt, align(center)[
-    #text(font: "Instrument Serif", size: 22pt, fill: c_gold_ink)[I] \
-    #text(font: "JetBrains Mono", size: 7pt, weight: "bold", fill: c_gold_ink)[INTENSITÉ #wb.page3.I_score]
+  align(center, text(size: 12pt, weight: "semibold", fill: c_muted)[+]),
+  box(width: 100%, stroke: (top: 1.2pt + c_ocre, bottom: 0.4pt + c_rule), inset: (y: 8pt), align(center)[
+    #text(font: "Instrument Serif", size: 22pt, fill: c_ocre)[I] \
+    #text(size: 7.8pt, weight: "semibold", fill: c_ink)[Intensité #wb.page3.I_score]
   ]),
-  align(center, text(font: "JetBrains Mono", size: 11pt, weight: "bold", fill: c_gold)[+]),
-  box(width: 100%, fill: c_paper_clay, stroke: 0.6pt + c_clay, radius: 2pt, inset: 8pt, align(center)[
-    #text(font: "Instrument Serif", size: 22pt, fill: c_clay_ink)[N] \
-    #text(font: "JetBrains Mono", size: 7pt, weight: "bold", fill: c_clay_ink)[NOMBRE MASSIF]
+  align(center, text(size: 12pt, weight: "semibold", fill: c_muted)[+]),
+  box(width: 100%, stroke: (top: 1.2pt + c_clay, bottom: 0.4pt + c_rule), inset: (y: 8pt), align(center)[
+    #text(font: "Instrument Serif", size: 22pt, fill: c_clay)[N] \
+    #text(size: 7.8pt, weight: "semibold", fill: c_ink)[Nombre massif]
   ]),
 )
-#v(12pt)
+#v(14pt)
 
-#box(width: 100%, fill: c_paper_sage, stroke: (left: 2.5pt + c_emerald), inset: 11pt)[
-  #text(font: "JetBrains Mono", size: 7.4pt, weight: "bold", fill: c_emerald)[V – PROBLÈME (VALEUR) : QUEL PROBLÈME PRÉCIS VEUX-TU RÉSOUDRE ?]
-  #v(4pt)
+#box(width: 100%, stroke: (left: 1pt + c_accent), inset: (left: 12pt, y: 3pt))[
+  #text(size: 8.5pt, weight: "bold", fill: c_accent)[V · Problème (Valeur) : quel problème précis veux-tu résoudre ?]
+  #v(3pt)
   #text(size: 9pt, fill: c_ink)[#wb.page3.V]
 ]
-#v(9pt)
+#v(10pt)
 
-#box(width: 100%, fill: rgb("#FBF1DC"), stroke: (left: 2.5pt + c_gold), inset: 11pt)[
-  #text(font: "JetBrains Mono", size: 7.4pt, weight: "bold", fill: c_gold_ink)[I – INTENSITÉ : NOTE #wb.page3.I_score — POURQUOI EST-IL DOULOUREUX ?]
-  #v(4pt)
+#box(width: 100%, stroke: (left: 1pt + c_ocre), inset: (left: 12pt, y: 3pt))[
+  #text(size: 8.5pt, weight: "bold", fill: c_ocre)[I · Intensité : note #wb.page3.I_score — pourquoi est-il douloureux ?]
+  #v(3pt)
   #text(size: 9pt, fill: c_ink)[#wb.page3.I_exp]
 ]
-#v(9pt)
+#v(10pt)
 
-#box(width: 100%, fill: c_paper_clay, stroke: (left: 2.5pt + c_clay), inset: 11pt)[
-  #text(font: "JetBrains Mono", size: 7.4pt, weight: "bold", fill: c_clay_ink)[N – NOMBRE : CAS ISOLÉ OU MARCHÉ RÉPANDU ?]
-  #v(4pt)
+#box(width: 100%, stroke: (left: 1pt + c_clay), inset: (left: 12pt, y: 3pt))[
+  #text(size: 8.5pt, weight: "bold", fill: c_clay)[N · Nombre : cas isolé ou marché répandu ?]
+  #v(3pt)
   #text(size: 9pt, fill: c_ink)[#wb.page3.N]
 ]
-#v(11pt)
+#v(14pt)
 
-#box(width: 100%, fill: c_deep, radius: 2pt, inset: 11pt)[
-  #text(font: "JetBrains Mono", size: 8pt, weight: "bold", fill: c_gold_hi)[VERDICT : ]
-  #text(size: 9.2pt, weight: "bold", fill: c_paper)[#wb.page3.conclusion]
+#box(width: 100%, stroke: (top: 0.8pt + c_accent, bottom: 0.8pt + c_accent), inset: (y: 9pt))[
+  #text(size: 9.2pt, weight: "semibold", fill: c_accent)[#wb.page3.conclusion]
 ]
 #pagebreak()
 
 // --- PAGE 4 : PROMESSE CLAIRE ---
-#wb_masthead(wb.page4.kicker, wb.page4.title, 4)
-#v(12pt)
+#wb_masthead(wb.page4.kicker, wb.page4.title)
 #text(size: 9.4pt, fill: c_ink)[#wb.page4.intro]
 #v(12pt)
 
@@ -1261,202 +1055,189 @@ WORKBOOK_TYP = r'''
   ("1. Pour qui est ton produit ?", wb.page4.q1),
   ("2. Résultat concret promis", wb.page4.q2),
   ("3. Délai promis", wb.page4.q3),
-), col1: 155pt, fill_alt: c_paper_sage)
+), col1: 155pt)
 
-#v(16pt)
-#text(font: "Instrument Serif", size: 15.5pt, fill: c_deep)[Formule exacte du Workbook appliquée]
+#v(18pt)
+#text(font: "Instrument Serif", size: 15.5pt, fill: c_ink)[Formule du Workbook appliquée]
 #v(4pt)
-#text(font: "JetBrains Mono", size: 7.8pt, fill: c_muted)[Modèle vierge : #wb.page4.formula_template]
-#v(10pt)
+#text(size: 8.4pt, fill: c_muted)[Modèle vierge : #wb.page4.formula_template]
+#v(12pt)
 
 #box(
   width: 100%,
-  fill: rgb("#FBF1DC"),
-  stroke: (left: 3pt + c_gold, rest: 0.6pt + rgb("#E4C98C")),
-  inset: 16pt,
+  stroke: (left: 1.2pt + c_accent),
+  inset: (left: 14pt, y: 6pt),
 )[
-  #text(font: "JetBrains Mono", size: 7.2pt, weight: "bold", fill: c_gold_ink, tracking: 0.12em)[PROMESSE RETENUE SUR LA COUVERTURE & POUR LA VENTE]
-  #v(5pt)
-  #text(font: "Instrument Serif", size: 16pt, style: "italic", fill: c_deep)[#wb.page4.formula_filled]
+  #text(font: "Instrument Serif", size: 16.5pt, style: "italic", fill: c_ink)[#wb.page4.formula_filled]
 ]
 #pagebreak()
 
 // --- PAGE 5 : FORMAT PDF ---
-#wb_masthead(wb.page5.kicker, wb.page5.title, 5)
-#v(12pt)
-#text(font: "Instrument Serif", size: 15.5pt, fill: c_deep)[Pourquoi commencer avec un PDF ? (Critères du Workbook)]
+#wb_masthead(wb.page5.kicker, wb.page5.title)
+#text(font: "Instrument Serif", size: 15.5pt, fill: c_ink)[Pourquoi commencer avec un PDF ?]
 #v(7pt)
 
 #for r in wb.page5.reasons_pdf [
-  #box(width: 100%, inset: (y: 4pt), stroke: (bottom: 0.4pt + c_rule))[
-    #checkbox(checked: true, accent: c_emerald) #h(7pt) #text(size: 9.2pt, fill: c_ink)[#r]
+  #box(width: 100%, inset: (y: 4.5pt), stroke: (bottom: 0.35pt + c_hair))[
+    #checkbox(checked: true, accent: c_accent) #h(7pt) #text(size: 9.1pt, fill: c_ink)[#r]
   ]
 ]
-#v(14pt)
+#v(16pt)
 
-#text(font: "Instrument Serif", size: 15.5pt, fill: c_deep)[Exercice « À toi de jouer ! » (Complété avec transparence)]
-#v(6pt)
+#text(font: "Instrument Serif", size: 15.5pt, fill: c_ink)[Exercice « À toi de jouer ! » (Complété avec transparence)]
+#v(4pt)
+#line(length: 100%, stroke: 0.5pt + c_rule)
 #kv_sheet((
   ("Pourquoi le format PDF", wb.page5.why_chosen),
   ("Nombre de pages prévues", wb.page5.pages_note),
   ("Titre officiel du produit", wb.page5.provisional_title),
-), col1: 150pt, fill_alt: c_paper_alt)
+), col1: 150pt)
 #pagebreak()
 
 // --- PAGE 6 : STRUCTURE EN 5 PARTIES + CONCLUSION ---
-#wb_masthead(wb.page6.kicker, wb.page6.title, 6)
-#v(12pt)
-#text(size: 9.3pt, fill: c_ink)[Architecture exacte appliquée dans *500-Idees-de-Business-a-Lancer-en-Afrique-en-2027.pdf* :]
+#wb_masthead(wb.page6.kicker, wb.page6.title)
+#text(size: 9.3pt, fill: c_ink)[Architecture exacte appliquée dans l'ouvrage *« #cfg.ebook_title »* :]
 #v(10pt)
 
 #table(
-  columns: (38pt, 95pt, 1fr),
-  stroke: (x: 0.45pt + c_rule, y: 0.45pt + c_rule),
-  fill: (_, r) => if calc.even(r) { c_paper_sage } else { c_paper_alt },
-  inset: (x: 9pt, y: 8.5pt),
+  columns: (36pt, 96pt, 1fr),
+  stroke: (x, y) => (bottom: if y == 0 { 0.8pt + c_ink } else { 0.35pt + c_hair }),
+  fill: none,
+  inset: (x: 5pt, y: 8.5pt),
+  table.header(
+    text(size: 7.8pt, weight: "bold", fill: c_accent)[N°],
+    text(size: 7.8pt, weight: "bold", fill: c_accent)[Partie],
+    text(size: 7.8pt, weight: "bold", fill: c_accent)[Contenu synthétique],
+  ),
   ..wb.page6.parts.map(p => (
-    align(center + top, text(font: "Instrument Serif", size: 15pt, fill: c_emerald)[#p.at(0)]),
-    text(size: 9.2pt, weight: "bold", fill: c_deep)[#p.at(1)],
-    text(size: 8.9pt, fill: c_ink2)[#p.at(2)],
+    align(left + top, text(font: "Instrument Serif", size: 15pt, fill: c_accent)[#p.at(0)]),
+    text(size: 9.1pt, weight: "bold", fill: c_ink)[#p.at(1)],
+    text(size: 8.8pt, fill: c_ink2)[#p.at(2)],
   )).flatten()
 )
 #pagebreak()
 
 // --- PAGE 7 : IA & CHECKLIST ---
-#wb_masthead(wb.page7.kicker, wb.page7.title, 7)
-#v(10pt)
+#wb_masthead(wb.page7.kicker, wb.page7.title)
 
 #box(
   width: 100%,
-  fill: c_paper_sage,
-  stroke: (left: 2.5pt + c_emerald, rest: 0.45pt + c_rule),
-  inset: 10pt,
+  fill: c_tint,
+  stroke: (left: 1pt + c_accent),
+  inset: (x: 11pt, y: 8pt),
 )[
-  #text(font: "JetBrains Mono", size: 7.2pt, weight: "bold", fill: c_emerald)[PROMPT EXACT DU WORKBOOK → VERSION APPLIQUÉE]
+  #text(size: 8.2pt, weight: "bold", fill: c_accent)[Prompt du Workbook · Modèle et version adaptée]
   #v(4pt)
-  #text(size: 8.2pt, style: "italic", fill: c_ink2)[*Modèle :* #wb.page7.prompt_template]
+  #text(size: 8.1pt, style: "italic", fill: c_ink2)[*Modèle :* #wb.page7.prompt_template]
   #v(4pt)
-  #text(size: 8.4pt, fill: c_ink)[*Appliqué :* #wb.page7.prompt_applied]
+  #text(size: 8.3pt, fill: c_ink)[*Appliqué :* #wb.page7.prompt_applied]
+]
+#v(10pt)
+
+#text(font: "Instrument Serif", size: 14pt, fill: c_ink)[Comment l'utiliser (6 étapes réalisées)]
+#v(4pt)
+#for s in wb.page7.how_to_use [
+  #text(size: 8.4pt, fill: c_ink2)[#s]
+  #v(2pt)
 ]
 #v(9pt)
 
-#text(font: "Instrument Serif", size: 13.5pt, fill: c_deep)[Comment l'utiliser (6 étapes réalisées)]
-#v(3pt)
-#for s in wb.page7.how_to_use [
-  #text(size: 8.4pt, fill: c_ink)[#s]
-  #v(2pt)
-]
-#v(7pt)
-
-#text(font: "Instrument Serif", size: 13.5pt, fill: c_deep)[Checklist de création (7 items du Workbook)]
+#text(font: "Instrument Serif", size: 14pt, fill: c_ink)[Checklist de création (7 items du Workbook)]
 #v(4pt)
-#box(width: 100%, fill: c_paper_alt, stroke: 0.5pt + c_rule, inset: (x: 10pt, y: 5pt))[
-  #for item in wb.page7.checklist [
-    #box(width: 100%, inset: (y: 3pt), stroke: (bottom: 0.35pt + c_rule))[
-      #checkbox(checked: true, accent: c_emerald) #h(7pt) #text(size: 8.4pt, fill: c_ink)[#item.at(0)]
-    ]
+#for item in wb.page7.checklist [
+  #box(width: 100%, inset: (y: 3.3pt), stroke: (bottom: 0.35pt + c_hair))[
+    #checkbox(checked: true, accent: c_accent) #h(7pt) #text(size: 8.4pt, fill: c_ink)[#item.at(0)]
   ]
 ]
-#v(8pt)
+#v(9pt)
 
-#box(width: 100%, fill: rgb("#FBF1DC"), stroke: (left: 2.2pt + c_gold), inset: 9pt)[
-  #text(font: "JetBrains Mono", size: 7pt, weight: "bold", fill: c_gold_ink)[IMPORTANT — PERSONNALISATION]
-  #v(2pt)
-  #text(size: 8.2pt, fill: c_ink)[#wb.page7.important_note]
+#box(width: 100%, stroke: (top: 0.5pt + c_rule), inset: (top: 7pt))[
+  #text(size: 8.3pt, style: "italic", fill: c_ink2)[#wb.page7.important_note]
 ]
 #pagebreak()
 
 // --- PAGE 8 : RÉCAPITULATIF ---
-#wb_masthead(wb.page8.kicker, wb.page8.title, 8)
-#v(12pt)
+#wb_masthead(wb.page8.kicker, wb.page8.title)
 #text(size: 9.4pt, fill: c_ink)[#wb.page8.intro]
 #v(12pt)
 
 #table(
-  columns: (1fr, 78pt),
-  stroke: (x: 0.45pt + c_rule, y: 0.45pt + c_rule),
-  fill: (_, r) => if calc.even(r) { c_paper_sage } else { c_paper },
-  inset: (x: 11pt, y: 9.5pt),
+  columns: (1fr, 74pt),
+  stroke: (x, y) => (bottom: 0.35pt + c_hair),
+  fill: none,
+  inset: (x: 4pt, y: 9.5pt),
   ..wb.page8.recap_cards.map(c => (
     block[
-      #text(size: 9.5pt, weight: "bold", fill: c_deep)[#c.at(0)]
+      #text(size: 9.4pt, weight: "bold", fill: c_ink)[#c.at(0)]
       #v(2pt)
       #text(size: 8.6pt, fill: c_ink2)[#c.at(1)]
     ],
-    align(center + horizon)[
-      #box(fill: c_emerald, radius: 2pt, inset: (x: 7pt, y: 3pt))[
-        #text(font: "JetBrains Mono", size: 7.4pt, weight: "bold", fill: c_paper)[#c.at(2)]
-      ]
+    align(right + horizon)[
+      #text(size: 8.4pt, weight: "semibold", fill: c_accent)[#checkbox(checked: true, accent: c_accent) #h(5pt) #c.at(2)]
     ]
   )).flatten()
 )
-#v(14pt)
+#v(16pt)
 
-#box(width: 100%, fill: rgb("#FBF1DC"), stroke: (left: 2.5pt + c_gold), inset: 12pt)[
-  #text(font: "Instrument Serif", size: 14pt, fill: c_deep)[Tu es maintenant un créateur de produits digitaux]
+#box(width: 100%, stroke: (left: 1pt + c_accent), inset: (left: 13pt, y: 4pt))[
+  #text(font: "Instrument Serif", size: 14.5pt, fill: c_ink)[Tu es maintenant un créateur de produits digitaux]
   #v(3pt)
-  #text(size: 8.9pt, fill: c_ink2)[Ton fichier complet *500-Idees-de-Business-a-Lancer-en-Afrique-en-2027.pdf* concrétise les 5 étapes ci-dessus.]
+  #text(size: 8.9pt, fill: c_ink2)[L'ouvrage complet *« #cfg.ebook_title »* concrétise les cinq étapes ci-dessus.]
 ]
 #pagebreak()
 
 // --- PAGE 9 : DÉCLARATION OFFICIELLE & POSTS FACEBOOK ---
-#wb_masthead(wb.page9.kicker, wb.page9.title, 9)
-#v(10pt)
-#text(font: "Instrument Serif", size: 14pt, fill: c_deep)[Ton engagement officiel]
-#v(5pt)
-#kv_sheet(wb.page9.declaration, col1: 135pt, fill_alt: c_paper_sage)
-#v(11pt)
+#wb_masthead(wb.page9.kicker, wb.page9.title)
+#text(font: "Instrument Serif", size: 14.5pt, fill: c_ink)[Ton engagement officiel]
+#v(4pt)
+#line(length: 100%, stroke: 0.5pt + c_rule)
+#kv_sheet(wb.page9.declaration, col1: 138pt)
+#v(14pt)
 
-#text(font: "Instrument Serif", size: 14pt, fill: c_deep)[Partage ta victoire !]
+#text(font: "Instrument Serif", size: 14.5pt, fill: c_ink)[Partage ta victoire]
 #v(2pt)
-#text(size: 8.5pt, weight: "bold", fill: c_clay_ink)[#wb.page9.fb_action]
-#v(7pt)
+#text(size: 8.5pt, weight: "semibold", fill: c_clay)[#wb.page9.fb_action]
+#v(9pt)
 
 #for p in wb.page9.social_posts [
   #box(
     width: 100%,
-    fill: c_paper_alt,
-    stroke: (left: 2.2pt + c_gold, rest: 0.45pt + c_rule),
-    inset: (x: 11pt, y: 8pt),
+    stroke: (left: 0.9pt + c_accent),
+    inset: (left: 11pt, y: 3pt),
   )[
-    #text(font: "JetBrains Mono", size: 7.2pt, weight: "bold", fill: c_gold_ink)[#p.at(0)]
-    #v(3pt)
-    #text(size: 8.2pt, style: "italic", fill: c_ink)[#p.at(1)]
+    #text(size: 8.3pt, weight: "bold", fill: c_accent)[#p.at(0)]
+    #v(2.5pt)
+    #text(size: 8.3pt, style: "italic", fill: c_ink)[#p.at(1)]
   ]
-  #v(6pt)
+  #v(9pt)
 ]
 #pagebreak()
 
 // --- PAGE 10 : PROCHAINS PAS ---
-#wb_masthead(wb.page10.kicker, wb.page10.title, 10)
-#v(12pt)
+#wb_masthead(wb.page10.kicker, wb.page10.title)
 
 #for st in wb.page10.steps [
   #box(
     width: 100%,
-    fill: c_paper_sage,
-    stroke: (left: 2.5pt + c_emerald, rest: 0.45pt + c_rule),
-    inset: 11pt,
+    stroke: (bottom: 0.35pt + c_hair),
+    inset: (y: 8pt),
   )[
-    #text(size: 9.4pt, weight: "bold", fill: c_deep)[#st.at(0)]
+    #text(size: 9.4pt, weight: "bold", fill: c_ink)[#st.at(0)]
     #v(3pt)
-    #text(size: 8.7pt, fill: c_ink2)[#st.at(1)]
+    #text(size: 8.8pt, fill: c_ink2)[#st.at(1)]
   ]
-  #v(8pt)
 ]
+#v(12pt)
 
 #box(
   width: 100%,
-  fill: rgb("#FBF1DC"),
-  stroke: (left: 2.5pt + c_gold, rest: 0.45pt + rgb("#E4C98C")),
-  inset: 11pt,
+  stroke: (left: 1pt + c_accent),
+  inset: (left: 12pt, y: 4pt),
 )[
-  #text(font: "JetBrains Mono", size: 7.2pt, weight: "bold", fill: c_gold_ink)[MESSAGE WHATSAPP PRÊT POUR TES 10 PREMIERS TESTEURS]
-  #v(4pt)
   #text(size: 8.4pt, style: "italic", fill: c_ink)[#wb.page10.whatsapp_testers]
 ]
-#v(12pt)
-#text(font: "Instrument Serif", size: 13pt, style: "italic", fill: c_emerald)[#wb.page10.closing]
+#v(16pt)
+#text(font: "Instrument Serif", size: 13.5pt, style: "italic", fill: c_accent)[#wb.page10.closing]
 '''
 
 
@@ -1486,7 +1267,7 @@ def build_json_payload(config, sectors, ebook_pages=None):
         "part01": {
             "kicker": PART_01_INTRO["kicker"],
             "title": PART_01_INTRO["title"],
-            "workbook_question": PART_01_INTRO["workbook_question"],
+            "epigraph": PART_01_INTRO["epigraph"],
             "lead": PART_01_INTRO["lead"],
             "problem_blocks": [{"title": t, "body": b} for t, b in PART_01_INTRO["problem_blocks"]],
             "trends": [{"title": t, "body": b} for t, b in PART_01_INTRO["trends_2027"]],
@@ -1495,14 +1276,14 @@ def build_json_payload(config, sectors, ebook_pages=None):
         "part02": {
             "kicker": PART_02_ERRORS["kicker"],
             "title": PART_02_ERRORS["title"],
-            "workbook_question": PART_02_ERRORS["workbook_question"],
+            "epigraph": PART_02_ERRORS["epigraph"],
             "intro": PART_02_ERRORS["intro"],
             "errors": [{"title": t, "consequence": c, "fix": f} for t, c, f in PART_02_ERRORS["errors"]],
         },
         "part04": {
             "kicker": PART_04_VALIDATION["kicker"],
             "title": PART_04_VALIDATION["title"],
-            "workbook_question": PART_04_VALIDATION["workbook_question"],
+            "epigraph": PART_04_VALIDATION["epigraph"],
             "intro": PART_04_VALIDATION["intro"],
             "vin": [{"title": t, "desc": d} for t, d in PART_04_VALIDATION["vin_reminders"]],
             "steps_48h": [{"title": t, "desc": d} for t, d in PART_04_VALIDATION["steps_48h"]],
@@ -1513,7 +1294,7 @@ def build_json_payload(config, sectors, ebook_pages=None):
         "part05": {
             "kicker": PART_05_LAUNCH["kicker"],
             "title": PART_05_LAUNCH["title"],
-            "workbook_question": PART_05_LAUNCH["workbook_question"],
+            "epigraph": PART_05_LAUNCH["epigraph"],
             "intro": PART_05_LAUNCH["intro"],
             "days": [{"day": d, "title": t, "desc": desc} for d, t, desc in PART_05_LAUNCH["days"]],
             "scripts": [{"title": t, "body": b} for t, b in PART_05_LAUNCH["scripts"]],
@@ -1523,7 +1304,7 @@ def build_json_payload(config, sectors, ebook_pages=None):
         "conclusion": {
             "kicker": CONCLUSION_CONTENT["kicker"],
             "title": CONCLUSION_CONTENT["title"],
-            "workbook_question": CONCLUSION_CONTENT["workbook_question"],
+            "epigraph": CONCLUSION_CONTENT["epigraph"],
             "message": CONCLUSION_CONTENT["message"],
             "mantra": CONCLUSION_CONTENT["mantra"],
             "next_steps": CONCLUSION_CONTENT["next_steps_reader"],
@@ -1559,9 +1340,9 @@ def write_markdown_exports(config, sectors, ebook_pages=None):
     wb_lines += [
         "",
         "## Page 3 — Validation Express (Méthode VIN)",
-        f"- **V – Problème (Valeur)** : {wb['page3']['V']}",
-        f"- **I – Intensité** : {wb['page3']['I_score']} — {wb['page3']['I_exp']}",
-        f"- **N – Nombre** : {wb['page3']['N']}",
+        f"- **V · Problème (Valeur)** : {wb['page3']['V']}",
+        f"- **I · Intensité** : {wb['page3']['I_score']} — {wb['page3']['I_exp']}",
+        f"- **N · Nombre** : {wb['page3']['N']}",
         f"- **{wb['page3']['conclusion']}**",
         "",
         "## Page 4 — Promesse Claire",
@@ -1624,7 +1405,7 @@ def write_markdown_exports(config, sectors, ebook_pages=None):
     eb_lines += ["", f"## Partie 02 — {PART_02_ERRORS['title']}", PART_02_ERRORS["intro"], ""]
     for et, ec, ef in PART_02_ERRORS["errors"]:
         eb_lines.append(f"### {et}\n- {ec}\n- {ef}\n")
-    eb_lines += ["", "## Partie 03 — Étape 1 : Les 500 Idées de Business en 20 Secteurs", ""]
+    eb_lines += ["", "## Partie 03 — Les 500 Idées de Business en 20 Secteurs", ""]
     for s in sectors:
         eb_lines.append(f"### Secteur {s['num']:02d} : {s['title']} (#{s['start_id']:03d}–#{s['end_id']:03d})")
         eb_lines.append(s["intro"])
@@ -1658,8 +1439,7 @@ def main():
     EBOOK_TYP_PATH.write_text(EBOOK_TYP.strip() + "\n", encoding="utf-8")
     WORKBOOK_TYP_PATH.write_text(WORKBOOK_TYP.strip() + "\n", encoding="utf-8")
 
-    # 1. Compilation de l'Ebook complet avec Typst 0.15
-    print("1/3 Compilation Typst de l'Ebook complet (design éditorial)...")
+    print("1/3 Compilation Typst de l'Ebook complet (mise en page éditoriale)...")
     payload = build_json_payload(config, sectors, ebook_pages=None)
     DATA_JSON_PATH.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
     typst.compile(
@@ -1672,7 +1452,6 @@ def main():
         ebook_pages = len(eb_doc)
     print(f"    -> {OUT_EBOOK_PDF} ({ebook_pages} pages)")
 
-    # 2. Compilation du Workbook Jour 2 rempli (10 pages exactes)
     print("2/3 Compilation Typst du Workbook Jour 2 rempli (10 pages exactes)...")
     payload = build_json_payload(config, sectors, ebook_pages=ebook_pages)
     DATA_JSON_PATH.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
@@ -1686,12 +1465,11 @@ def main():
         wb_pages = len(wb_doc)
     print(f"    -> {OUT_WORKBOOK_PDF} ({wb_pages} pages)")
 
-    # 3. Export des Markdown éditables
     print("3/3 Export des sources Markdown éditables...")
     write_markdown_exports(config, sectors, ebook_pages=ebook_pages)
     print(f"    -> {OUT_WORKBOOK_MD}")
     print(f"    -> {OUT_EBOOK_MD}")
-    print("Design éditorial Typst terminé avec succès !")
+    print("Compilation éditoriale terminée avec succès !")
 
 
 if __name__ == "__main__":

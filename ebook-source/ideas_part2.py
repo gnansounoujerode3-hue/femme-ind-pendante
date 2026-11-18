@@ -266,7 +266,7 @@ SECTORS_PART_2 = [
             ("Coaching sportif à domicile ou en parc (individuel et petits groupes)", "Séances de remise en forme tôt le matin ou après le bureau avec abonnement mensuel.", "Petit"),
             ("Bootcamp fitness plein air le samedi matin (perte de poids & cardio)", "Ambiance conviviale, tarif accessible à la séance ou au mois, zéro loyer de salle.", "Petit"),
             ("Programme de coaching fitness et perte de poids 100 % en ligne sur WhatsApp", "Vidéos courtes quotidiennes sans matériel + suivi alimentaire local + groupe de motivation.", "Petit"),
-            ("Cours de danse fitness afro (Afro-Fit, Zumba africaine, danse traditionnelle cardio)", "Allie plaisir musical, culture et dépense calorique — énorme succès auprès des femmes.", "Petit"),
+            ("Cours de danse fitness afro (Afro-Fit, Zumba africaine, danse traditionnelle cardio)", "Allie plaisir musical, culture et dépense calorique, avec une forte adhésion féminine.", "Petit"),
             ("Exploitation d'un terrain de foot à 5 (maracana synthétique) avec éclairage nocturne", "Réservation à l'heure le soir et le week-end + buvette et tournois inter-entreprises.", "Structuré"),
             ("Organisation de tournois sportifs inter-entreprises et corporatifs", "Sponsoring, inscriptions d'équipes et ambiance networking très prisée des RH.", "Moyen"),
             ("Salle de jeux vidéo / E-sport lounge propre et bien climatisée", "Consoles nouvelle génération, tournois FIFA/eFootball et tournois mobiles le week-end.", "Structuré"),
