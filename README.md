@@ -11,6 +11,27 @@ Pour Noël et le 1er janvier, avec des explications adaptées aux débutants.
 - Vérification des sources, des licences et des crédits avant publication.
 - Une photographie illustrative ne sera pas présentée comme le résultat exact d’une recette testée pour ce livre.
 
+## Nouvelle maquette — photographies réelles uniquement
+
+📕 **[Ouvrir ou télécharger la nouvelle maquette PDF (8 pages)](MAQUETTE-PHOTOS-REELLES.pdf)**
+
+Trois extraits : **amiwo, poulet yassa et kelewele**. Chaque page photo précède immédiatement la recette correspondante. Aucune image générée par IA dans ce document.
+
+**Il s’agit d’un prototype écran**, pas du livre complet : les photos sont des aperçus de travail en basse définition et montrent des variantes des plats. La sélection haute définition des 100 recettes reste à compléter. Les crédits et liens sources figurent sur les pages photo.
+
+### Feuilleter sans ouvrir le PDF
+
+1. [Couverture](reports/photos-reelles/page-1.png)
+2. [Sommaire de l’extrait](reports/photos-reelles/page-2.png)
+3. [Photo : amiwo](reports/photos-reelles/page-3.png)
+4. [Recette : amiwo](reports/photos-reelles/page-4.png)
+5. [Photo : poulet yassa](reports/photos-reelles/page-5.png)
+6. [Recette : poulet yassa](reports/photos-reelles/page-6.png)
+7. [Photo : kelewele](reports/photos-reelles/page-7.png)
+8. [Recette : kelewele](reports/photos-reelles/page-8.png)
+
+[Script de génération de cette maquette](tools/maquette_photos_reelles.py)
+
 ## Recherche de photos — premier lot
 
 📷 **[Consulter la sélection et les sources photographiques](recherche-photos/SELECTION-PHOTOS-REELLES.md)**

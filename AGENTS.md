@@ -10,6 +10,11 @@ Les skills de ce dépôt sont des ressources de travail locales, pas des extensi
 - Rédaction et cohérence des recettes : `.agents/skills/recipe-editor/SKILL.md`.
 - Contrôles avant livraison, PDF/EPUB : `.agents/skills/ebook-quality/SKILL.md`.
 
+## Publication GitHub
+- Demande permanente du client : à chaque étape terminée qui modifie le projet, mettre à jour GitHub sur la branche de travail actuelle, sans attendre une nouvelle demande.
+- Vérifier le statut, sélectionner les fichiers pertinents, créer un commit et pousser uniquement la branche actuelle. Ne pas publier d’images IA, de secrets ou de fichiers temporaires non validés. Ne pas fusionner vers main sans demande explicite.
+- En cas d’échec du push, le signaler ; ne pas prétendre que la publication a réussi.
+
 ## Règles du projet
 - Décision explicite du client : **aucune image générée par IA**, y compris la couverture. L’ancienne maquette illustrée est obsolète et ne doit pas être présentée comme la version approuvée.
 - Pour la prochaine édition : **une page de photographie réelle du plat terminé immédiatement avant chaque recette**. Les images de préparation ou d’ingrédients seuls ne conviennent pas à cette page.
