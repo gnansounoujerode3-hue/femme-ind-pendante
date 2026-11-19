@@ -16,6 +16,7 @@ Les skills de ce dépôt sont des ressources de travail locales, pas des extensi
 - En cas d’échec du push, le signaler ; ne pas prétendre que la publication a réussi.
 
 ## Règles du projet
+- Couverture : **conserver le design de la première maquette** (bloc crème, mêmes titres et polices, grande image en bas, bandeau vert). Remplacer uniquement l’image IA par une vraie photographie ; ne pas refaire la composition sans demande explicite.
 - Décision explicite du client : **aucune image générée par IA**, y compris la couverture. L’ancienne maquette illustrée est obsolète et ne doit pas être présentée comme la version approuvée.
 - Pour la prochaine édition : **une page de photographie réelle du plat terminé immédiatement avant chaque recette**. Les images de préparation ou d’ingrédients seuls ne conviennent pas à cette page.
 - Les photos trouvées en ligne illustrent une variante ; ne pas les présenter comme le résultat exact d’une recette testée pour ce livre.

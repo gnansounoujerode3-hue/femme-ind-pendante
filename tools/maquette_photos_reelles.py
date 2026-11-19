@@ -47,17 +47,32 @@ def page(n,label):
  text(str(n).zfill(2),530,808,9,'SansBold')
  c.bookmarkPage(f'p{n}')
 
-page(1,'ÉDITION DÉBUTANT')
-text('LE GUIDE ULTIME',45,105,10,'SansBold',TERRA)
-text('100 recettes',40,162,66,'SerifBold')
-text('béninoises',44,242,48,'Serif')
-text('& africaines',44,299,48,'Serif')
-line(386)
-text('Noël & le 1er janvier',45,418,26,'Serif')
-para('Voir le plat.<br/>Puis le préparer, pas à pas.',45,490,480,22,'Serif')
-para('NOUVELLE PRÉSENTATION',45,631,490,9,'SansBold',TERRA)
-para('Extrait de trois recettes • Une page photo avant chaque fiche.<br/>Photographies existantes de variantes des plats, non résultats de tests culinaires de ce guide.',45,660,490,11)
-para('Aperçus disponibles en basse définition : ce document est un prototype écran, pas une version prête à imprimer.',45,740,490,9,color=MUTED)
+# Couverture : reprendre exactement la composition initiale ; remplacer uniquement l’image.
+c.setFillColor(BG);c.rect(0,0,W,H,fill=1,stroke=0)
+c.bookmarkPage('p1')
+def cover_text(s,x,y,size=11,font='Sans',color=GREEN):
+ c.setFillColor(color);c.setFont(font,size);c.drawString(x,H-y-size*.78,s)
+cover_text('LE GUIDE ULTIME',44,38,10,'SansBold',TERRA)
+cover_text('100 recettes',41,70,56,'SerifBold')
+cover_text('béninoises & africaines',44,130,33,'Serif')
+cover_text('Noël & le 1er janvier',45,180,19,'Serif')
+c.setStrokeColor(TERRA);c.setLineWidth(.6);c.line(45,H-219,109,H-219)
+cover_text('PAS À PAS, POUR DÉBUTER EN CONFIANCE',45,235,9.5,'SansBold')
+cover_photo=photos[11]
+assert cover_photo['image_kind']=='photograph'
+with Image.open(ROOT/cover_photo['local_path']) as im:
+ # Même cadre que la première couverture ; recadrage proportionnel, sans étirement.
+ scale=max(W/im.width,516/im.height)
+ sw,sh=W/scale,516/scale
+ x0,y0=(im.width-sw)/2,(im.height-sh)/2
+ cropped=im.crop((round(x0),round(y0),round(x0+sw),round(y0+sh)))
+ c.drawImage(ImageReader(cropped),0,H-273-516,W,516)
+c.setFillColor(GREEN);c.rect(0,0,W,53,fill=1,stroke=0)
+cover_text('Quantités claires. Gestes expliqués. Le plaisir de recevoir.',31,807,10,'Sans',BG)
+# Attribution discrète, dans la zone où figurait le crédit de l’ancienne illustration.
+c.setFillColor(GREEN);c.rect(315,H-789,280,20,fill=1,stroke=0)
+cover_text('Photo : Aimeabibis • CC BY-SA 4.0 • recadrée',325,776,7,'Sans',BG)
+c.linkURL(cover_photo['source_page_url'],(315,H-789,W,H-769),relative=0,thickness=0)
 c.showPage()
 page(2,'DANS CET EXTRAIT')
 text('D’abord les yeux,',43,100,38,'Serif')

@@ -15,6 +15,10 @@ Pour Noël et le 1er janvier, avec des explications adaptées aux débutants.
 
 📕 **[Ouvrir ou télécharger la nouvelle maquette PDF (8 pages)](MAQUETTE-PHOTOS-REELLES.pdf)**
 
+**Couverture corrigée : le design initial est rétabli**, avec les mêmes titres, polices, fond crème, emplacement de la grande image et bandeau vert. Seule l’illustration IA a été remplacée par une photographie réelle d’amiwo avec poulet (aperçu provisoire).
+
+![Couverture — design initial conservé et photo réelle](reports/photos-reelles/page-1.png)
+
 Trois extraits : **amiwo, poulet yassa et kelewele**. Chaque page photo précède immédiatement la recette correspondante. Aucune image générée par IA dans ce document.
 
 **Il s’agit d’un prototype écran**, pas du livre complet : les photos sont des aperçus de travail en basse définition et montrent des variantes des plats. La sélection haute définition des 100 recettes reste à compléter. Les crédits et liens sources figurent sur les pages photo.
