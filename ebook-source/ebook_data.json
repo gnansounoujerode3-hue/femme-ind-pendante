@@ -1,12 +1,12 @@
 {
   "config": {
-    "ebook_title": "500 Idées de Business à Lancer en Afrique en 2027",
-    "ebook_subtitle": "Le guide pratique pour choisir, valider et lancer ton activité rentable en 7 jours, même avec un petit budget",
-    "promise_formula": "Comment choisir, valider et lancer ton business rentable en Afrique en 2027 en 7 jours sans gros capital ni peur de te tromper.",
-    "edition": "Édition 2027 · Guide Pratique & Répertoire",
+    "ebook_title": "500 Idées de Business à Lancer en Afrique pour Bien Finir l'Année",
+    "ebook_subtitle": "Le guide pratique pour choisir, valider et lancer ton activité rentable en 7 jours avant le 31 décembre, même avec un petit budget",
+    "promise_formula": "Comment choisir, valider et lancer ton business rentable en Afrique pour bien finir l'année en 7 jours sans gros capital ni attendre janvier.",
+    "edition": "Édition Fin d'Année · Guide Pratique & Répertoire",
     "author_name": "[Ton Nom / Ta Marque]",
     "author_role": "Entrepreneur et créateur de produits digitaux",
-    "author_bio": "Présentation de l'auteur : raconte ici en quelques lignes ton parcours sur le terrain, ta ville d'ancrage et ce qui t'a poussé à réunir ces 500 pistes concrètes pour la génération entrepreneuriale africaine de 2027.",
+    "author_bio": "Présentation de l'auteur : raconte ici en quelques lignes ton parcours sur le terrain, ta ville d'ancrage et ce qui t'a poussé à réunir ces 500 pistes concrètes pour clôturer l'année sur de vrais résultats.",
     "contact_whatsapp": "+2XX XX XX XX XX",
     "contact_social": "@toncompte",
     "contact_email": "contact@tondomaine.com",
@@ -17,7 +17,7 @@
       "tier": "Petit",
       "label": "Petit budget",
       "range": "Moins de 50 000 FCFA (0 à 80 USD)",
-      "desc": "Activités démarrables depuis chez soi avec un smartphone, un savoir-faire ou un outillage simple. Aucun local commercial requis au départ : idéal pour tester la demande dès cette semaine."
+      "desc": "Activités démarrables depuis chez soi avec un smartphone, un savoir-faire ou un outillage simple. Aucun local commercial requis au départ : idéal pour capter la demande de fin d'année dès cette semaine."
     },
     {
       "tier": "Moyen",
@@ -36,7 +36,7 @@
     {
       "num": 1,
       "title": "Agro-business & Transformation Locale",
-      "intro": "L'Afrique importe encore des milliards de dollars de produits alimentaires qu'elle cultive sur place. En 2027, transformer, conditionner et valoriser les récoltes locales reste l'un des leviers les plus rentables du continent.",
+      "intro": "L'Afrique importe encore des milliards de dollars de produits alimentaires qu'elle cultive sur place. En cette fin d'année, transformer, conditionner et valoriser les récoltes locales reste l'un des leviers les plus rentables du continent.",
       "start_code": "001",
       "end_code": "025",
       "counts": {
@@ -414,7 +414,7 @@
     {
       "num": 3,
       "title": "E-commerce, Social Commerce & Import-Export",
-      "intro": "En 2027, le vrai e-commerce africain se passe sur WhatsApp, TikTok, Facebook et Instagram avec paiement à la livraison ou via Mobile Money. Vendre malin sans immobiliser de gros stocks ouvre des marges rapides.",
+      "intro": "Aujourd'hui, le vrai e-commerce africain se passe sur WhatsApp, TikTok, Facebook et Instagram avec paiement à la livraison ou via Mobile Money. Vendre malin sans immobiliser de gros stocks ouvre des marges rapides avant les fêtes.",
       "start_code": "051",
       "end_code": "075",
       "counts": {
@@ -603,7 +603,7 @@
     {
       "num": 4,
       "title": "Services Digitaux, Freelance & Intelligence Artificielle",
-      "intro": "Un smartphone performant ou un ordinateur et une connexion internet suffisent en 2027 pour vendre des services numériques aux PME africaines comme à des clients internationaux payant en euros ou dollars.",
+      "intro": "Un smartphone performant ou un ordinateur et une connexion internet suffisent dès cette semaine pour vendre des services numériques aux PME africaines comme à des clients internationaux payant en euros ou dollars.",
       "start_code": "076",
       "end_code": "100",
       "counts": {
@@ -792,7 +792,7 @@
     {
       "num": 5,
       "title": "Produits Digitaux, Formation & Éducation (EdTech)",
-      "intro": "Créer une fois et vendre des centaines de fois sans stock physique ni frais de livraison : en 2027, l'économie du savoir explose en Afrique francophone grâce au Mobile Money et aux plateformes dédiées.",
+      "intro": "Créer une fois et vendre des centaines de fois sans stock physique ni frais de livraison : en période de bilans et de bonnes résolutions, l'économie du savoir explose en Afrique francophone grâce au Mobile Money.",
       "start_code": "101",
       "end_code": "125",
       "counts": {
@@ -951,7 +951,7 @@
         {
           "id": 122,
           "code": "122",
-          "title": "Création de cahiers d'exercices et plannings imprimables (planners 2027)",
+          "title": "Création de cahiers d'exercices et plannings imprimables (bilan & nouvelle année)",
           "desc": "Plannings de vie, journaux de gratitude, suivis d'objectifs business en PDF ou imprimés.",
           "budget": "Petit"
         },
@@ -1170,7 +1170,7 @@
     {
       "num": 7,
       "title": "Mode, Textile Africain & Accessoires",
-      "intro": "La fierté culturelle et le style afro-contemporain séduisent autant les jeunes urbains que la diaspora. En 2027, combiner savoir-faire des tailleurs locaux, finitions soignées et vente digitale crée de vraies marques rentables.",
+      "intro": "La fierté culturelle et le style afro-contemporain séduisent autant les jeunes urbains que la diaspora de retour pour les fêtes. Combiner savoir-faire des tailleurs locaux, finitions soignées et vente digitale crée de vraies marques rentables.",
       "start_code": "151",
       "end_code": "175",
       "counts": {
@@ -1548,7 +1548,7 @@
     {
       "num": 9,
       "title": "Transport, Mobilité & Logistique Urbaine",
-      "intro": "Le commerce explose, mais la livraison fiable reste le maillon faible dans presque toutes les villes africaines. En 2027, quiconque garantit ponctualité, sécurité et suivi WhatsApp peut bâtir une flotte rentable.",
+      "intro": "Le commerce explose en fin d'année, mais la livraison fiable reste le maillon faible dans presque toutes les villes africaines. Quiconque garantit ponctualité, sécurité et suivi WhatsApp peut bâtir une flotte rentable dès ce mois-ci.",
       "start_code": "201",
       "end_code": "225",
       "counts": {
@@ -1737,7 +1737,7 @@
     {
       "num": 10,
       "title": "Énergie Solaire, Eau & Économie Verte",
-      "intro": "Avec un ensoleillement exceptionnel et des enjeux croissants d'accès à l'électricité fiable, à l'eau potable et à la gestion des déchets, les métiers verts sont l'un des plus grands eldorados africains de 2027.",
+      "intro": "Avec un ensoleillement exceptionnel et des enjeux croissants d'accès à l'électricité fiable, à l'eau potable et à la gestion des déchets, les métiers verts sont l'un des plus grands eldorados africains du moment.",
       "start_code": "226",
       "end_code": "250",
       "counts": {
@@ -2115,7 +2115,7 @@
     {
       "num": 12,
       "title": "Événementiel, Mariages, Culture & Création de Contenu",
-      "intro": "Les célébrations familiales, conférences professionnelles et la création de contenu explosent partout sur le continent. En 2027, l'économie de l'attention et des événements offre des marges rapides.",
+      "intro": "Les célébrations familiales, dîners de fin d'année, conférences et créations de contenu explosent partout sur le continent. L'économie de l'attention et des événements offre des marges rapides dès novembre et décembre.",
       "start_code": "276",
       "end_code": "300",
       "counts": {
@@ -2682,7 +2682,7 @@
     {
       "num": 15,
       "title": "Artisanat Moderne, Décoration & Petite Industrie",
-      "intro": "Les nouveaux appartements, bureaux, hôtels et cafés africains recherchent des objets beaux, durables et fabriqués sur place plutôt que des importations fragiles. La petite fabrication locale a un avenir radieux en 2027.",
+      "intro": "Les nouveaux appartements, bureaux, hôtels et cafés africains recherchent des objets beaux, durables et fabriqués sur place plutôt que des importations fragiles. La petite fabrication locale répond aussi à la forte demande de cadeaux.",
       "start_code": "351",
       "end_code": "375",
       "counts": {
@@ -2871,7 +2871,7 @@
     {
       "num": 16,
       "title": "Services aux Entreprises (B2B), RH & Administratif",
-      "intro": "Les PME africaines se structurent et se formalisent en 2027. Elles préfèrent externaliser les fonctions supports (compta, recrutement, prospection, administratif) plutôt que d'embaucher à temps plein.",
+      "intro": "Les PME africaines se structurent et bouclent leurs bilans. Elles préfèrent externaliser les fonctions supports (compta, recrutement, prospection, administratif et paniers cadeaux) plutôt que d'embaucher à temps plein.",
       "start_code": "376",
       "end_code": "400",
       "counts": {
@@ -3353,7 +3353,7 @@
           "id": 439,
           "code": "439",
           "title": "Coaching parental et ateliers pratiques (gestion des écrans, discipline bienveillante)",
-          "desc": "Accompagnement concret des parents modernes confrontés aux défis éducatifs de 2027.",
+          "desc": "Accompagnement concret des parents modernes confrontés aux défis éducatifs actuels.",
           "budget": "Petit"
         },
         {
@@ -3816,39 +3816,39 @@
   ],
   "part01": {
     "kicker": "Première partie · Introduction",
-    "title": "Pourquoi 2027 est le moment idéal pour lancer un business en Afrique",
-    "epigraph": "Comprendre les blocages réels du terrain et s'appuyer sur cinq lames de fond économiques déjà à l'œuvre sur le continent.",
-    "lead": "Chaque jour, des milliers de jeunes diplômés, de salariés, de femmes actives et de membres de la diaspora souhaitent bâtir une source de revenus indépendante. Pourtant, la majorité reste bloquée avant même de vendre : soit faute d'identifier une idée adaptée au pouvoir d'achat réel autour d'eux, soit après avoir imité un commerce déjà saturé sans vérifier la demande.",
+    "title": "Pourquoi la fin d'année est le meilleur moment pour lancer un business en Afrique",
+    "epigraph": "Ne pas attendre janvier pour se lancer : profiter des dernières semaines de l'année où l'argent, les commandes et la diaspora circulent le plus vite.",
+    "lead": "Chaque mois de novembre, beaucoup se répètent la même phrase : « L'année est presque terminée, je commencerai en janvier. » C'est une erreur coûteuse. En Afrique francophone, les six à huit dernières semaines de l'année concentrent la plus forte circulation d'argent des douze mois : achats familiaux, cérémonies, primes, colis diaspora et clôture de budgets d'entreprises.",
     "problem_blocks": [
       {
-        "title": "Le vrai frein n'est pas le manque de courage, mais l'absence de filtre",
-        "body": "En Afrique francophone, l'énergie entrepreneuriale est immense. Entre des concepts importés qui supposent une logistique absente et des projets lourds qui immobilisent des millions de FCFA avant la première vente, beaucoup s'épuisent avant d'avoir encaissé un seul client."
+        "title": "Le vrai frein n'est pas le manque de temps, mais l'absence de filtre",
+        "body": "Repousser à janvier fait rater le pic commercial le plus généreux de l'année. À l'inverse, ceux qui s'appuient sur des concepts trop lourds immobilisent leurs économies avant d'avoir encaissé un seul client. L'enjeu est de choisir une offre simple, vendable immédiatement."
       },
       {
-        "title": "Cinq vagues économiques qui favorisent les projets agiles",
-        "body": "En 2027, démarrer léger avec une offre simple, locale et testée en quelques jours offre un avantage décisif sur les structures lentes et coûteuses."
+        "title": "Cinq dynamiques de fin d'année favorables aux projets légers",
+        "body": "Démarrer léger en novembre ou décembre permet de tester une idée sur une vraie demande urgente, d'encaisser avant le 31 décembre et d'aborder la nouvelle année avec une clientèle déjà fidélisée."
       }
     ],
     "trends": [
       {
-        "title": "Paiements mobiles et commerce conversationnel",
-        "body": "Du Bénin au Sénégal, de la Côte d'Ivoire au Cameroun, vendre sans boutique physique grâce à WhatsApp Business, Facebook, TikTok et Mobile Money fait partie des usages quotidiens."
+        "title": "Pic d'achats festifs et commerce sur WhatsApp",
+        "body": "Des repas de groupe aux tenues et coffrets cadeaux, les ménages commandent par WhatsApp Business, TikTok et Facebook avec règlement rapide par Mobile Money."
       },
       {
-        "title": "Essor du « Consommons local » transformé",
-        "body": "Face au prix des importations, les ménages et la diaspora recherchent des farines infantiles, jus, épices, soins naturels et textiles locaux présentés proprement."
+        "title": "Demande record autour du « Consommons local » et des colis diaspora",
+        "body": "Réceptions de fin d'année, visites familiales et retours de la diaspora dopent les ventes de jus naturels, épices, pâtisseries, soins locaux, textiles et artisanat."
       },
       {
-        "title": "Outils numériques accessibles sur téléphone",
-        "body": "Un prestataire indépendant équipé d'un smartphone produit en deux heures des visuels, devis, catalogues, supports de formation et contenus qui exigeaient autrefois toute une agence."
+        "title": "Commerçants débordés en quête de renfort digital express",
+        "body": "Les boutiques ont besoin dès cette semaine de visuels promo, catalogues WhatsApp, vidéos courtes et suivi de messages pour ne rater aucune commande des fêtes."
       },
       {
-        "title": "Transition énergétique et sobriété",
-        "body": "Le coût du réseau pousse commerces, ateliers agricoles et foyers vers les kits solaires, le froid autonome, le recyclage utile et l'eau potable de proximité."
+        "title": "Besoins urgents en fraîcheur, énergie, transport et nettoyage",
+        "body": "Réunions de famille, galas et congés multiplient la demande en glaçons, froid autonome, livraisons ponctuelles, lavage auto, ménage et location de matériel."
       },
       {
-        "title": "Externalisation pour PME locales et diaspora",
-        "body": "Les petites entreprises préfèrent déléguer comptabilité, prospection, livraison et accueil client ; la diaspora rémunère volontiers des relais fiables restés au pays."
+        "title": "Clôtures d'exercice des PME et résolutions déjà en préparation",
+        "body": "Entreprises et particuliers délèguent leurs inventaires, paniers d'entreprise, comptes de fin d'année et carnets d'objectifs pour repartir du bon pied."
       }
     ],
     "profiles": [
@@ -3858,7 +3858,7 @@
         "sectors": "Secteurs 04 (Digital), 05 (Formation), 03 (Social commerce), 12 (Contenu)"
       },
       {
-        "profile": "Salarié cherchant un revenu d'appoint",
+        "profile": "Salarié cherchant un revenu d'appoint avant les fêtes",
         "budget": "Petit à moyen budget",
         "sectors": "Secteurs 02 (Livraison week-end), 08 (Immobilier), 16 (Services B2B), 17 (Fintech)"
       },
@@ -3873,7 +3873,7 @@
         "sectors": "Secteurs 10 (Solaire), 15 (Artisanat), 20 (BTP et réparation)"
       },
       {
-        "profile": "Investisseur ou diaspora en partenariat",
+        "profile": "Investisseur ou diaspora en séjour de fin d'année",
         "budget": "Budget structuré",
         "sectors": "Secteurs 09 (Logistique), 13 (Tourisme), 14 (Élevage et pisciculture), 01 (Unités)"
       }
@@ -3881,70 +3881,70 @@
   },
   "part02": {
     "kicker": "Deuxième partie · Erreurs à éviter",
-    "title": "Les sept erreurs qui coûtent le plus cher aux nouveaux projets",
-    "epigraph": "Avant d'engager ton énergie ou ton épargne, évite ces pièges observés sur le terrain et adopte d'emblée l'alternative économe.",
-    "intro": "La plupart des échecs précoces ne viennent pas d'un manque d'ardeur au travail, mais de décisions prises dans les deux premières semaines. Voici les sept écueils les plus fréquents et le réflexe pragmatique qui les neutralise.",
+    "title": "Les sept erreurs qui font perdre de l'argent en fin d'année",
+    "epigraph": "Avant d'engager ton épargne ou tes primes de fin d'année, évite ces pièges fréquents et adopte d'emblée l'alternative économe.",
+    "intro": "En fin d'année, l'envie d'aller vite pousse parfois à dépenser son capital dans le mauvais ordre. Voici les sept erreurs les plus coûteuses observées sur le terrain et le réflexe sobre qui protège ta trésorerie.",
     "errors": [
       {
         "title": "Lancer sur un coup de cœur sans vérifier le besoin",
-        "consequence": "Tu produis un bel article ou ouvres un service dont personne ne ressent l'urgence autour de toi.",
+        "consequence": "Tu achètes un beau stock de fin d'année dont personne ne ressent l'urgence autour de toi.",
         "fix": "Applique le test terrain en trois critères (Valeur, Intensité, Nombre) auprès de cinq clients potentiels avant tout achat de stock."
       },
       {
         "title": "Copier le voisin à l'identique",
-        "consequence": "Lorsque trois étals vendent la même chose au même carrefour, il ne reste qu'à casser les prix, et chacun travaille à perte.",
-        "fix": "Différencie au moins un axe concret : emballage soigné, livraison à domicile, horaire tardif, abonnement ou clientèle précise."
+        "consequence": "Lorsque trois vendeurs proposent exactement les mêmes coffrets ou plats au même endroit, il ne reste qu'à brader les marges.",
+        "fix": "Différencie au moins un axe concret : emballage cadeau soigné, livraison le soir, paiement en deux tranches ou clientèle précise."
       },
       {
         "title": "Immobiliser l'essentiel du capital dans un local",
-        "consequence": "Caution, loyer d'avance, enseigne et mobilier assèchent ta trésorerie bien avant l'arrivée du dixième client.",
-        "fix": "Démarre depuis chez toi, sur précommande, en point relais partagé ou avec un kiosque léger."
+        "consequence": "Caution, loyer d'avance, enseigne et mobilier avalent ton épargne avant même d'avoir profité de la saison des achats.",
+        "fix": "Démarre depuis chez toi, sur précommande, en point relais partagé ou en boutique éphémère sur les week-ends forts."
       },
       {
-        "title": "Confondre la caisse du business et les dépenses personnelles",
-        "consequence": "Tu as le sentiment de bien vendre, puis impossible de renouveler le stock parce que l'argent a servi aux imprévus familiaux.",
-        "fix": "Sépare dès le premier jour deux comptes Mobile Money distincts et verse-toi une part fixe définie à l'avance."
+        "title": "Confondre les ventes de décembre avec de l'argent de poche",
+        "consequence": "L'euphorie des fêtes pousse à puiser dans la caisse pour les cadeaux et sorties familiales ; en janvier, plus de fonds de roulement.",
+        "fix": "Sépare dès le premier jour deux comptes Mobile Money distincts et applique la règle des trois enveloppes sur chaque encaissement."
       },
       {
-        "title": "Accorder du crédit aux proches sans cadre écrit",
-        "consequence": "Ton fonds de roulement reste bloqué chez des connaissances difficiles à relancer, et tu abîmes à la fois ta trésorerie et le lien.",
-        "fix": "Travaille au comptant ou demande un acompte de 50 % à la commande, avec confirmation claire avant la livraison."
+        "title": "Accorder du crédit aux proches pendant les fêtes",
+        "consequence": "Les achats « je te paie en janvier » bloquent ta trésorerie au pire moment et fragilisent les relations dès la rentrée.",
+        "fix": "Travaille au comptant ou exige un acompte de 50 % à la commande, solde réglé à la remise."
       },
       {
         "title": "Fixer ses tarifs sans compter les frais invisibles",
-        "consequence": "Transport, pertes, emballages, données mobiles, frais de retrait et temps passé grignotent la marge sans que tu t'en aperçoives.",
-        "fix": "Additionne tous les coûts directs, ajoute 15 % pour les aléas puis ta marge nette avant d'annoncer un prix."
+        "consequence": "Transport de dernière minute, emballages, pertes, données mobiles et frais de retrait grignotent toute ta marge.",
+        "fix": "Additionne tous les coûts directs, ajoute 15 % pour les aléas puis ta marge nette avant d'afficher un tarif."
       },
       {
-        "title": "Attendre une version parfaite avant d'exister",
-        "consequence": "Pendant des mois passés à peaufiner un logo ou des statuts, un concurrent plus simple et plus rapide prend les premiers clients.",
-        "fix": "Mets sur le marché une première offre sobre dès cette semaine, encaisse tes dix premières ventes, puis améliore en version 2."
+        "title": "Attendre le 1er janvier ou une version parfaite avant d'exister",
+        "consequence": "Reporter le lancement à l'an prochain par peur d'un logo imparfait te fait manquer les semaines les plus acheteuses de l'année.",
+        "fix": "Mets sur le marché une première offre sobre dès cette semaine, encaisse tes premières ventes avant le 31 décembre, puis améliore en version 2."
       }
     ]
   },
   "part04": {
     "kicker": "Quatrième partie · Validation en 48 heures",
     "title": "Valider ton Top 3 en 48 heures avant de dépenser le moindre franc",
-    "epigraph": "Une méthode simple pour confronter tes trois meilleures pistes à de vrais acheteurs avant d'acheter du matériel ou du stock.",
-    "intro": "Une fois trois à cinq pistes repérées dans le répertoire, résiste à l'envie de produire tout de suite. Consacre quarante-huit heures et zéro franc de fabrication à mesurer la demande réelle grâce aux trois filtres VIN et à cinq conversations.",
+    "epigraph": "Une méthode express pour confronter tes trois meilleures pistes à de vrais acheteurs dès cette semaine, sans acheter de stock à l'aveugle.",
+    "intro": "Une fois trois à cinq pistes repérées dans le répertoire, résiste à l'envie de produire tout de suite. Consacre quarante-huit heures et zéro franc d'investissement à vérifier l'appétit réel de ton entourage grâce aux trois filtres VIN.",
     "vin": [
       {
         "title": "Valeur · Le problème précis",
-        "desc": "En une phrase : quelle contrainte ou envie précise le client accepte-t-il de payer pour résoudre dès cette semaine ?"
+        "desc": "En une phrase : quelle envie ou contrainte immédiate le client accepte-t-il de payer pour résoudre dès cette semaine ?"
       },
       {
         "title": "Intensité · L'urgence ressentie (/10)",
-        "desc": "Le besoin est-il pressant ou accessoire ? Vise au moins 7 sur 10 : si l'acheteur peut attendre six mois, il différera sa dépense."
+        "desc": "Le besoin est-il pressant avant la fin de l'année ? Vise au moins 7 sur 10 : si le prospect peut attendre trois mois, il n'achètera pas aujourd'hui."
       },
       {
         "title": "Nombre · Le volume solvable",
-        "desc": "Combien de personnes prêtes à payer rencontrent ce problème chaque semaine dans ton quartier, ta ville ou ton réseau ?"
+        "desc": "Combien de personnes prêtes à payer rencontrent ce besoin chaque semaine dans ton quartier, ton bureau, ton église ou ton groupe WhatsApp ?"
       }
     ],
     "steps_48h": [
       {
         "title": "Heures 0 à 4 · Retenir trois finalistes",
-        "desc": "Sélectionne une piste à petit budget démarrable aussitôt, une piste appuyée sur ton réseau actuel et ton choix prioritaire."
+        "desc": "Sélectionne une piste à petit budget vendable cette semaine, une piste portée par le pic de fin d'année et ton choix de cœur."
       },
       {
         "title": "Heures 4 à 18 · Noter sur 30 points",
@@ -3952,7 +3952,7 @@
       },
       {
         "title": "Heures 18 à 36 · Mener cinq vrais échanges",
-        "desc": "Appelle ou rencontre cinq clients potentiels. Évite « Aimerais-tu ce produit ? », demande plutôt : « Combien as-tu dépensé pour cela le mois dernier, et commandes-tu si je te livre vendredi à tel prix ? »."
+        "desc": "Appelle ou rencontre cinq acheteurs probables. Évite « Aimerais-tu ce produit ? », demande plutôt : « Si je te livre ce format vendredi à tel prix, est-ce que je te note une commande ? »."
       },
       {
         "title": "Heures 36 à 48 · Obtenir un engagement daté",
@@ -3962,7 +3962,7 @@
     "scoring": [
       {
         "title": "1. Besoin urgent et vérifié",
-        "desc": "Des clients cherchent déjà une réponse et dépensent de l'argent pour l'obtenir."
+        "desc": "Des clients achètent déjà une solution proche en cette fin d'année."
       },
       {
         "title": "2. Capital disponible tout de suite",
@@ -3970,7 +3970,7 @@
       },
       {
         "title": "3. Savoir-faire accessible en moins de 7 jours",
-        "desc": "Tu maîtrises déjà le geste, ou tu peux te former ou t'associer rapidement."
+        "desc": "Tu maîtrises déjà le geste, ou tu peux te former ou t'associer immédiatement."
       },
       {
         "title": "4. Cycle de vente court (moins de 7 jours)",
@@ -3981,127 +3981,127 @@
         "desc": "Une fois transport, emballage et frais déduits, un bénéfice clair subsiste."
       },
       {
-        "title": "6. Répétition d'achat ou recommandation",
-        "desc": "Un même client revient régulièrement ou t'adresse des contacts proches."
+        "title": "6. Répétition d'achat après les fêtes",
+        "desc": "Le produit reste utile ou recommandable au-delà du 31 décembre."
       }
     ],
     "example_title": "Cas d'application · Idée #002 : Chips de banane plantain aromatisées",
     "example_lines": [
-      "Filtre VIN : besoin d'un en-cas croquant et propre au bureau ou à l'école (Valeur), envie quotidienne immédiate notée 8/10 (Intensité) auprès de milliers de salariés, étudiants et supérettes (Nombre).",
-      "Note sur 30 : besoin (5/5), petit budget inférieur à 50 000 FCFA (5/5), prise en main rapide (5/5), vente en 24 heures (5/5), marge supérieure à 40 % (4/5), réachat hebdomadaire (5/5), soit 29/30.",
-      "Test en 48 heures : deux lots préparés en cuisine puis proposés à dix collègues et deux épiceries de quartier. Huit sachets réglés comptant et une commande hebdomadaire confirmée avant même d'investir dans du matériel."
+      "Filtre VIN : besoin d'un en-cas croquant et présentable pour bureaux, réceptions et paniers de fin d'année (Valeur), demande immédiate notée 8/10 (Intensité) auprès des collègues, familles et supérettes (Nombre).",
+      "Note sur 30 : besoin (5/5), petit budget inférieur à 50 000 FCFA (5/5), fabrication maîtrisée en 24h (5/5), encaissement immédiat (5/5), marge supérieure à 40 % (4/5), réachat régulier en semaine comme en janvier (5/5), soit 29/30.",
+      "Test en 48 heures : deux lots préparés en cuisine puis proposés à dix collègues et deux épiceries de quartier. Huit sachets réglés comptant et deux précommandes de coffrets apéro confirmées avant même d'acheter une friteuse pro."
     ]
   },
   "part05": {
     "kicker": "Cinquième partie · Plan d'action en 7 jours",
-    "title": "Lancer ton activité en sept jours et encaisser tes premières ventes",
-    "epigraph": "Une progression jour par jour pour passer de l'idée validée au premier encaissement sans site complexe ni local coûteux.",
-    "intro": "Une fois l'idée la mieux notée validée, l'objectif n'est plus de planifier mais d'obtenir tes premières ventes réelles en une semaine. Suis ces sept étapes dans l'ordre.",
+    "title": "Lancer ton activité en sept jours et encaisser avant la fin de l'année",
+    "epigraph": "Une feuille de route jour par jour pour passer de l'idée choisie aux premiers encaissements sans site complexe ni local coûteux.",
+    "intro": "Une fois l'idée la mieux notée validée, l'objectif n'est plus d'attendre une nouvelle année mais de réaliser tes premières ventes concrètes en une semaine. Suis ces sept étapes dans l'ordre.",
     "days": [
       {
         "day": "Jour 1",
         "title": "Clarifier une offre simple et son prix",
-        "desc": "Définis une formule découverte claire et un format standard, vérifie tes coûts complets et rédige ta promesse en une phrase."
+        "desc": "Définis une formule découverte ou un pack de fin d'année lisible, vérifie tes coûts complets et rédige ta promesse en une phrase."
       },
       {
         "day": "Jour 2",
         "title": "Préparer le minimum présentable",
-        "desc": "Réalise trois photos nettes à la lumière du jour (ou une fiche PDF lisible), puis règle ton profil WhatsApp Business et ton compte Mobile Money."
+        "desc": "Réalise trois photos nettes à la lumière du jour (ou une fiche PDF propre), puis règle ton profil WhatsApp Business et ton compte Mobile Money."
       },
       {
         "day": "Jour 3",
         "title": "Lister trente acheteurs probables",
-        "desc": "Note dix connaissances directes, dix contacts professionnels ou de quartier et dix groupes locaux où se trouve déjà ta clientèle."
+        "desc": "Note dix connaissances directes, dix contacts professionnels ou de quartier et dix groupes locaux où l'on prépare déjà les achats de fin d'année."
       },
       {
         "day": "Jour 4",
         "title": "Envoyer les trente premiers messages",
-        "desc": "Adresse le premier message ci-contre à vingt contacts ciblés et publie un statut WhatsApp accompagné d'une offre limitée aux cinq premiers clients."
+        "desc": "Adresse le premier message ci-contre à vingt contacts ciblés et publie un statut WhatsApp avec une offre valable pour les cinq premiers clients."
       },
       {
         "day": "Jour 5",
         "title": "Encaisser et livrer avec soin",
-        "desc": "Demande un acompte ou un règlement à la commande, livre à l'heure convenue avec une présentation propre et un mot personnalisé."
+        "desc": "Demande un acompte ou un règlement à la commande, livre à l'heure convenue avec une présentation propre et un mot soigné."
       },
       {
         "day": "Jour 6",
         "title": "Recueillir les premiers retours",
-        "desc": "Demande un court avis écrit ou vocal à tes premiers acheteurs et propose un avantage simple à ceux qui te recommandent un proche."
+        "desc": "Demande un court avis écrit ou vocal à tes premiers acheteurs et propose un avantage simple à ceux qui te recommandent auprès de leurs proches."
       },
       {
         "day": "Jour 7",
-        "title": "Faire les comptes et préparer la semaine suivante",
-        "desc": "Répartis tes recettes selon la règle des trois enveloppes, relève le canal le plus efficace et concentre tes efforts dessus."
+        "title": "Sécuriser le cash pour traverser les fêtes",
+        "desc": "Répartis tes recettes selon la règle des trois enveloppes afin que les dépenses de décembre ne mangent jamais ton capital de janvier."
       }
     ],
     "scripts": [
       {
         "title": "Message WhatsApp pour le premier cercle",
-        "body": "« Bonjour [Prénom], j'espère que tu vas bien. Je lance cette semaine [nom de ton service ou produit] pour aider [cible] à [résultat concret] en [délai], sans [principal frein]. Pour mes cinq premiers clients d'ici samedi, je propose l'offre à [Prix] au lieu de [Prix habituel]. Est-ce utile pour toi ou pour quelqu'un autour de toi en ce moment ? »"
+        "body": "« Bonjour [Prénom], j'espère que tu termines bien l'année. Je lance cette semaine [nom de ton service ou produit] pour aider [cible] à [résultat concret] en [délai], sans [principal frein]. Pour mes cinq premières commandes avant [Jour/Date], je propose l'offre à [Prix] au lieu de [Prix habituel]. Est-ce utile pour toi ou quelqu'un autour de toi ? »"
       },
       {
         "title": "Publication Facebook ou statut WhatsApp",
-        "body": "« Vous cherchez [résultat concret] à [Ville/Quartier] sans [difficulté courante] ? Nous ouvrons cette semaine [Nom de l'offre] avec [deux avantages précis et délai de livraison]. Offre d'ouverture valable jusqu'à dimanche pour les dix premières demandes. Écrivez INFOS en commentaire ou envoyez un message WhatsApp au [Numéro]. »"
+        "body": "« Besoin de [résultat concret] à [Ville/Quartier] avant la fin de l'année sans [difficulté courante] ? Nous ouvrons cette semaine [Nom de l'offre] avec [deux avantages précis et délai de livraison]. Offre de lancement limitée aux dix premières commandes de la semaine. Écrivez INFOS en commentaire ou envoyez un message WhatsApp au [Numéro]. »"
       },
       {
         "title": "Réponse sereine à l'objection sur le prix",
-        "body": "« Je comprends tout à fait. Ce tarif inclut justement [élément de qualité, garantie ou livraison comprise] pour éviter toute mauvaise surprise. Si tu préfères démarrer plus léger cette semaine, nous avons aussi la formule Essentiel à [Prix d'entrée] pour que tu testes par toi-même. Souhaites-tu essayer celle-ci ? »"
+        "body": "« Je comprends tout à fait. Ce tarif inclut justement [élément de qualité, garantie ou livraison comprise] pour t'éviter tout souci de dernière minute. Si tu préfères tester plus léger cette semaine, nous avons aussi la formule Essentiel à [Prix d'entrée]. Souhaites-tu démarrer avec celle-ci ? »"
       }
     ],
     "pricing": [
-      "1. Additionne tous les coûts directs : matière première, emballage, livraison, énergie et frais Mobile Money.",
+      "1. Additionne tous les coûts directs : matière première, emballage soigné, livraison, énergie et frais Mobile Money.",
       "2. Ajoute une juste rétribution pour ton temps de travail ainsi qu'une marge de 10 à 15 % pour les pertes ou imprévus.",
       "3. Applique ta marge nette cible (au moins 30 % sur un produit physique, 50 % ou plus sur une prestation de service) afin de fixer ton prix plancher."
     ],
     "envelopes": [
       {
-        "title": "Enveloppe 1 · 50 % Réinvestissement",
-        "desc": "Reste sur le compte professionnel pour reconstituer le stock, soigner le conditionnement et faire croître l'outil de travail."
+        "title": "Enveloppe 1 · 50 % Capital & Stock",
+        "desc": "Reste bloquée sur ton compte business pour renouveler la marchandise et entrer en janvier avec de la trésorerie."
       },
       {
         "title": "Enveloppe 2 · 30 % Charges et réserve",
-        "desc": "Couvre transport, crédit internet, communication, démarches légales et coussin de sécurité pour les semaines plus calmes."
+        "desc": "Couvre transport, crédit internet, emballages, communication et coussin de sécurité pour les semaines plus calmes."
       },
       {
         "title": "Enveloppe 3 · 20 % Rémunération personnelle",
-        "desc": "Constitue ta paie officielle. Seule cette enveloppe règle tes dépenses privées, jamais le chiffre d'affaires brut."
+        "desc": "Constitue ta vraie paie pour tes achats personnels et fêtes : ne touche jamais aux deux premières enveloppes."
       }
     ]
   },
   "conclusion": {
     "kicker": "Conclusion · Passage à l'action",
-    "title": "Oublie la perfection, agis dans les quarante-huit heures",
-    "epigraph": "Un livre de business ne change rien tant qu'il reste fermé : tout se joue dans les deux prochaines journées.",
-    "message": "Tu disposes désormais de cinq cents pistes adaptées aux marchés africains de 2027, d'une grille claire pour éviter les erreurs coûteuses, d'une méthode de validation en quarante-huit heures et d'une feuille de route sur sept jours. Ce qui sépare un projet qui reste dans un carnet d'une activité qui encaisse tient à la rapidité de ton premier pas.",
-    "mantra": "« Ton premier jour de vente ne sera pas parfait, et c'est normal. Lance une version simple, encaisse ton premier client réel, puis améliore en version 2.0. »",
+    "title": "N'attends pas janvier, agis dans les quarante-huit heures",
+    "epigraph": "Un bilan d'année réussi ne se décide pas le 1er janvier, il commence par une première action mesurable dès cette semaine.",
+    "message": "Tu disposes désormais de cinq cents pistes concrètes adaptées aux marchés africains, d'une grille lucide pour préserver ton argent pendant la période la plus animée de l'année, d'un test en quarante-huit heures et d'un plan d'exécution sur sept jours. Ceux qui finissent l'année avec un business actif sont simplement ceux qui lancent avant tout le monde.",
+    "mantra": "« Mieux vaut encaisser tes cinq premiers clients imparfaits avant le 31 décembre que rédiger un plan parfait qui dort jusqu'en mars. »",
     "next_steps": [
-      "1. Dans les deux prochaines heures, arrête ton choix sur une seule idée parmi tes finalistes, en privilégiant celle qui demande le moindre capital initial.",
+      "1. Dans les deux prochaines heures, arrête ton choix sur une seule idée parmi tes finalistes, en privilégiant celle que tu peux vendre dès cette semaine.",
       "2. Dans les quarante-huit heures, mène cinq entretiens de terrain et propose une première offre test à dix personnes de ton entourage.",
-      "3. Au bout de sept jours, rassemble les remarques de tes premiers clients et ajuste ton offre pour passer en version améliorée."
+      "3. Avant la fin de la semaine, encaisse tes premières commandes et protège ton fonds de roulement grâce aux trois enveloppes."
     ],
     "action_sheet": [
       "Secteur retenu (01 à 20) :",
       "Idée sélectionnée (numéro et intitulé) :",
-      "Budget réaliste disponible au départ (FCFA) :",
+      "Budget réaliste disponible dès aujourd'hui (FCFA) :",
       "Promesse en une phrase (Pour qui, quel résultat, en quel délai) :",
       "Cinq premiers prospects à contacter demain matin :",
-      "Date visée pour le premier encaissement :"
+      "Premier encaissement visé avant le 31 décembre (montant et date) :"
     ]
   },
   "workbook": {
     "author": "[Ton Nom / Ta Marque]",
     "date": "16 novembre 2026",
-    "title": "500 Idées de Business à Lancer en Afrique en 2027",
-    "promise": "Comment choisir, valider et lancer ton business rentable en Afrique en 2027 en 7 jours sans gros capital ni peur de te tromper.",
+    "title": "500 Idées de Business à Lancer en Afrique pour Bien Finir l'Année",
+    "promise": "Comment choisir, valider et lancer ton business rentable en Afrique pour bien finir l'année en 7 jours sans gros capital ni attendre janvier.",
     "page1": {
       "badge": "Workbook Officiel · Jour 2",
       "title": "Crée ton premier produit digital",
-      "subtitle": "Dossier d'application complété pour l'ouvrage « 500 Idées de Business à Lancer en Afrique en 2027 »",
-      "welcome": "Bienvenue dans ton guide pratique pour transformer ton idée en un véritable produit digital. Ce workbook est conçu spécialement pour toi, entrepreneur africain francophone, qui souhaites passer à l'action dès aujourd'hui. Pas besoin d'être expert en technologie ou d'avoir des années d'expérience. Ce qui compte, c'est ta volonté d'avancer et de créer quelque chose de concret qui aide les autres. Dans les pages suivantes, la méthode exacte du Workbook Jour 2 (valider, structurer, créer étape par étape) est appliquée de bout en bout à ton ebook sur les 500 idées de business en Afrique en 2027.",
+      "subtitle": "Dossier d'application complété pour l'ouvrage « 500 Idées de Business à Lancer en Afrique pour Bien Finir l'Année »",
+      "welcome": "Bienvenue dans ton guide pratique pour transformer ton idée en un véritable produit digital. Ce workbook est conçu spécialement pour toi, entrepreneur africain francophone, qui souhaites passer à l'action dès aujourd'hui. Pas besoin d'être expert en technologie ou d'avoir des années d'expérience. Ce qui compte, c'est ta volonté d'avancer et de créer quelque chose de concret qui aide les autres. Dans les pages suivantes, la méthode exacte du Workbook Jour 2 (valider, structurer, créer étape par étape) est appliquée de bout en bout à ton ebook sur les 500 idées de business pour bien finir l'année en Afrique.",
       "summary_rows": [
         [
           "Produit créé",
-          "500 Idées de Business à Lancer en Afrique en 2027"
+          "500 Idées de Business à Lancer en Afrique pour Bien Finir l'Année"
         ],
         [
           "Cible prioritaire",
@@ -4137,7 +4137,7 @@
         ],
         [
           "Statut de l'engagement",
-          "Validé pour « 500 Idées de Business à Lancer en Afrique en 2027 »"
+          "Validé pour « 500 Idées de Business à Lancer en Afrique pour Bien Finir l'Année »"
         ]
       ]
     },
@@ -4145,21 +4145,21 @@
       "kicker": "Validation · Page 3",
       "title": "Validation express de ton idée (Méthode VIN)",
       "intro": "Avant de créer ton produit, assure-toi que ton idée répond à un vrai besoin. VIN signifie Valeur, Intensité et Nombre. Si ces trois éléments sont élevés, ton idée est validée et tu peux avancer en toute confiance.",
-      "V": "Des milliers de jeunes, salariés, femmes actives et membres de la diaspora en Afrique francophone veulent entreprendre en 2027, mais restent bloqués par manque d'idées concrètes adaptées au terrain, à leur petit budget et sans méthode simple pour valider avant d'investir.",
+      "V": "En fin d'année, des milliers de jeunes, salariés, femmes actives et membres de la diaspora veulent générer un revenu avant le 31 décembre au lieu d'attendre janvier, mais manquent d'idées ciblées adaptées à leur budget et d'une méthode pour tester vite.",
       "I_score": "9 / 10",
-      "I_exp": "Le chômage, la hausse du coût de la vie et le besoin d'indépendance financière rendent la création d'une source de revenus urgente. Beaucoup perdent leurs maigres économies dans des business mal ciblés faute de filtre et de plan de démarrage.",
-      "N": "Marché massif et très répandu : des millions de francophones en Afrique de l'Ouest et Centrale (Bénin, Côte d'Ivoire, Sénégal, Togo, Cameroun, Burkina Faso, Mali, RDC, Guinée, Gabon...) et dans la diaspora cherchent ce type de feuille de route chaque mois.",
+      "I_exp": "Les dépenses de fin d'année, la hausse du coût de la vie et le besoin d'entrer dans la nouvelle année avec de la trésorerie créent une urgence immédiate. Beaucoup dilapident leurs économies en décembre faute d'activité rentable lancée à temps.",
+      "N": "Marché massif et saisonnier à très forte réactivité : des millions de francophones en Afrique de l'Ouest et Centrale (Bénin, Côte d'Ivoire, Sénégal, Togo, Cameroun, Burkina Faso, Mali, RDC, Guinée, Gabon...) et dans la diaspora veulent agir avant la clôture de l'année.",
       "conclusion": "Verdict : Valeur (problème réel) + Intensité (9/10) + Nombre (marché massif) sont élevés, l'idée est validée."
     },
     "page4": {
       "kicker": "Promesse · Page 4",
       "title": "Transformation de ton idée en promesse claire",
       "intro": "Ton produit doit offrir une transformation concrète à tes lecteurs. Plus ta promesse est précise (pour qui, quel résultat, en combien de temps), plus elle est convaincante.",
-      "q1": "Les futurs entrepreneurs africains francophones (étudiants, salariés, femmes actives, commerçants et diaspora) cherchant un business rentable et réaliste pour 2027.",
-      "q2": "Choisir une activité adaptée à son budget réel (Petit, Moyen ou Structuré), la valider en 48 heures sur le terrain et lancer les premières ventes concrètes.",
+      "q1": "Les futurs entrepreneurs africains francophones (étudiants, salariés, femmes actives, commerçants et diaspora) qui refusent d'attendre janvier pour se lancer.",
+      "q2": "Choisir une activité adaptée à son budget réel (Petit, Moyen ou Structuré), la valider en 48 heures sur le terrain et réaliser ses premières ventes avant la fin de l'année.",
       "q3": "En 7 jours (48 heures de filtrage et validation terrain, puis 5 jours de lancement commercial).",
       "formula_template": "« Comment _________________ en _________________ sans _________________. »",
-      "formula_filled": "« Comment choisir, valider et lancer ton business rentable en Afrique en 2027 en 7 jours sans gros capital ni peur de te tromper. »"
+      "formula_filled": "« Comment choisir, valider et lancer ton business rentable en Afrique pour bien finir l'année en 7 jours sans gros capital ni attendre janvier. »"
     },
     "page5": {
       "kicker": "Format · Page 5",
@@ -4173,7 +4173,7 @@
       ],
       "why_chosen": "Le PDF s'ouvre instantanément sur smartphone même avec une connexion faible, se livre automatiquement par WhatsApp ou Mobile Money, se lit hors ligne et offre une vraie valeur perçue de livre de référence.",
       "pages_note": "Recommandation de base du workbook : 5 à 15 pages pour un premier mini-guide. Pour honorer la promesse réelle de « 500 idées détaillées », l'édition finale publiée compte exactement 51 pages structurées en 20 secteurs, accompagnée d'un extrait gratuit de 10 pages (Couverture, Introduction, Erreurs et début du Secteur 01) conforme au format court.",
-      "provisional_title": "500 Idées de Business à Lancer en Afrique en 2027"
+      "provisional_title": "500 Idées de Business à Lancer en Afrique pour Bien Finir l'Année"
     },
     "page6": {
       "kicker": "Structure · Page 6",
@@ -4182,17 +4182,17 @@
         [
           "01",
           "Introduction",
-          "Le problème du manque de filtre entrepreneurial en Afrique et pourquoi les cinq dynamiques de 2027 créent une opportunité claire (+ guide des budgets)."
+          "Pourquoi lancer avant le 31 décembre plutôt qu'attendre janvier, les 5 dynamiques de fin d'année et le guide des trois budgets."
         ],
         [
           "02",
           "Erreurs à éviter",
-          "Les 7 erreurs fatales qui fragilisent les débutants (copier sans se différencier, tout mettre dans le local, mélanger les caisses, vendre à crédit, attendre la perfection)."
+          "Les 7 erreurs fatales de fin d'année (immobiliser son cash, vendre à crédit, confondre caisse et fêtes, attendre janvier)."
         ],
         [
           "03",
           "Étape 1",
-          "Sélectionner son idée : répertoire complet des 500 idées classées en 20 secteurs porteurs Afrique 2027 (25 idées/secteur avec budget Petit, Moyen ou Structuré)."
+          "Sélectionner son idée : répertoire complet des 500 idées classées en 20 secteurs porteurs en Afrique (25 idées/secteur avec budget Petit, Moyen ou Structuré)."
         ],
         [
           "04",
@@ -4202,12 +4202,12 @@
         [
           "05",
           "Étape 3",
-          "Lancer son business en 7 jours : feuille de route jour par jour (J1 à J7), 3 scripts WhatsApp/Facebook, calcul du prix juste et règle des 3 enveloppes."
+          "Lancer son business en 7 jours : feuille de route J1 à J7, 3 scripts WhatsApp/Facebook de fin d'année, calcul du prix juste et règle des 3 enveloppes."
         ],
         [
           "End",
           "Conclusion",
-          "Engagement écrit du lecteur sur 48h, passage à l'action imparfait mais immédiat, puis page auteur personnalisable et prise de contact."
+          "Engagement daté sur 48h avant le 31 décembre, passage à l'action immédiat, puis page auteur personnalisable et prise de contact."
         ]
       ]
     },
@@ -4215,11 +4215,11 @@
       "kicker": "Rédaction & Checklist · Page 7",
       "title": "Utilise l'IA pour générer ton contenu rapidement",
       "prompt_template": "Agis comme un expert pédagogique. Crée un guide structuré sur [sujet] destiné à [type de personne]. Le guide doit être clair, simple, pratique et structuré en étapes. Inclure une introduction motivante, 3 à 5 étapes détaillées et une conclusion actionnable.",
-      "prompt_applied": "« Agis comme un expert pédagogique et analyste marché africain. Crée un guide structuré sur [500 idées de business rentables à lancer en Afrique en 2027, réparties en 20 secteurs et 3 niveaux de budget, avec validation en 48h et plan de lancement en 7 jours] destiné à [des entrepreneurs africains francophones et membres de la diaspora voulant démarrer vite sans gros capital]. Le guide doit être clair, simple, pratique et structuré en étapes. Inclure une introduction motivante, les 7 erreurs à éviter, 3 étapes détaillées (Choisir, Valider, Lancer) et une conclusion actionnable. »",
+      "prompt_applied": "« Agis comme un expert pédagogique et analyste marché africain. Crée un guide structuré sur [500 idées de business rentables à lancer en Afrique pour bien finir l'année, réparties en 20 secteurs et 3 niveaux de budget, avec validation en 48h et plan de lancement en 7 jours] destiné à [des entrepreneurs africains francophones et membres de la diaspora voulant encaisser avant la fin de l'année sans gros capital]. Le guide doit être clair, simple, pratique et structuré en étapes. Inclure une introduction motivante, les 7 erreurs à éviter, 3 étapes détaillées (Choisir, Valider, Lancer) et une conclusion actionnable. »",
       "how_to_use": [
-        "1. Prompt copié et adapté avec le sujet précis et le lectorat Afrique 2027",
+        "1. Prompt copié et adapté avec l'angle précis « bien finir l'année » en Afrique",
         "2. Structuration en 20 secteurs × 25 fiches uniques (500 idées sans doublon)",
-        "3. Adaptation locale : montants en FCFA et USD, Mobile Money, réalités terrain 2027",
+        "3. Adaptation locale : montants en FCFA et USD, Mobile Money, pic de fin d'année",
         "4. Relecture linguistique complète et suppression de toute formulation artificielle",
         "5. Mise en page de livre soignée avec couverture illustrée, sommaire et folios",
         "6. Export en PDF final vérifié et conservation des sources éditables pour personnalisation"
@@ -4238,7 +4238,7 @@
           true
         ],
         [
-          "J'ai personnalisé avec des exemples locaux (réalités Afrique francophone 2027)",
+          "J'ai personnalisé avec l'angle fin d'année en Afrique francophone",
           true
         ],
         [
@@ -4246,7 +4246,7 @@
           true
         ],
         [
-          "J'ai enregistré en format PDF (500-Idees-de-Business-a-Lancer-en-Afrique-en-2027.pdf)",
+          "J'ai enregistré en format PDF (500-Idees-de-Business-a-Lancer-en-Afrique-pour-Bien-Finir-l-Annee.pdf)",
           true
         ],
         [
@@ -4268,7 +4268,7 @@
         ],
         [
           "2. Tu as défini ta promesse",
-          "Formule claire en 7 jours sans gros capital ni peur de se tromper",
+          "Formule claire pour lancer en 7 jours avant la fin de l'année",
           "Accompli"
         ],
         [
@@ -4306,22 +4306,22 @@
         ],
         [
           "Titre de mon produit",
-          "500 Idées de Business à Lancer en Afrique en 2027"
+          "500 Idées de Business à Lancer en Afrique pour Bien Finir l'Année"
         ]
       ],
       "fb_action": "Action immédiate : publie dans le groupe Facebook avec une capture de la couverture de ton ebook.",
       "social_posts": [
         [
           "Modèle 1 · Victoire communautaire (Workbook Jour 2)",
-          "« J'ai créé mon premier produit digital ! [Photo de couverture] Après avoir appliqué étape par étape la méthode VIN, défini ma promesse et structuré les 5 parties, voici enfin mon ebook : \"500 Idées de Business à Lancer en Afrique en 2027\". Pas besoin d'attendre la perfection pour passer à l'action. Merci à la communauté pour l'élan ! »"
+          "« J'ai créé mon premier produit digital ! [Photo de couverture] Après avoir appliqué étape par étape la méthode VIN, défini ma promesse et structuré les 5 parties, voici enfin mon ebook : \"500 Idées de Business à Lancer en Afrique pour Bien Finir l'Année\". Pas besoin d'attendre janvier pour agir. Merci à la communauté pour l'élan ! »"
         ],
         [
-          "Modèle 2 · Publication valeur & autorité",
-          "« Tu veux entreprendre en 2027 mais tu te demandes par quel business commencer avec ton budget actuel ? J'ai réuni 500 idées concrètes réparties en 20 secteurs africains (du petit budget < 50 000 FCFA aux projets structurés) + une méthode en 48h pour tester avant d'investir. Commente \"2027\" si tu veux découvrir le sommaire ! »"
+          "Modèle 2 · Publication valeur & urgence fin d'année",
+          "« Pourquoi attendre janvier alors que la fin d'année concentre la plus forte demande de l'année ? J'ai réuni 500 idées concrètes réparties en 20 secteurs africains (du petit budget < 50 000 FCFA aux projets structurés) + une méthode en 48h pour encaisser avant le 31 décembre. Commente \"SOMMAIRE\" si tu veux le découvrir ! »"
         ],
         [
           "Modèle 3 · Lancement et précommande",
-          "« OFFRE DE LANCEMENT : Mon nouveau guide \"500 Idées de Business à Lancer en Afrique en 2027\" est disponible en PDF instantané sur téléphone. En bonus : les 7 erreurs à éviter et le plan exact des 7 premiers jours avec scripts WhatsApp. Écris-moi en privé ou sur WhatsApp pour recevoir ton exemplaire dès aujourd'hui. »"
+          "« OFFRE DE FIN D'ANNÉE : Mon nouveau guide \"500 Idées de Business à Lancer en Afrique pour Bien Finir l'Année\" est disponible en PDF instantané sur téléphone. En bonus : les 7 erreurs à éviter pendant les fêtes et le plan exact des 7 premiers jours avec scripts WhatsApp. Écris-moi en privé ou sur WhatsApp pour recevoir ton exemplaire dès aujourd'hui. »"
         ]
       ]
     },
@@ -4330,19 +4330,19 @@
       "title": "Et maintenant ? Tes prochains pas",
       "steps": [
         [
-          "1. Lance ton produit auprès de dix proches",
+          "1. Lance ton produit auprès de dix proches dès cette semaine",
           "Partage dès aujourd'hui le PDF (ou les dix premières pages en extrait gratuit) à dix personnes ciblées pour récolter leurs vrais retours en quarante-huit heures."
         ],
         [
           "2. Améliore-le en version 2.0",
-          "Note quelles idées suscitent le plus de questions. Pour la version suivante, ajoute des fiches chiffrées détaillées sur les vingt idées favorites de tes premiers lecteurs."
+          "Note quelles idées suscitent le plus de questions. Pour l'édition suivante, ajoute des fiches chiffrées détaillées sur les vingt idées favorites de tes premiers lecteurs."
         ],
         [
           "3. Crée le suivant avec la même méthode",
-          "Suites naturelles faciles à décliner ensuite : « 50 Business à lancer avec moins de 25 000 FCFA », « Modèles de budget sur WhatsApp et tableur » ou « Scripts de vente Afrique 2027 »."
+          "Suites naturelles faciles à décliner ensuite : « 50 Business à lancer avec moins de 25 000 FCFA », « Modèles de gestion de caisse sur WhatsApp » ou « Plan d'action de rentrée janvier »."
         ]
       ],
-      "whatsapp_testers": "Message WhatsApp prêt à envoyer à tes 10 premiers testeurs :\n« Salut [Prénom] ! Je viens de finaliser mon tout premier ebook pratique : \"500 Idées de Business à Lancer en Afrique en 2027\" (20 secteurs + méthode pour valider en 48h et lancer en 7 jours). Comme ton avis compte beaucoup pour moi, je t'envoie le PDF en avant-première. Tu peux me dire d'ici 48h : 1) quelle idée t'a le plus marqué, et 2) ce que tu aimerais voir approfondi dans la version 2.0 ? Un grand merci d'avance ! »",
+      "whatsapp_testers": "Message WhatsApp prêt à envoyer à tes 10 premiers testeurs :\n« Salut [Prénom] ! Je viens de finaliser mon tout premier ebook pratique : \"500 Idées de Business à Lancer en Afrique pour Bien Finir l'Année\" (20 secteurs + méthode pour valider en 48h et encaisser avant la fin de l'année). Comme ton avis compte beaucoup pour moi, je t'envoie le PDF en avant-première. Tu peux me dire d'ici 48h : 1) quelle idée t'a le plus marqué, et 2) ce que tu aimerais voir approfondi dans la version 2.0 ? Un grand merci d'avance ! »",
       "closing": "Le succès n'est pas une destination, c'est un voyage. Bonne continuation dans la communauté des créateurs de produits digitaux !"
     }
   }

@@ -5,7 +5,7 @@ SECTORS_PART_1 = [
     {
         "num": 1,
         "title": "Agro-business & Transformation Locale",
-        "intro": "L'Afrique importe encore des milliards de dollars de produits alimentaires qu'elle cultive sur place. En 2027, transformer, conditionner et valoriser les récoltes locales reste l'un des leviers les plus rentables du continent.",
+        "intro": "L'Afrique importe encore des milliards de dollars de produits alimentaires qu'elle cultive sur place. En cette fin d'année, transformer, conditionner et valoriser les récoltes locales reste l'un des leviers les plus rentables du continent.",
         "ideas": [
             ("Production et ensachage de farine infantile enrichie", "Mélange nutritif local (mil, soja, maïs, arachide) conditionné en sachets hygiéniques pour jeunes mamans et pharmacies.", "Moyen"),
             ("Chips de banane plantain aromatisées en sachets scellés", "Déclinaisons salées, pimentées, gingembre ou oignon vendues aux supérettes, écoles et bureaux.", "Petit"),
@@ -69,7 +69,7 @@ SECTORS_PART_1 = [
     {
         "num": 3,
         "title": "E-commerce, Social Commerce & Import-Export",
-        "intro": "En 2027, le vrai e-commerce africain se passe sur WhatsApp, TikTok, Facebook et Instagram avec paiement à la livraison ou via Mobile Money. Vendre malin sans immobiliser de gros stocks ouvre des marges rapides.",
+        "intro": "Aujourd'hui, le vrai e-commerce africain se passe sur WhatsApp, TikTok, Facebook et Instagram avec paiement à la livraison ou via Mobile Money. Vendre malin sans immobiliser de gros stocks ouvre des marges rapides avant les fêtes.",
         "ideas": [
             ("Boutique WhatsApp d'accessoires téléphoniques durables", "Câbles renforcés, batteries externes solaires, écouteurs et supports vendus avec livraison express.", "Moyen"),
             ("Importation en achat groupé (pré-commandes) depuis la Chine ou la Turquie", "Collecte des commandes et acomptes avant d'importer pour éliminer le risque d'invendus.", "Petit"),
@@ -101,7 +101,7 @@ SECTORS_PART_1 = [
     {
         "num": 4,
         "title": "Services Digitaux, Freelance & Intelligence Artificielle",
-        "intro": "Un smartphone performant ou un ordinateur et une connexion internet suffisent en 2027 pour vendre des services numériques aux PME africaines comme à des clients internationaux payant en euros ou dollars.",
+        "intro": "Un smartphone performant ou un ordinateur et une connexion internet suffisent dès cette semaine pour vendre des services numériques aux PME africaines comme à des clients internationaux payant en euros ou dollars.",
         "ideas": [
             ("Community management pour commerces locaux (restaurants, salons, boutiques)", "Gestion de 3 à 5 pages Facebook/Instagram/TikTok par mois sur abonnement mensuel récurrent.", "Petit"),
             ("Montage de vidéos courtes (Reels, TikTok, Shorts) pour créateurs et marques", "Découpage dynamique, sous-titres animés et rythme engageant réalisés sur CapCut ou Premiere.", "Petit"),
@@ -133,7 +133,7 @@ SECTORS_PART_1 = [
     {
         "num": 5,
         "title": "Produits Digitaux, Formation & Éducation (EdTech)",
-        "intro": "Créer une fois et vendre des centaines de fois sans stock physique ni frais de livraison : en 2027, l'économie du savoir explose en Afrique francophone grâce au Mobile Money et aux plateformes dédiées.",
+        "intro": "Créer une fois et vendre des centaines de fois sans stock physique ni frais de livraison : en période de bilans et de bonnes résolutions, l'économie du savoir explose en Afrique francophone grâce au Mobile Money.",
         "ideas": [
             ("E-books pratiques et guides PDF sur des problèmes précis", "Guides courts et actionnables (business, parentalité, carrière, cuisine, santé) vendus à prix accessible.", "Petit"),
             ("Pack de templates Canva pour commerçants africains", "Modèles prêts à éditer (promos, menus, témoignages, fiches tarifs) vendus en téléchargement immédiat.", "Petit"),
@@ -156,7 +156,7 @@ SECTORS_PART_1 = [
             ("Préparation aux concours de la fonction publique et grandes écoles", "Quiz quotidiens, résumés de culture générale et examens blancs en ligne.", "Petit"),
             ("Formation au montage vidéo et design sur smartphone uniquement", "Apprendre aux débutants sans ordinateur à créer un contenu pro avec leur téléphone.", "Petit"),
             ("Location d'espace calme équipé pour cours particuliers et webinaires", "Petite salle climatisée avec bonne fibre louée à l'heure aux formateurs et coachs.", "Structuré"),
-            ("Création de cahiers d'exercices et plannings imprimables (planners 2027)", "Plannings de vie, journaux de gratitude, suivis d'objectifs business en PDF ou imprimés.", "Petit"),
+            ("Création de cahiers d'exercices et plannings imprimables (bilan & nouvelle année)", "Plannings de vie, journaux de gratitude, suivis d'objectifs business en PDF ou imprimés.", "Petit"),
             ("Service de mise en page d'e-books et de supports de formation pour coachs", "Transformation de notes vocales ou brouillons en PDF professionnels vendables.", "Petit"),
             ("Atelier pratique de prise de parole en public et aisance face caméra", "Sessions hebdomadaires aidant entrepreneurs et cadres à convaincre en vidéo et en réunion.", "Petit"),
             ("Plateforme ou newsletter payante de résumés de livres business en français", "Synthèses audio de 10 minutes + fiches PDF actionnables chaque semaine sur abonnement.", "Petit"),
@@ -197,7 +197,7 @@ SECTORS_PART_1 = [
     {
         "num": 7,
         "title": "Mode, Textile Africain & Accessoires",
-        "intro": "La fierté culturelle et le style afro-contemporain séduisent autant les jeunes urbains que la diaspora. En 2027, combiner savoir-faire des tailleurs locaux, finitions soignées et vente digitale crée de vraies marques rentables.",
+        "intro": "La fierté culturelle et le style afro-contemporain séduisent autant les jeunes urbains que la diaspora de retour pour les fêtes. Combiner savoir-faire des tailleurs locaux, finitions soignées et vente digitale crée de vraies marques rentables.",
         "ideas": [
             ("Marque de prêt-à-porter afro-urbain (chemises, vestes, robes modernes en wax/bogolan)", "Petites collections capsules bien coupées vendues via Instagram, WhatsApp et pop-up stores.", "Moyen"),
             ("Service de couture express et retouches à domicile", "Collecte et livraison de vêtements à ajuster pour cadres et familles débordées.", "Petit"),
@@ -261,7 +261,7 @@ SECTORS_PART_1 = [
     {
         "num": 9,
         "title": "Transport, Mobilité & Logistique Urbaine",
-        "intro": "Le commerce explose, mais la livraison fiable reste le maillon faible dans presque toutes les villes africaines. En 2027, quiconque garantit ponctualité, sécurité et suivi WhatsApp peut bâtir une flotte rentable.",
+        "intro": "Le commerce explose en fin d'année, mais la livraison fiable reste le maillon faible dans presque toutes les villes africaines. Quiconque garantit ponctualité, sécurité et suivi WhatsApp peut bâtir une flotte rentable dès ce mois-ci.",
         "ideas": [
             ("Service de livraison express par moto pour e-commerçants WhatsApp", "Collecte chez les vendeuses, livraison avec encaissement cash/Mobile Money et reversement le soir même.", "Moyen"),
             ("Transport scolaire privé sécurisé en minibus climatisé", "Abonnement mensuel avec notification WhatsApp aux parents à chaque montée et descente.", "Structuré"),
@@ -293,7 +293,7 @@ SECTORS_PART_1 = [
     {
         "num": 10,
         "title": "Énergie Solaire, Eau & Économie Verte",
-        "intro": "Avec un ensoleillement exceptionnel et des enjeux croissants d'accès à l'électricité fiable, à l'eau potable et à la gestion des déchets, les métiers verts sont l'un des plus grands eldorados africains de 2027.",
+        "intro": "Avec un ensoleillement exceptionnel et des enjeux croissants d'accès à l'électricité fiable, à l'eau potable et à la gestion des déchets, les métiers verts sont l'un des plus grands eldorados africains du moment.",
         "ideas": [
             ("Vente et installation de kits solaires domestiques anti-délestage", "Packs clés en main (panneau, batterie lithium, onduleur) pour assurer Wi-Fi, TV, ventilateurs et frigo.", "Structuré"),
             ("Kiosque solaire de recharge de téléphones, powerbanks et batteries", "Service quotidien indispensable dans les marchés, zones périurbaines et gares routières.", "Moyen"),

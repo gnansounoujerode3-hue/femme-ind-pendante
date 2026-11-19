@@ -119,18 +119,18 @@
   ])
 
   // Titre sculptural avec hiérarchie pure, entièrement au-dessus des rayons solaires
-  #place(top + left, dx: 20mm, dy: 23mm, box(width: 170mm)[
-    #text(font: "Instrument Serif", size: 40pt, fill: rgb("#FAF7F2"), tracking: -0.01em)[
+  #place(top + left, dx: 20mm, dy: 22mm, box(width: 170mm)[
+    #text(font: "Instrument Serif", size: 39pt, fill: rgb("#FAF7F2"), tracking: -0.01em)[
       500 Idées de Business
     ]
     #v(-4pt)
-    #text(font: "Instrument Serif", size: 30pt, fill: c_gold_hi, tracking: -0.01em)[
-      à lancer en Afrique en 2027
+    #text(font: "Instrument Serif", size: 24.5pt, fill: c_gold_hi, tracking: -0.01em)[
+      à lancer en Afrique pour bien finir l'année
     ]
     #v(7pt)
     #line(length: 40pt, stroke: 0.9pt + c_gold_hi)
     #v(6pt)
-    #text(size: 10.0pt, fill: rgb("#F3EFE6"))[#cfg.ebook_subtitle]
+    #text(size: 9.8pt, fill: rgb("#F3EFE6"))[#cfg.ebook_subtitle]
   ])
 
   // Zone inférieure : promesse librement posée + mention auteur sobre
@@ -165,7 +165,7 @@
         columns: (auto, 1fr),
         column-gutter: 12pt,
         align(left)[
-          #text(size: 7.6pt, fill: c_muted)[500 Idées de Business à Lancer en Afrique en 2027]
+          #text(size: 7.5pt, fill: c_muted)[500 Idées de Business · Pour bien finir l'année]
         ],
         align(right)[
           #text(size: 7.6pt, weight: "semibold", fill: c_accent)[#sec]
@@ -242,7 +242,7 @@
 
 #section_head("Comment lire et exploiter cet ouvrage")
 #text(size: 9.0pt, fill: c_ink)[
-  Ce livre suit une progression volontairement pragmatique en cinq parties : comprendre pourquoi 2027 favorise les lancements légers (*Première partie*), éviter les sept fautes qui immobilisent les débutants (*Deuxième partie*), explorer vingt secteurs regroupant cinq cents activités concrètes (*Troisième partie*), vérifier la demande réelle en quarante-huit heures sans engager de stock (*Quatrième partie*) puis encaisser ses premiers clients en sept jours (*Cinquième partie*).
+  Ce livre suit une progression volontairement pragmatique en cinq parties : comprendre pourquoi la fin d'année favorise les lancements légers (*Première partie*), éviter les sept fautes qui immobilisent les débutants (*Deuxième partie*), explorer vingt secteurs regroupant cinq cents activités concrètes (*Troisième partie*), vérifier la demande réelle en quarante-huit heures sans engager de stock (*Quatrième partie*) puis encaisser ses premiers clients avant le 31 décembre (*Cinquième partie*).
 ]
 
 #v(1fr)
@@ -285,7 +285,7 @@
 }
 
 #toc_part_row("00", "Avant-propos et niveaux de budget", <p-garde>)
-#toc_part_row("01", "Première partie · Pourquoi entreprendre en Afrique en 2027", <p-01>)
+#toc_part_row("01", "Première partie · Pourquoi lancer un business en fin d'année", <p-01>)
 #toc_part_row("02", "Deuxième partie · Les sept erreurs à éviter", <p-02>)
 #toc_part_row("03", "Troisième partie · Catalogue des 500 idées (20 secteurs)", <p-03>)
 #toc_part_row("04", "Quatrième partie · Validation express en 48 heures (Méthode VIN)", <p-04>)
@@ -361,7 +361,7 @@
   ]
 )
 
-#section_head("Cinq dynamiques porteuses en 2027")
+#section_head("Cinq dynamiques porteuses en fin d'année")
 
 #grid(
   columns: (1fr, 1fr),

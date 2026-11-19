@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Regroupe et valide les 500 idées de business à lancer en Afrique en 2027."""
+"""Regroupe et valide les 500 idées de business à lancer en Afrique pour bien finir l'année."""
 
 from ideas_part1 import SECTORS_PART_1
 from ideas_part2 import SECTORS_PART_2

@@ -128,7 +128,7 @@
   inset: (y: 10pt),
 )[
   #text(size: 8.6pt, fill: c_ink2)[
-    Chaque page de ce dossier correspond page pour page à *WORKBOOK-OFFICIEL-JOUR-2-CREE-TON-PREMIER-PRODUIT-DIGITAL.pdf* (pages 1 à 10), concrétisé dans l'ouvrage *500-Idees-de-Business-a-Lancer-en-Afrique-en-2027.pdf*.
+    Chaque page de ce dossier correspond page pour page à *WORKBOOK-OFFICIEL-JOUR-2-CREE-TON-PREMIER-PRODUIT-DIGITAL.pdf* (pages 1 à 10), concrétisé dans l'ouvrage *500-Idees-de-Business-a-Lancer-en-Afrique-pour-Bien-Finir-l-Annee.pdf*.
   ]
 ]
 #pagebreak()

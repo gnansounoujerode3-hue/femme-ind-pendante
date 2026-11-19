@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """Générateur éditorial Typst 0.15 des livrables PDF et exports Markdown :
-- 500-Idees-de-Business-a-Lancer-en-Afrique-en-2027.pdf
-- Workbook-Jour-2-Rempli-500-Idees-Business-Afrique-2027.pdf
+- 500-Idees-de-Business-a-Lancer-en-Afrique-pour-Bien-Finir-l-Annee.pdf
+- Workbook-Jour-2-Rempli-500-Idees-Business-Afrique-Bien-Finir-l-Annee.pdf
 Système éditorial sobre « Savane Sobre & Papier Munken » (.agents/skills/).
 """
 
@@ -25,9 +25,9 @@ from ideas_500 import get_numbered_sectors
 ROOT_DIR = Path(__file__).resolve().parent.parent
 SOURCE_DIR = Path(__file__).resolve().parent
 
-OUT_EBOOK_PDF = ROOT_DIR / "500-Idees-de-Business-a-Lancer-en-Afrique-en-2027.pdf"
-OUT_WORKBOOK_PDF = ROOT_DIR / "Workbook-Jour-2-Rempli-500-Idees-Business-Afrique-2027.pdf"
-OUT_EBOOK_MD = SOURCE_DIR / "ebook-500-idees-business-afrique-2027.md"
+OUT_EBOOK_PDF = ROOT_DIR / "500-Idees-de-Business-a-Lancer-en-Afrique-pour-Bien-Finir-l-Annee.pdf"
+OUT_WORKBOOK_PDF = ROOT_DIR / "Workbook-Jour-2-Rempli-500-Idees-Business-Afrique-Bien-Finir-l-Annee.pdf"
+OUT_EBOOK_MD = SOURCE_DIR / "ebook-500-idees-business-afrique-bien-finir-l-annee.md"
 OUT_WORKBOOK_MD = SOURCE_DIR / "workbook-jour-2-rempli.md"
 CONFIG_PATH = SOURCE_DIR / "author_config.json"
 DATA_JSON_PATH = SOURCE_DIR / "ebook_data.json"
@@ -161,18 +161,18 @@ EBOOK_TYP = r'''
   ])
 
   // Titre sculptural avec hiérarchie pure, entièrement au-dessus des rayons solaires
-  #place(top + left, dx: 20mm, dy: 23mm, box(width: 170mm)[
-    #text(font: "Instrument Serif", size: 40pt, fill: rgb("#FAF7F2"), tracking: -0.01em)[
+  #place(top + left, dx: 20mm, dy: 22mm, box(width: 170mm)[
+    #text(font: "Instrument Serif", size: 39pt, fill: rgb("#FAF7F2"), tracking: -0.01em)[
       500 Idées de Business
     ]
     #v(-4pt)
-    #text(font: "Instrument Serif", size: 30pt, fill: c_gold_hi, tracking: -0.01em)[
-      à lancer en Afrique en 2027
+    #text(font: "Instrument Serif", size: 24.5pt, fill: c_gold_hi, tracking: -0.01em)[
+      à lancer en Afrique pour bien finir l'année
     ]
     #v(7pt)
     #line(length: 40pt, stroke: 0.9pt + c_gold_hi)
     #v(6pt)
-    #text(size: 10.0pt, fill: rgb("#F3EFE6"))[#cfg.ebook_subtitle]
+    #text(size: 9.8pt, fill: rgb("#F3EFE6"))[#cfg.ebook_subtitle]
   ])
 
   // Zone inférieure : promesse librement posée + mention auteur sobre
@@ -207,7 +207,7 @@ EBOOK_TYP = r'''
         columns: (auto, 1fr),
         column-gutter: 12pt,
         align(left)[
-          #text(size: 7.6pt, fill: c_muted)[500 Idées de Business à Lancer en Afrique en 2027]
+          #text(size: 7.5pt, fill: c_muted)[500 Idées de Business · Pour bien finir l'année]
         ],
         align(right)[
           #text(size: 7.6pt, weight: "semibold", fill: c_accent)[#sec]
@@ -284,7 +284,7 @@ EBOOK_TYP = r'''
 
 #section_head("Comment lire et exploiter cet ouvrage")
 #text(size: 9.0pt, fill: c_ink)[
-  Ce livre suit une progression volontairement pragmatique en cinq parties : comprendre pourquoi 2027 favorise les lancements légers (*Première partie*), éviter les sept fautes qui immobilisent les débutants (*Deuxième partie*), explorer vingt secteurs regroupant cinq cents activités concrètes (*Troisième partie*), vérifier la demande réelle en quarante-huit heures sans engager de stock (*Quatrième partie*) puis encaisser ses premiers clients en sept jours (*Cinquième partie*).
+  Ce livre suit une progression volontairement pragmatique en cinq parties : comprendre pourquoi la fin d'année favorise les lancements légers (*Première partie*), éviter les sept fautes qui immobilisent les débutants (*Deuxième partie*), explorer vingt secteurs regroupant cinq cents activités concrètes (*Troisième partie*), vérifier la demande réelle en quarante-huit heures sans engager de stock (*Quatrième partie*) puis encaisser ses premiers clients avant le 31 décembre (*Cinquième partie*).
 ]
 
 #v(1fr)
@@ -327,7 +327,7 @@ EBOOK_TYP = r'''
 }
 
 #toc_part_row("00", "Avant-propos et niveaux de budget", <p-garde>)
-#toc_part_row("01", "Première partie · Pourquoi entreprendre en Afrique en 2027", <p-01>)
+#toc_part_row("01", "Première partie · Pourquoi lancer un business en fin d'année", <p-01>)
 #toc_part_row("02", "Deuxième partie · Les sept erreurs à éviter", <p-02>)
 #toc_part_row("03", "Troisième partie · Catalogue des 500 idées (20 secteurs)", <p-03>)
 #toc_part_row("04", "Quatrième partie · Validation express en 48 heures (Méthode VIN)", <p-04>)
@@ -403,7 +403,7 @@ EBOOK_TYP = r'''
   ]
 )
 
-#section_head("Cinq dynamiques porteuses en 2027")
+#section_head("Cinq dynamiques porteuses en fin d'année")
 
 #grid(
   columns: (1fr, 1fr),
@@ -957,7 +957,7 @@ WORKBOOK_TYP = r'''
   inset: (y: 10pt),
 )[
   #text(size: 8.6pt, fill: c_ink2)[
-    Chaque page de ce dossier correspond page pour page à *WORKBOOK-OFFICIEL-JOUR-2-CREE-TON-PREMIER-PRODUIT-DIGITAL.pdf* (pages 1 à 10), concrétisé dans l'ouvrage *500-Idees-de-Business-a-Lancer-en-Afrique-en-2027.pdf*.
+    Chaque page de ce dossier correspond page pour page à *WORKBOOK-OFFICIEL-JOUR-2-CREE-TON-PREMIER-PRODUIT-DIGITAL.pdf* (pages 1 à 10), concrétisé dans l'ouvrage *500-Idees-de-Business-a-Lancer-en-Afrique-pour-Bien-Finir-l-Annee.pdf*.
   ]
 ]
 #pagebreak()
@@ -1270,7 +1270,7 @@ def build_json_payload(config, sectors, ebook_pages=None):
             "epigraph": PART_01_INTRO["epigraph"],
             "lead": PART_01_INTRO["lead"],
             "problem_blocks": [{"title": t, "body": b} for t, b in PART_01_INTRO["problem_blocks"]],
-            "trends": [{"title": t, "body": b} for t, b in PART_01_INTRO["trends_2027"]],
+            "trends": [{"title": t, "body": b} for t, b in PART_01_INTRO["trends_fin_annee"]],
             "profiles": [{"profile": p, "budget": b, "sectors": sec} for p, b, sec in PART_01_INTRO["profiles"]],
         },
         "part02": {
@@ -1400,7 +1400,7 @@ def write_markdown_exports(config, sectors, ebook_pages=None):
     ]
     for bt, bb in PART_01_INTRO["problem_blocks"]:
         eb_lines.append(f"### {bt}\n{bb}\n")
-    for tt, tb in PART_01_INTRO["trends_2027"]:
+    for tt, tb in PART_01_INTRO["trends_fin_annee"]:
         eb_lines.append(f"- **{tt}** : {tb}")
     eb_lines += ["", f"## Partie 02 — {PART_02_ERRORS['title']}", PART_02_ERRORS["intro"], ""]
     for et, ec, ef in PART_02_ERRORS["errors"]:

@@ -37,7 +37,7 @@ SECTORS_PART_2 = [
     {
         "num": 12,
         "title": "Événementiel, Mariages, Culture & Création de Contenu",
-        "intro": "Les célébrations familiales, conférences professionnelles et la création de contenu explosent partout sur le continent. En 2027, l'économie de l'attention et des événements offre des marges rapides.",
+        "intro": "Les célébrations familiales, dîners de fin d'année, conférences et créations de contenu explosent partout sur le continent. L'économie de l'attention et des événements offre des marges rapides dès novembre et décembre.",
         "ideas": [
             ("Organisation complète ou coordination Jour-J de mariages (wedding planner)", "Gestion prestataires, timing et budget pour couples modernes et mariages de la diaspora.", "Petit"),
             ("Décoration de salles et arches de ballons pour anniversaires et baby showers", "Prestations visuelles très partagées sur les réseaux sociaux générant un fort bouche-à-oreille.", "Moyen"),
@@ -133,7 +133,7 @@ SECTORS_PART_2 = [
     {
         "num": 15,
         "title": "Artisanat Moderne, Décoration & Petite Industrie",
-        "intro": "Les nouveaux appartements, bureaux, hôtels et cafés africains recherchent des objets beaux, durables et fabriqués sur place plutôt que des importations fragiles. La petite fabrication locale a un avenir radieux en 2027.",
+        "intro": "Les nouveaux appartements, bureaux, hôtels et cafés africains recherchent des objets beaux, durables et fabriqués sur place plutôt que des importations fragiles. La petite fabrication locale répond aussi à la forte demande de cadeaux.",
         "ideas": [
             ("Fabrication de bougies parfumées artisanales en cire végétale ou d'abeille", "Pots esthétiques vendus en décoration intérieure, spas et cadeaux d'entreprise.", "Petit"),
             ("Atelier de menuiserie contemporaine (meubles minimalistes bois local & métal)", "Bureaux de télétravail, tables basses et étagères modernes fabriqués sur commande.", "Structuré"),
@@ -165,7 +165,7 @@ SECTORS_PART_2 = [
     {
         "num": 16,
         "title": "Services aux Entreprises (B2B), RH & Administratif",
-        "intro": "Les PME africaines se structurent et se formalisent en 2027. Elles préfèrent externaliser les fonctions supports (compta, recrutement, prospection, administratif) plutôt que d'embaucher à temps plein.",
+        "intro": "Les PME africaines se structurent et bouclent leurs bilans. Elles préfèrent externaliser les fonctions supports (compta, recrutement, prospection, administratif et paniers cadeaux) plutôt que d'embaucher à temps plein.",
         "ideas": [
             ("Accompagnement à la création et formalisation d'entreprises (RCCM, IFU, statuts)", "Service clé en main épargnant aux porteurs de projets les va-et-vient administratifs.", "Petit"),
             ("Tenue de comptabilité simplifiée et suivi fiscal pour petites PME et commerçants", "Forfait mensuel abordable avec mise en ordre des factures et déclarations à temps.", "Petit"),
@@ -244,7 +244,7 @@ SECTORS_PART_2 = [
             ("Location de matériel de puériculture (poussettes, sièges auto, lits parapluie)", "Idéal pour les familles de la diaspora en vacances au pays ou les premiers mois de bébé.", "Moyen"),
             ("Confection de repas et purées fraîches maison pour bébés (6 à 24 mois)", "Pots sains à base de produits locaux (patate douce, banane, poisson, légumes) sans sucre ajouté.", "Petit"),
             ("Boutique de jeux éducatifs, Montessori et puzzles adaptés par âge", "Sélection conseillée par tranche d'âge vendue en ligne et en coffrets cadeaux.", "Moyen"),
-            ("Coaching parental et ateliers pratiques (gestion des écrans, discipline bienveillante)", "Accompagnement concret des parents modernes confrontés aux défis éducatifs de 2027.", "Petit"),
+            ("Coaching parental et ateliers pratiques (gestion des écrans, discipline bienveillante)", "Accompagnement concret des parents modernes confrontés aux défis éducatifs actuels.", "Petit"),
             ("Service de couture et personnalisation de trousseaux de naissance", "Couvertures brodées, bavoirs, sacs à langer et capes de bain en coton doux.", "Petit"),
             ("Orientation scolaire et bilan d'orientation pour collégiens et lycéens", "Aide au choix des filières et métiers porteurs d'avenir pour rassurer parents et jeunes.", "Petit"),
             ("Cours de natation sécurisés pour enfants en partenariat avec des piscines d'hôtels", "Apprentissage vital très demandé pendant les week-ends et vacances.", "Petit"),
