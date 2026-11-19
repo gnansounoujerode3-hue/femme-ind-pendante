@@ -23,7 +23,10 @@ Le volume comprend les 100 fiches, un sommaire cliquable, les dix chapitres, les
 - [Rapport technique](reports/ebook-complet/validation.json)
 - [Script de génération](tools/construire_ebook_complet.py)
 - [Liste des photographies à intégrer ou remplacer](recherche-photos/photographies-a-finaliser.csv)
-- [Liens directs vers les 15 photographies originales repérées](recherche-photos/LIENS-ORIGINAUX.md)
+- [Liens des originaux : 15 sources précédentes + 45 nouvelles pistes à vérifier](recherche-photos/LIENS-ORIGINAUX.md)
+- [Tableau des liens et statuts pour les 100 recettes (CSV)](recherche-photos/liens-100-recettes.csv)
+
+**Recherche de liens actualisée :** 60 recettes ont un fichier original repéré, dont 45 nouvelles pistes non examinées visuellement. Les 40 autres restent sans original adapté identifié. Cela ne signifie pas que 60 photos sont validées ou intégrées : le livre reste à 14 aperçus et 86 photos manquantes.
 
 La couverture et les fiches reprennent la maquette validée. Les recettes restent non testées en cuisine dans le cadre de ce projet.
 

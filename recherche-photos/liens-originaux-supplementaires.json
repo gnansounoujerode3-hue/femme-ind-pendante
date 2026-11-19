@@ -1,0 +1,771 @@
+{
+  "date": "2026-11-18",
+  "description": "Fichiers existants identifiés via les métadonnées imageinfo de Wikimedia Commons. Pistes documentaires, sans validation visuelle, d’authenticité photographique ou de licence. Aucun fichier intégré au livre.",
+  "candidates": [
+    {
+      "recipe_id": 1,
+      "file_title": "Pastels.jpg",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Pastels.jpg",
+      "original_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Pastels.jpg",
+      "original_dimensions": [
+        1280,
+        1280
+      ],
+      "note": "Farce et présentation à contrôler.",
+      "status": "file_identified_not_approved",
+      "metadata_checked_on": "2026-11-18",
+      "visual_review": false,
+      "photographic_authenticity_verified": false,
+      "license_checked": false,
+      "publication_ready": false
+    },
+    {
+      "recipe_id": 3,
+      "file_title": "A taste of Fried Plantain.jpg",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:A_taste_of_Fried_Plantain.jpg",
+      "original_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/A_taste_of_Fried_Plantain.jpg",
+      "original_dimensions": [
+        5760,
+        3840
+      ],
+      "note": "Plantain frit ; assaisonnement à contrôler.",
+      "status": "file_identified_not_approved",
+      "metadata_checked_on": "2026-11-18",
+      "visual_review": false,
+      "photographic_authenticity_verified": false,
+      "license_checked": false,
+      "publication_ready": false
+    },
+    {
+      "recipe_id": 5,
+      "file_title": "Beef samosa, Le Petit Laotien, Montparnasse, Paris 001.jpg",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Beef_samosa%2C_Le_Petit_Laotien%2C_Montparnasse%2C_Paris_001.jpg",
+      "original_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Beef_samosa%2C_Le_Petit_Laotien%2C_Montparnasse%2C_Paris_001.jpg",
+      "original_dimensions": [
+        5472,
+        3648
+      ],
+      "note": "Samoussas au bœuf d’un restaurant laotien ; variante, pas recette testée du livre.",
+      "status": "file_identified_not_approved",
+      "metadata_checked_on": "2026-11-18",
+      "visual_review": false,
+      "photographic_authenticity_verified": false,
+      "license_checked": false,
+      "publication_ready": false
+    },
+    {
+      "recipe_id": 7,
+      "file_title": "Avocado Mango Salad.jpg",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Avocado_Mango_Salad.jpg",
+      "original_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Avocado_Mango_Salad.jpg",
+      "original_dimensions": [
+        656,
+        633
+      ],
+      "note": "Petite définition ; ingrédients et nature photographique à vérifier.",
+      "status": "file_identified_not_approved",
+      "metadata_checked_on": "2026-11-18",
+      "visual_review": false,
+      "photographic_authenticity_verified": false,
+      "license_checked": false,
+      "publication_ready": false
+    },
+    {
+      "recipe_id": 8,
+      "file_title": "Salade Mechouia au thon.jpg",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Salade_Mechouia_au_thon.jpg",
+      "original_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Salade_Mechouia_au_thon.jpg",
+      "original_dimensions": [
+        2104,
+        2377
+      ],
+      "note": "Variante avec thon ; accompagnement absent de notre recette. Non validée.",
+      "status": "file_identified_not_approved",
+      "metadata_checked_on": "2026-11-18",
+      "visual_review": false,
+      "photographic_authenticity_verified": false,
+      "license_checked": false,
+      "publication_ready": false
+    },
+    {
+      "recipe_id": 12,
+      "file_title": "Plat de Atassi(watché) du Bénin.jpg",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Plat_de_Atassi(watch%C3%A9)_du_B%C3%A9nin.jpg",
+      "original_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Plat_de_Atassi(watch%C3%A9)_du_B%C3%A9nin.jpg",
+      "original_dimensions": [
+        1216,
+        1216
+      ],
+      "note": "Atassi ; accompagnements à vérifier.",
+      "status": "file_identified_not_approved",
+      "metadata_checked_on": "2026-11-18",
+      "visual_review": false,
+      "photographic_authenticity_verified": false,
+      "license_checked": false,
+      "publication_ready": false
+    },
+    {
+      "recipe_id": 14,
+      "file_title": "Okro soup.jpg",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Okro_soup.jpg",
+      "original_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Okro_soup.jpg",
+      "original_dimensions": [
+        720,
+        841
+      ],
+      "note": "Type de poisson et éventuelles autres protéines à vérifier.",
+      "status": "file_identified_not_approved",
+      "metadata_checked_on": "2026-11-18",
+      "visual_review": false,
+      "photographic_authenticity_verified": false,
+      "license_checked": false,
+      "publication_ready": false
+    },
+    {
+      "recipe_id": 15,
+      "file_title": "Arts culinaire du Bénin - Les plats de la cuisine béninoise 15.jpg",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Arts_culinaire_du_B%C3%A9nin_-_Les_plats_de_la_cuisine_b%C3%A9ninoise_15.jpg",
+      "original_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Arts_culinaire_du_B%C3%A9nin_-_Les_plats_de_la_cuisine_b%C3%A9ninoise_15.jpg",
+      "original_dimensions": [
+        9216,
+        6912
+      ],
+      "note": "Piste trouvée avec sauce crincrin ; crevettes et plat exact à confirmer visuellement.",
+      "status": "file_identified_not_approved",
+      "metadata_checked_on": "2026-11-18",
+      "visual_review": false,
+      "photographic_authenticity_verified": false,
+      "license_checked": false,
+      "publication_ready": false
+    },
+    {
+      "recipe_id": 16,
+      "file_title": "Wɔ̌ (pâte de maïs) du Bénin.jpg",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:W%C9%94%CC%8C_(p%C3%A2te_de_ma%C3%AFs)_du_B%C3%A9nin.jpg",
+      "original_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/W%C9%94%CC%8C_(p%C3%A2te_de_ma%C3%AFs)_du_B%C3%A9nin.jpg",
+      "original_dimensions": [
+        1920,
+        2560
+      ],
+      "note": "Présentation et accompagnements à vérifier.",
+      "status": "file_identified_not_approved",
+      "metadata_checked_on": "2026-11-18",
+      "visual_review": false,
+      "photographic_authenticity_verified": false,
+      "license_checked": false,
+      "publication_ready": false
+    },
+    {
+      "recipe_id": 17,
+      "file_title": "POUNDED YAM & VEGETABLE SOUP. A native delicacy of the Yoruba tribe in Nigeria, West Africa..jpg",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:POUNDED_YAM_%26_VEGETABLE_SOUP._A_native_delicacy_of_the_Yoruba_tribe_in_Nigeria%2C_West_Africa..jpg",
+      "original_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/POUNDED_YAM_%26_VEGETABLE_SOUP._A_native_delicacy_of_the_Yoruba_tribe_in_Nigeria%2C_West_Africa..jpg",
+      "original_dimensions": [
+        4912,
+        3264
+      ],
+      "note": "Igname accompagnée de soupe ; soupe non incluse dans la fiche.",
+      "status": "file_identified_not_approved",
+      "metadata_checked_on": "2026-11-18",
+      "visual_review": false,
+      "photographic_authenticity_verified": false,
+      "license_checked": false,
+      "publication_ready": false
+    },
+    {
+      "recipe_id": 19,
+      "file_title": "Créations africaines-Arts-Akassa sous emballage de feuille de tectona grandis.jpg",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Cr%C3%A9ations_africaines-Arts-Akassa_sous_emballage_de_feuille_de_tectona_grandis.jpg",
+      "original_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Cr%C3%A9ations_africaines-Arts-Akassa_sous_emballage_de_feuille_de_tectona_grandis.jpg",
+      "original_dimensions": [
+        4608,
+        3456
+      ],
+      "note": "Akassa emballé en feuille ; visibilité du produit fini à vérifier.",
+      "status": "file_identified_not_approved",
+      "metadata_checked_on": "2026-11-18",
+      "visual_review": false,
+      "photographic_authenticity_verified": false,
+      "license_checked": false,
+      "publication_ready": false
+    },
+    {
+      "recipe_id": 21,
+      "file_title": "Poulet Bicyclette.jpg",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Poulet_Bicyclette.jpg",
+      "original_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Poulet_Bicyclette.jpg",
+      "original_dimensions": [
+        3024,
+        4032
+      ],
+      "note": "Cuisson et présentation à vérifier.",
+      "status": "file_identified_not_approved",
+      "metadata_checked_on": "2026-11-18",
+      "visual_review": false,
+      "photographic_authenticity_verified": false,
+      "license_checked": false,
+      "publication_ready": false
+    },
+    {
+      "recipe_id": 23,
+      "file_title": "African Chicken Peanut Stew (37673757141).jpg",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:African_Chicken_Peanut_Stew_(37673757141).jpg",
+      "original_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/African_Chicken_Peanut_Stew_(37673757141).jpg",
+      "original_dimensions": [
+        5184,
+        3456
+      ],
+      "note": "Variante de poulet arachide ; garniture à vérifier.",
+      "status": "file_identified_not_approved",
+      "metadata_checked_on": "2026-11-18",
+      "visual_review": false,
+      "photographic_authenticity_verified": false,
+      "license_checked": false,
+      "publication_ready": false
+    },
+    {
+      "recipe_id": 26,
+      "file_title": "Chicken moambe with French fries (14792587921).jpg",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Chicken_moambe_with_French_fries_(14792587921).jpg",
+      "original_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Chicken_moambe_with_French_fries_(14792587921).jpg",
+      "original_dimensions": [
+        4928,
+        3264
+      ],
+      "note": "Frites servies en accompagnement, non incluses dans la fiche.",
+      "status": "file_identified_not_approved",
+      "metadata_checked_on": "2026-11-18",
+      "visual_review": false,
+      "photographic_authenticity_verified": false,
+      "license_checked": false,
+      "publication_ready": false
+    },
+    {
+      "recipe_id": 28,
+      "file_title": "2018-02-03 Chicken Piri-Piri, Albufeira.JPG",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:2018-02-03_Chicken_Piri-Piri%2C_Albufeira.JPG",
+      "original_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/2018-02-03_Chicken_Piri-Piri%2C_Albufeira.JPG",
+      "original_dimensions": [
+        3445,
+        3327
+      ],
+      "note": "Poulet piri-piri ; variante portugaise, cuisson et accompagnements à vérifier.",
+      "status": "file_identified_not_approved",
+      "metadata_checked_on": "2026-11-18",
+      "visual_review": false,
+      "photographic_authenticity_verified": false,
+      "license_checked": false,
+      "publication_ready": false
+    },
+    {
+      "recipe_id": 30,
+      "file_title": "Roast turkey from fall season.jpg",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Roast_turkey_from_fall_season.jpg",
+      "original_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Roast_turkey_from_fall_season.jpg",
+      "original_dimensions": [
+        5184,
+        3456
+      ],
+      "note": "Dinde rôtie ; épices et garniture à vérifier.",
+      "status": "file_identified_not_approved",
+      "metadata_checked_on": "2026-11-18",
+      "visual_review": false,
+      "photographic_authenticity_verified": false,
+      "license_checked": false,
+      "publication_ready": false
+    },
+    {
+      "recipe_id": 31,
+      "file_title": "Mafé au bœuf dans un restaurant africain à Lyon (2019).jpg",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Maf%C3%A9_au_b%C5%93uf_dans_un_restaurant_africain_%C3%A0_Lyon_(2019).jpg",
+      "original_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Maf%C3%A9_au_b%C5%93uf_dans_un_restaurant_africain_%C3%A0_Lyon_(2019).jpg",
+      "original_dimensions": [
+        3387,
+        3014
+      ],
+      "note": "Mafé de bœuf ; garniture et composition à vérifier.",
+      "status": "file_identified_not_approved",
+      "metadata_checked_on": "2026-11-18",
+      "visual_review": false,
+      "photographic_authenticity_verified": false,
+      "license_checked": false,
+      "publication_ready": false
+    },
+    {
+      "recipe_id": 40,
+      "file_title": "Ye Bere Tibs - tenderized, lean, cubed beef, cooked in berbere sauce. -Ethiopian -Oakland (14987170060).jpg",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Ye_Bere_Tibs_-_tenderized%2C_lean%2C_cubed_beef%2C_cooked_in_berbere_sauce._-Ethiopian_-Oakland_(14987170060).jpg",
+      "original_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Ye_Bere_Tibs_-_tenderized%2C_lean%2C_cubed_beef%2C_cooked_in_berbere_sauce._-Ethiopian_-Oakland_(14987170060).jpg",
+      "original_dimensions": [
+        640,
+        640
+      ],
+      "note": "Bœuf au berbéré ; petite définition et force de l’assaisonnement non vérifiable.",
+      "status": "file_identified_not_approved",
+      "metadata_checked_on": "2026-11-18",
+      "visual_review": false,
+      "photographic_authenticity_verified": false,
+      "license_checked": false,
+      "publication_ready": false
+    },
+    {
+      "recipe_id": 41,
+      "file_title": "Grilled Tilapia 001.jpg",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Grilled_Tilapia_001.jpg",
+      "original_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Grilled_Tilapia_001.jpg",
+      "original_dimensions": [
+        6016,
+        4016
+      ],
+      "note": "Tilapia grillé ; citron et accompagnements à vérifier.",
+      "status": "file_identified_not_approved",
+      "metadata_checked_on": "2026-11-18",
+      "visual_review": false,
+      "photographic_authenticity_verified": false,
+      "license_checked": false,
+      "publication_ready": false
+    },
+    {
+      "recipe_id": 43,
+      "file_title": "Le yassa au poisson 03.jpg",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Le_yassa_au_poisson_03.jpg",
+      "original_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Le_yassa_au_poisson_03.jpg",
+      "original_dimensions": [
+        3646,
+        2391
+      ],
+      "note": "Variante de yassa au poisson ; dressage à vérifier.",
+      "status": "file_identified_not_approved",
+      "metadata_checked_on": "2026-11-18",
+      "visual_review": false,
+      "photographic_authenticity_verified": false,
+      "license_checked": false,
+      "publication_ready": false
+    },
+    {
+      "recipe_id": 46,
+      "file_title": "Shrimp in light coconut milk gravy - 4.jpg",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Shrimp_in_light_coconut_milk_gravy_-_4.jpg",
+      "original_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Shrimp_in_light_coconut_milk_gravy_-_4.jpg",
+      "original_dimensions": [
+        6048,
+        4024
+      ],
+      "note": "Crevettes coco ; variante et autres ingrédients à vérifier.",
+      "status": "file_identified_not_approved",
+      "metadata_checked_on": "2026-11-18",
+      "visual_review": false,
+      "photographic_authenticity_verified": false,
+      "license_checked": false,
+      "publication_ready": false
+    },
+    {
+      "recipe_id": 50,
+      "file_title": "Wet fried coconut fish served with ugali and creamed spinach.jpg",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Wet_fried_coconut_fish_served_with_ugali_and_creamed_spinach.jpg",
+      "original_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Wet_fried_coconut_fish_served_with_ugali_and_creamed_spinach.jpg",
+      "original_dimensions": [
+        4080,
+        1884
+      ],
+      "note": "Poisson coco avec épinards séparés et ugali ; variante non exacte, à vérifier.",
+      "status": "file_identified_not_approved",
+      "metadata_checked_on": "2026-11-18",
+      "visual_review": false,
+      "photographic_authenticity_verified": false,
+      "license_checked": false,
+      "publication_ready": false
+    },
+    {
+      "recipe_id": 51,
+      "file_title": "Ghana Jollof Rice with Chicken.jpg",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Ghana_Jollof_Rice_with_Chicken.jpg",
+      "original_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Ghana_Jollof_Rice_with_Chicken.jpg",
+      "original_dimensions": [
+        3024,
+        4032
+      ],
+      "note": "Variante ghanéenne de riz tomate au poulet, pas notre recette testée.",
+      "status": "file_identified_not_approved",
+      "metadata_checked_on": "2026-11-18",
+      "visual_review": false,
+      "photographic_authenticity_verified": false,
+      "license_checked": false,
+      "publication_ready": false
+    },
+    {
+      "recipe_id": 53,
+      "file_title": "Waakye in Ghana.jpg",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Waakye_in_Ghana.jpg",
+      "original_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Waakye_in_Ghana.jpg",
+      "original_dimensions": [
+        810,
+        1080
+      ],
+      "note": "Waakye ; garnitures et faible définition à vérifier.",
+      "status": "file_identified_not_approved",
+      "metadata_checked_on": "2026-11-18",
+      "visual_review": false,
+      "photographic_authenticity_verified": false,
+      "license_checked": false,
+      "publication_ready": false
+    },
+    {
+      "recipe_id": 56,
+      "file_title": "Couscous végétarien.jpg",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Couscous_v%C3%A9g%C3%A9tarien.jpg",
+      "original_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Couscous_v%C3%A9g%C3%A9tarien.jpg",
+      "original_dimensions": [
+        960,
+        720
+      ],
+      "note": "Couscous végétarien ; sept légumes et inscriptions sur l’image à contrôler.",
+      "status": "file_identified_not_approved",
+      "metadata_checked_on": "2026-11-18",
+      "visual_review": false,
+      "photographic_authenticity_verified": false,
+      "license_checked": false,
+      "publication_ready": false
+    },
+    {
+      "recipe_id": 59,
+      "file_title": "Vegetable fried rice from Kerala.jpg",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Vegetable_fried_rice_from_Kerala.jpg",
+      "original_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Vegetable_fried_rice_from_Kerala.jpg",
+      "original_dimensions": [
+        3000,
+        4000
+      ],
+      "note": "Riz sauté aux légumes du Kerala ; variante, assaisonnement à vérifier.",
+      "status": "file_identified_not_approved",
+      "metadata_checked_on": "2026-11-18",
+      "visual_review": false,
+      "photographic_authenticity_verified": false,
+      "license_checked": false,
+      "publication_ready": false
+    },
+    {
+      "recipe_id": 61,
+      "file_title": "Beans with Fried Plantain.jpg",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Beans_with_Fried_Plantain.jpg",
+      "original_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Beans_with_Fried_Plantain.jpg",
+      "original_dimensions": [
+        4698,
+        3356
+      ],
+      "note": "Haricots avec plantain ; absence de poisson à confirmer avant utilisation pour la fiche sans poisson.",
+      "status": "file_identified_not_approved",
+      "metadata_checked_on": "2026-11-18",
+      "visual_review": false,
+      "photographic_authenticity_verified": false,
+      "license_checked": false,
+      "publication_ready": false
+    },
+    {
+      "recipe_id": 62,
+      "file_title": "Nigerian beans porridge 02.jpg",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Nigerian_beans_porridge_02.jpg",
+      "original_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Nigerian_beans_porridge_02.jpg",
+      "original_dimensions": [
+        1145,
+        2560
+      ],
+      "note": "Niébé mijoté ; présence éventuelle de poisson à vérifier.",
+      "status": "file_identified_not_approved",
+      "metadata_checked_on": "2026-11-18",
+      "visual_review": false,
+      "photographic_authenticity_verified": false,
+      "license_checked": false,
+      "publication_ready": false
+    },
+    {
+      "recipe_id": 64,
+      "file_title": "Misir Wat in Pot.jpg",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Misir_Wat_in_Pot.jpg",
+      "original_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Misir_Wat_in_Pot.jpg",
+      "original_dimensions": [
+        600,
+        800
+      ],
+      "note": "Misir wat en casserole ; faible définition et niveau de piment à vérifier.",
+      "status": "file_identified_not_approved",
+      "metadata_checked_on": "2026-11-18",
+      "visual_review": false,
+      "photographic_authenticity_verified": false,
+      "license_checked": false,
+      "publication_ready": false
+    },
+    {
+      "recipe_id": 65,
+      "file_title": "Ethiopian Shiro (11354785095).jpg",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Ethiopian_Shiro_(11354785095).jpg",
+      "original_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Ethiopian_Shiro_(11354785095).jpg",
+      "original_dimensions": [
+        1024,
+        768
+      ],
+      "note": "Shiro ; présentation et définition à vérifier.",
+      "status": "file_identified_not_approved",
+      "metadata_checked_on": "2026-11-18",
+      "visual_review": false,
+      "photographic_authenticity_verified": false,
+      "license_checked": false,
+      "publication_ready": false
+    },
+    {
+      "recipe_id": 67,
+      "file_title": "Chakalaka.jpg",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Chakalaka.jpg",
+      "original_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Chakalaka.jpg",
+      "original_dimensions": [
+        2112,
+        2816
+      ],
+      "note": "Chakalaka dans une casserole ; dressage à améliorer, version douce non vérifiable.",
+      "status": "file_identified_not_approved",
+      "metadata_checked_on": "2026-11-18",
+      "visual_review": false,
+      "photographic_authenticity_verified": false,
+      "license_checked": false,
+      "publication_ready": false
+    },
+    {
+      "recipe_id": 71,
+      "file_title": "Dambou.jpg",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Dambou.jpg",
+      "original_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Dambou.jpg",
+      "original_dimensions": [
+        9216,
+        6912
+      ],
+      "note": "Dambou ; céréale utilisée à comparer à notre adaptation au couscous.",
+      "status": "file_identified_not_approved",
+      "metadata_checked_on": "2026-11-18",
+      "visual_review": false,
+      "photographic_authenticity_verified": false,
+      "license_checked": false,
+      "publication_ready": false
+    },
+    {
+      "recipe_id": 72,
+      "file_title": "Boiled plantain with Vegetable soup.jpg",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Boiled_plantain_with_Vegetable_soup.jpg",
+      "original_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Boiled_plantain_with_Vegetable_soup.jpg",
+      "original_dimensions": [
+        720,
+        807
+      ],
+      "note": "Plantain bouilli avec soupe non incluse dans la fiche.",
+      "status": "file_identified_not_approved",
+      "metadata_checked_on": "2026-11-18",
+      "visual_review": false,
+      "photographic_authenticity_verified": false,
+      "license_checked": false,
+      "publication_ready": false
+    },
+    {
+      "recipe_id": 73,
+      "file_title": "Roasted plantain with groundnut.jpg",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Roasted_plantain_with_groundnut.jpg",
+      "original_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Roasted_plantain_with_groundnut.jpg",
+      "original_dimensions": [
+        1074,
+        1572
+      ],
+      "note": "Plantain rôti avec arachides, absentes de notre fiche ; gingembre non vérifiable.",
+      "status": "file_identified_not_approved",
+      "metadata_checked_on": "2026-11-18",
+      "visual_review": false,
+      "photographic_authenticity_verified": false,
+      "license_checked": false,
+      "publication_ready": false
+    },
+    {
+      "recipe_id": 76,
+      "file_title": "Ugali Posho.jpg",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Ugali_Posho.jpg",
+      "original_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Ugali_Posho.jpg",
+      "original_dimensions": [
+        3984,
+        2656
+      ],
+      "note": "Ugali ; céréale et accompagnements à vérifier.",
+      "status": "file_identified_not_approved",
+      "metadata_checked_on": "2026-11-18",
+      "visual_review": false,
+      "photographic_authenticity_verified": false,
+      "license_checked": false,
+      "publication_ready": false
+    },
+    {
+      "recipe_id": 77,
+      "file_title": "Chapati-1.jpg",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Chapati-1.jpg",
+      "original_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Chapati-1.jpg",
+      "original_dimensions": [
+        3984,
+        2656
+      ],
+      "note": "Chapati ; variante locale et composition à vérifier.",
+      "status": "file_identified_not_approved",
+      "metadata_checked_on": "2026-11-18",
+      "visual_review": false,
+      "photographic_authenticity_verified": false,
+      "license_checked": false,
+      "publication_ready": false
+    },
+    {
+      "recipe_id": 78,
+      "file_title": "Batbout.jpg",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Batbout.jpg",
+      "original_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Batbout.jpg",
+      "original_dimensions": [
+        4080,
+        3072
+      ],
+      "note": "Pain de poêle ; proportion de semoule à vérifier.",
+      "status": "file_identified_not_approved",
+      "metadata_checked_on": "2026-11-18",
+      "visual_review": false,
+      "photographic_authenticity_verified": false,
+      "license_checked": false,
+      "publication_ready": false
+    },
+    {
+      "recipe_id": 79,
+      "file_title": "Tomato and onion sauce.jpg",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Tomato_and_onion_sauce.jpg",
+      "original_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Tomato_and_onion_sauce.jpg",
+      "original_dimensions": [
+        1020,
+        752
+      ],
+      "note": "Sauce tomate-oignons ; origine et nature photographique à vérifier.",
+      "status": "file_identified_not_approved",
+      "metadata_checked_on": "2026-11-18",
+      "visual_review": false,
+      "photographic_authenticity_verified": false,
+      "license_checked": false,
+      "publication_ready": false
+    },
+    {
+      "recipe_id": 86,
+      "file_title": "Bowl of chin-chin.jpg",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Bowl_of_chin-chin.jpg",
+      "original_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Bowl_of_chin-chin.jpg",
+      "original_dimensions": [
+        2349,
+        1762
+      ],
+      "note": "Chin-chin servis en bol ; nature photographique et composition à vérifier.",
+      "status": "file_identified_not_approved",
+      "metadata_checked_on": "2026-11-18",
+      "visual_review": false,
+      "photographic_authenticity_verified": false,
+      "license_checked": false,
+      "publication_ready": false
+    },
+    {
+      "recipe_id": 87,
+      "file_title": "Golden Mikaté.jpg",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Golden_Mikat%C3%A9.jpg",
+      "original_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Golden_Mikat%C3%A9.jpg",
+      "original_dimensions": [
+        5184,
+        3456
+      ],
+      "note": "Mikaté ; nature photographique et composition à vérifier.",
+      "status": "file_identified_not_approved",
+      "metadata_checked_on": "2026-11-18",
+      "visual_review": false,
+      "photographic_authenticity_verified": false,
+      "license_checked": false,
+      "publication_ready": false
+    },
+    {
+      "recipe_id": 91,
+      "file_title": "Bissap & Ginger Juice (7558541174).jpg",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Bissap_%26_Ginger_Juice_(7558541174).jpg",
+      "original_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Bissap_%26_Ginger_Juice_(7558541174).jpg",
+      "original_dimensions": [
+        2592,
+        1936
+      ],
+      "note": "Deux boissons ; identifier le bissap rouge, menthe non vérifiable.",
+      "status": "file_identified_not_approved",
+      "metadata_checked_on": "2026-11-18",
+      "visual_review": false,
+      "photographic_authenticity_verified": false,
+      "license_checked": false,
+      "publication_ready": false
+    },
+    {
+      "recipe_id": 93,
+      "file_title": "Ginger Juice.jpg",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Ginger_Juice.jpg",
+      "original_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Ginger_Juice.jpg",
+      "original_dimensions": [
+        2480,
+        3508
+      ],
+      "note": "Jus de gingembre ; ingrédients et nature photographique à vérifier.",
+      "status": "file_identified_not_approved",
+      "metadata_checked_on": "2026-11-18",
+      "visual_review": false,
+      "photographic_authenticity_verified": false,
+      "license_checked": false,
+      "publication_ready": false
+    },
+    {
+      "recipe_id": 94,
+      "file_title": "Fresh Tamarind Juice.jpg",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Fresh_Tamarind_Juice.jpg",
+      "original_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Fresh_Tamarind_Juice.jpg",
+      "original_dimensions": [
+        810,
+        1080
+      ],
+      "note": "Jus de tamarin ; variante et petite définition à vérifier.",
+      "status": "file_identified_not_approved",
+      "metadata_checked_on": "2026-11-18",
+      "visual_review": false,
+      "photographic_authenticity_verified": false,
+      "license_checked": false,
+      "publication_ready": false
+    },
+    {
+      "recipe_id": 95,
+      "file_title": "Jus de bouye, gingembre et bissap 01.jpg",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Jus_de_bouye%2C_gingembre_et_bissap_01.jpg",
+      "original_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Jus_de_bouye%2C_gingembre_et_bissap_01.jpg",
+      "original_dimensions": [
+        3024,
+        4032
+      ],
+      "note": "Plusieurs boissons dans une même photo ; identifier précisément le bouye.",
+      "status": "file_identified_not_approved",
+      "metadata_checked_on": "2026-11-18",
+      "visual_review": false,
+      "photographic_authenticity_verified": false,
+      "license_checked": false,
+      "publication_ready": false
+    },
+    {
+      "recipe_id": 98,
+      "file_title": "Sugar coated candied peanuts.jpg",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Sugar_coated_candied_peanuts.jpg",
+      "original_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Sugar_coated_candied_peanuts.jpg",
+      "original_dimensions": [
+        6000,
+        4000
+      ],
+      "note": "Arachides sucrées ; comparer texture sablée et caramélisation de la recette.",
+      "status": "file_identified_not_approved",
+      "metadata_checked_on": "2026-11-18",
+      "visual_review": false,
+      "photographic_authenticity_verified": false,
+      "license_checked": false,
+      "publication_ready": false
+    }
+  ]
+}
