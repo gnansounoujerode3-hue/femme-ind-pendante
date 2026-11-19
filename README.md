@@ -23,7 +23,7 @@ Le volume comprend les 100 fiches, un sommaire cliquable, les dix chapitres, les
 - [Rapport technique](reports/ebook-complet/validation.json)
 - [Script de génération](tools/construire_ebook_complet.py)
 - [Liste des photographies à intégrer ou remplacer](recherche-photos/photographies-a-finaliser.csv)
-- [Liens directs vers les 14 photographies originales repérées](recherche-photos/LIENS-ORIGINAUX.md)
+- [Liens directs vers les 15 photographies originales repérées](recherche-photos/LIENS-ORIGINAUX.md)
 
 La couverture et les fiches reprennent la maquette validée. Les recettes restent non testées en cuisine dans le cadre de ce projet.
 

@@ -1,6 +1,6 @@
 # Liens de téléchargement des photographies originales
 
-Liens vers les fichiers originaux des **14 photographies repérées**. Les fichiers HD ne sont pas hébergés dans ce dépôt : chaque lien ouvre le fichier chez Wikimedia Commons. La définition varie selon la source ; certains originaux restent de petite taille.
+Liens vers les fichiers originaux des **15 photographies repérées**. Les fichiers HD ne sont pas hébergés dans ce dépôt : chaque lien ouvre le fichier chez Wikimedia Commons. La définition varie selon la source ; certains originaux restent de petite taille.
 
 Ces liens ne couvrent pas encore les 100 recettes. La correspondance avec les adaptations et la qualité finale restent à valider.
 
