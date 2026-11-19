@@ -11,7 +11,22 @@ Pour Noël et le 1er janvier, avec des explications adaptées aux débutants.
 - Vérification des sources, des licences et des crédits avant publication.
 - Une photographie illustrative ne sera pas présentée comme le résultat exact d’une recette testée pour ce livre.
 
-## Nouvelle maquette — photographies réelles uniquement
+## Livre intégral mis en page — version de travail, 227 pages
+
+📕 **[Consulter les 100 recettes dans le design validé](EBOOK-100-RECETTES-TERRE-DE-FETE-TRAVAIL.pdf)**
+
+Le volume comprend les 100 fiches, un sommaire cliquable, les dix chapitres, les conseils pour débutants, les menus et les crédits. Une page photo est réservée immédiatement avant chaque recette.
+
+**L’e-book n’est pas encore finalisé pour la vente : 4 aperçus photo intégrés, 96 emplacements à compléter et 0 photographie validée en haute définition pour publication finale.** Les pages manquantes sont explicitement signalées. Aucune photo IA ou photo d’un autre plat ne remplace les images absentes.
+
+- [État de production et travail restant](FINALISATION-EBOOK.md)
+- [Rapport technique](reports/ebook-complet/validation.json)
+- [Script de génération](tools/construire_ebook_complet.py)
+- [Liste des photographies à intégrer ou remplacer](recherche-photos/photographies-a-finaliser.csv)
+
+La couverture et les fiches reprennent la maquette validée. Les recettes restent non testées en cuisine dans le cadre de ce projet.
+
+## Maquette validée — photographies réelles uniquement
 
 📕 **[Ouvrir ou télécharger la nouvelle maquette PDF (8 pages)](MAQUETTE-PHOTOS-REELLES.pdf)**
 

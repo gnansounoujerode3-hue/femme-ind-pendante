@@ -1,0 +1,14 @@
+{
+  "file": "EBOOK-100-RECETTES-TERRE-DE-FETE-TRAVAIL.pdf",
+  "recipes": 100,
+  "photo_slots": 100,
+  "preview_photos": 4,
+  "missing_photos": 96,
+  "publication_ready": false,
+  "notes": [
+    "Couverture et direction artistique validées",
+    "Photos manquantes signalées, aucune image IA",
+    "Recettes non testées en cuisine",
+    "Validation visuelle et technique requise"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "file": "EBOOK-100-RECETTES-TERRE-DE-FETE-TRAVAIL.pdf",
+  "pages": 227,
+  "recipe_count": 100,
+  "photo_slot_count": 100,
+  "actual_preview_photos": 4,
+  "missing_photos": 96,
+  "internal_links": 100,
+  "all_fonts_embedded": true,
+  "empty_pages": [],
+  "text_out_of_bounds": [],
+  "errors": [],
+  "publication_ready": false,
+  "visual_review": "227 pages rendues et parcourues sur sept planches ; fiches longues et crédits examinés en grand.",
+  "limits": [
+    "96 photographies manquantes",
+    "4 aperçus basse définition non validés pour publication finale",
+    "Recettes non testées en cuisine",
+    "Pas de validation imprimeur ou PDF/UA"
+  ]
+}
