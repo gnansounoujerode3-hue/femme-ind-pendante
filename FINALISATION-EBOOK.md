@@ -8,13 +8,13 @@
 - Sommaire cliquable, signets PDF et dix ouvertures de chapitre.
 - Introduction, vocabulaire, mesures, hygiène, menus, liste de courses, rétroplanning et dépannage.
 - Crédits des aperçus photographiques, texte sélectionnable et polices embarquées.
-- PDF de travail : **227 pages**.
+- PDF de travail : **228 pages**.
 
 ## Point bloquant : les photographies
 
-**Ce n’est pas une version prête à vendre.** Quatre miniatures de travail sont intégrées pour les recettes 4, 11, 18 et 22. Les **96 autres pages photo** portent la mention « Photographie réelle à intégrer ». Même les quatre aperçus doivent être remplacés par des originaux de définition adaptée, puis leur correspondance avec la variante vérifiée.
+**Ce n’est pas une version prête à vendre.** Quatorze aperçus de travail sont intégrés pour les recettes 2, 4, 11, 18, 20, 22, 24, 25, 39, 44, 52, 68, 85 et 88. Les **86 autres pages photo** portent la mention « Photographie réelle à intégrer ». Tous les aperçus doivent encore être remplacés par des originaux de définition adaptée et validés pour l’édition finale.
 
-La validation de la maquette valide sa présentation ; elle ne signifie pas que les 100 photographies ont été trouvées. Le suivi de recherche reste inchangé : 29 pistes, 5 pages de licence consultées et 71 recettes sans recherche effectuée dans ce premier lot.
+Le deuxième lot ajoute dix photographies réelles, avec légendes de variantes et crédits. L’accès direct aux originaux Wikimedia est bloqué dans cet environnement ; les fichiers intégrés restent des miniatures. Voir le [bilan du lot 2](recherche-photos/LOT-2-PHOTOS.md). Le suivi JSON du premier lot est une archive de recherche, pas le bilan actuel du livre.
 
 La couverture reprend une photo réelle provisoire, sans modification de son design. Aucune image IA n’est utilisée dans ce nouveau document. Aucune photographie de substitution trompeuse n’est insérée.
 
@@ -24,7 +24,7 @@ La couverture reprend une photo réelle provisoire, sans modification de son des
 - Pour chaque numéro, page recette = page photo + 1.
 - Les ingrédients, les étapes et le conseil sont présents sur chacune des 100 fiches.
 - Pas de page vide ni de bloc de texte hors de la page dans l’extraction technique.
-- 227 pages rendues sous forme de sept planches et inspectées ; contrôle détaillé de fiches longues, de la couverture et des crédits.
+- 228 pages rendues sous forme de sept planches ; les dix nouvelles pages photo ont été inspectées après intégration. Les fiches longues, la couverture et les crédits avaient été examinés dans la précédente version.
 - L’export `--final` est bloqué tant que les 100 recettes n’ont pas une photographie explicitement approuvée et déclarée prête à publier dans le registre.
 - Le contrôle automatisé ne certifie ni une conformité PDF/UA ou imprimeur ni la réussite culinaire des recettes. Pas d’essai sur liseuse ou de test d’impression effectué.
 

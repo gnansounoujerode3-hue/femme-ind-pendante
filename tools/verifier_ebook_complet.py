@@ -47,8 +47,8 @@ def main():
                 actual_preview_photos=actual_photos,missing_photos=100-actual_photos,
                 internal_links=internal_links,all_fonts_embedded=embedded,empty_pages=empty,
                 text_out_of_bounds=outside,errors=issues,publication_ready=False,
-                visual_review='227 pages rendues et parcourues sur sept planches ; fiches longues et crédits examinés en grand.',
-                limits=['96 photographies manquantes','4 aperçus basse définition non validés pour publication finale','Recettes non testées en cuisine','Pas de validation imprimeur ou PDF/UA'])
+                visual_review='Maquette initiale inspectée ; nouvelles photos examinées sur planches puis pages mises en page contrôlées séparément.',
+                limits=[f'{100-actual_photos} photographies manquantes',f'{actual_photos} aperçus basse définition non validés pour publication finale','Recettes non testées en cuisine','Pas de validation imprimeur ou PDF/UA'])
     folder=ROOT/'reports/ebook-complet';folder.mkdir(exist_ok=True,parents=True)
     (folder/'validation.json').write_text(json.dumps(result,ensure_ascii=False,indent=2)+'\n')
     print(json.dumps(result,ensure_ascii=False,indent=2))

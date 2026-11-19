@@ -17,7 +17,7 @@ Les skills de ce dépôt sont des ressources de travail locales, pas des extensi
 
 ## Règles du projet
 - Le client a validé la maquette à couverture photographique. Appliquer cette direction au livre complet ; ne pas rouvrir la validation du design sans besoin.
-- Générateur intégral : `tools/construire_ebook_complet.py` ; sortie actuelle `EBOOK-100-RECETTES-TERRE-DE-FETE-TRAVAIL.pdf`. Il contient 100 fiches et 100 pages photo, mais seulement 4 aperçus réels : **96 photos restent manquantes**. Ne pas présenter ce fichier de travail comme un e-book finalisé ou prêt à vendre.
+- Générateur intégral : `tools/construire_ebook_complet.py` ; sortie actuelle `EBOOK-100-RECETTES-TERRE-DE-FETE-TRAVAIL.pdf`. Il contient 100 fiches et 100 pages photo, mais seulement 14 aperçus réels : **86 photos restent manquantes**. Ne pas présenter ce fichier de travail comme un e-book finalisé ou prêt à vendre.
 - Couverture : **conserver le design de la première maquette** (bloc crème, mêmes titres et polices, grande image en bas, bandeau vert). Remplacer uniquement l’image IA par une vraie photographie ; ne pas refaire la composition sans demande explicite.
 - Décision explicite du client : **aucune image générée par IA**, y compris la couverture. L’ancienne maquette illustrée est obsolète et ne doit pas être présentée comme la version approuvée.
 - Pour la prochaine édition : **une page de photographie réelle du plat terminé immédiatement avant chaque recette**. Les images de préparation ou d’ingrédients seuls ne conviennent pas à cette page.

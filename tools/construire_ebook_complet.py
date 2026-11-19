@@ -157,6 +157,8 @@ def main(final=False):
         story.extend([Picture(photo),Spacer(1,16)])
         if photo:
             story.append(p('Photographie illustrative d’une variante du plat. Aperçu de travail en basse définition.','small'))
+            if photo.get('caption'):
+                story.append(p(escape(photo['caption']),'small'))
             story.append(p(escape(photo['attribution'])+'. Mise à l’échelle sans recadrage sur cette page.','small'))
             story.append(p(f'<link href="{escape(photo["source_page_url"],quote=True)}">Page source</link> · <link href="{escape(photo["license_url"],quote=True)}">Licence</link>','small'))
         else:story.append(p('PHOTOGRAPHIE MANQUANTE — NE PAS PUBLIER CETTE PAGE EN L’ÉTAT','label'))
