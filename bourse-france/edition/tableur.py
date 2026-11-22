@@ -59,13 +59,32 @@ def make():
     hs=['Pièce / preuve','Piste','État','Qui s’en charge ?','Format / mode de dépôt','À obtenir avant','Reçu / transmis le','Preuve ou action suivante']
     for i,(h,width) in enumerate(zip(hs,[28,26,19,26,44,18,19,39])):s.set_column(i,i,width);s.write(3,i,h,head)
     s.set_row(3,38);s.freeze_panes(4,1);s.autofilter('A4:H44');s.repeat_rows(3,3)
-    for i,(a,b,who,detail,nxt) in enumerate([('Attestation de classement','Eiffel · Paris-Saclay','Scolarité','Attestation officielle, années demandées dans l’appel.','Demander la disponibilité de la pièce.'),('Preuve de licence en cours','Mastercard · Sciences Po','Scolarité','Selon voie : établissement référencé / passerelle / statut HCR.','Vérifier la liste et le justificatif.'),('Recommandation 1 / 2','Europhotonics','Référent 1','Envoi direct, adresse institutionnelle.','Obtenir son accord avant la demande.'),('Recommandation 2 / 2','Europhotonics','Référent 2','Envoi direct ; un référent au moins doit être enseignant connaissant ton parcours.','Vérifier le statut dans le portail.'),('Test ou attestation de langue','[Mon programme]','Moi / centre habilité','Selon conditions ou dispense de la formation.','Vérifier langue, score et date de validité.'),('Accusé de dépôt','[Mon programme]','Moi','PDF ou courriel de confirmation transmis par le portail.','Noter date et identifiant, conserver une copie.')],4):
+    pieces=[
+        ('Identité / passeport','[Mon programme]','Moi / DEI','Pièce acceptée à ce stade ; passeport pour voyager.','Comparer noms, dates, page photo et validité.'),
+        ('Bac : attestation et relevé','Bénin · EEF','Moi / Office du bac','Pièces distinctes ; choisir les actes demandés pour le niveau visé.','Conserver code de suivi et bordereau de retrait.'),
+        ('Bulletins du secondaire','Bénin · EEF','Lycée','Années requises selon le niveau visé.','Vérifier que les bulletins après 2019 sont authentifiables sur Educmaster.'),
+        ('Relevés universitaires','[Mon programme]','Scolarité','Semestres complets ; recto-verso si le barème est au dos.','Contrôler filière, session et légende des notes.'),
+        ('Diplôme / preuve provisoire','[Mon programme]','Scolarité','Attestation de succès ou d’inscription seulement si admise pour cette étape.','Noter la date à laquelle le diplôme final sera exigé.'),
+        ('Traduction / copie certifiée','[Si exigée]','Traducteur / guichet reconnu','Reprendre la langue, l’agrément ou le type de copie exacts dans la notice.','Ne pas confondre copie, traduction et légalisation de l’acte.'),
+        ('Casier judiciaire B3','[Seulement si prescrit]','Moi / Service public du Bénin','Vérifier émetteur, ancienneté et stade demandé ; sinon Sans objet.','Planifier le B3 béninois en tenant compte de ses trois mois de validité.'),
+        ('Fiche médicale','[Seulement si prescrite]','Médecin ou centre admis','Modèle de la campagne, selon la convocation ; sinon Sans objet.','Noter le statut, jamais un diagnostic ni le détail médical dans ce classeur.'),
+        ('Test ou attestation de langue','[Mon programme]','Moi / centre habilité','Résultat du test admis ou preuve d’une dispense.','Vérifier langue, score et date de réception des résultats.'),
+        ('Stage / certificat de compétence','[Si pertinent et admis]','Structure émettrice','Compétence, dates et preuve vérifiable ; pas de pièce hors consigne.','Comparer les dates et le rôle décrits sur le CV.'),
+        ('CV, motivation, Study Plan','[Si demandés]','Moi','Formulaire, fichiers, langue et limites de la notice.','Retirer les crochets et les consignes du modèle Word.'),
+        ('Attestation de classement','Eiffel · Paris-Saclay','Scolarité','Attestation officielle, années demandées dans l’appel.','Demander la disponibilité de la pièce.'),
+        ('Preuve de licence en cours','Mastercard · Sciences Po','Scolarité','Selon voie : établissement référencé / passerelle / statut HCR.','Vérifier la liste et le justificatif.'),
+        ('Recommandation 1 / 2','Europhotonics','Référent 1','Envoi direct, adresse institutionnelle.','Obtenir son accord avant la demande.'),
+        ('Recommandation 2 / 2','Europhotonics','Référent 2','Envoi direct ; un référent au moins doit être enseignant connaissant ton parcours.','Vérifier le statut dans le portail.'),
+        ('Lettre de préadmission','[Selon appel et étape]','Admissions de l’école','Lettre officielle, conditions et délai d’acceptation.','L’accusé de candidature n’est pas une admission.'),
+        ('API après choix définitif','Bénin · EEF classique','Moi / Campus France Bénin','Accord préalable d’inscription signé et tamponné avant le visa.','Suivre les instructions de l’espace local.'),
+        ('Accusé de dépôt','[Mon programme]','Moi','PDF ou courriel de confirmation transmis par le portail.','Noter date et identifiant, conserver une copie.')]
+    for i,(a,b,who,detail,nxt) in enumerate(pieces,4):
         for j,v in enumerate((a,b,'À vérifier',who,detail,'','',nxt)):
             if v:s.write(i,j,v,entry if j==2 else body)
         s.set_row(i,55)
     for i in range(4,44):
         for j in (5,6):s.write_blank(i,j,None,dt)
-    dropdown(s,'C5:C44',['À vérifier','À demander','Demandé','Reçu','À corriger','Transmis','Sans objet']);s.print_area('A1:H10')
+    dropdown(s,'C5:C44',['À vérifier','À demander','Demandé','Reçu','À corriger','Transmis','Sans objet']);s.print_area(0,0,3+len(pieces),7)
 
     def budget(name,demo):
         s=tabs[name];setup(s,9,'Exemple budget  /  Simulation fictive' if demo else 'Budget  /  Ta période, ta monnaie','Exemple pédagogique, pas des tarifs réels.' if demo else 'En jaune : tes données. Utilise une seule période. Un coût inconnu doit rester vide ; mets 0 seulement si le poste ne te coûte rien.')

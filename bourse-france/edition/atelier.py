@@ -8,7 +8,7 @@ from docx.oxml.ns import qn
 from docx.shared import Cm, Pt, RGBColor
 from commun import BONUS, DOCX
 
-TITRES=['CV de candidature','Lettre de motivation','Projet d’études et projet professionnel','Note d’intention pour une thèse','Premier contact avec une formation','Demande de recommandation','Relance après un premier contact','Préparation de l’entretien']
+TITRES=['CV de candidature','Lettre de motivation','Mon Study Plan : projet d’études','Note d’intention pour une thèse','Contacter une formation','Demande de recommandation','Relance après un premier contact','Préparation de l’entretien']
 
 def make():
     d=Document();sec=d.sections[0];sec.page_height=Cm(29.7);sec.page_width=Cm(21)
@@ -78,7 +78,9 @@ def make():
     p('Je prépare / j’ai obtenu [diplôme, établissement et pays]. Mon travail sur [projet précis] m’a conduit(e) à envisager votre [nom exact du parcours], notamment pour [enseignement vérifié ou axe de recherche].')
     p('J’ai consulté [titre de l’appel et lien officiel]. Pourriez-vous me confirmer [une question non résolue : date interne, justificatif accepté, personne à contacter ou mode de dépôt] ? Je souhaite aussi m’assurer de suivre séparément la bonne procédure d’admission à la formation.')
     p('[Si demandé : je joins mon CV et les pièces indiquées dans l’appel.]\nMerci pour votre aide.\n[Prénom Nom, établissement, pays et e-mail]')
-    note('Si la page fixe déjà la date et donne le mode de dépôt, suis-les directement ; un e-mail ne remplace pas le dépôt. Si un établissement te présente déjà à Eiffel, n’en fais pas présenter un deuxième.')
+    h2('Variante : demander une lettre de préadmission')
+    p('Objet : [Master / rentrée] — justificatif d’admission pour [bourse]. « Ma candidature n° […] est [statut exact]. La notice du financeur demande [intitulé de la pièce] avant le [date]. Votre service peut-il délivrer ce document à mon stade ? Si l’offre est conditionnelle, pourriez-vous préciser les conditions et le délai pour les lever ? Merci. »')
+    note('Adresse la demande aux admissions ; seul le service compétent délivre la lettre. Un e-mail de premier contact ne vaut ni dépôt, ni admission, ni nomination à Eiffel.')
     begin(6,'Demande l’accord d’une personne qui a vu ton travail. Il s’agit d’un message de demande, jamais d’une lettre à signer à sa place.')
     p('Objet : recommandation pour [programme] — échéance [date et fuseau]');p('Bonjour [titre et nom],')
     p('Vous avez encadré mon [TD / mémoire / stage] sur [sujet] en [période]. J’y ai notamment [tâche permettant de me resituer]. Je souhaite candidater à [formation et établissement] pour y apprendre [objectif].')

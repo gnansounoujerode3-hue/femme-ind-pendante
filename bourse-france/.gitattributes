@@ -1,0 +1,6 @@
+# Les livrables générés doivent conserver leurs octets, y compris les PDF.
+*.pdf binary
+*.zip binary
+*.png binary
+*.docx binary
+*.xlsx binary

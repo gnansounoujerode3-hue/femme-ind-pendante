@@ -118,11 +118,22 @@ L’inscription en thèse se prépare avec une équipe et une école doctorale, 
 ## Paiement et première soumission
 Campus France Bénin indique **70 000 F CFA** de frais de gestion. Sa page actualisée reporte le paiement (initialement le 15 novembre) **et la première soumission** (initialement le 20 novembre) au **1er décembre 2026**. Relis les étapes 4 et 5 et tes messages : une ancienne affiche peut encore circuler.
 ## Quatre gestes concrets
-- Utilise ton propre compte. Garde ton numéro BJ, vérifie tes formations puis le canal officiel de paiement **avant** de régler. Archive la quittance selon les consignes locales.
+- Garde ton compte et ton numéro BJ. Si les frais sont dus, vérifie la banque indiquée à l’étape 4 (canal distinct pour Parakou). Dans « Cursus », ajoute « Autre activité », intitule-la « quittance de paiement » et joins le scan. Sélectionne tes formations dans le panier.
 - Paiement et soumission sont deux actions : vérifie la confirmation du dépôt. Si une correction est demandée, lis son délai ; ce n’est pas une nouvelle première candidature.
 - Déjà titulaire, par exemple, d’une bourse du gouvernement français ou Erasmus Mundus ? La rubrique « Cas particuliers » prévoit une dispense de paiement et d’entretien, mais **le dossier Études en France reste obligatoire**. Fais confirmer ton justificatif ; « je postule » ne veut pas dire « je suis boursier ».
 - Admis directement par une école ? Vérifie la procédure préconsulaire applicable au lieu de payer pour la mauvaise démarche.
-@ bj exon choix cotonou
+@ bj exon choix connexion
+
+# preadmission | 03 / Candidater depuis le Bénin | Qui délivre la préadmission ?
+> « Un professeur m’a répondu » et « j’ai une place » ne veulent pas dire la même chose. La **lettre de préadmission** vient de l’établissement habilité, pas du candidat ni d’une agence.
+## Si la bourse demande une lettre
+Relève la formulation exacte : « preuve de candidature », « offre conditionnelle » ou « admission définitive » ? Écris aux admissions avec l’intitulé, la rentrée, ton identifiant et la date limite. Demande si la lettre disponible remplit la condition. Un accusé de dépôt ou un accord de principe d’encadrement ne suffit pas par défaut.
+## Si l’école t’accepte
+Télécharge la décision datée depuis le portail. Vérifie nom, niveau, année, campus, conditions à lever et délai pour accepter. Admission directe depuis le Bénin ? Consulte la voie préconsulaire « Je suis accepté ». Ne recrée pas un compte pour cette étape.
+## Dans la procédure classique au Bénin
+Après une réponse favorable et ton choix définitif dans Études en France, télécharge l’**accord préalable d’inscription (API)**. Campus France Bénin demande de le faire signer et tamponner par son service avant la demande de visa. Ce n’est ni la lettre d’attribution de bourse, ni le visa.
+! Si tu attends encore | « Mon dossier n° […] est en cours. Votre règlement accepte-t-il l’accusé de dépôt jusqu’au [date], ou faut-il déjà la décision d’admission ? » Conserve la réponse.
+@ bj choix visa
 
 # pieces | 04 / Construire le dossier | Les pièces : une liste par candidature
 > Avant de payer pour une traduction ou un test, ouvre la notice du programme. Il n’existe pas de dossier standard à envoyer partout.
@@ -132,7 +143,75 @@ Crée trois dossiers : **Originaux**, **Copies de travail**, **Déposé**. Garde
 - **Langue et traduction :** vérifie les dispenses et le type de traduction. Par exemple, Europhotonics demande les relevés avec traduction officielle en anglais ; une traduction automatique ne la remplace pas.
 - **Preuves :** attestation de stage, de classement ou de scolarité selon la notice. Si une pièce n’existe pas, demande un substitut accepté par écrit. N’invente ni numéro ni signature.
 ! Test de lecture | Ouvre le PDF final sur un autre téléphone. Vois-tu les quatre coins du relevé et toutes les notes ? Nomme-le « NOM_Releves_L3.pdf », sauf si le portail impose son propre format.
-@ eurodocs saclay
+@ eurodocs saclay piecesbj
+
+# identite | 04 / Pièce par pièce · identité | Passeport : commencer au bon guichet
+> **Pour un Béninois résidant au Bénin.** Avant de saisir ton nom sur un portail, pose ta pièce d’identité à côté du formulaire : mêmes noms, mêmes prénoms, même ordre et même date de naissance.
+## Première demande ou renouvellement ?
+Ouvre la fiche « Demande de passeport ordinaire biométrique » du service public béninois. Pour une première demande dans le cas courant d’une naissance déclarée au Bénin : copies de l’acte de naissance sécurisé et du certificat d’identification personnelle délivrés par l’ANIP, preuve de profession et photo conforme. Pour un mineur, une naturalisation ou un renouvellement, suis la liste de ton cas ; pour renouveler, prépare aussi l’ancien passeport et sa page d’identité.
+## Faire la démarche puis vérifier
+Passe par « Faire une demande ». Suis les instructions pour le paiement et la présentation à la Direction de l’émigration et de l’immigration à Cotonou. La fiche affiche **30 000 FCFA** ; vérifie ce tarif avant de payer et conserve le reçu. Au retrait, contrôle l’orthographe et la validité **avant** d’acheter un billet.
+! Passeport en cours ? | N’invente pas de numéro. Europhotonics préfère un passeport mais accepte une pièce d’identité valide au dépôt. Cette souplesse ne vaut ni pour tous les appels ni pour voyager. Vérifie la liste personnelle France-Visas.
+@ passeport eurodocs assistant
+
+# diplomes | 04 / Pièce par pièce · diplômes | Prouver le diplôme obtenu ou en cours
+> Le diplôme atteste un titre ; le relevé détaille les notes ; le certificat de scolarité prouve une inscription. Même nom sur les trois documents, mais **trois usages différents**.
+## Baccalauréat béninois
+À l’Office du baccalauréat, recherche ta session et ton numéro de table sur le portail des actes. Choisis **l’acte demandé** : attestation de succès, extrait de relevé ou diplôme. Vérifie tarif, délai et frais de transaction affichés. Conserve le code de suivi et le bordereau de retrait. L’Office précise qu’il faut avoir retiré l’attestation avant de demander le diplôme.
+## Diplôme universitaire
+Adresse-toi à la scolarité de l’établissement qui t’a diplômé. À l’Université d’Abomey-Calavi, **ACTIA** permet de choisir ton établissement, ton niveau et le type d’acte : diplôme, attestation de succès, duplicata ou correction. Renseigne le matricule exact, joins les justificatifs affichés et suis la demande par son code. Hors UAC, utilise le service de **ton** établissement.
+! Tu n’as pas encore soutenu ? | En procédure classique au Bénin, vérifie le critère de diplôme national de licence pour l’accès au master. Un certificat d’inscription avec date prévue du diplôme n’est utilisable à un stade provisoire que si la formation l’accepte. N’écris pas « diplômé » si tu es encore inscrit.
+@ ob uac piecesbj bj eurodocs
+
+# releves | 04 / Pièce par pièce · notes | Quels bulletins et quels relevés ?
+> Pour la procédure classique, ouvre « Les pièces à fournir » de Campus France Bénin et lis la ligne du **niveau auquel tu postules**, pas celle de ta classe actuelle.
+- **Bac+1 ou bac+2 :** bulletins de seconde, première et terminale ; attestation du bac et relevé du bac. Ajoute les résultats et diplômes du supérieur et les attestations de stage ou travail qui s’appliquent.
+- **Bac+3 :** tous les bulletins de terminale, pièces du bac, relevés des première et deuxième années du supérieur, puis les autres justificatifs applicables.
+- **Bac+4 et plus :** pièces du bac, relevés de L1, L2 et L3, diplôme de licence ou attestation de succès, résultats et titres ultérieurs s’il y en a. Pour l’année en cours, vérifie l’attestation d’inscription prévue.
+## Récupérer et contrôler
+Pour un bulletin manquant, contacte le secrétariat du lycée. Les bulletins postérieurs à 2019 doivent pouvoir être authentifiés sur **Educmaster** selon la procédure locale. Pour un relevé du supérieur, précise à la scolarité semestre, filière et session. Compare les pages : nom, matières, notes, échelle, cachet ou moyen de vérification. Inclus le verso s’il porte la légende ; ne convertis pas toi-même une moyenne sur 20 en GPA américain.
+! Un écart ? | Signale-le à l’émetteur et demande la correction officielle. Garde tous les semestres exigés, y compris une année redoublée.
+@ piecesbj bj uac
+
+# formalites | 04 / Pièce par pièce · conformité | Traduire, certifier ou légaliser ?
+> Ces opérations ne résolvent pas le même problème. Avant tout devis, note **le document, son pays d’émission, la langue et le destinataire**.
+## Traduction : changer de langue
+Un relevé en français ne se traduit pas pour une formation qui l’accepte en français. Europhotonics exige en revanche une traduction officielle en anglais des relevés et diplômes concernés. Demande quel traducteur est reconnu, le tarif et le délai. Joins source et traduction selon la notice ; compare noms, notes et dates.
+## Copie certifiée : constater la conformité
+Une copie certifiée correspond à l’original présenté ; elle ne le traduit pas. Exemple local : pour l’entretien classique, Campus France Bénin demande les originaux scolaires, la pièce d’identité **et sa copie légalisée**, la quittance et sa copie. Demande à l’espace quel guichet il accepte pour cette copie ; suis ta convocation.
+## Légalisation internationale : vérifier l’origine
+Elle porte sur la signature, la qualité du signataire ou le sceau, pas sur la valeur académique du diplôme. Dans le tableau de France Diplomatie, la ligne **Bénin**, colonne V (actes administratifs, dont diplômes publics), indique « Da » : dispense conventionnelle pour ces actes présentés en France. Vérifie le type d’acte dans le simulateur ; n’étends pas cette règle à un document privé ou à une autre destination.
+@ trad leg convention piecesbj eurodocs
+
+# sensibles | 04 / Pièce par pièce · seulement si exigé | Casier judiciaire et fiche médicale
+> Ces deux pièces **ne figurent pas** dans la liste scolaire générale de Campus France Bénin. Pas de certificat « au cas où ». Cherche qui le demande, pour quelle étape, dans quel délai et par quel canal confidentiel.
+## Si un extrait de casier est demandé
+Relève le pays et le type d’extrait prescrits. Pour le Bénin, cherche « Extrait B3 » sur le Portail national des services publics. Connecte-toi avec ton NPI selon ton cas, valide la demande et le paiement puis récupère le bulletin par le canal indiqué. La fiche affiche **1 900 FCFA et trois mois de validité**. Remonte depuis la date de remise pour éviter de le refaire. Contrôle identité, date et lisibilité du document original.
+## Si une fiche médicale est demandée
+Télécharge le formulaire de la bonne campagne sur le site qui le réclame. Vérifie langue, médecin ou centre admis, période de validité et mode d’envoi. Apporte le formulaire et ta pièce d’identité au rendez-vous ; le professionnel remplit et signe les rubriques médicales. Vérifie date et signatures, pas le diagnostic. Ne transmets pas ton dossier de santé entier.
+! Ne mélange pas les pays | Pour MEXT 2027 au Bénin, le Japon demandait exceptionnellement le certificat **à l’oral**, pas au premier dépôt. Cette notice n’est pas une instruction pour la France. Pour le visa français, utilise ta liste personnalisée.
+@ piecesbj b3 mextbj assistant
+
+# langues | 04 / Pièce par pièce · langues | Quel certificat de langue fournir ?
+> Parler français au quotidien, avoir suivi ses cours en français et avoir obtenu un diplôme de langue sont trois faits distincts. Vérifie **lequel** le programme accepte comme preuve.
+## Une vérification avant d’acheter un test
+Sur la fiche du parcours, copie la langue, le test admis (et sa version), le score par compétence s’il existe, la date de validité et le dernier jour de réception des résultats. Vérifie les places et le délai des résultats auprès du centre reconnu par l’organisme du test. Si le résultat arrivera après la clôture, demande si un dépôt ultérieur est autorisé ; une convocation n’est pas un score.
+## Deux exemples à ne pas intervertir
+- **Sciences Po, master :** si le français est exigé, deux années consécutives dans un même cursus supérieur entièrement en français peuvent dispenser de test avec preuve officielle. La langue maternelle seule ne suffit pas. À l’UAC, repère « Attestation de langue d’étude » sur ACTIA.
+- **Europhotonics :** dix mois au moins avec **tous** les cours en anglais peuvent être attestés par ton établissement. Quelques cours d’anglais ne suffisent pas. À défaut, choisis un test accepté : par exemple IELTS 6,5 au minimum selon la notice.
+! À déposer | Rapport officiel ou justificatif de dispense dans le bon champ ; vérifie nom, date et score. Un certificat de participation à un atelier n’équivaut pas à un résultat de test.
+@ langue uac eurodocs
+
+# competences | 04 / Pièce par pièce · parcours | Qu’est-ce qui prouve ta compétence ?
+> « Je sais analyser des données. » Quel travail le montre ? Qui peut le confirmer ? Choisis une preuve utile au jury.
+## Stage, emploi ou engagement
+Si une attestation est requise, demande-la au service RH, au secrétariat ou au responsable de l’activité. Indique tes dates et fonctions réelles. Demande un document daté qui identifie la structure, ta mission et le signataire joignable, avec le cachet si exigé. Vérifie que les dates concordent avec ton CV.
+## Formation ou certification
+Télécharge le certificat depuis le compte de l’organisme émetteur. Contrôle intitulé exact, nom, date, évaluation obtenue et code de vérification s’il existe. « A suivi » ne veut pas dire « a réussi l’examen ». Un certificat facultatif ne remplace jamais un diplôme, une preuve de langue ou un relevé demandé.
+## Transformer le papier en preuve • cas fictif
+Nadia a nettoyé un tableau de comptages de bus pendant un stage. Sur son CV : outil, tâche et résultat. En annexe, **seulement si autorisé** : attestation du stage ou extrait anonymisé de son propre travail avec accord du maître de stage. Elle ne joint pas les données nominatives des passagers.
+! Décision | Si le portail ne prévoit ni annexe ni portfolio, cite brièvement la compétence et garde l’attestation pour une demande ultérieure. Ne paie pas pour accumuler des certificats sans rapport avec le parcours.
+@ piecesbj eurodocs
 
 # cv | 04 / Construire le dossier | Un CV qui apporte une preuve
 > Le jury doit pouvoir relier une ligne de ton CV à un travail que tu as fait. Une liste d’adjectifs lui apprend peu.
@@ -164,6 +243,17 @@ Sur une demi-page de brouillon : écris le poste ou l’activité que tu vises, 
 Formule **une question** plutôt qu’un thème. Ajoute ce que des travaux existants ont déjà établi, ta méthode, l’accès aux données, l’équipe d’accueil et un calendrier réaliste. Si une cotutelle est demandée, distingue accord envisagé et convention signée. Budgète les mois hors mobilité.
 ! Relis ton texte | Si le terrain ou les données sont indisponibles, quel travail reste possible ? Cette réponse montre que ton projet tient compte des conditions réelles.
 
+# studyplan | 04 / Écrits de candidature | Rédiger ton Study Plan
+> Certains appels disent **Study Plan** ou « plan d’études ». La lettre explique pourquoi tu candidates ; le plan montre **comment tu utiliseras le temps et les enseignements**. N’ajoute pas de document distinct si la formation demande une réponse dans un champ.
+## Quatre lignes de brouillon
+- **Point de départ :** quelle question de terrain ou de cours restait sans réponse ? Donne une trace du travail déjà fait, même modeste.
+- **Premier semestre :** associe une compétence manquante à un cours qui figure vraiment dans la maquette. Indique comment tu t’exerceras et ce qui montrera que tu as progressé.
+- **Semestre suivant :** prévois une application (stage, mémoire ou projet), son calendrier et une solution de repli si tu n’obtiens pas l’accès au terrain.
+- **Après le diplôme :** choisis un premier usage réaliste au Bénin ou ailleurs. N’annonce pas une embauche ni un partenariat non confirmés.
+## Exemple de travail • fictif
+« Au premier semestre, je veux apprendre à construire un échantillon ; je comparerai deux plans de collecte sur mes relevés d’attente. Pour le mémoire, je testerai la méthode sur des données accessibles avec autorisation. Sans accès au terrain, j’utiliserai un jeu public et j’expliquerai ce qu’il ne permet pas de conclure. »
+! Avant l’envoi | Ouvre le gabarit 03 de l’atelier Word. Remplace les périodes par celles **de ton cursus**, vérifie chaque cours, puis réduis le texte à la longueur et à la langue demandées.
+
 # reco | 04 / Construire le dossier | Obtenir une vraie recommandation
 > La bonne personne n’est pas forcément celle qui a le titre le plus prestigieux. C’est celle qui a vu comment tu travailles et peut citer un exemple précis.
 ## Avant d’inscrire son adresse
@@ -172,7 +262,7 @@ Demande son accord. Donne-lui le programme, ton CV, le travail qu’elle a encad
 « Bonjour Madame [Nom], dans votre TD de [matière], j’ai réalisé [travail précis]. J’envisage de postuler à [programme]. Accepteriez-vous de recommander ma candidature avant le [date, heure, fuseau] ? Le portail vous enverrait un lien privé. Je peux vous transmettre mon CV et le travail corrigé. Merci pour votre réponse. »
 ## Après son accord
 Vérifie l’orthographe de l’adresse avec la personne. Pour Europhotonics, les deux référents envoient leur lettre eux-mêmes ; en déposer une à leur place ne suffit pas. Surveille le statut, préviens si le lien n’arrive pas et remercie la personne après l’envoi.
-! Limite à respecter | Tu peux rappeler les faits. Tu ne signes pas la lettre, n’ouvres pas le lien privé du référent et ne fabriques pas un avis élogieux en son nom.
+! Pour le référent | Une lettre utile indique dans quel cadre il t’a suivi, un travail observé et ce qu’il en déduit pour ce master. Le référent écrit son avis, le signe et l’envoie par le canal prescrit. Tu n’ouvres pas son lien privé.
 @ eurodocs
 
 # budget | 05 / Déposer et suivre | Combien dois-tu vraiment avancer ?
@@ -196,6 +286,42 @@ Choisis la période, par exemple jusqu’au premier versement. Duplique l’ongl
 **Avant les versements :** 300 000 + 150 000 − 100 000 = **350 000 F à trouver** si tout doit être payé d’abord.
 **Après remboursement et allocation :** 350 000 − 200 000 − 80 000 = **70 000 F non financés**. Ce ne sont pas 70 000 F qui suffisent au départ : le calendrier du paiement change tout.
 ! Décision | Si tu ne peux pas avancer les fonds, demande si le financeur peut émettre le billet directement. Sans accord écrit ni solution viable, ne prends pas un engagement non remboursable.
+
+# mois1 | 05 / Calendrier mensuel · 1 sur 3 | Septembre à décembre 2026
+> **Du Bénin vers la France, rentrée 2027.** Les mois sont des repères de travail ; les dates précises appartiennent à chaque organisme. Commence par ta première limite encore accessible.
+## Septembre • repérer
+Choisis deux formations et lis leur rubrique « Candidater ». Pour chacune : ai-je les prérequis, qui reçoit le dossier, quel poste de dépense me bloque ? **À garder :** deux liens, les années de relevés à obtenir et le nom d’un référent possible.
+## Octobre • ouvrir les bons dossiers
+Pour la procédure classique, panier Études en France à partir du **1er octobre**. Utilise ou retrouve ton compte personnel, choisis l’espace Bénin et vérifie ton numéro BJ. Réclame les pièces manquantes, prépare le CV et repère les dates internes des écoles.
+## Novembre • choisir et agir
+Exemples distincts : vague 1 Mastercard le **23** ; Eiffel master à Paris-Saclay, contact **avant le 26** ; Boutmy master, deuxième commission le **29 à 23 h 59, Paris**. Ne dépose pas trois dossiers par automatisme : écarte celui qui ne paiera pas le séjour dont tu as besoin.
+## Décembre • transmettre et corriger
+Bénin classique : paiement si dû **et première soumission le 1er décembre au plus tard**. Relis la messagerie ; le **15 décembre** concerne la dernière soumission après correction, pas un nouveau premier dépôt. Mastercard vague 2 : **14 décembre**. Conserve une confirmation par portail.
+@ calendrier bj carte saclay boutmy
+
+# mois2 | 05 / Calendrier mensuel · 2 sur 3 | Janvier à avril 2027
+> Donne une date à chaque action des tiers (référent, scolarité, université). Un dossier peut sembler complet chez toi alors que le jury attend encore une pièce.
+## Janvier • contrôler les tiers
+Le **6 janvier**, pour Eiffel, c’est l’établissement qui dépose. Demande seulement la confirmation utile. Pour le Bachelor international Boutmy, vérifie la demande financière et la validation avant le **13 janvier**. Pour Europhotonics, vérifie le statut des deux recommandations.
+## Février • déposer et répéter
+Si tu vises Europhotonics 2027–2029, valide le dossier avant le **4 février à 17 h, heure de Paris**. Vérifie l’accusé. Pour l’entretien pédagogique au Bénin, rassemble les originaux et répète ton projet en une minute avec une personne qui peut te questionner.
+## Mars • venir avec les bonnes preuves
+Au Bénin, les entretiens pédagogiques de la procédure classique sont prévus jusqu’au **15 mars** : suis **ta convocation** sans attendre cette limite. Relis les copies que tu as réellement déposées. Après l’entretien, note les compléments demandés, à qui les fournir et avant quand.
+## Avril • lire les décisions
+Pour Eiffel, résultats annoncés la semaine du **12 avril**. Pour chaque réponse, note « admission », « bourse » ou « attente » et la date pour accepter. Une absence de message ne vaut pas attribution. Mets le budget à jour avec les montants **confirmés** seulement.
+@ calendrier piecesbj eiffel boutmy euro
+
+# mois3 | 05 / Calendrier mensuel · 3 sur 3 | Mai à août 2027
+> Il s’agit d’actions à anticiper, pas d’un rendez-vous de visa fixé pour tous. Dès qu’une décision arrive, respecte la date figurant sur **ta** lettre, même si elle tombe plus tôt.
+## Mai • décider sur des chiffres
+Compare les offres sur une même période : droits restant dus, logement, billet, argent à avancer. Si tu as une admission, réponds avant son expiration. Dans le parcours classique, vérifie le choix définitif et l’API avec Campus France Bénin. En admission directe, vérifie la démarche préconsulaire.
+## Juin • préparer le séjour si admis
+Lance l’assistant France-Visas pour ta situation. Identifie les justificatifs d’admission, de ressources et d’hébergement réellement demandés. Si la bourse n’est pas encore attribuée, ne la présente pas comme ressource acquise. Range liste personnalisée, attestations et échéance de rendez-vous.
+## Juillet • suivre sans précipiter le départ
+Vérifie l’état de la demande et la date attendue par l’école. Demande si le financeur émet le billet ou rembourse après le vol. Ne prends pas d’engagement non remboursable sur une promesse. En cas de retard, demande par écrit quelles options l’école autorise.
+## Août • préparer l’arrivée ou le plan B
+Si le visa est délivré, vérifie identité, dates, assurance, adresse des premières nuits et contact d’accueil. Note les formalités à effectuer après l’arrivée. Si le financement manque, demande un report éventuel **à l’école et au financeur séparément**, puis conserve les pièces réutilisables.
+@ bj choix assistant visa
 
 # planning | 05 / Déposer et suivre | Remonter le temps depuis ta limite
 > **J = ta date de dépôt ou de contact**, pas le jour où le jury se réunit. Enregistre l’heure annoncée et le fuseau du programme. Mets un rappel sur ton téléphone.
@@ -239,13 +365,25 @@ Recalcule le budget sans elle. Si le manque est trop important, demande s’il e
 ! À l’arrivée | Lis sur le visa et sur France-Visas les formalités et délais applicables, notamment si tu dois valider un visa de long séjour. Garde l’attestation de bourse, le contact d’accueil et des copies sécurisées de tes justificatifs.
 @ visa assistant boutmy
 
-# depart | 06 / À garder sous la main | Ta fiche de départ
-> Choisis **une** piste. Réponds à ces questions dans ton téléphone. Si une réponse manque, tu viens de trouver ta prochaine action.
-- Quel diplôme et quelle rentrée sont couverts ? Ma nationalité, ma résidence, mon niveau et ma langue correspondent-ils ?
-- Qui reçoit ma candidature : établissement, service de bourses ou consortium ? Existe-t-il un autre dossier d’admission à créer ?
-- Quelle est **mon** échéance, à quelle heure et dans quel fuseau ? Quel est le lien officiel que je vérifierai à nouveau avant d’envoyer ?
-- Quelle pièce dépend d’une autre personne ? Lui ai-je demandé son accord et ai-je vérifié le mode de dépôt ?
-- Combien dois-je avancer ? Quelle dépense restera à ma charge ? Que ferai-je si la réponse est négative ?
-- Ai-je validé le dossier, enregistré son identifiant et conservé la preuve de soumission ?
-! Après la lecture | Ouvre « Suivi-et-budget.xlsx », onglet « Pistes ». Inscris ta prochaine action avec une date. Puis ouvre « Atelier-dossier.docx » uniquement au modèle dont tu as besoin.
-Ce guide indépendant n’est affilié à aucun des organismes cités. Les exemples personnels sont fictifs. Les règles, tarifs et calendriers des organismes priment sur cette édition de novembre 2026.
+# depart | 06 / À garder sous la main | Checklist finale avant le clic
+> Coche ces cases pour **une seule candidature** et enregistre ta copie. Si ton lecteur ne garde pas les coches, utilise tes notes. Une pièce obligatoire manque ? Attends avant de valider.
+□ **Route.** J’ai le bon programme, la bonne session, le bon portail et ma date de dépôt avec son fuseau. Je sais si admission et bourse exigent deux envois.
+□ **Identité et notes.** Nom conforme à la pièce acceptée ; bon diplôme ou preuve provisoire autorisée ; toutes les pages et tous les semestres requis. Je peux montrer les originaux.
+□ **Pièces conditionnelles.** Langue ou dispense justifiée ; traductions et copies conformes au format demandé. Casier, médical, préadmission et certificats joints seulement si prescrits à cette étape.
+□ **Écrits et tiers.** CV, motivation et Study Plan répondent à cet appel ; pas de crochets de modèle. Les recommandations sont arrivées par le canal prescrit.
+□ **Argent.** Je connais l’avance à trouver. Les frais dus ont un bénéficiaire officiel ; la quittance ou la dispense est archivée. Pas d’acompte sur une bourse hypothétique.
+□ **Envoi et suivi.** J’ai rouvert les fichiers téléversés, sélectionné la demande de bourse si nécessaire, validé et enregistré l’accusé, la date et la prochaine action dans mon tableur.
+! Si tu t’arrêtes ici | Écris une seule action : « [Qui] obtient [pièce ou réponse] avant [date]. » En cas d’appel clos, consulte le bonus international ou prépare la prochaine campagne ; ne décale pas les dates d’un an.
+
+# faq | 06 / À garder sous la main | FAQ : quand le dossier bloque
+## J’ai payé. Le dossier est-il soumis ?
+Non. Vérifie que le portail affiche l’envoi, pas seulement le paiement ou le brouillon. S’il reste bloqué, garde le message horodaté et contacte le support officiel avec ton identifiant, avant la clôture. Ne paie pas une seconde fois pour débloquer l’écran.
+## Mon diplôme définitif n’est pas prêt. J’attends ?
+Pas forcément. Vérifie la pièce provisoire acceptée **par chaque destinataire**. Une attestation d’inscription prouve une année en cours, pas la réussite. Demande l’accord écrit et la date limite du document définitif.
+## Mon référent n’a rien reçu. Puis-je joindre sa lettre ?
+Seulement si la notice l’autorise. Pour Europhotonics, vérifie l’adresse professionnelle, les indésirables et le statut ; utilise la relance du portail ou contacte le consortium. Ne dépose pas la lettre à la place de ton référent.
+## Puis-je faire ces démarches sans payer une agence ?
+Oui. Garde le contrôle du compte ; utilise les séances d’orientation de Campus France Bénin si nécessaire. Les frais officiels éventuels restent distincts. Un intermédiaire ne décide ni d’une bourse ni d’un visa.
+## Je suis admis sans bourse. Dois-je accepter ?
+Recalcule le budget **sans** l’aide espérée. Si l’avance ou le solde n’est pas finançable, demande les conditions de report ou retire-toi avant de perdre un acompte. Choisis une autre piste dont le financement couvre réellement ton besoin.
+@ calendrier bj eurodocs

@@ -84,8 +84,8 @@ def cover(c,extrait=False):
     txt(c,M,H-325,'candidater sans agence',20,'SansB',SAND)
     horizon(c,0,127,W,309)
     rect(c,0,0,W,127,'#103638');rect(c,M,105,45,3,CLAY)
-    txt(c,M,78,'AFRIQUE FRANCOPHONE',12,'SansB',PAPER)
-    txt(c,M,56,'Avec un parcours pratique depuis le Bénin',12,'Sans','#CFDFD7')
+    txt(c,M,78,'DEPUIS LE BÉNIN',13,'SansB',PAPER)
+    txt(c,M,56,'Ton dossier, pièce par pièce, jusqu’au dépôt',13,'Sans','#CFDFD7')
     txt(c,M,24,'EXTRAIT GRATUIT' if extrait else 'GUIDE INDÉPENDANT',9,'SansB',SAND)
     txt(c,W-M,24,'ÉDITION  /  NOVEMBRE 2026',9,'Sans',SAND,True)
 
@@ -93,16 +93,18 @@ def vignette():
     # Render as a true 1080×1080 PNG; no third-party logos or photo rights.
     from io import BytesIO
     b=BytesIO(); c=canvas.Canvas(b,pagesize=(540,540),invariant=1)
-    rect(c,0,0,540,540,FOREST); txt(c,32,500,'GUIDE PRATIQUE   /   AFRIQUE FRANCOPHONE',13,'SansB',SAND)
+    rect(c,0,0,540,540,FOREST); txt(c,32,500,'DEPUIS LE BÉNIN   /   RENTRÉE 2027',13,'SansB',SAND)
     line(c,32,482,508,482,'#68908B');txt(c,29,423,'Mon dossier',50,'Serif',PAPER);txt(c,29,343,'France',83,'SerifB',PAPER)
     txt(c,33,302,'Trouver une bourse et candidater sans agence',19,'Sans',SAND)
-    horizon(c,0,62,540,211)
-    txt(c,32,25,'GUIDE + MODÈLES + TABLEUR',13,'SansB',PAPER);txt(c,508,25,'RENTRÉE 2027',12,'SansB',SAND,True)
+    horizon(c,0,80,540,193)
+    txt(c,32,49,'GUIDE + 3 BONUS',15,'SansB',PAPER)
+    txt(c,32,24,'10 bourses dans 10 pays  ·  Word  ·  Excel',12,'Sans',SAND)
+    txt(c,508,43,'5 000 FCFA',20,'SansB',PAPER,True)
     c.showPage();c.save();d=pymupdf.open(stream=b.getvalue(),filetype='pdf');d[0].get_pixmap(matrix=pymupdf.Matrix(2,2),alpha=False).save(VENTE/'Visuel-Chariow.png');d.close()
 
-def read_pages():
+def read_pages(filename='guide.md'):
     result=[]
-    for line_ in (ICI/'guide.md').read_text(encoding='utf-8').splitlines():
+    for line_ in (ICI/filename).read_text(encoding='utf-8').splitlines():
         s=line_.strip()
         if not s: continue
         if s.startswith('# '):
@@ -110,15 +112,16 @@ def read_pages():
         if s.startswith('@ '):
             result[-1]['refs'].extend(s[2:].split()); continue
         prefix=s[:2]
-        kind,text=({'##':('h',s[3:]), '> ':('lead',s[2:]), '- ':('item',s[2:]), '! ':('note',s[2:])}.get(prefix,('p',s)))
+        kind,text=({'##':('h',s[3:]), '> ':('lead',s[2:]), '- ':('item',s[2:]), '! ':('note',s[2:]), '? ':('field',s[2:]), '□ ':('check',s[2:])}.get(prefix,('p',s)))
         result[-1]['blocks'].append((kind,text))
     return result
 
-GROUPS=[('niveau','Choisir ta piste','Niveau d’études, admission, financement, visa.'),('eiffel','Comparer quatre financements','Eiffel, Boutmy, Mastercard et Erasmus Mundus.'),('voie','Candidater depuis ton pays','Choix du portail ; exemple de la procédure au Bénin.'),('pieces','Construire ton dossier','Pièces, CV, motivation, projet et recommandations.'),('budget','Déposer et suivre','Budget, délais, entretien et réponse à une offre.'),('depart','Vérifier avant de partir','Dernière liste de contrôle et liens officiels.')]
+GROUPS=[('niveau','Choisir ta piste','Niveau d’études, admission, bourse et visa.'),('eiffel','Comparer quatre financements','Eiffel, Boutmy, Mastercard et Erasmus Mundus.'),('voie','Candidater depuis le Bénin','Portails, frais, préadmission et accord préalable.'),('pieces','Construire ton dossier','Pièce par pièce, puis CV, motivation, Study Plan et recommandations.'),('budget','Déposer et suivre','Budget, calendrier mensuel, entretien et décisions.'),('depart','Faire le dernier contrôle','Checklist finale, FAQ et carnet d’adresses.')]
+RACCOURCIS=[('identite','Passeport'),('formalites','Légalisation'),('mois1','Calendrier'),('faq','FAQ')]
 
-def footer(c,n,total,extrait=False):
+def footer(c,n,total,extrait=False,index_label='RENTRÉE 2027'):
     line(c,M,38,W-M,38)
-    txt(c,M,19,'EXTRAIT   /   MON DOSSIER FRANCE' if extrait else ('RENTRÉE 2027' if n==2 else '←  SOMMAIRE'),9.5,'SansB',TEAL)
+    txt(c,M,19,'EXTRAIT   /   MON DOSSIER FRANCE' if extrait else (index_label if n==2 else '←  SOMMAIRE'),9.5,'SansB',TEAL)
     if not extrait and n!=2:c.linkRect('Sommaire','sommaire',(M-4,10,M+104,36),relative=0,thickness=0)
     txt(c,W-M,18,f'{n:02d}   /   {total:02d}',10,'SansB',FADE,True)
 
@@ -130,15 +133,18 @@ def header(c,tag):
 def toc(c,numbers,total):
     header(c,'Mode d’emploi')
     y=top(c,para('Par où commencer ?',28,33,'SerifB'),M,H-70,COL)-14
-    y=top(c,para('Tu n’as pas besoin de lire ce guide dans l’ordre. Touche la rubrique qui débloque ta prochaine démarche.',14.7,20.3),M,y,COL)-19
+    y=top(c,para('Choisis ta prochaine démarche. Touche une rubrique ou utilise les raccourcis en bas de page.',14.2,19),M,y,COL)-16
     for i,(key,title,desc) in enumerate(GROUPS,1):
         y1=y; rect(c,M,y-25,29,25,SOFT);txt(c,M+6,y-18,str(i).zfill(2),10.4,'SansB',TEAL)
         txt(c,M+40,y-15,title,14.9,'SansB',INK)
         b=top(c,para(desc,12.6,17,'Sans',FADE),M+40,y-23,COL-85)
         txt(c,W-M,b+3,str(numbers[key]).zfill(2)+' →',11,'SansB',TEAL,True)
-        y=b-12;line(c,M,y,W-M,y);c.linkRect(title,key,(M,y,W-M,y1),relative=0,thickness=0);y-=12
+        y=b-9;line(c,M,y,W-M,y);c.linkRect(title,key,(M,y,W-M,y1),relative=0,thickness=0);y-=9
     y-=2
-    top(c,para('**Avec le guide :** un atelier Word à personnaliser et un tableur pour comparer les appels, suivre tes pièces et calculer ton budget. Les liens soulignés dans le PDF ouvrent les sources officielles.',12.7,17.6,'Sans',FOREST),M,y,COL)
+    links='  ·  '.join(f'<link href="#{key}" color="{TEAL}"><u>{label}</u></link>' for key,label in RACCOURCIS)
+    y=top(c,para(links,12.5,17,html=True),M,y,COL)-12
+    y=top(c,para('**Avec le guide :** le Top 10 des bourses internationales (PDF), huit modèles Word et un tableur de suivi et de budget. Garde les PDF sur ton téléphone ; une connexion est nécessaire pour ouvrir les sources officielles.',12.7,17.6,'Sans',FOREST),M,y,COL)
+    assert y>45, 'Sommaire trop long'
     footer(c,2,total)
 
 def source_par(keys):
@@ -156,6 +162,10 @@ def blocks(page,base):
         elif typ=='h':p=para(text,base+1.0,base*1.30,'SansB',TEAL);pre,post=3,3.5
         elif typ=='note':
             label,value=text.split(' | ',1);p=para(value,base-.35,base*1.33);w-=22;pre,post=4,6
+        elif typ=='check':
+            label=text.split('**')[1].rstrip('.');w-=22;p=para(text,base,base*1.34);pre,post=0,6
+        elif typ=='field':
+            label=text;p=para(text,base-.5,base*1.24,'Sans',FADE);pre,post=0,5
         elif typ=='item':p=para(text,base,base*1.34);w-=15;pre,post=0,5.5
         else:p=para(text,base,base*1.34);pre,post=0,6
         out.append((typ,p,w,pre,post,label))
@@ -172,16 +182,31 @@ def page_body(c,page,n,total,extrait=False):
         line(c,M,src_top+1,W-M,src_top+1);txt(c,M,src_top-11,'SOURCES  /  TOUCHER POUR OUVRIR',8,'SansB',FADE)
         top(c,sp,M,src_top-17,COL)
     last=src_top+8
+    extra={'note':26, 'field':25}
     for tick in range(148,125,-1):
         base=tick/10
-        stack=blocks(page,base);req=sum(a+b+measure(p,w)+(26 if k=='note' else 0) for k,p,w,a,b,_ in stack)
+        stack=blocks(page,base);req=sum(a+b+measure(p,w)+extra.get(k,0) for k,p,w,a,b,_ in stack)
         if req <= y-last:break
     else:raise ValueError(f"Trop de texte : {page['key']} ({req:.1f} > {y-last:.1f})")
-    for k,p,w,before,after,label in stack:
+    for i,(k,p,w,before,after,label) in enumerate(stack):
         y-=before;h=measure(p,w)
         if k=='note':
             rect(c,M,y-h-26,COL,h+26,SOFT);rect(c,M,y-h-26,2.3,h+26,TEAL)
             txt(c,M+11,y-13,label.upper(),9,'SansB',TEAL);top(c,p,M+11,y-19,w);y-=h+26
+        elif k=='check':
+            c.acroForm.checkbox(name=f"{page['key']}-{i:02d}",tooltip=label,
+                                x=M,y=y-15,size=14,checked=False,fieldFlags='',
+                                fillColor=HexColor(PAPER),borderColor=HexColor(TEAL),
+                                textColor=HexColor(FOREST),borderWidth=.85,
+                                annotationFlags='print',forceBorder=True)
+            y=top(c,p,M+22,y,w)
+        elif k=='field':
+            y=top(c,p,M,y,w)-extra['field']
+            c.acroForm.textfield(name=f"{page['key']}-{i:02d}",tooltip=label,x=M,y=y,
+                                 width=w,height=22,fillColor=HexColor('#F4F7F3'),
+                                 borderColor=HexColor(TEAL),textColor=HexColor(INK),
+                                 borderStyle='underlined',borderWidth=0.7,fontSize=11,
+                                 annotationFlags='print',forceBorder=True,maxlen=256)
         elif k=='item':
             fill(c,CLAY);c.circle(M+3.2,y-base*.58,2.45,stroke=0,fill=1);y=top(c,p,M+15,y,w)
         else:y=top(c,p,M,y,w)
@@ -192,14 +217,15 @@ def page_body(c,page,n,total,extrait=False):
 def directory(c,n,total):
     header(c,'06 / À garder sous la main');footer(c,n,total)
     y=top(c,para('Ton carnet d’adresses',27,32,'SerifB'),M,H-70,COL)-12
-    y=top(c,para('Un lien a changé ? Repars du domaine de l’organisme et recherche l’intitulé du programme et la rentrée. Ne suis pas un lien de paiement reçu en réponse privée.',14.2,19),M,y,COL)-18
-    sections=[('Chercher un financement', ['catalogue','mundus','espaces']),('Retrouver les quatre pistes', ['eiffel','saclay','boutmy','carte','euro']),('Vérifier les modalités locales', ['eef','bj','exon','cotonou']),('Préparer le séjour', ['visa','assistant'])]
+    y=top(c,para('Un lien a changé ? Retrouve le programme et la rentrée sur le site de l’organisme, pas dans un message privé.',14.2,19),M,y,COL)-12
+    sections=[('Chercher un financement', ['catalogue','mundus','espaces']),('Retrouver les quatre pistes', ['eiffel','boutmy','carte','euro']),('Faire ses démarches au Bénin', ['connexion','bj','calendrier','piecesbj','cotonou']),('Obtenir un document', ['ob','uac','passeport','b3']),('Préparer le séjour', ['visa','assistant'])]
     for name,keys in sections:
         h=para(name,15,19,'SansB',FOREST);y=top(c,h,M,y,COL)-5
         for key in keys:
             lbl,url=LIENS[key];t=para(f'<link href={quoteattr(url)} color="{TEAL}"><u>{escape(lbl)}</u></link>',12.4,16.6,html=True);y=top(c,t,M+11,y,COL-11)-2
         y-=8
-    top(c,para('**Repères vérifiés : novembre 2026.** Les appels cités concernent la rentrée 2027. Pour une rentrée ultérieure, recherche un nouvel appel : ne décale pas simplement les dates d’un an.',12.7,17.5,'Sans',FADE),M,y,COL)
+    y=top(c,para('**Édition indépendante • novembre 2026.** Aucune affiliation avec les organismes cités. Pour une nouvelle rentrée, reprends leurs appels ; ne décale pas les dates d’un an.',12.7,17.5,'Sans',FADE),M,y,COL)
+    assert y>45, 'Annuaire trop long'
 
 def make():
     pages=read_pages();numbers={p['key']:i for i,p in enumerate(pages,3)};total=len(pages)+3
@@ -216,7 +242,7 @@ def make():
     # An excerpt is rendered separately so no broken links point to missing book pages.
     c=canvas.Canvas(str(VENTE/'Extrait-gratuit.pdf'),pagesize=(W,H),pageCompression=1,invariant=1,lang='fr')
     c.setTitle('Mon dossier France — Extrait gratuit');c.setAuthor('Mon dossier France · guide indépendant');cover(c,True);c.showPage()
-    for i,k in enumerate(('saclay','exemple'),2):
+    for i,k in enumerate(('releves','exemple'),2):
         page_body(c,next(p for p in pages if p['key']==k),i,3,True);c.showPage()
     c.save();vignette();print(f'{total} pages, extrait 3 pages, visuel 1080×1080')
 

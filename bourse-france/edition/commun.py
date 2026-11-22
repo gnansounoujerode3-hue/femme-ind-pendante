@@ -8,6 +8,7 @@ BONUS = RACINE / 'bonus'
 VENTE = RACINE / 'vente'
 LIENS = json.loads((ICI / 'sources.json').read_text(encoding='utf-8'))
 GUIDE = RACINE / 'Mon-dossier-France.pdf'
+PANORAMA = BONUS / 'Top-10-bourses-internationales.pdf'
 DOCX = BONUS / 'Atelier-dossier.docx'
 XLSX = BONUS / 'Suivi-et-budget.xlsx'
 KIT = RACINE / 'Kit-Mon-dossier-France.zip'

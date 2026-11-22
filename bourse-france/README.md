@@ -1,26 +1,31 @@
 # Mon dossier France — Trouver une bourse et candidater sans agence
 
-Produit numérique en français pour les candidats d’Afrique francophone, avec un parcours pratique depuis le Bénin. Édition de novembre 2026, rentrée 2027. Produit indépendant, pas un service de dépôt. Aucun fichier n’a été mis en vente automatiquement.
+Édition indépendante de novembre 2026 pour la rentrée 2027. Le parcours principal concerne un candidat qui réside **au Bénin** et souhaite étudier en **France**. Le bonus international est un ouvrage distinct. Prix du kit : **5 000 FCFA**. Aucun service de dépôt ou de suivi individuel n’est inclus ; rien n’a été publié automatiquement en boutique.
 
-## Pour l’acheteur
+## Fichiers acheteur
 
-[Kit complet à livrer](Kit-Mon-dossier-France.zip) : trois fichiers à extraire dans un même dossier. On peut aussi les proposer séparément pour éviter la décompression sur téléphone.
+**[Télécharger le kit complet](Kit-Mon-dossier-France.zip)**. Extraire les quatre fichiers. Ils peuvent aussi être proposés séparément sur téléphone :
 
-1. [Guide de 27 pages](Mon-dossier-France.pdf) — sommaire et sources cliquables ; pour commencer, choisir sa piste page 3.
-2. [Atelier Word](bonus/Atelier-dossier.docx) — huit gabarits à personnaliser ; ne jamais envoyer l’atelier entier à un jury.
-3. [Suivi et budget](bonus/Suivi-et-budget.xlsx) — cinq onglets. Ouvrir dans un tableur qui recalcule les formules, puis faire une copie de travail. L’exemple chiffré est fictif ; le budget personnel est vierge.
+| Fichier | Par où commencer ? |
+| --- | --- |
+| [Guide France · 40 pages (PDF)](Mon-dossier-France.pdf) | Sommaire page 2. Quatre financements, démarches béninoises pièce par pièce, écrits, plan mensuel, entretien, checklist, FAQ et sources. |
+| [Top 10 · 10 bourses complètes dans 10 pays · 17 pages (PDF)](bonus/Top-10-bourses-internationales.pdf) | Le sommaire indique quelles campagnes sont ouvertes, à confirmer ou closes à l’édition. Chaque fiche distingue les dépenses couvertes et les avances. Enregistrer une copie par piste pour remplir les champs de la dernière page ; sur un lecteur sans formulaires, imprimer ou répondre dans une note. |
+| [Atelier de candidature (Word)](bonus/Atelier-dossier.docx) | Huit gabarits modifiables : CV, motivation, Study Plan, projet de thèse, contacts (dont préadmission), recommandation, relance, entretien. Extraire le modèle voulu, pas de dossier type à envoyer tel quel. |
+| [Suivi et budget (Excel)](bonus/Suivi-et-budget.xlsx) | Cinq onglets, sept exemples de démarches françaises, dix-huit exemples de pièces ou preuves, budget personnel et simulation. Ouvrir une copie dans un tableur qui recalcule les formules. |
 
-## Pour la boutique, à conserver séparément
+Les PDF sont en français, à texte sélectionnable et à sommaire cliquable, lisibles hors ligne sur téléphone ou ordinateur. Une connexion est nécessaire pour consulter les sources officielles. Le prix des fichiers ne couvre aucun frais de candidature.
 
-[Ressources de vente](vente/Ressources-Chariow.zip) : [texte de la fiche et proposition de prix](vente/Fiche-Chariow.md), [vignette 1080 × 1080](vente/Visuel-Chariow.png), [extrait public de 3 pages](vente/Extrait-gratuit.pdf). Le ZIP vendeur n’est pas le fichier à remettre aux acheteurs.
+## Fichiers pour la vente
 
-## Actualisation
+**[Ressources Chariow](vente/Ressources-Chariow.zip)** : [fiche produit et bouton d’achat à configurer](vente/Fiche-Chariow.md), [vignette 1080 × 1080](vente/Visuel-Chariow.png), [extrait gratuit de 3 pages](vente/Extrait-gratuit.pdf). Le ZIP vendeur ne doit pas être livré comme kit acheteur. Le dépôt étant public, ces fichiers n’offrent aucune exclusivité d’accès au produit payant.
 
-Relire les [sources officielles](edition/sources.json) chez le financeur, l’établissement porteur et l’espace local **avant de relancer les ventes**. La page HTML actualisée de Campus France Bénin (étapes 4 et 5) signale une prolongation que son calendrier PDF initial ne reprend pas. Les exemples de dates, de frais et d’exonérations sont localisés ; ne pas simplement changer le millésime.
+## Actualiser une campagne
 
-Le [manuscrit du guide](edition/guide.md) est séparé de la mise en page. Les modèles Word sont dans `edition/atelier.py`, les exemples du classeur et les formules dans `edition/tableur.py`. Penser aussi au texte de vente et au nombre de pages si l’édition change.
+- Contrôler les [sources officielles](edition/sources.json) avant de relancer les ventes. Pour le Bénin, distinguer le **1er décembre** (paiement si dû et première soumission) du **15 décembre 2026** (dernière soumission après correction) : lire les pages HTML actualisées, pas seulement le premier calendrier PDF.
+- Modifier le [manuscrit France](edition/guide.md) et le [manuscrit international](edition/panorama.md). Dans le second, relire chaque année nationalité/résidence, niveau, financement, durée, versements, voie d’admission et date de la bourse. Une offre passée n’est pas une nouvelle session. Mettre à jour aussi les statuts affichés dans l’index de `edition/panorama.py`.
+- Les modèles Word sont dans `edition/atelier.py` ; les exemples du classeur et les formules sont dans `edition/tableur.py`. Aligner la fiche boutique, l’extrait et le visuel sur ce qui est réellement livré. Pas de chiffres de ventes ni d’avis d’autres vendeurs.
 
-Pour régénérer depuis la racine du dépôt (Python 3.11+, polices DejaVu Sans et Serif, normales et grasses) :
+Pour régénérer et vérifier depuis la racine (Python 3.11+, polices DejaVu Sans et Serif, normales et grasses) :
 
 ```sh
 python -m venv .venv
@@ -29,4 +34,4 @@ python -m venv .venv
 .venv/bin/python bourse-france/edition/verifier.py
 ```
 
-Le chemin des polices peut être défini avec `DOSSIER_FONTS`. La génération ne télécharge pas les sources et ne publie rien en ligne.
+Le chemin des polices peut être défini avec `DOSSIER_FONTS`. La génération et le contrôle sont hors ligne : ils testent les fichiers, pas la disponibilité actuelle des bourses, et ne publient rien en ligne.
