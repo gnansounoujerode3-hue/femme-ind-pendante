@@ -1,0 +1,6 @@
+# Les empreintes des deux paquets vérifient les octets de la version d’origine,
+# y compris sur un poste qui convertit habituellement LF en CRLF.
+skills/pdf/** -text
+skills/theme-factory/** -text
+*.pdf binary
+*.png binary
