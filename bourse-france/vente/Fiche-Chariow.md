@@ -6,54 +6,49 @@
 
 **Texte du bouton d’achat :** Acheter maintenant
 
-**Accroche courte :** Depuis le Bénin, prépare ton dossier pour la France, pièce par pièce. Le guide, dix bourses dans dix autres pays et deux outils modifiables pour passer de l’annonce au dépôt.
+**Accroche courte :** Tu n’as jamais demandé de bourse ? Commence avec ton téléphone ou un cahier. Depuis le Bénin, découvre quelle aide chercher, quels papiers réunir et comment vérifier que ton dossier est bien parti.
 
 ---
 
 ## Description à copier dans la boutique
 
-### Une annonce de bourse n’est pas encore un dossier
+### Ta première demande de bourse, depuis le Bénin
 
-Il te manque un relevé. Un ami te conseille de faire légaliser tous tes diplômes. L’université publie une date, mais tu ne sais pas si c’est **ta** date de dépôt ou celle de l’établissement. Que faire en premier, et pour quoi vaut-il vraiment la peine de payer ?
+Tu veux étudier en France. Une école te demande un « relevé », une autre parle de « préadmission ». On te dit de payer des frais, mais tu ne sais pas encore si tu es au bon endroit. **Par quoi commencer ?**
 
-**Mon dossier France** est un guide pour candidater toi-même, depuis le Bénin, à des études en France. À partir d’une annonce, tu peux identifier qui reçoit la candidature, demander les bonnes pièces, préparer ton entretien et conserver la preuve du dépôt. Tu gardes ton adresse e-mail, tes documents et tes accès.
+Ouvre *Mon dossier France* et touche **« Je débute »**. Sur la première page de travail, tu notes trois choses : le diplôme que tu prépares, les études que tu voudrais faire et la dépense pour laquelle tu as besoin d’aide. **Tu n’as pas besoin de créer un compte ni de payer des frais de candidature pour faire cet exercice.**
 
-### Ce que tu sauras faire
+### Un exemple de ce que le guide t’explique
 
-- **Choisir une piste réaliste.** Quatre financements sont expliqués : Eiffel, Émile Boutmy, Fondation Mastercard à Sciences Po et Erasmus Mundus–Europhotonics. Tu vois ce qui couvre le séjour, ce qui réduit seulement la scolarité et comment repérer une date interne plus tôt que la date nationale.
-- **Constituer le dossier pièce par pièce.** Passeport, diplômes et relevés par niveau, traductions et copies certifiées, preuve de langue et attestations de compétence : où les demander, quoi contrôler et comment les déposer. Pour le casier judiciaire, la fiche médicale et la lettre de préadmission, le guide t’aide d’abord à déterminer **si et quand** ils sont demandés. Pas de dépense « au cas où ».
-- **Écrire avec des faits.** Prépare un CV, une motivation et un *Study Plan* qui relient une expérience vécue au cursus visé. Demande une recommandation à la bonne personne, distingue préadmission et attribution de bourse, puis entraîne-toi aux questions d’entretien.
-- **Savoir quoi faire chaque mois.** Le calendrier de septembre 2026 à août 2027 va du choix des formations à la préparation du départ. Il distingue admission, financement et visa. Une checklist finale et une FAQ t’aident si un référent tarde, si le diplôme définitif manque ou si l’école t’accepte sans bourse.
+Tu as payé les frais de ton dossier et la banque t’a remis un reçu. **Ton dossier est-il envoyé ? Non.** Le reçu prouve le paiement, pas l’envoi. Pour la procédure classique au Bénin, le guide te montre où joindre ce reçu dans Études en France, comment vérifier les formations choisies et quelle confirmation garder après le premier dépôt. Si le service demande une correction, tu sais ce qu’il faut refaire et pourquoi il faut soumettre à nouveau.
 
-### Ton téléchargement : un guide et trois bonus
+### Ce que tu reçois : quatre fichiers
 
-1. **Mon dossier France — PDF de 40 pages.** Sommaire tactile, liens officiels, parcours Études en France depuis le Bénin et exemples de candidature pour la rentrée 2027.
-2. **Top 10 des bourses complètes — PDF indépendant de 17 pages.** Dix programmes, dix destinations : Suisse, Pays-Bas, Rwanda, Belgique, Turquie, Royaume-Uni, Allemagne, Canada, Japon et Chine. Chaque fiche indique le niveau, les critères, le portail, la campagne et ce qui est payé. « Complète » couvre scolarité et vie, pas forcément le billet ou l’argent à avancer. Certaines campagnes sont closes : le calendrier le dit. Une fiche de décision est à remplir pour ta piste.
-3. **Atelier de candidature — Word, huit modèles modifiables.** CV, lettre, plan d’études, projet de thèse, premier contact ou demande de préadmission, recommandation, relance et entretien. Tu ne signes jamais à la place d’un référent.
-4. **Suivi et budget — Excel, cinq onglets.** Suis tes dates et les pièces qui dépendent d’un tiers. Calcule séparément **l’argent à trouver avant le départ** et le montant qui restera après les remboursements confirmés.
+1. **Mon dossier France — guide PDF de 56 pages.** Une bourse, une admission et un visa sont trois choses différentes. Le guide te les explique, puis t’aide à choisir entre **Eiffel, Émile Boutmy, Fondation Mastercard à Sciences Po et Erasmus Mundus–Europhotonics**. Tu apprends à retrouver un relevé au Bénin, à faire une copie lisible avec un téléphone et à joindre le bon fichier. Il y a aussi les démarches pour le passeport, les traductions, la langue et la préadmission, ainsi que le casier et le médical **seulement s’ils sont exigés**. Un calendrier mois par mois, des questions d’entretien et six cases à cocher t’accompagnent jusqu’au suivi de l’envoi.
+2. **Top 10 des bourses complètes — autre PDF, 18 pages.** Dix pays : Suisse, Pays-Bas, Rwanda, Belgique, Turquie, Royaume-Uni, Allemagne, Canada, Japon et Chine. Tu peux commencer par ton niveau d’études. Une page explique les mots anglais des formulaires. Chaque fiche dit qui peut demander, où déposer et qui paie quoi. « Complète » veut dire que l’aide couvre les études et la vie sur place, **pas que chaque dépense est payée d’avance**. Certaines campagnes sont déjà closes ; c’est indiqué. Une dernière page à remplir t’aide à décider.
+3. **Atelier de candidature — fichier Word avec huit modèles.** Un essai te montre comment passer d’un texte entre crochets à une phrase vraie sur ton parcours. Tu choisis ensuite le modèle utile : CV, lettre, plan d’études (*Study Plan*), projet de thèse, message à l’école, demande de recommandation, relance ou préparation de l’entretien. Tu n’envoies pas le cahier entier à l’école.
+4. **Suivi et budget — fichier Excel avec cinq onglets.** Un onglet, c’est une feuille du classeur. Tu peux noter tes dates, suivre les papiers qui manquent et calculer une dépense même si elle sera remboursée plus tard. Un exercice te fait changer un seul chiffre dans une copie : tu vois de combien diminue l’argent à trouver avant de partir.
 
-Les deux PDF se lisent sur **téléphone ou ordinateur**, hors connexion après téléchargement. Les liens officiels nécessitent internet. Extrais les quatre fichiers du ZIP ; pour modifier les modèles et recalculer le budget, utilise une application compatible Word ou Excel.
+### Comment commencer sur téléphone ?
 
-### À propos de Mon dossier France
+Le téléchargement complet est un **ZIP**, comme une enveloppe qui contient les quatre fichiers. Ouvre-le depuis « Fichiers » ou « Téléchargements » et choisis « Extraire » si ton appareil le propose. Lis d’abord **Mon-dossier-France.pdf**. Les PDF se lisent hors connexion après téléchargement. Internet est nécessaire pour visiter les sites officiels et soumettre une vraie candidature. Pour modifier le Word ou faire recalculer l’Excel, il faut une application compatible ; **un cahier suffit pour les premiers exercices**.
 
-Ce guide indépendant s’adresse aux candidats et aux familles d’Afrique francophone. Son point de départ est le parcours béninois : les guichets pour obtenir un acte, les consignes de Campus France Bénin et les différences entre les appels. Si tu résides ailleurs, utilise les liens vers ton espace local plutôt que les dates béninoises. Le guide n’est pas affilié aux organismes cités et ne dépose rien à ta place.
+**Envie de voir avant d’acheter ?** L’extrait gratuit de **4 pages** contient le premier exercice, les bulletins à réunir selon ton niveau et un calcul de billet remboursé. Les personnes des exemples sont fictives ; les conditions des aides renvoient aux sites des organismes.
 
-**Tu veux juger avant d’acheter ?** Lis l’extrait gratuit : tu y trouveras les relevés à réunir selon le niveau visé et un calcul qui montre pourquoi un billet remboursé peut malgré tout empêcher le départ. Les cas illustratifs sont fictifs ; les conditions des bourses sont reliées aux pages des organismes.
+**Acheter maintenant — 5 000 FCFA pour le kit complet.**
 
-**Acheter maintenant — 5 000 FCFA pour le kit complet.** Télécharge le kit et commence par une seule piste : ton programme, la pièce qui manque et la personne à contacter.
-
-*Édition de novembre 2026. Le prix est celui des fichiers, pas celui d’une démarche officielle. Ni admission, ni bourse, ni visa garantis. Avant un dépôt, vérifie toujours l’appel de la bonne rentrée.*
+*Guide indépendant de novembre 2026 pour la rentrée 2027. Le parcours principal part du Bénin vers la France. Si tu habites ailleurs, consulte le service de ton pays de résidence. Le prix paie les fichiers, pas les frais d’école, de procédure ou de visa. Personne ne dépose à ta place. Ni admission, ni bourse, ni visa garantis. Vérifie toujours la campagne officielle avant de payer ou d’envoyer.*
 
 ---
 
 ## Message WhatsApp
 
-« Pour ta candidature en France, te faut-il vraiment un casier judiciaire ? Et si la bourse rembourse le billet, qui doit l’avancer ? *Mon dossier France* te montre quoi vérifier depuis le Bénin, pièce par pièce. Guide + Top 10 international + modèles Word + budget Excel : **5 000 FCFA**. Écris “EXTRAIT” pour lire trois pages avant de décider. »
+« Tu veux demander une bourse pour la France, mais tu ne sais pas quel papier préparer en premier ? Dans *Mon dossier France*, tu commences par trois réponses dans ton téléphone ou ton cahier. Ensuite, tu apprends à choisir une aide, à préparer les pièces depuis le Bénin et à vérifier que le dossier a bien été envoyé. Guide + 10 bourses dans 10 autres pays + modèles Word + budget Excel : **5 000 FCFA**. Écris “EXTRAIT” pour essayer le premier exercice avant de décider. »
 
 ## Notes vendeur — ne pas copier dans la description publique
 
-1. Paramétrer le prix à **5 000 FCFA**. Mettre `Visuel-Chariow.png` en vignette et `Extrait-gratuit.pdf` en aperçu. Associer le bouton « Acheter maintenant » au véritable paiement de la boutique ; ne pas publier de lien fictif.
-2. Affecter `Kit-Mon-dossier-France.zip` au téléchargement acheteur, **pas** `Ressources-Chariow.zip`. Tester le paiement, le mode et le délai réels de remise, l’extraction sur téléphone, les deux PDF, le Word et le tableur. Proposer les quatre téléchargements séparés si la boutique le permet. N’annoncer une livraison instantanée qu’après test.
-3. Renseigner ton vrai nom commercial, le contact de l’assistance et tes conditions de vente. Pour une courte bio signée, utiliser seulement ton identité et des faits vérifiables. Ne pas te présenter comme boursier à l’étranger sans que ce soit vrai.
-4. La preuve disponible au lancement est l’extrait. Si tu recueilles des avis, publie-les avec accord, pour **ce kit**, sans modifier leur sens. Ne pas emprunter de témoignage, de compteur de ventes ni de taux de satisfaction à un autre auteur.
-5. Le dépôt GitHub du projet est public : tant que le kit y reste accessible, il peut être obtenu sans achat. N’annonce pas un accès exclusif ; décide de la distribution avant une campagne payante. Vérifier dates, frais et liens dans les deux PDF et la fiche avant chaque relance. Aucun produit n’est publié par les scripts d’édition.
+1. Régler le prix à **5 000 FCFA**. Utiliser `Visuel-Chariow.png` comme vignette et `Extrait-gratuit.pdf` comme aperçu. Relier le bouton « Acheter maintenant » au paiement réel de ta boutique, pas à un lien fictif.
+2. Pour l’acheteur, joindre `Kit-Mon-dossier-France.zip`, **pas** `Ressources-Chariow.zip`. Tester le paiement, le délai réel de remise, l’ouverture des documents et des formulaires sur téléphone. Si possible, proposer aussi les quatre fichiers séparés. N’annoncer une livraison instantanée qu’après test.
+3. Renseigner ton vrai nom commercial, un contact d’assistance et tes conditions de vente. Dans une bio signée, ne déclarer que des faits vérifiables. L’exemple de Nadia n’est pas un témoignage ni la biographie de l’auteur.
+4. Utiliser l’extrait comme preuve de ce qui est livré. Ne publier des avis qu’avec l’accord de leurs auteurs, pour ce kit et sans modifier leur sens. Ne pas reprendre le compteur de ventes ou les avis d’un autre vendeur.
+5. Le dépôt GitHub est public : les fichiers y sont accessibles sans achat. Ne pas annoncer un accès exclusif. Avant chaque campagne commerciale, vérifier sur les sites officiels les conditions, les frais et les dates des deux PDF. Aucun produit n’est publié par les scripts d’édition.

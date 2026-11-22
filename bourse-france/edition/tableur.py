@@ -25,20 +25,31 @@ def make():
         s.set_footer('&LMon dossier France — Édition novembre 2026&RPage &P / &N');s.set_tab_color('#22716A')
     def dropdown(s,where,options):s.data_validation(where,{'validate':'list','source':options,'error_title':'Valeur non prévue','error_message':'Choisis une option dans la liste.'})
     def display_source(s,r,c,key):s.write_url(r,c,LIENS[key][1],link,string=LIENS[key][0])
-    mode=tabs['Mode d’emploi'];setup(mode,3,'Mon dossier France  /  Tableau de bord','Commence ici. Fais une copie du tableur pour chaque rentrée. Tu peux travailler hors ligne ; une connexion est nécessaire pour vérifier les appels.')
-    mode.set_column('A:A',24);mode.set_column('B:D',23)
-    for row,(tab,desc) in enumerate([('Pistes','Exemples datés pour la rentrée 2027. Ta date de dépôt et la date du porteur sont distinctes. Filtre ou ajoute une ligne ; note l’action suivante et la preuve de dépôt.'),('Pièces','Une ligne par pièce et par programme. Mets à jour la personne responsable et la date promise. N’enregistre pas tes mots de passe ou un numéro de passeport dans ce tableur.'),('Budget','En jaune : à saisir. Indique une période, tes fonds disponibles et tes seules aides confirmées. Zéro = coût réellement nul ; vide = coût inconnu. Les résultats apparaissent quand le budget est complet.'),('Exemple budget','Cas fictif du guide en XOF. Compare l’argent à avancer et ce qui reste au final. Les montants ne sont ni des tarifs ni les prestations d’une bourse réelle.')],3):
-        mode.write_url(row,0,f"internal:'{tab}'!A1",link,string=tab+' →');mode.merge_range(row,1,row,3,desc,body);mode.set_row(row,63)
-    mode.merge_range('A9:D9','Si la date est dépassée, cherche la nouvelle session. N’ajoute pas un an par défaut.',banner)
-    mode.merge_range('A11:D12','Sur mobile : fais défiler vers la droite pour les conditions, le lien officiel et les preuves. Dans « Pistes », les colonnes utiles à l’action viennent en premier. Les couleurs sont des repères ; les statuts sont aussi écrits.',sub)
-    mode.merge_range('A14:D16','Les frais officiels éventuels ne sont pas des frais d’agence. Une admission, une bourse et un visa sont trois décisions distinctes. Pour une autre monnaie que le XOF, modifie la devise et le taux dans chaque budget.',body)
-    mode.print_area('A1:D16')
+    mode=tabs['Mode d’emploi'];setup(mode,3,'Mon premier essai  /  Suivi et budget','Ce cahier contient cinq feuilles (les « onglets »). Pour commencer, fais « Enregistrer une copie ». Un clic sur les noms soulignés ci-dessous ouvre la bonne feuille. Tu peux aussi toucher son nom en bas de l’écran.')
+    mode.set_column('A:A',24);mode.set_column('B:D',20);mode.set_row(1,58)
+    def consigne(ligne,texte,style=body,hauteur=44):
+        mode.merge_range(ligne-1,0,ligne-1,3,texte,style);mode.set_row(ligne-1,hauteur)
+    def aller(ligne,onglet,point,action,hauteur=78):
+        mode.write_url(ligne-1,0,f"internal:'{onglet}'!{point}",link,string=onglet+' →')
+        mode.merge_range(ligne-1,1,ligne-1,3,action,body);mode.set_row(ligne-1,hauteur)
+    consigne(4,'1  /  Essaie avec de l’argent imaginaire',banner,30)
+    aller(5,'Exemple budget','C7','Une case a une adresse : C7 = colonne C, ligne 7. Dans ta COPIE d’essai, remplace les 100 000 disponibles en C7 par 150000. Valide ta saisie. Pas besoin du signe F dans la case.')
+    consigne(6,'Descends aux lignes 29 et 30. Avant : 350 000 et 70 000 F. Avec 50 000 F de plus en main : 300 000 à trouver avant les versements, 20 000 au final. Rien ne bouge ? Ouvre le fichier dans une application qui recalcule, pas dans un aperçu.',body,76)
+    consigne(8,'2  /  Note une démarche réelle et un papier à demander',banner,30)
+    aller(9,'Pistes','A5','Exemple : la ligne Eiffel sépare « Ma limite » (pour contacter le master avant le 26 novembre 2026 à Paris-Saclay) et celle de l’école (6 janvier 2027). Garde la ligne qui te concerne. Dans « Prochaine action », écris ce que TOI, tu vas faire.',92)
+    aller(10,'Pièces','A5','Sur la ligne « Relevés universitaires », écris le nom de ta formation en B et « À demander » en C si une feuille manque. Après réception, mets « Reçu » et sa date. Les 18 exemples ne sont pas 18 pièces obligatoires.',92)
+    consigne(12,'3  /  Fais ton propre calcul',banner,30)
+    aller(13,'Budget','C4','Saisis ta période en C4. Laisse XOF et le taux en C5/C6 si tu comptes en francs CFA du Bénin. C7 = argent en main. C8 = aides en argent déjà confirmées pour cette période et pas comptées ailleurs. Mets 0 en C8 si aucune.',92)
+    consigne(14,'Pour chaque dépense : prix d’une unité en C, quantité en D. En E et F écris le total de la ligne, dans sa monnaie : E si l’organisme paie directement ; F si tu paies puis es remboursé. Les cases de résultat calculent seules.',body,74)
+    consigne(15,'Les totaux sont vides ? Lis « Contrôle » tout à droite. Prix inconnu ? Laisse-le vide et demande un devis. Mets 0 seulement pour une dépense réellement nulle. Une fois toutes les lignes renseignées, lis les lignes 29 et 30.',sub,72)
+    consigne(17,'Sur téléphone, fais glisser la feuille vers la droite pour voir les sources et les preuves. Sans tableur, un cahier suffit : une ligne par démarche, sa date et la preuve à garder. Ne note aucun mot de passe ici.',body,58)
+    mode.set_portrait();mode.set_paper(9);mode.print_area('A1:D17')
 
     s=tabs['Pistes'];setup(s,12,'Pistes  /  Une ligne par démarche','Exemples de la campagne 2027, pas une liste d’appels toujours ouverts. Date vide = à vérifier, jamais « sans limite ». Ouvre le lien officiel avant toute dépense. Les cellules sont modifiables.')
     hs=['Piste ou session','Prochaine action','Ma limite','Heure / précision','État','Démarche','Qui reçoit le dossier ?','Public / point à vérifier','Financement / frais','Limite du porteur (pas la tienne)','Source officielle →','Mon contrôle le','Preuve / note privée']
     for i,(h,width) in enumerate(zip(hs,[27,39,15,25,18,18,39,53,52,18,35,17,37])):s.set_column(i,i,width);s.write(3,i,h,head)
     s.set_row(3,43);s.freeze_panes(4,1);s.autofilter('A4:M44');s.repeat_rows(3,3)
-    rows=[('Eiffel · master Paris-Saclay','Contacter le responsable AVANT la date indiquée.',(2026,11,26),'Date interne ; contacter avant.','Bourse','Responsable du master ; Paris-Saclay présente les dossiers retenus.','Volet master. Ne pas réutiliser cette date pour le doctorat ou une autre école. Vérifier candidature d’admission séparée.','Allocation et prestations sous conditions ; pas de couverture générale des frais de formation.',(2027,1,6),'saclay'),
+    rows=[('Eiffel · master Paris-Saclay','Contacter le responsable AVANT la date indiquée.',(2026,11,26),'Écrire AVANT cette date.','Bourse','Responsable du master ; Paris-Saclay présente les dossiers retenus.','Volet master. Ne pas réutiliser cette date pour le doctorat ou une autre école. Vérifier candidature d’admission séparée.','Allocation et prestations sous conditions ; pas de couverture générale des frais de formation.',(2027,1,6),'saclay'),
           ('Émile Boutmy · Bachelor international','Demander la bourse dans le dossier, puis valider.',(2027,1,13),'Voie internationale ; vérifier l’heure.','Bourse','Portail Sciences Po, informations financières.','Bachelor éligible ; situation familiale et fiscale, diplôme et voie d’admission à vérifier.','Exonération des droits, pas de versement pour la vie courante. Frais de dossier à vérifier.',None,'boutmy'),
           ('Émile Boutmy · master','Compléter aussi la rubrique financière avant validation.',(2026,11,29),'23 h 59, Paris (2e commission).','Bourse','Portail d’admission internationale Sciences Po.','Primo-arrivant ; vérifier nationalité, foyer fiscal, master et exclusions.','18 500 € de droits exonérés par an selon la fiche. Demander Boutmy ne dispense pas des frais de dossier.',None,'boutmy'),
           ('Mastercard · Sciences Po · vague 1','Vérifier mon université/passerelle/statut, ma moyenne et lancer les deux dossiers.',(2026,11,23),'Vague 1 ; vérifier l’heure.','Bourse','Plateforme bourse ET dossier d’admission en master à créer en parallèle.','Critères africains et académiques ; licence concernée ; autres exclusions dans la notice.','Scolarité et vie des lauréats ; exonération de candidature si confirmée, pas automatiquement.',None,'carte'),
@@ -89,13 +100,13 @@ def make():
     def budget(name,demo):
         s=tabs[name];setup(s,9,'Exemple budget  /  Simulation fictive' if demo else 'Budget  /  Ta période, ta monnaie','Exemple pédagogique, pas des tarifs réels.' if demo else 'En jaune : tes données. Utilise une seule période. Un coût inconnu doit rester vide ; mets 0 seulement si le poste ne te coûte rien.')
         for i,width in enumerate([30,14,18,9,19,19,21,21,45,19]):s.set_column(i,i,width)
-        for r,text in enumerate(['Période (début et fin)','Monnaie locale (code)','1 EUR en monnaie locale','Fonds disponibles au départ','Aides en espèces à recevoir'],4):s.merge_range(f'A{r}:B{r}',text,label)
-        s.merge_range('C4:J4','Du dépôt au premier versement — à dater',entry);s.write('C5','XOF',entry);s.write_number('C6',655.957,rate)
+        for r,text in enumerate(['Période (début et fin)','Ma monnaie (code)','1 EUR dans ma monnaie','Mon argent disponible maintenant','Aides confirmées à recevoir'],4):s.merge_range(f'A{r}:B{r}',text,label)
+        s.merge_range('C4:J4','Exemple : du dépôt au premier versement' if demo else '',entry);s.write('C5','XOF',entry);s.write_number('C6',655.957,rate)
         if demo:s.write_number('C7',100000,num);s.write_number('C8',80000,num)
         else:s.write_blank('C7',None,num);s.write_blank('C8',None,num)
-        for r,text in enumerate(['Ex. XOF au Bénin. Si tu changes de monnaie, ajuste aussi le taux ci-dessous.','Taux de conversion (hors frais). Par défaut, 1 euro = 655,957 francs CFA BCEAO.','En monnaie locale : argent mobilisable maintenant. N’y inclus pas de remboursement futur.','En monnaie locale : seulement les aides confirmées pour cette période, non comptées ailleurs. Zéro si aucune.'],5):s.merge_range(f'D{r}:J{r}',text,hint)
+        for r,text in enumerate(['Ex. XOF au Bénin. Si tu changes de monnaie, ajuste aussi le taux ci-dessous.','Taux de conversion (hors frais). Par défaut, 1 euro = 655,957 francs CFA BCEAO.','En monnaie locale : argent disponible maintenant. N’y inclus pas de remboursement futur.','En monnaie locale : seulement les aides confirmées pour cette période, non comptées ailleurs. Zéro si aucune.'],5):s.merge_range(f'D{r}:J{r}',text,hint)
         s.merge_range('A10:J10','',banner)
-        headers=['Poste de dépense','Monnaie','Prix par unité','Qté','Pris en charge sans avance¹','Remboursé après avance¹','À décaisser (local)','Net après remb. (local)','Devis / preuve écrite / hypothèse','Contrôle']
+        headers=['Poste de dépense','Monnaie','Prix par unité','Qté','Pris en charge sans avance¹','Remboursé après avance¹','À payer d’abord (local)','Coût après remboursement (local)','Devis / preuve écrite / hypothèse','Contrôle']
         for j,t in enumerate(headers):s.write(10,j,t,head)
         s.set_row(10,44);s.freeze_panes(11,1)
         postes=['Frais de procédure (si dus)','Frais de candidature école','Traductions et justificatifs','Test de langue','Visa + prestataire éventuel','Voyage et trajet d’arrivée','Droits et frais de scolarité','Caution à avancer','Logement pour la période','Vie courante et transport local','Assurance / autres frais requis','Frais bancaires / transferts']

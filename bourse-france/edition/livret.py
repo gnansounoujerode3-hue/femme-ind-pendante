@@ -77,11 +77,17 @@ def cover(c,extrait=False):
     txt(c,M+36,H-48,'CARNET DE CANDIDATURE',10,'SansB',SAND)
     txt(c,W-M,H-48,'2027',11,'Serif',SAND,True)
     line(c,M,H-70,W-M,H-70,'#547674')
-    txt(c,M,H-120,'ÉTUDES SUPÉRIEURES',10,'SansB','#B9DAD3')
+    txt(c,M,H-120,'MA PREMIÈRE CANDIDATURE',10,'SansB','#B9DAD3')
     txt(c,M-2,H-186,'Mon dossier',43,'Serif',PAPER)
     txt(c,M-3,H-254,'France',73,'SerifB',PAPER)
     txt(c,M,H-296,'Trouver une bourse et',20,'Sans',SAND)
     txt(c,M,H-325,'candidater sans agence',20,'SansB',SAND)
+    if extrait:
+        label, cible = 'Essayer le premier exercice  →  p. 2', 'debut'
+    else:
+        label, cible = 'Je débute : commencer ici  →  p. 3', 'debut'
+    rect(c,M,H-377,COL,30,SOFT);txt(c,M+10,H-367,label,12,'SansB',FOREST)
+    c.linkRect(label,cible,(M,H-377,W-M,H-347),relative=0,thickness=0)
     horizon(c,0,127,W,309)
     rect(c,0,0,W,127,'#103638');rect(c,M,105,45,3,CLAY)
     txt(c,M,78,'DEPUIS LE BÉNIN',13,'SansB',PAPER)
@@ -97,7 +103,7 @@ def vignette():
     line(c,32,482,508,482,'#68908B');txt(c,29,423,'Mon dossier',50,'Serif',PAPER);txt(c,29,343,'France',83,'SerifB',PAPER)
     txt(c,33,302,'Trouver une bourse et candidater sans agence',19,'Sans',SAND)
     horizon(c,0,80,540,193)
-    txt(c,32,49,'GUIDE + 3 BONUS',15,'SansB',PAPER)
+    txt(c,32,49,'PREMIÈRE CANDIDATURE',15,'SansB',PAPER)
     txt(c,32,24,'10 bourses dans 10 pays  ·  Word  ·  Excel',12,'Sans',SAND)
     txt(c,508,43,'5 000 FCFA',20,'SansB',PAPER,True)
     c.showPage();c.save();d=pymupdf.open(stream=b.getvalue(),filetype='pdf');d[0].get_pixmap(matrix=pymupdf.Matrix(2,2),alpha=False).save(VENTE/'Visuel-Chariow.png');d.close()
@@ -111,13 +117,25 @@ def read_pages(filename='guide.md'):
             key,tag,title=s[2:].split(' | ',2);result.append(dict(key=key,tag=tag,title=title,blocks=[],refs=[])); continue
         if s.startswith('@ '):
             result[-1]['refs'].extend(s[2:].split()); continue
+        if re.match(r'^\d+\. ',s):
+            result[-1]['blocks'].append(('step',s)); continue
         prefix=s[:2]
-        kind,text=({'##':('h',s[3:]), '> ':('lead',s[2:]), '- ':('item',s[2:]), '! ':('note',s[2:]), '? ':('field',s[2:]), '□ ':('check',s[2:])}.get(prefix,('p',s)))
+        kind,text=({'##':('h',s[3:]), '> ':('lead',s[2:]), '- ':('item',s[2:]), '! ':('note',s[2:]), '? ':('field',s[2:]), '~ ':('jump',s[2:]), '□ ':('check',s[2:])}.get(prefix,('p',s)))
         result[-1]['blocks'].append((kind,text))
     return result
 
-GROUPS=[('niveau','Choisir ta piste','Niveau d’études, admission, bourse et visa.'),('eiffel','Comparer quatre financements','Eiffel, Boutmy, Mastercard et Erasmus Mundus.'),('voie','Candidater depuis le Bénin','Portails, frais, préadmission et accord préalable.'),('pieces','Construire ton dossier','Pièce par pièce, puis CV, motivation, Study Plan et recommandations.'),('budget','Déposer et suivre','Budget, calendrier mensuel, entretien et décisions.'),('depart','Faire le dernier contrôle','Checklist finale, FAQ et carnet d’adresses.')]
-RACCOURCIS=[('identite','Passeport'),('formalites','Légalisation'),('mois1','Calendrier'),('faq','FAQ')]
+GROUPS = [
+    ('niveau','Choisir mes études','Bac, licence ou master : où chercher ?'),
+    ('aiguillage','Choisir une aide','Quatre pistes pour financer des études en France.'),
+    ('voie','Déposer depuis le Bénin','Compte, frais et envoi sur Études en France.'),
+    ('pieces','Préparer mes documents','Du premier relevé à la recommandation.'),
+    ('budget','Préparer mon budget et la suite','Avances, dates, entretien et réponses.'),
+    ('depart','Vérifier mon dossier','Six cases à cocher et les réponses aux blocages.'),
+]
+RACCOURCIS = [('outils','Ouvrir le kit'), ('mots','Les mots du dossier'),
+              ('depot','Joindre la quittance'), ('releves','Choisir mes relevés'),
+              ('mois1','Calendrier'), ('faq','Si je suis bloqué')]
+EXTRAIT = ('debut','releves','exemple')
 
 def footer(c,n,total,extrait=False,index_label='RENTRÉE 2027'):
     line(c,M,38,W-M,38)
@@ -131,19 +149,28 @@ def header(c,tag):
     line(c,M,H-53,W-M,H-53)
 
 def toc(c,numbers,total):
-    header(c,'Mode d’emploi')
-    y=top(c,para('Par où commencer ?',28,33,'SerifB'),M,H-70,COL)-14
-    y=top(c,para('Choisis ta prochaine démarche. Touche une rubrique ou utilise les raccourcis en bas de page.',14.2,19),M,y,COL)-16
+    header(c,'Sommaire / Touche une ligne pour ouvrir la page')
+    y=top(c,para('Par où commencer ?',27,32,'SerifB'),M,H-68,COL)-13
+    rect(c,M,y-58,COL,58,FOREST)
+    txt(c,M+11,y-20,'C’est ma première demande',15,'SansB',PAPER)
+    txt(c,M+11,y-43,'Trois réponses à noter. Rien à payer.',12,'Sans',SAND)
+    txt(c,W-M-10,y-21,f'p. {numbers["debut"]} →',11,'SansB',SAND,True)
+    c.linkRect('Commencer mon premier exercice','debut',(M,y-58,W-M,y),relative=0,thickness=0)
+    y-=77
     for i,(key,title,desc) in enumerate(GROUPS,1):
-        y1=y; rect(c,M,y-25,29,25,SOFT);txt(c,M+6,y-18,str(i).zfill(2),10.4,'SansB',TEAL)
-        txt(c,M+40,y-15,title,14.9,'SansB',INK)
-        b=top(c,para(desc,12.6,17,'Sans',FADE),M+40,y-23,COL-85)
-        txt(c,W-M,b+3,str(numbers[key]).zfill(2)+' →',11,'SansB',TEAL,True)
-        y=b-9;line(c,M,y,W-M,y);c.linkRect(title,key,(M,y,W-M,y1),relative=0,thickness=0);y-=9
-    y-=2
-    links='  ·  '.join(f'<link href="#{key}" color="{TEAL}"><u>{label}</u></link>' for key,label in RACCOURCIS)
-    y=top(c,para(links,12.5,17,html=True),M,y,COL)-12
-    y=top(c,para('**Avec le guide :** le Top 10 des bourses internationales (PDF), huit modèles Word et un tableur de suivi et de budget. Garde les PDF sur ton téléphone ; une connexion est nécessaire pour ouvrir les sources officielles.',12.7,17.6,'Sans',FOREST),M,y,COL)
+        y1=y; rect(c,M,y-25,27,25,SOFT);txt(c,M+5,y-18,str(i).zfill(2),10,'SansB',TEAL)
+        txt(c,M+35,y-14,title,13.5,'SansB',INK)
+        txt(c,W-M,y-14,f'p. {numbers[key]}',10.5,'SansB',TEAL,True)
+        b=top(c,para(desc,12.1,16,'Sans',FADE),M+35,y-23,COL-35)
+        y=b-9;line(c,M,y,W-M,y);c.linkRect(title,key,(M,y,W-M,y1),relative=0,thickness=0);y-=10
+    y-=7;txt(c,M,y,'ACCÈS DIRECT',10,'SansB',TEAL);y-=9
+    for i,(key,label) in enumerate(RACCOURCIS):
+        x=M+(i%2)*(COL/2+2); t=y-(i//2)*32
+        rect(c,x,t-27,COL/2-3,27,SAND);txt(c,x+7,t-18,label,11.1,'SansB',FOREST)
+        txt(c,x+COL/2-10,t-18,str(numbers[key]),10,'Sans',FOREST,True)
+        c.linkRect(label,key,(x,t-27,x+COL/2-3,t),relative=0,thickness=0)
+    y-=len(RACCOURCIS)//2*32+10
+    y=top(c,para('Tu peux aussi tourner les pages. « Sommaire », en bas de chaque page, te ramène ici. Les liens sous « Sources » ouvrent les sites officiels avec internet.',12.7,17,'Sans',FADE),M,y,COL)
     assert y>45, 'Sommaire trop long'
     footer(c,2,total)
 
@@ -153,7 +180,7 @@ def source_par(keys):
         name,url=LIENS[key];labels.append(f'<link href={quoteattr(url)} color="{TEAL}"><u>{escape(name)}</u></link>')
     return para('  •  '.join(labels),10.4,15.3,html=True)
 
-def blocks(page,base):
+def blocks(page,base,numbers):
     """(kind, paragraph, usable width, space before, space after, callout label)."""
     out=[]
     for typ,text in page['blocks']:
@@ -166,26 +193,29 @@ def blocks(page,base):
             label=text.split('**')[1].rstrip('.');w-=22;p=para(text,base,base*1.34);pre,post=0,6
         elif typ=='field':
             label=text;p=para(text,base-.5,base*1.24,'Sans',FADE);pre,post=0,5
+        elif typ=='step':
+            label,body=text.split('. ',1);w-=25;p=para(body,base,base*1.34);pre,post=0,7
+        elif typ=='jump':
+            label,caption=text.split(' | ',1)
+            if label not in numbers: continue  # Pas de renvoi hors de l’extrait gratuit.
+            w-=16;p=para(f'→  {caption}  ·  p. {numbers[label]}',base-.7,base*1.27,'SansB',TEAL);pre,post=0,7
         elif typ=='item':p=para(text,base,base*1.34);w-=15;pre,post=0,5.5
         else:p=para(text,base,base*1.34);pre,post=0,6
         out.append((typ,p,w,pre,post,label))
     return out
 
-def page_body(c,page,n,total,extrait=False):
-    header(c,page['tag']);footer(c,n,total,extrait)
+def page_body(c,page,n,total,numbers,extrait=False):
+    header(c,page['tag'])
     headerp=para(page['title'],26.2,30.1,'SerifB',INK)
     y=top(c,headerp,M,H-62,COL)-11
     sp=source_par(page['refs']) if page['refs'] else None
     # Sources go in a separate, stable area, never over the text.
     src_top=49+(measure(sp,COL) + 18 if sp else 0)
-    if sp:
-        line(c,M,src_top+1,W-M,src_top+1);txt(c,M,src_top-11,'SOURCES  /  TOUCHER POUR OUVRIR',8,'SansB',FADE)
-        top(c,sp,M,src_top-17,COL)
     last=src_top+8
     extra={'note':26, 'field':25}
     for tick in range(148,125,-1):
         base=tick/10
-        stack=blocks(page,base);req=sum(a+b+measure(p,w)+extra.get(k,0) for k,p,w,a,b,_ in stack)
+        stack=blocks(page,base,numbers);req=sum(a+b+measure(p,w)+extra.get(k,0) for k,p,w,a,b,_ in stack)
         if req <= y-last:break
     else:raise ValueError(f"Trop de texte : {page['key']} ({req:.1f} > {y-last:.1f})")
     for i,(k,p,w,before,after,label) in enumerate(stack):
@@ -207,15 +237,24 @@ def page_body(c,page,n,total,extrait=False):
                                  borderColor=HexColor(TEAL),textColor=HexColor(INK),
                                  borderStyle='underlined',borderWidth=0.7,fontSize=11,
                                  annotationFlags='print',forceBorder=True,maxlen=256)
+        elif k=='step':
+            rect(c,M,y-16,19,16,SOFT);txt(c,M+5,y-12.4,label,10.7,'SansB',TEAL);y=top(c,p,M+25,y,w)
+        elif k=='jump':
+            line(c,M,y-1,M,y-h,TEAL,2);y1=y;y=top(c,p,M+8,y,w)
+            c.linkRect(p.getPlainText(),label,(M,y-2,W-M,y1+1),relative=0,thickness=0)
         elif k=='item':
             fill(c,CLAY);c.circle(M+3.2,y-base*.58,2.45,stroke=0,fill=1);y=top(c,p,M+15,y,w)
         else:y=top(c,p,M,y,w)
         y-=after
     assert y>=last-.1
+    if sp:
+        line(c,M,src_top+1,W-M,src_top+1);txt(c,M,src_top-11,'SOURCES  /  TOUCHER POUR OUVRIR',8,'SansB',FADE)
+        top(c,sp,M,src_top-17,COL)
+    footer(c,n,total,extrait)
     return base
 
 def directory(c,n,total):
-    header(c,'06 / À garder sous la main');footer(c,n,total)
+    header(c,'06 / À garder sous la main')
     y=top(c,para('Ton carnet d’adresses',27,32,'SerifB'),M,H-70,COL)-12
     y=top(c,para('Un lien a changé ? Retrouve le programme et la rentrée sur le site de l’organisme, pas dans un message privé.',14.2,19),M,y,COL)-12
     sections=[('Chercher un financement', ['catalogue','mundus','espaces']),('Retrouver les quatre pistes', ['eiffel','boutmy','carte','euro']),('Faire ses démarches au Bénin', ['connexion','bj','calendrier','piecesbj','cotonou']),('Obtenir un document', ['ob','uac','passeport','b3']),('Préparer le séjour', ['visa','assistant'])]
@@ -226,24 +265,27 @@ def directory(c,n,total):
         y-=8
     y=top(c,para('**Édition indépendante • novembre 2026.** Aucune affiliation avec les organismes cités. Pour une nouvelle rentrée, reprends leurs appels ; ne décale pas les dates d’un an.',12.7,17.5,'Sans',FADE),M,y,COL)
     assert y>45, 'Annuaire trop long'
+    footer(c,n,total)
 
 def make():
     pages=read_pages();numbers={p['key']:i for i,p in enumerate(pages,3)};total=len(pages)+3
-    assert len(numbers)==len(pages)
+    assert len(numbers)==len(pages) and pages[0]['key']=='debut'
+    assert all(text.split(' | ',1)[0] in numbers for page in pages for kind,text in page['blocks'] if kind=='jump')
     VENTE.mkdir(exist_ok=True)
     c=canvas.Canvas(str(GUIDE),pagesize=(W,H),pageCompression=1,invariant=1,lang='fr')
     c.setTitle('Mon dossier France — Trouver une bourse et candidater sans agence');c.setAuthor('Mon dossier France · guide indépendant');c.setSubject('Afrique francophone • Rentrée 2027')
     c.bookmarkPage('couverture');c.addOutlineEntry('Mon dossier France','couverture');cover(c);c.showPage()
     c.bookmarkPage('sommaire');c.addOutlineEntry('Sommaire','sommaire');toc(c,numbers,total);c.showPage()
     for page in pages:
-        k=page['key'];c.bookmarkPage(k);c.addOutlineEntry(page['title'],k,0 if k in {s[0] for s in GROUPS} else 1,closed=True)
-        base=page_body(c,page,numbers[k],total);print(k,base);c.showPage()
+        k=page['key'];c.bookmarkPage(k);c.addOutlineEntry(page['title'],k,0 if k in {'debut', *(s[0] for s in GROUPS)} else 1,closed=True)
+        base=page_body(c,page,numbers[k],total,numbers);print(k,base);c.showPage()
     c.bookmarkPage('liens');c.addOutlineEntry('Ton carnet d’adresses','liens',1);directory(c,total,total);c.showPage();c.save()
     # An excerpt is rendered separately so no broken links point to missing book pages.
     c=canvas.Canvas(str(VENTE/'Extrait-gratuit.pdf'),pagesize=(W,H),pageCompression=1,invariant=1,lang='fr')
     c.setTitle('Mon dossier France — Extrait gratuit');c.setAuthor('Mon dossier France · guide indépendant');cover(c,True);c.showPage()
-    for i,k in enumerate(('releves','exemple'),2):
-        page_body(c,next(p for p in pages if p['key']==k),i,3,True);c.showPage()
-    c.save();vignette();print(f'{total} pages, extrait 3 pages, visuel 1080×1080')
+    apercu={k:i for i,k in enumerate(EXTRAIT,2)}
+    for k,i in apercu.items():
+        c.bookmarkPage(k);page_body(c,next(p for p in pages if p['key']==k),i,len(apercu)+1,apercu,True);c.showPage()
+    c.save();vignette();print(f'{total} pages, extrait {len(apercu)+1} pages, visuel 1080×1080')
 
 if __name__=='__main__':make()

@@ -6,7 +6,8 @@ from livret import (W, H, M, COL, INK, FOREST, TEAL, PAPER, SOFT, SAND, GOLD, CL
                     FADE, rect, line, txt, fill, stroke, top, para, header, footer,
                     read_pages, page_body)
 
-# L’ordre de ces raccourcis suit celui des fiches dans panorama.md.
+# L’ordre des liens suit celui des pages du bonus.
+LECTURES = [('orientation', 'Quel est mon niveau ?'), ('lecture', 'Les mots en anglais')]
 FICHES = [
     ('suisse', 'Suisse', 'ESOP · ETH Zurich', 'Ouvert'),
     ('paysbas', 'Pays-Bas', 'NL-High Potential · Maastricht', 'Ouvert'),
@@ -52,10 +53,11 @@ def couverture(c):
 def sommaire(c, numbers, total):
     header(c,'Top 10 / Sommaire interactif')
     y=top(c,para('Choisis ta destination',25,30,'SerifB'),M,H-69,COL)-12
-    y=top(c,para('États des appels à l’édition de novembre 2026. Touche une fiche pour lire les conditions et ouvrir le site officiel.',13.5,18),M,y,COL)-12
-    rect(c,M,y-30,COL,30,SOFT)
-    txt(c,M+9,y-20,'D’abord : quelle piste pour mon niveau ?',12,'SansB',TEAL)
-    c.linkRect('Choisir selon mon niveau','orientation',(M,y-30,W-M,y),relative=0,thickness=0)
+    y=top(c,para('En novembre 2026, certaines campagnes sont déjà closes. Touche un pays pour vérifier sa rentrée, ses règles et son site. Tu débutes ? Commence par ces deux pages.',13.5,18),M,y,COL)-12
+    for i,(key,label) in enumerate(LECTURES):
+        x=M+i*(COL/2+2); rect(c,x,y-30,COL/2-3,30,SOFT)
+        txt(c,x+6,y-20,f'{numbers[key]}  {label}',11.2,'SansB',TEAL)
+        c.linkRect(label,key,(x,y-30,x+COL/2-3,y),relative=0,thickness=0)
     y-=42
     for i,(key,pays,nom,etat) in enumerate(FICHES,1):
         txt(c,M,y-13,f'{i:02d}',10,'SansB',TEAL)
@@ -78,7 +80,7 @@ def sommaire(c, numbers, total):
 def make():
     pages=read_pages('panorama.md')
     numbers={p['key']:i for i,p in enumerate(pages,3)}
-    assert list(numbers)==['orientation',*[f[0] for f in FICHES],*[a[0] for a in ATELIERS]]
+    assert list(numbers)==[*[key for key,_ in LECTURES],*[f[0] for f in FICHES],*[a[0] for a in ATELIERS]]
     total=len(pages)+2
     BONUS.mkdir(exist_ok=True)
     c=canvas.Canvas(str(PANORAMA),pagesize=(W,H),pageCompression=1,invariant=1,lang='fr')
@@ -91,7 +93,7 @@ def make():
     for p in pages:
         k=p['key']; c.bookmarkPage(k)
         label=(pays[k]+' — ' if k in pays else '')+p['title']
-        c.addOutlineEntry(label,k); base=page_body(c,p,numbers[k],total)
+        c.addOutlineEntry(label,k); base=page_body(c,p,numbers[k],total,numbers)
         print('Top 10 /',k,base); c.showPage()
     c.save()
     print(f'Bonus international : {len(FICHES)} pays, {total} pages.')

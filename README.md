@@ -1,3 +1,5 @@
-# femme-ind-pendante
+# Mon dossier France — ma première candidature
 
-[Mon dossier France — kit de candidature depuis le Bénin](bourse-france/README.md) : guide France, Top 10 des bourses internationales, modèles Word, budget Excel et ressources pour la boutique.
+Un kit en français pour préparer, depuis le Bénin, une demande de bourse d’études pour la France. **Tu n’as jamais fait de dossier ?** [Ouvre le guide PDF](bourse-france/Mon-dossier-France.pdf?raw=true) et touche « Je débute » sur la couverture. Le premier exercice se fait aussi dans un cahier.
+
+[Les quatre fichiers et leur mode d’emploi](bourse-france/README.md) · [Kit complet à télécharger](bourse-france/Kit-Mon-dossier-France.zip?raw=true) · [Fiche pour la boutique](bourse-france/vente/Fiche-Chariow.md)
