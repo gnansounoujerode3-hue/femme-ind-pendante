@@ -53,9 +53,17 @@ def clean(t):
     return t.replace("[ ]", "☐")
 
 
+HAS_TOC = len(files) > 1  # un seul chapitre (bonus) : pas de sommaire
+
+
+def _plain_page(n):
+    """Couverture (page 1) et sommaire (page 2) n'ont ni en-tête ni pied de page."""
+    return n <= (2 if HAS_TOC else 1)
+
+
 class Guide(FPDF):
     def header(self):
-        if self.page_no() <= 2:
+        if _plain_page(self.page_no()):
             return
         self.set_font("DV", "", 8)
         self.set_text_color(*GREY)
@@ -68,7 +76,7 @@ class Guide(FPDF):
         self.set_xy(ML, MT)  # le texte reprend sous l'en-tête, à la marge haute
 
     def footer(self):
-        if self.page_no() <= 2:
+        if _plain_page(self.page_no()):
             return
         self.set_y(-14)
         self.set_font("DV", "", 8)
@@ -77,14 +85,19 @@ class Guide(FPDF):
         self.set_text_color(0, 0, 0)
 
 
-pdf = Guide(format="A4")
-pdf.set_margins(ML, MT, ML)
-pdf.set_auto_page_break(True, 24)
-pdf.add_font("DV", "", FD + "DejaVuSans.ttf")
-pdf.add_font("DV", "B", FD + "DejaVuSans-Bold.ttf")
-pdf.add_font("DVS", "", FD + "DejaVuSerif.ttf")
-pdf.add_font("DVS", "B", FD + "DejaVuSerif-Bold.ttf")
-TEXT_W = pdf.w - 2 * ML
+TEXT_W = 210 - 2 * ML
+pdf = None  # créé par setup()
+
+
+def setup():
+    global pdf
+    pdf = Guide(format="A4")
+    pdf.set_margins(ML, MT, ML)
+    pdf.set_auto_page_break(True, 24)
+    pdf.add_font("DV", "", FD + "DejaVuSans.ttf")
+    pdf.add_font("DV", "B", FD + "DejaVuSans-Bold.ttf")
+    pdf.add_font("DVS", "", FD + "DejaVuSerif.ttf")
+    pdf.add_font("DVS", "B", FD + "DejaVuSerif-Bold.ttf")
 
 
 def inline(text, size, style, font, h, color=None):
@@ -194,37 +207,39 @@ def cover():
     para("Vérifie toujours les dates, montants et liens sur les sites officiels avant d'agir.", 10)
 
 
-def toc_page():
+def toc_page(entries, pages):
+    """Sommaire dessiné à la main. entries : titres ; pages : numéros de page (0 = provisoire)."""
     pdf.add_page()
-    pdf.insert_toc_placeholder(render_toc, pages=1)
+    pdf.set_left_margin(ML)
+    pdf.set_font("DVS", "B", 18)
+    pdf.set_text_color(*NAVY)
+    pdf.set_x(ML)
+    pdf.cell(0, 10, "Sommaire", new_x="LMARGIN", new_y="NEXT")
+    pdf.set_text_color(0, 0, 0)
+    pdf.ln(4)
+    for name, page in zip(entries, pages):
+        pdf.set_font("DV", "", 10.5)
+        pdf.set_text_color(*BLUE)
+        pdf.set_x(ML)
+        link = TOC_LINKS.get(name, "")
+        pdf.cell(TEXT_W - 12, 7, name, link=link, new_x="RIGHT", new_y="TOP")
+        pdf.set_text_color(0, 0, 0)
+        pdf.cell(12, 7, str(page), align="R", new_x="LMARGIN", new_y="NEXT")
 
 
-def render_toc(pdf_, outline):
-    pdf_.set_left_margin(ML)
-    pdf_.set_font("DVS", "B", 18)
-    pdf_.set_text_color(*NAVY)
-    pdf_.set_x(ML)
-    pdf_.cell(0, 10, "Sommaire", new_x="LMARGIN", new_y="NEXT")
-    pdf_.set_text_color(0, 0, 0)
-    pdf_.ln(4)
-    for item_ in outline:
-        if item_.level != 0:
-            continue
-        pdf_.set_font("DV", "", 10.5)
-        pdf_.set_text_color(*BLUE)
-        pdf_.set_x(ML)
-        pdf_.cell(TEXT_W - 12, 7, item_.name, link=TOC_LINKS.get(item_.name, ""), new_x="RIGHT", new_y="TOP")
-        pdf_.set_text_color(0, 0, 0)
-        pdf_.cell(12, 7, str(item_.page_number), align="R", new_x="LMARGIN", new_y="NEXT")
+def title_of(path):
+    lines = open(path, encoding="utf-8").read().split("\n")
+    first = next((l for l in lines if l.startswith("# ")), os.path.basename(path))
+    return clean(first[2:]).strip()
 
 
 def chapter(path):
     pdf.add_page()
     lines = open(path, encoding="utf-8").read().split("\n")
-    first = next((l for l in lines if l.startswith("# ")), os.path.basename(path))
-    name = clean(first[2:]).strip()
+    name = title_of(path)
     pdf.start_section(name, level=0)
     TOC_LINKS[name] = pdf.add_link(page=pdf.page_no(), y=0)
+    start_page = pdf.page_no()
     i = 0
     while i < len(lines):
         l = lines[i].rstrip()
@@ -261,12 +276,26 @@ def chapter(path):
         else:
             para(l, 10.5, h=6)
         i += 1
+    return start_page
 
 
-cover()
-toc_page()
-for f in files:
-    chapter(f)
+def build(pages):
+    """Construit le PDF ; pages = numéros de page du sommaire (liste de même longueur que files)."""
+    global TOC_LINKS
+    TOC_LINKS = {}
+    setup()
+    names = [title_of(f) for f in files]
+    cover()
+    if HAS_TOC:
+        toc_page(names, pages)
+    starts = [chapter(f) for f in files]
+    return starts
 
+
+# Passe 1 : on mesure où commence chaque chapitre (le sommaire garde la même longueur).
+provisional = build([0] * len(files))
+# Passe 2 : on reconstruit avec les vrais numéros de page dans le sommaire.
+final = build(provisional) if HAS_TOC else provisional
+assert final == provisional, "la pagination a changé entre les deux passes"
 pdf.output(OUT)
 print("pages", pdf.page_no(), "chapitres", len(files))
