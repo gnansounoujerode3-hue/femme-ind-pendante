@@ -1,4 +1,4 @@
-# Chapitre 19 — Plan d'action détaillé, mois par mois
+# Chapitre 19 : Plan d'action détaillé, mois par mois
 
 Ce plan part de la situation au 22 novembre 2026. Adapte-le si ton dossier est déjà plus avancé, ou si tu vises une campagne ultérieure.
 

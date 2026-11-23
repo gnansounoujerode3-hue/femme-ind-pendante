@@ -235,20 +235,20 @@ note("Une page, en français, format Europass si possible. Chaque expérience do
 p("[PRÉNOM NOM]", bold=True, size=14)
 p("[Adresse, ville, pays] · [téléphone] · [e-mail] · Nationalité : [nationalité]")
 h2("Formation")
-p("[Année] — [Diplôme] en [discipline], [établissement], [ville]. Mention : [mention].")
-p("[Année] — Baccalauréat série [série], [lycée], [ville]. Mention : [mention].")
+p("[Année], [Diplôme] en [discipline], [établissement], [ville]. Mention : [mention].")
+p("[Année], Baccalauréat série [série], [lycée], [ville]. Mention : [mention].")
 h2("Expériences")
-p("[Mois Année] – [Mois Année] — [Poste ou stage], [structure], [ville]", bold=True)
+p("[Mois Année] - [Mois Année], [Poste ou stage], [structure], [ville]", bold=True)
 bullet("[Verbe d'action + tâche + résultat]")
 bullet("[Verbe d'action + tâche + résultat]")
-p("[Mois Année] – [Mois Année] — [Poste ou bénévolat], [structure], [ville]", bold=True)
+p("[Mois Année] - [Mois Année], [Poste ou bénévolat], [structure], [ville]", bold=True)
 bullet("[Verbe d'action + tâche + résultat]")
 h2("Compétences")
 bullet("Informatique : [outils, logiciels, langages]")
 bullet("Langues : Français ([niveau], [preuve, date]) ; Anglais ([niveau], [preuve, date])")
 bullet("Techniques : [compétences propres à ta discipline]")
 h2("Engagements")
-bullet("[Année] — [Association ou club], [rôle], [action principale]")
+bullet("[Année], [Association ou club], [rôle], [action principale]")
 h2("Centres d'intérêt")
 bullet("[Deux ou trois activités, en une ligne]")
 page_break()
@@ -273,7 +273,7 @@ letter_block([
     "",
     "Merci d'avance pour votre temps et votre soutien.",
     "",
-    "[Prénom nom] — [téléphone] — [e-mail]",
+    "[Prénom nom], [téléphone], [e-mail]",
 ])
 h2("Éléments à transmettre au recommandeur")
 table(["Élément", "Fourni (oui/non)"], rows=5, widths=[12, 5])
@@ -286,7 +286,7 @@ note("À utiliser si ton dossier comporte une interruption, un redoublement, un 
 letter_block([
     "[Ville], le [date]",
     "",
-    "Objet : Explication sur mon parcours académique — dossier [numéro BJ ou référence]",
+    "Objet : Explication sur mon parcours académique, dossier [numéro BJ ou référence]",
     "",
     "Madame, Monsieur,",
     "",
@@ -323,14 +323,14 @@ letter_block([
     "",
     "Je reste à votre disposition pour fournir tout justificatif complémentaire. Je vous remercie d'avance pour votre aide.",
     "",
-    "[Prénom nom] — [téléphone] — [e-mail]",
+    "[Prénom nom], [téléphone], [e-mail]",
 ])
 page_break()
 
 # ---------------------------------------------------------------- 8 Mail Eiffel
 h1("8. Mail à un établissement pour la bourse Eiffel")
 letter_block([
-    "Objet : Demande d'information sur la candidature à la bourse Eiffel — session 2027",
+    "Objet : Demande d'information sur la candidature à la bourse Eiffel, session 2027",
     "",
     "Madame, Monsieur,",
     "",
@@ -348,14 +348,14 @@ letter_block([
     "",
     "Veuillez agréer, Madame, Monsieur, l'expression de mes salutations distinguées.",
     "",
-    "[Prénom nom] — [téléphone] — [e-mail]",
+    "[Prénom nom], [téléphone], [e-mail]",
 ])
 page_break()
 
 # ---------------------------------------------------------------- 9 Réponse correction
 h1("9. Réponse à une demande de correction de Campus France")
 letter_block([
-    "Objet : Réponse à la demande de correction — dossier [numéro BJ]",
+    "Objet : Réponse à la demande de correction, dossier [numéro BJ]",
     "",
     "Bonjour,",
     "",
@@ -365,7 +365,7 @@ letter_block([
     "",
     "Je reste à votre disposition pour toute précision.",
     "",
-    "[Prénom nom] — Numéro BJ : [BJXX-XXXXX]",
+    "[Prénom nom], Numéro BJ : [BJXX-XXXXX]",
 ])
 note("Nomme chaque fichier joint de façon claire, par exemple : releve_licence_2024_corrige.pdf.")
 page_break()
@@ -373,7 +373,7 @@ page_break()
 # ---------------------------------------------------------------- 10 Relance
 h1("10. Relance d'un établissement sans réponse")
 letter_block([
-    "Objet : Relance — candidature [formation] — dossier [numéro]",
+    "Objet : Relance, candidature [formation], dossier [numéro]",
     "",
     "Madame, Monsieur,",
     "",
@@ -389,7 +389,7 @@ page_break()
 # ---------------------------------------------------------------- 11 Remerciement entretien
 h1("11. Remerciement après l'entretien")
 letter_block([
-    "Objet : Remerciements — entretien du [date]",
+    "Objet : Remerciements, entretien du [date]",
     "",
     "Bonjour [Titre] [Nom],",
     "",

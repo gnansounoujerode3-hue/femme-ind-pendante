@@ -1,4 +1,4 @@
-# Chapitre 9 — Finances et logement
+# Chapitre 9 : Finances et logement
 
 ## 9.1 Pourquoi l'argent fait partie du dossier
 

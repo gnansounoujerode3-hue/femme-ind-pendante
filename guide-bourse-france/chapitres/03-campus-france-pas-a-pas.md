@@ -1,4 +1,4 @@
-# Chapitre 3 — La procédure Campus France Bénin, étape par étape
+# Chapitre 3 : La procédure Campus France Bénin, étape par étape
 
 ## 3.1 Pourquoi cette procédure est obligatoire
 
@@ -20,7 +20,7 @@ Cette procédure aboutit à l'API, qui est indispensable pour ta demande de visa
 
 Le découpage peut varier légèrement selon les pages officielles. Repère toujours l'étape où tu te trouves sur la plateforme.
 
-## 3.3 Étape 1 — Créer ton compte
+## 3.3 Étape 1 : Créer ton compte
 
 1. Va sur la plateforme « Études en France » (etudesenfrance.diplomatie.gouv.fr).
 2. Clique sur « Je m'inscris ».
@@ -31,7 +31,7 @@ Le découpage peut varier légèrement selon les pages officielles. Repère touj
 
 **Pense à conserver ton identifiant.** Ton numéro BJ (format BJXX-XXXXX) est ton identifiant officiel. Note-le dans un document sécurisé et sur ton téléphone.
 
-## 3.4 Étape 2 — Renseigner tes informations
+## 3.4 Étape 2 : Renseigner tes informations
 
 Tu peux commencer dès l'étape 1 à remplir :
 
@@ -40,7 +40,7 @@ Tu peux commencer dès l'étape 1 à remplir :
 
 Écris ton nom exactement comme il apparaît sur ton passeport. Les écarts d'orthographe créent des erreurs de correspondance entre les documents.
 
-## 3.5 Étape 3 — Payer les frais de gestion
+## 3.5 Étape 3 : Payer les frais de gestion
 
 Les frais de gestion de dossier pour la campagne 2026-2027 sont de **70 000 F CFA**.
 
@@ -58,7 +58,7 @@ Les frais de gestion de dossier pour la campagne 2026-2027 sont de **70 000 F CF
 
 **Ces frais ne sont pas remboursables**, même en cas de refus de ton dossier. Ce n'est pas une agence privée : c'est le passage obligatoire de la procédure officielle. Tu peux le payer toi-même, sans intermédiaire.
 
-## 3.6 Étape 4 — Choisir tes formations et soumettre ton dossier
+## 3.6 Étape 4 : Choisir tes formations et soumettre ton dossier
 
 À partir du 1er octobre 2026, tu peux utiliser le **panier de formation** dans ton espace personnel.
 
@@ -73,7 +73,7 @@ Les frais de gestion de dossier pour la campagne 2026-2027 sont de **70 000 F CF
 
 **Avant de soumettre, relis-toi à voix haute.** Vérifie les dates, les noms d'établissements, les intitulés de diplômes et les numéros de téléphone.
 
-## 3.7 Étape 5 — Répondre aux demandes de correction
+## 3.7 Étape 5 : Répondre aux demandes de correction
 
 Un conseiller Campus France examine ton dossier. Il peut te demander :
 
@@ -90,7 +90,7 @@ Un conseiller Campus France examine ton dossier. Il peut te demander :
 
 Attention : une correction doit être faite dans les délais en vigueur au Bénin. Consulte le calendrier officiel à chaque fois.
 
-## 3.8 Étape 6 — Passer l'entretien individuel
+## 3.8 Étape 6 : Passer l'entretien individuel
 
 Quand ton dossier en ligne est complet, tu reçois une convocation. L'entretien est individuel et a lieu à Cotonou.
 
@@ -101,7 +101,7 @@ Lors de l'entretien :
 
 Le chapitre 14 détaille la préparation de l'entretien.
 
-## 3.9 Étape 7 — Recevoir les réponses des établissements
+## 3.9 Étape 7 : Recevoir les réponses des établissements
 
 Une fois ton dossier transmis aux établissements, ceux-ci examinent les candidatures. Tu reçois un mail à chaque réponse.
 
@@ -111,7 +111,7 @@ Une fois ton dossier transmis aux établissements, ceux-ci examinent les candida
 
 Si toutes les réponses sont négatives, la procédure Campus France s'arrête pour cette campagne. Tu peux envisager une nouvelle candidature selon les règles en vigueur.
 
-## 3.10 Étape 8 — Valider ton choix définitif et obtenir l'API
+## 3.10 Étape 8 : Valider ton choix définitif et obtenir l'API
 
 Si tu as au moins une réponse positive :
 
@@ -125,7 +125,7 @@ Si tu as au moins une réponse positive :
 
 Attention : ne valide qu'un seul choix définitif. Si tu as plusieurs réponses positives, choisis avec soin, car le choix définitif a des conséquences pour la suite.
 
-## 3.11 Étape 9 — Demande de visa et préparation du départ
+## 3.11 Étape 9 : Demande de visa et préparation du départ
 
 Le chapitre 16 détaille le visa. Retiens ici que la demande passe par le site **France-Visas**, et que le dépôt des justificatifs se fait au centre **Capago**, après prise de rendez-vous.
 

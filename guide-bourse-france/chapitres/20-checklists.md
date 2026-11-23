@@ -1,4 +1,4 @@
-# Chapitre 20 — Checklists complètes
+# Chapitre 20 : Checklists complètes
 
 Imprime ce chapitre, coche chaque ligne, et range-le avec ton dossier.
 

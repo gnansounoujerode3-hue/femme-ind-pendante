@@ -1,4 +1,4 @@
-# Chapitre 6 — Choisir ta formation et tes établissements
+# Chapitre 6 : Choisir ta formation et tes établissements
 
 ## 6.1 Pourquoi le choix est la première décision
 
@@ -6,7 +6,7 @@ Une bonne candidature commence par un bon choix. Une formation mal choisie produ
 
 Prends donc le temps de choisir. Ce chapitre te donne une méthode en quatre étapes.
 
-## 6.2 Étape 1 — Faire le point sur ton parcours
+## 6.2 Étape 1 : Faire le point sur ton parcours
 
 Note, dans un document, les éléments suivants :
 
@@ -21,7 +21,7 @@ Note, dans un document, les éléments suivants :
 
 Cet inventaire est la base de ton projet d'études. Il te permet aussi de voir si tu as les prérequis pour la formation visée.
 
-## 6.3 Étape 2 — Définir ton objectif
+## 6.3 Étape 2 : Définir ton objectif
 
 Réponds par écrit aux questions suivantes :
 
@@ -33,7 +33,7 @@ Réponds par écrit aux questions suivantes :
 
 Si tu n'arrives pas à répondre à la question 2, c'est un signal : ton projet n'est pas encore assez mûr. Prends le temps de le clarifier avant de déposer un dossier.
 
-## 6.4 Étape 3 — Identifier les formations possibles
+## 6.4 Étape 3 : Identifier les formations possibles
 
 Pour chaque objectif, identifie une à trois familles de formations. Par exemple :
 
@@ -49,7 +49,7 @@ Pour chaque formation, consulte :
 - les débouchés annoncés ;
 - le calendrier de candidature.
 
-## 6.5 Étape 4 — Comparer avec une grille
+## 6.5 Étape 4 : Comparer avec une grille
 
 Remplis une grille pour chaque formation retenue :
 

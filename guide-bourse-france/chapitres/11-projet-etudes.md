@@ -1,4 +1,4 @@
-# Chapitre 11 — Le projet d'études et le projet professionnel
+# Chapitre 11 : Le projet d'études et le projet professionnel
 
 ## 11.1 La différence entre les deux projets
 

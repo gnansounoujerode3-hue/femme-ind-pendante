@@ -1,4 +1,4 @@
-# Bonus — Comparatif des bourses françaises
+# Bonus : Comparatif des bourses françaises
 
 *Vérifié au 22 novembre 2026. Ce comparatif ne retient que les bourses dont les informations ont été contrôlées sur une page officielle ou sur la fiche officielle du catalogue Campus Bourses. Les conditions détaillées de chaque bourse se trouvent sur sa fiche : lis-la avant de candidater.*
 

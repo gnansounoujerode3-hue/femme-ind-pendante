@@ -1,4 +1,4 @@
-# Chapitre 4 — La bourse d'excellence Eiffel
+# Chapitre 4 : La bourse d'excellence Eiffel
 
 ## 4.1 Présentation
 

@@ -1,4 +1,4 @@
-# Chapitre 23 — Liens officiels et contacts
+# Chapitre 23 : Liens officiels et contacts
 
 Ne fais confiance qu'aux sites officiels. Tape toujours l'adresse toi-même, ou passe par les liens ci-dessous.
 

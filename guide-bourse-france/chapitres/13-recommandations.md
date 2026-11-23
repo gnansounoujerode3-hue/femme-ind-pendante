@@ -1,4 +1,4 @@
-# Chapitre 13 — Les lettres de recommandation
+# Chapitre 13 : Les lettres de recommandation
 
 ## 13.1 À quoi servent les lettres
 

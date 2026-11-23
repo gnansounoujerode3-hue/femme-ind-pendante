@@ -1,4 +1,4 @@
-# Chapitre 17 — Préparer ton départ et ton arrivée
+# Chapitre 17 : Préparer ton départ et ton arrivée
 
 ## 17.1 Pourquoi préparer le départ à l'avance
 

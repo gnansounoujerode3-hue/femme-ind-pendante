@@ -1,4 +1,4 @@
-# Chapitre 18 — Les 25 erreurs qui font échouer un dossier
+# Chapitre 18 : Les 25 erreurs qui font échouer un dossier
 
 Ces erreurs reviennent souvent. Relis cette liste avant de soumettre ton dossier.
 

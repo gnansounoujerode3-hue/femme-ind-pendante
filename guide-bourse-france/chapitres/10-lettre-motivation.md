@@ -1,4 +1,4 @@
-# Chapitre 10 — La lettre de motivation
+# Chapitre 10 : La lettre de motivation
 
 ## 10.1 Ce qu'est une lettre de motivation
 
@@ -14,19 +14,19 @@ Une bonne lettre ne se contente pas de dire que tu es motivé(e). Elle le démon
 
 ## 10.3 La structure en cinq paragraphes
 
-**Paragraphe 1 — Accroche (3 à 4 lignes).**
+**Paragraphe 1 : Accroche (3 à 4 lignes).**
 Commence par un fait précis : une expérience, un problème que tu as observé, une rencontre, un chiffre. Évite les formules du type « depuis toujours ».
 
-**Paragraphe 2 — Ton parcours (8 à 10 lignes).**
+**Paragraphe 2 : Ton parcours (8 à 10 lignes).**
 Présente ton parcours académique et professionnel. Choisis deux ou trois éléments qui montrent ta progression, et explique ce qu'ils t'ont appris. Relie-les à ton projet.
 
-**Paragraphe 3 — Pourquoi cette formation (8 à 10 lignes).**
+**Paragraphe 3 : Pourquoi cette formation (8 à 10 lignes).**
 Cite des éléments précis du programme : un cours, un laboratoire, un enseignant, un stage, une spécificité de l'établissement. Montre que tu as lu le programme et que tu sais ce qu'il t'apportera.
 
-**Paragraphe 4 — Ton projet (6 à 8 lignes).**
+**Paragraphe 4 : Ton projet (6 à 8 lignes).**
 Explique ce que tu feras après la formation, au Bénin ou ailleurs. Donne un exemple concret : un poste visé, un problème à résoudre, un projet à lancer.
 
-**Paragraphe 5 — Conclusion (2 à 3 lignes).**
+**Paragraphe 5 : Conclusion (2 à 3 lignes).**
 Remercie le jury et termine sur une phrase sobre. Pas de formule creuse.
 
 ## 10.4 La longueur et la forme

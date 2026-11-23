@@ -1,4 +1,4 @@
-# Chapitre 1 — Les dates qui comptent maintenant
+# Chapitre 1 : Les dates qui comptent maintenant
 
 *Situation au 22 novembre 2026.*
 
@@ -22,13 +22,13 @@ La campagne 2026-2027 est déjà bien engagée. Les grandes étapes se sont déj
 
 ## 1.3 Les trois actions à faire cette semaine
 
-**Action 1 — Payer les frais de gestion.**
+**Action 1 : Payer les frais de gestion.**
 Rends-toi à une agence de la Société Générale du Bénin avec ton numéro BJ et une pièce d'identité. Pour les étudiants de Parakou, le paiement se fait à Orabank. Garde la quittance : tu devras la scanner et l'ajouter à ton dossier.
 
-**Action 2 — Soumettre ton dossier avant le 1er décembre.**
+**Action 2 : Soumettre ton dossier avant le 1er décembre.**
 Même si tout n'est pas parfait, soumets un dossier complet dans sa version actuelle. Un conseiller Campus France peut ensuite te demander des corrections. Un dossier non soumis ne sera pas examiné.
 
-**Action 3 — Écrire à ton établissement pour la bourse Eiffel.**
+**Action 3 : Écrire à ton établissement pour la bourse Eiffel.**
 Si tu vises la bourse Eiffel, écris aujourd'hui à l'établissement français que tu vises. Demande-lui :
 
 - sa date limite interne de réception des candidatures ;

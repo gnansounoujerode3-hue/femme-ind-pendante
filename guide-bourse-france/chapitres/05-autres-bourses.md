@@ -1,4 +1,4 @@
-# Chapitre 5 — Les autres bourses et aides
+# Chapitre 5 : Les autres bourses et aides
 
 ## 5.1 Ne pas mettre tous ses œufs dans le même panier
 

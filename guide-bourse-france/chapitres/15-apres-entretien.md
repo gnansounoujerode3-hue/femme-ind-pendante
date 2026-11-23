@@ -1,4 +1,4 @@
-# Chapitre 15 — Après l'entretien : corrections, réponses et choix
+# Chapitre 15 : Après l'entretien : corrections, réponses et choix
 
 ## 15.1 Ce qui se passe après l'entretien
 

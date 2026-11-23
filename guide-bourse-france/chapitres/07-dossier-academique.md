@@ -1,4 +1,4 @@
-# Chapitre 7 — Constituer ton dossier académique
+# Chapitre 7 : Constituer ton dossier académique
 
 ## 7.1 Ce que le jury lit en premier
 

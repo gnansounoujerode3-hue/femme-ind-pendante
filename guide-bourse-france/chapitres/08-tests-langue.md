@@ -1,4 +1,4 @@
-# Chapitre 8 — Les tests de langue
+# Chapitre 8 : Les tests de langue
 
 ## 8.1 Pourquoi les tests de langue comptent
 

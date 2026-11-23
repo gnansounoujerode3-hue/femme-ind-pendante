@@ -1,4 +1,4 @@
-# Chapitre 22 — Glossaire
+# Chapitre 22 : Glossaire
 
 **API (Accord préalable d'inscription).** Document issu de la plateforme « Études en France », qui atteste que tu as été accepté(e) dans un établissement. Il doit être signé et tamponné par Campus France Bénin pour servir au visa.
 

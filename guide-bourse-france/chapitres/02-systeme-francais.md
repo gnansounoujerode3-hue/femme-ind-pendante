@@ -1,4 +1,4 @@
-# Chapitre 2 — Comprendre le système français d'enseignement supérieur
+# Chapitre 2 : Comprendre le système français d'enseignement supérieur
 
 ## 2.1 Pourquoi comprendre le système avant de postuler
 

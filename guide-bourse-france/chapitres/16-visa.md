@@ -1,4 +1,4 @@
-# Chapitre 16 — Le visa étudiant
+# Chapitre 16 : Le visa étudiant
 
 ## 16.1 Ce que le visa permet
 

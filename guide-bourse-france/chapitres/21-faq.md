@@ -1,4 +1,4 @@
-# Chapitre 21 — Questions fréquentes
+# Chapitre 21 : Questions fréquentes
 
 ## 21.1 Procédure Campus France
 

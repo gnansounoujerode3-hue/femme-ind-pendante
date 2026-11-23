@@ -1,10 +1,10 @@
-# Chapitre 24 — Annexes : modèles de mails et de demandes
+# Chapitre 24 : Annexes : modèles de mails et de demandes
 
 *Ces modèles sont à adapter. Remplace tous les éléments entre crochets, relis avant d'envoyer, et garde une copie de chaque envoi.*
 
-## Annexe A — Mail à un établissement pour la bourse Eiffel
+## Annexe A : Mail à un établissement pour la bourse Eiffel
 
-> Objet : Demande d'information sur la candidature à la bourse Eiffel — session 2027
+> Objet : Demande d'information sur la candidature à la bourse Eiffel, session 2027
 >
 > Madame, Monsieur,
 >
@@ -21,9 +21,9 @@
 > Veuillez agréer, Madame, Monsieur, l'expression de mes salutations distinguées.
 >
 > [Prénom nom]
-> [Numéro de téléphone] — [adresse e-mail]
+> [Numéro de téléphone], [adresse e-mail]
 
-## Annexe B — Demande d'attestation de rang à mon école ou université
+## Annexe B : Demande d'attestation de rang à mon école ou université
 
 > Objet : Demande d'attestation de rang dans la promotion
 >
@@ -36,9 +36,9 @@
 > Je reste à votre disposition pour fournir tout justificatif complémentaire. Je vous remercie d'avance pour votre aide.
 >
 > [Prénom nom]
-> [Téléphone] — [e-mail]
+> [Téléphone], [e-mail]
 
-## Annexe C — Demande de lettre de recommandation
+## Annexe C : Demande de lettre de recommandation
 
 > Objet : Demande de lettre de recommandation
 >
@@ -52,9 +52,9 @@
 >
 > [Prénom nom]
 
-## Annexe D — Réponse à une demande de correction de Campus France
+## Annexe D : Réponse à une demande de correction de Campus France
 
-> Objet : Réponse à la demande de correction — dossier BJXX-XXXXX
+> Objet : Réponse à la demande de correction, dossier BJXX-XXXXX
 >
 > Bonjour,
 >
@@ -65,9 +65,9 @@
 > [Prénom nom]
 > [Numéro BJ]
 
-## Annexe E — Relance à un établissement sans réponse
+## Annexe E : Relance à un établissement sans réponse
 
-> Objet : Relance — candidature [formation] — dossier [numéro]
+> Objet : Relance, candidature [formation], dossier [numéro]
 >
 > Madame, Monsieur,
 >
@@ -79,9 +79,9 @@
 >
 > [Prénom nom]
 
-## Annexe F — Remerciement après l'entretien
+## Annexe F : Remerciement après l'entretien
 
-> Objet : Remerciements — entretien du [date]
+> Objet : Remerciements, entretien du [date]
 >
 > Bonjour [Titre] [Nom],
 >
@@ -93,7 +93,7 @@
 >
 > [Prénom nom]
 
-## Annexe G — Note de suivi personnelle
+## Annexe G : Note de suivi personnelle
 
 Tableau à reproduire et à remplir chaque semaine :
 
@@ -104,7 +104,7 @@ Tableau à reproduire et à remplir chaque semaine :
 | | | | | | |
 | | | | | | |
 
-## Annexe H — Conseils finaux pour les modèles
+## Annexe H : Conseils finaux pour les modèles
 
 - Garde les modèles dans un dossier séparé, sous un nom clair.
 - Personnalise chaque envoi : un mail générique est lu rapidement et souvent ignoré.
