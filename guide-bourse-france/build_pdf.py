@@ -1,7 +1,11 @@
 """Génère le PDF du guide à partir des chapitres Markdown.
 
 Usage (depuis la racine du dépôt) :
-    python3 guide-bourse-france/build_pdf.py guide-bourse-france/DECROCHE-TA-BOURSE-FRANCAISE-TOI-MEME.pdf
+    python3 guide-bourse-france/build_pdf.py SORTIE.pdf [DOSSIER_SOURCE] [TITRE] [SOUS-TITRE]
+
+Par défaut : chapitres/ -> guide principal. Pour le bonus :
+    python3 guide-bourse-france/build_pdf.py guide-bourse-france/BONUS-COMPARATIF-BOURSES.pdf \
+        guide-bourse-france/bonus "Bonus : comparatif des bourses françaises" "Bourses vérifiées au 22 novembre 2026"
 
 Dépendance : fpdf2 (pip install fpdf2). Polices DejaVu requises.
 Les liens (Markdown ou URL nues) apparaissent en bleu et sont cliquables.
@@ -16,7 +20,10 @@ from fpdf import FPDF
 HERE = os.path.dirname(os.path.abspath(__file__))
 FD = "/usr/share/fonts/truetype/dejavu/"
 BLUE = (0, 0, 238)
-files = sorted(glob.glob(os.path.join(HERE, "chapitres", "*.md")))
+SRC_DIR = sys.argv[2] if len(sys.argv) > 2 else os.path.join(HERE, "chapitres")
+TITLE = sys.argv[3] if len(sys.argv) > 3 else "Décroche ta bourse française"
+SUBTITLE = sys.argv[4] if len(sys.argv) > 4 else "toi-même, sans payer une agence"
+files = sorted(glob.glob(os.path.join(SRC_DIR, "*.md")))
 
 pdf = FPDF(format="A4")
 pdf.set_margins(22, 22, 22)
@@ -75,8 +82,8 @@ def rule():
 # Page de titre
 pdf.add_page()
 pdf.ln(60)
-write("Décroche ta bourse française", 26, "B", "DVS", h=13)
-write("toi-même, sans payer une agence", 20, "", "DVS", h=11, after=10)
+write(TITLE, 26, "B", "DVS", h=13)
+write(SUBTITLE, 20, "", "DVS", h=11, after=10)
 write("Guide pratique complet pour les candidats béninois", 12, after=4)
 write("Procédure Campus France Bénin, bourse d'excellence Eiffel, dossier, entretien, visa, départ", 10.5, after=40)
 write("Version de référence : 22 novembre 2026", 10, after=2)
