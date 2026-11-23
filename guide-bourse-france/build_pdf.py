@@ -169,7 +169,16 @@ def table(rows):
     pdf.ln(4)
 
 
+COVER_IMG = os.path.join(HERE, "couverture", "couverture-finale.png")
+COVER_FORMAT = (210, 315)  # format de l'image de couverture (2:3), sans la déformer
+
+
 def cover():
+    # Couverture image (uniquement pour le guide principal, pas pour le bonus)
+    if os.path.exists(COVER_IMG) and SRC_DIR == os.path.join(HERE, "chapitres"):
+        pdf.add_page(format=COVER_FORMAT)
+        pdf.image(COVER_IMG, x=0, y=0, w=COVER_FORMAT[0], h=COVER_FORMAT[1])
+        return
     pdf.add_page()
     pdf.set_fill_color(*NAVY)  # bandeau de couverture uniquement
     pdf.rect(0, 0, pdf.w, 110, "F")
