@@ -2,3 +2,7 @@
 __pycache__/
 # Miniatures de recherche non sélectionnées et sans droits vérifiés
 image-search/
+
+# Copie personnelle : images tierces et PDF non destinés au dépôt public
+personnel/
+EBOOK-100-RECETTES-TERRE-DE-FETE-PERSONNEL.pdf

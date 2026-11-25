@@ -1,6 +1,7 @@
 """Livre complet au design validé. --final refuse une édition incomplètement illustrée."""
 from pathlib import Path
 from html import escape
+from io import BytesIO
 import argparse,json,re,sys
 from reportlab.platypus import (BaseDocTemplate, PageTemplate, Frame, Flowable, Paragraph,
     Spacer, PageBreak, NextPageTemplate, Table, TableStyle, KeepTogether)
@@ -19,7 +20,10 @@ CREAM,GREEN,TERRA,MUTED=[HexColor(x) for x in ('#FAF6ED','#174A3B','#A9472D','#5
 OUT='EBOOK-100-RECETTES-TERRE-DE-FETE-TRAVAIL.pdf'
 
 
-def main(final=False):
+def main(final=False, personal=False, manifest=None):
+    if final and personal:
+        print("Choisir --final ou --personal, pas les deux.", file=sys.stderr)
+        return 2
     recipes=load_recipes()
     registry=json.loads((ROOT/'assets/food/registry.json').read_text())
     photos={}
@@ -27,6 +31,19 @@ def main(final=False):
         local=item.get('local_path')
         if item.get('image_kind')=='photograph' and item.get('status')!='rejected' and local and (ROOT/local).is_file():
             photos[item['recipe_id']]=item
+    if personal:
+        manifest_path=Path(manifest) if manifest else ROOT/'personnel/manifest.json'
+        extras=json.loads(manifest_path.read_text())['images']
+        seen=set()
+        for item in extras:
+            n=item['recipe_id']
+            if type(n) is not int or not 1 <= n <= 100 or n in seen:
+                raise ValueError(f'Numéro personnel invalide ou dupliqué : {n}')
+            seen.add(n)
+            local=ROOT/item['local_path']
+            if not local.is_file() or item.get('image_kind')!='photograph' or item.get('status')!='personal_only':
+                raise ValueError(f'Photographie personnelle absente ou non sélectionnée : {n}')
+            photos[n]=item
     ready={n:p for n,p in photos.items() if p['status']=='approved' and p.get('publication_ready') is True}
     if final and any(r['number'] not in ready for r in recipes):
         missing=[str(r['number']) for r in recipes if r['number'] not in ready]
@@ -86,7 +103,18 @@ def main(final=False):
                 with Image.open(ROOT/self.photo['local_path']) as im:
                     scale=min(self.width/im.width,self.height/im.height)
                     w,h=im.width*scale,im.height*scale
-                    c.drawImage(ImageReader(im),(self.width-w)/2,(self.height-h)/2,w,h)
+                    if personal:
+                        # JPEG incorporé, pas du RGB recompressé en Flate : PDF écran léger.
+                        # Aucun agrandissement, recadrage ou effacement de crédit.
+                        screen=im.convert('RGB')
+                        screen.thumbnail((1800,1800))
+                        stream=BytesIO()
+                        screen.save(stream,format='JPEG',quality=88,optimize=True)
+                        stream.seek(0)
+                        reader=ImageReader(stream)
+                    else:
+                        reader=ImageReader(im)
+                    c.drawImage(reader,(self.width-w)/2,(self.height-h)/2,w,h)
             else:
                 c.setFillColor(HexColor('#EEEADF'));c.roundRect(0,0,505,440,8,fill=1,stroke=0)
                 paragraph_draw(c,'Photographie réelle<br/>à intégrer',40,265,425,'h1')
@@ -98,7 +126,7 @@ def main(final=False):
         c.setFont('Sans',8);c.drawRightString(W-45,H-34,'100 RECETTES • ÉDITION DÉBUTANT')
         c.setStrokeColor(TERRA);c.setLineWidth(.5);c.line(45,H-49,W-45,H-49);c.line(45,45,W-45,45)
         c.setFillColor(MUTED);c.setFont('Sans',7.5)
-        c.drawString(45,29,'VERSION DE TRAVAIL • PHOTOGRAPHIES À COMPLÉTER' if not final else '100 RECETTES BÉNINOISES & AFRICAINES')
+        c.drawString(45,29,'COPIE PERSONNELLE • NON DESTINÉE À LA DIFFUSION' if personal else ('VERSION DE TRAVAIL • PHOTOGRAPHIES À COMPLÉTER' if not final else '100 RECETTES BÉNINOISES & AFRICAINES'))
         c.setFont('SansBold',9);c.drawRightString(W-45,28,str(doc.page).zfill(2));c.restoreState()
 
     class Book(BaseDocTemplate):
@@ -107,7 +135,7 @@ def main(final=False):
             if key:
                 self.canv.bookmarkPage(key)
                 self.canv.addOutlineEntry(flowable.getPlainText(),key,0,False)
-    output=ROOT/('EBOOK-100-RECETTES-TERRE-DE-FETE.pdf' if final else OUT)
+    output=ROOT/('EBOOK-100-RECETTES-TERRE-DE-FETE-PERSONNEL.pdf' if personal else ('EBOOK-100-RECETTES-TERRE-DE-FETE.pdf' if final else OUT))
     doc=Book(str(output),pagesize=(W,H),title='100 recettes béninoises & africaines — Terre de fête',
              author='Atelier éditorial culinaire',subject='Mise en page intégrale — photographies réelles uniquement',pageCompression=1)
     doc.addPageTemplates([
@@ -125,14 +153,25 @@ def main(final=False):
             elif line.startswith('## '):story.append(p(inline(line[3:]),'h2'))
             elif line.startswith('- '):story.append(p('• '+inline(line[2:])))
             else:story.append(p(inline(line)))
-    heading('Avant publication','etat')
-    story.extend([p('MISE EN PAGE COMPLÈTE — VERSION DE TRAVAIL','label'),
-        p('Le design de la couverture et des fiches reprend la maquette validée. Ce volume contient les 100 recettes, leurs emplacements photographiques, les conseils pour débutants et les annexes.'),
-        p(f'<b>{len(photos)} aperçus photographiques disponibles sur 100 ; {100-len(photos)} emplacements restent à compléter.</b> Les aperçus sont en basse définition et ne sont pas validés pour une publication finale.'),
-        p('Les pages sans photographie portent explicitement la mention « à intégrer ». Ce document n’est pas un e-book final prêt à vendre. Aucune image générée par IA n’est utilisée.'),
-        p('Les photographies existantes illustrent des variantes des plats : elles ne montrent pas des recettes testées pour ce livre. Les accompagnements visibles ne sont pas forcément inclus dans la fiche.'),
-        p('Recettes rédigées pour ce projet, non testées en cuisine dans le cadre de sa réalisation. Faire relire et tester avant commercialisation.'),
-        p('Pour exporter la version finale, le générateur exige une photographie validée pour chacune des 100 recettes. Il ne transforme pas les emplacements vides en illustrations fictives.'),PageBreak()])
+    if personal:
+        heading('Votre copie personnelle','etat')
+        story.extend([
+            p('100 RECETTES • PHOTOGRAPHIES ILLUSTRATIVES','label'),
+            p(f'<b>{len(photos)} pages avec photographie sur 100.</b> La couverture et la mise en page validées sont conservées.'),
+            p('Les photos récupérées en ligne illustrent des variantes des plats. Elles ne montrent pas des recettes testées pour ce livre. Les différences de composition, de cuisson et les accompagnements sont signalés sous les images.'),
+            p('Les fichiers disponibles ont une définition variable, parfois très petite. Cette copie convient à une consultation personnelle à l’écran ; elle n’est pas un export haute définition destiné à l’impression.'),
+            p('Aucune image n’a été générée par IA pour ce livre. Les résultats hors sujet et images suspectes ont été écartés lors de la sélection visuelle.'),
+            p('Les sources sont indiquées sous les photos et dans les crédits. Les droits de republication des nouvelles images ne sont pas validés : ne pas diffuser ni vendre cette copie.'),
+            p('Les recettes restent non testées en cuisine dans le cadre de ce projet.'),PageBreak()])
+    else:
+        heading('Avant publication','etat')
+        story.extend([p('MISE EN PAGE COMPLÈTE — VERSION DE TRAVAIL','label'),
+            p('Le design de la couverture et des fiches reprend la maquette validée. Ce volume contient les 100 recettes, leurs emplacements photographiques, les conseils pour débutants et les annexes.'),
+            p(f'<b>{len(photos)} aperçus photographiques disponibles sur 100 ; {100-len(photos)} emplacements restent à compléter.</b> Les aperçus sont en basse définition et ne sont pas validés pour une publication finale.'),
+            p('Les pages sans photographie portent explicitement la mention « à intégrer ». Ce document n’est pas un e-book final prêt à vendre. Aucune image générée par IA n’est utilisée.'),
+            p('Les photographies existantes illustrent des variantes des plats : elles ne montrent pas des recettes testées pour ce livre. Les accompagnements visibles ne sont pas forcément inclus dans la fiche.'),
+            p('Recettes rédigées pour ce projet, non testées en cuisine dans le cadre de sa réalisation. Faire relire et tester avant commercialisation.'),
+            p('Pour exporter la version finale, le générateur exige une photographie validée pour chacune des 100 recettes. Il ne transforme pas les emplacements vides en illustrations fictives.'),PageBreak()])
     heading('Les 100 recettes','sommaire')
     story.append(p('Touchez un titre pour ouvrir la fiche correspondante.','small'))
     chapter=''
@@ -150,17 +189,17 @@ def main(final=False):
             chapter=r['chapter'];heading(chapter,f'chapitre-{num}')
             story.extend([Spacer(1,30),p('Des gestes simples, des repères clairs.','h2'),
                 p('Commencez par lire la recette entière. Préparez les ingrédients, vérifiez les temps d’attente et choisissez votre accompagnement.'),
-                p('Une page est réservée au plat terminé avant chaque recette. Les emplacements sans photo sont signalés sans ambiguïté.','small'),PageBreak()])
+                p('Une photographie illustrative précède chaque recette ; les variantes sont signalées sous les images.' if personal else 'Une page est réservée au plat terminé avant chaque recette. Les emplacements sans photo sont signalés sans ambiguïté.','small'),PageBreak()])
         label=p(f'RECETTE {num:02} • LE PLAT EN IMAGE','label');story.append(label)
         heading(r['title'],f'photo-{num}')
         photo=photos.get(num)
         story.extend([Picture(photo),Spacer(1,16)])
         if photo:
-            story.append(p('Photographie illustrative d’une variante du plat. Aperçu de travail en basse définition.','small'))
+            story.append(p('Photographie illustrative d’une variante du plat. Définition variable, copie personnelle.' if personal else 'Photographie illustrative d’une variante du plat. Aperçu de travail en basse définition.','small'))
             if photo.get('caption'):
                 story.append(p(escape(photo['caption']),'small'))
             story.append(p(escape(photo['attribution'])+'. Mise à l’échelle sans recadrage sur cette page.','small'))
-            story.append(p(f'<link href="{escape(photo["source_page_url"],quote=True)}">Page source</link> · <link href="{escape(photo["license_url"],quote=True)}">Licence</link>','small'))
+            story.append(p(f'<link href="{escape(photo["source_page_url"],quote=True)}">Page source</link>' + ('' if photo.get('status')=='personal_only' else f' · <link href="{escape(photo["license_url"],quote=True)}">Licence</link>'),'small'))
         else:story.append(p('PHOTOGRAPHIE MANQUANTE — NE PAS PUBLIER CETTE PAGE EN L’ÉTAT','label'))
         story.extend([p('La recette commence à la page suivante.','small'),PageBreak()])
         story.append(p(f'RECETTE {num:02}','label'));heading(r['title'],f'recette-{num}')
@@ -180,20 +219,27 @@ def main(final=False):
     heading('Menus & organisation','annexes')
     markdown((ROOT/'guide-annexes.md').read_text())
     story.extend([PageBreak()]);heading('Crédits photographiques','credits')
-    story.append(p('Les photos ci-dessous sont des aperçus présents dans cette version de travail. Leurs licences ne s’étendent pas automatiquement au texte du livre. Les pages photo indiquent leur source.'))
+    story.append(p('Sources des photographies illustratives de cette copie personnelle. Les droits de republication des nouvelles images ne sont pas validés. Chaque photo conserve sa source ; les marques ou crédits présents dans les images sont conservés.' if personal else 'Les photos ci-dessous sont des aperçus présents dans cette version de travail. Leurs licences ne s’étendent pas automatiquement au texte du livre. Les pages photo indiquent leur source.'))
     for num,photo in sorted(photos.items()):
         story.extend([p(f'{num}. {escape(recipes[num-1]["title"])}','sub'),p(escape(photo['attribution'])),
             p(f'<link href="{escape(photo["source_page_url"],quote=True)}">{escape(photo["source_page_url"])}</link>','small'),
-            p(f'<link href="{escape(photo["license_url"],quote=True)}">{escape(photo["license_url"])}</link>','small')])
+            p('Réutilisation non vérifiée — copie personnelle uniquement.' if photo.get('status')=='personal_only' else f'<link href="{escape(photo["license_url"],quote=True)}">{escape(photo["license_url"])}</link>','small')])
     story.append(p('La couverture reprend la photographie d’amiwo par Aimeabibis, recadrée. Les aperçus intérieurs sont mis à l’échelle sans retouche générative.','small'))
     doc.build(story)
     report=dict(file=output.name,recipes=100,photo_slots=100,preview_photos=len(photos),missing_photos=100-len(photos),publication_ready=False if not final else True,
                 notes=['Couverture et direction artistique validées','Photos manquantes signalées, aucune image IA','Recettes non testées en cuisine','Validation visuelle et technique requise'])
-    folder=ROOT/'reports/ebook-complet';folder.mkdir(exist_ok=True,parents=True)
+    if personal:
+        report.update(personal_use=True,publication_ready=False,notes=['Design validé conservé','Photos de variantes, sources dans le PDF','Définition variable, non HD','Ne pas diffuser cette copie personnelle'])
+    folder=ROOT/('personnel/rapports' if personal else 'reports/ebook-complet');folder.mkdir(exist_ok=True,parents=True)
     (folder/'etat-production.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n')
     print(output)
     return 0
 
 if __name__=='__main__':
     parser=argparse.ArgumentParser();parser.add_argument('--final',action='store_true')
-    sys.exit(main(parser.parse_args().final))
+    parser.add_argument('--personal',action='store_true',help='Copie personnelle séparée, sans modifier le PDF public')
+    parser.add_argument('--manifest',help='Registre local des photos de la copie personnelle')
+    args=parser.parse_args()
+    if args.manifest and not args.personal:
+        parser.error('--manifest exige --personal')
+    sys.exit(main(args.final,args.personal,args.manifest))

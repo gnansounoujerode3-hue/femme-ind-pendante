@@ -11,7 +11,19 @@ Pour Noël et le 1er janvier, avec des explications adaptées aux débutants.
 - Vérification des sources, des licences et des crédits avant publication.
 - Une photographie illustrative ne sera pas présentée comme le résultat exact d’une recette testée pour ce livre.
 
-## Livre intégral mis en page — version de travail, 228 pages
+## Copie personnelle illustrée — 240 pages
+
+Une copie séparée avec **100 photos illustratives, chacune placée avant sa recette**, a été préparée à la demande de l’utilisateur pour son usage personnel. Les variantes sont légendées et les sources indiquées. Définition des images variable ; recettes non testées pour ce projet.
+
+Le PDF personnel est remis dans la conversation, **pas publié dans ce dépôt public**. Les droits de republication des nouvelles images ne sont pas validés.
+
+- [Détails de la copie personnelle](EDITION-PERSONNELLE.md)
+- [Sources des 100 images utilisées](recherche-photos/SOURCES-COPIE-PERSONNELLE.csv)
+- [Contrôles techniques](reports/edition-personnelle/validation.json)
+
+Le bilan ci-dessous concerne uniquement la version publique de travail, distincte de cette copie personnelle.
+
+## Livre intégral mis en page — version publique de travail, 228 pages
 
 📕 **[Consulter les 100 recettes dans le design validé](EBOOK-100-RECETTES-TERRE-DE-FETE-TRAVAIL.pdf)**
 
