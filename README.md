@@ -15,10 +15,12 @@ Pour Noël et le 1er janvier, avec des explications adaptées aux débutants.
 
 Une copie séparée avec **100 photos illustratives, chacune placée avant sa recette**, a été préparée à la demande de l’utilisateur pour son usage personnel. Les variantes sont légendées et les sources indiquées. Définition des images variable ; recettes non testées pour ce projet.
 
-Le PDF personnel est remis dans la conversation, **pas publié dans ce dépôt public**. Les droits de republication des nouvelles images ne sont pas validés.
+📕 **[Ouvrir le PDF illustré — 240 pages](EBOOK-100-RECETTES-TERRE-DE-FETE-PERSONNEL.pdf)** · **[Téléchargement direct](https://github.com/gnansounoujerode3-hue/femme-ind-pendante/raw/refs/heads/arena/f365f470-femme-ind-pendante/EBOOK-100-RECETTES-TERRE-DE-FETE-PERSONNEL.pdf)**
+
+Le PDF a été **reconstruit puis archivé sur cette branche GitHub à la demande explicite de l’utilisateur**, avec les 86 fichiers réacquis et leur manifeste, en complément des 14 photos existantes. Quelques sélections diffèrent de la copie précédente, perdue avant téléchargement. Les droits de republication des nouvelles images ne sont pas validés : cette archive n’est pas une édition commerciale approuvée.
 
 - [Détails de la copie personnelle](EDITION-PERSONNELLE.md)
-- [Sources des 100 images utilisées](recherche-photos/SOURCES-COPIE-PERSONNELLE.csv)
+- [Sources actuelles des 100 images utilisées](recherche-photos/SOURCES-RECONSTRUCTION.csv)
 - [Contrôles techniques](reports/edition-personnelle/validation.json)
 
 Le bilan ci-dessous concerne uniquement la version publique de travail, distincte de cette copie personnelle.

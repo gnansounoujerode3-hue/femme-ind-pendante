@@ -1,45 +1,51 @@
-# Copie personnelle illustrée — Terre de fête
+# Terre de fête — copie personnelle illustrée reconstruite
 
-## Fichier remis dans la conversation
+## Télécharger
 
-`EBOOK-100-RECETTES-TERRE-DE-FETE-PERSONNEL.pdf` : **240 pages, 100 photographies illustratives, 100 recettes**, environ **18,6 Mo**.
+**[Ouvrir le PDF (240 pages)](EBOOK-100-RECETTES-TERRE-DE-FETE-PERSONNEL.pdf)**
 
-- Les 100 pages photo précèdent immédiatement leur fiche recette.
-- Couverture et design validés conservés.
-- Ajout de 86 images aux 14 aperçus précédents, dans une copie séparée.
-- Photos sélectionnées visuellement ; aucune génération d’image par IA utilisée. Résultats hors sujet et images suspectes écartés.
-- Différences de composition, de cuisson et accompagnements explicités sous les nouvelles images : il ne s’agit pas de résultats exacts de recettes testées pour ce livre.
-- Images de définition variable. Les dimensions **réellement acquises**, et non les dimensions annoncées des originaux distants, figurent dans le [tableau des sources](recherche-photos/SOURCES-COPIE-PERSONNELLE.csv).
-- Mise à l’échelle proportionnelle sans recadrage intérieur ; crédits et marques présents dans les images conservés. Compression JPEG et réduction éventuelle à 1 800 pixels par côté pour alléger la lecture écran, sans agrandissement artificiel des fichiers.
+**[Télécharger directement sur GitHub](https://github.com/gnansounoujerode3-hue/femme-ind-pendante/raw/refs/heads/arena/f365f470-femme-ind-pendante/EBOOK-100-RECETTES-TERRE-DE-FETE-PERSONNEL.pdf)**
 
-## Séparation entre copie personnelle et dépôt public
+100 recettes, 100 photographies distinctes, chaque page photo immédiatement avant sa fiche. Design validé conservé, y compris la couverture photographique. La taille et l’empreinte exacte figurent dans le [contrôle des images](reports/edition-personnelle/controle-images.json).
 
-La demande porte sur un usage personnel. Les droits de republication des nouvelles images ne sont pas validés : le **PDF personnel, son registre local et les images tierces ne sont pas ajoutés au dépôt GitHub public**. Ils sont disponibles dans l’espace de travail et le PDF a vocation à être remis dans la conversation.
+## Pourquoi une reconstruction ?
 
-GitHub contient le générateur, le tableau de sources et les rapports techniques, mais pas cette copie personnelle. Le PDF public de travail garde son statut antérieur (14 aperçus, 86 images absentes) ; il n’est pas remplacé silencieusement par la copie personnelle. Le registre public n’est pas marqué « approuvé ».
+Le précédent PDF personnel et les 86 nouveaux fichiers image étaient exclus de Git et n’ont pas survécu à la restauration de l’espace de travail. Le lien donné auparavant n’était plus utilisable et le client n’a pas pu télécharger le fichier.
 
-## Contrôles
+Les recettes, le générateur, les 14 photos historiques et le tableau de sources avaient été conservés. Ils ont servi à reconstruire cette copie ; les 86 photographies supplémentaires ont été recherchées et récupérées à nouveau. Certaines sélections et légendes ont donc changé. Ce n’est pas une restauration à l’identique de l’ancien fichier.
 
-- 100 fiches complètes et 100 pages photo repérées.
-- Une page photo immédiatement avant chaque fiche ; 100 images distinctes selon leurs empreintes de fichiers.
-- 100 liens internes valides ; lien source présent sur chacune des 100 pages photo.
-- Polices utilisées incorporées ; pas de page quasi vide ni de texte hors des limites.
-- 100 pages photo examinées sur cinq planches ; remplacement d’une photo de pintade non terminée et d’un résultat « shiro » montrant des ingrédients. Photo du wagassi récupérée dans une meilleure définition.
-- Export personnel optimisé d’environ 18,6 Mo, après remplacement d’un premier export non optimisé de 296 Mo.
-- Le mode `--personal` ne permet pas de contourner le contrôle de l’édition finale : `--personal --final` est refusé.
-- [Rapport technique](reports/edition-personnelle/validation.json) et [contrôle des images](reports/edition-personnelle/controle-images.json).
+À la demande explicite du client de mettre le PDF sur GitHub, **le PDF reconstruit et les images sélectionnées sont cette fois archivés dans la branche de travail**, avec le manifeste `assets/food/personnel/manifest.json`. Les fichiers de recherche rejetés et les planches intermédiaires restent exclus. Le PDF public de travail n’a pas été remplacé.
 
-## Reproduction locale
+## Statut éditorial
 
-Les images et le manifeste local sont nécessaires : ils ne sont volontairement pas publiés sur GitHub. Dans cet espace de travail :
+- Aucune image générée avec un outil d’IA pour le livre ; sélection visuelle de photographies trouvées sur les sources citées. Ce contrôle ne certifie pas la provenance de chaque fichier tiers.
+- Illustrations de variantes, pas des résultats de recettes testées pour le livre. Accompagnements et différences signalés en légende.
+- Définition variable, parfois très faible. Copie écran, pas un export haute définition pour impression.
+- Crédits et filigranes présents conservés. Images mises à l’échelle proportionnellement, sans retouche générative ; réduction éventuelle à 1 800 pixels et JPEG pour limiter le poids.
+- Les droits de republication des nouvelles images **ne sont pas validés** ; leur présence dans cette archive demandée par le client ne leur confère aucune licence libre et ne constitue pas une autorisation de vente.
+- Recettes non testées en cuisine dans le cadre de ce projet. Pas de validation imprimeur ou PDF/UA.
+
+[Sources actuelles et dimensions des 100 fichiers](recherche-photos/SOURCES-RECONSTRUCTION.csv). Le tableau `SOURCES-COPIE-PERSONNELLE.csv` est conservé comme historique de la sélection perdue.
+
+## Contrôles de la reconstruction
+
+- 100 fiches, 100 pages photo et 100 fichiers image distincts (SHA-256).
+- 100 liens internes valides, une source externe par page photo.
+- Polices utilisées incorporées ; aucune page quasi vide ni texte hors page selon le vérificateur.
+- Contrôle des 100 photos sur cinq planches, puis des 100 pages photo mises en page sur cinq planches et de la couverture.
+- Photos d’ingrédients du thiakry et de poisson cru écartées au profit des plats terminés ; candidats suspects ou hors sujet rejetés.
+
+[Rapport technique](reports/edition-personnelle/validation.json).
+
+## Reconstruction depuis un clone GitHub
 
 ```bash
+python -m venv .venv
+.venv/bin/pip install -r requirements-editorial.txt
 .venv/bin/python tools/construire_ebook_complet.py --personal
 .venv/bin/python tools/verifier_ebook_complet.py \
   --pdf EBOOK-100-RECETTES-TERRE-DE-FETE-PERSONNEL.pdf \
   --report-dir personnel/rapports --require-photos
 ```
 
-Le générateur lit les aperçus existants du registre public, puis `personnel/manifest.json`. L’option `--manifest chemin/registre.json` permet de préciser un autre manifeste local, uniquement avec `--personal`.
-
-Chaque entrée de `images` contient `recipe_id`, `local_path`, `source_page_url`, `attribution`, `caption`, `status: personal_only` et `image_kind: photograph`. Un numéro dupliqué, invalide ou une image absente entraîne une erreur. Ce manifeste sert uniquement à une copie personnelle et ne vaut pas validation pour la vente ou la diffusion.
+Le générateur combine les 14 photos locales du registre historique et les 86 entrées du manifeste archivé. Aucun téléchargement réseau n’est nécessaire pour cette reconstruction. `--final` reste protégé : cette copie personnelle ne transforme pas les images tierces en photographies approuvées pour une édition commerciale.

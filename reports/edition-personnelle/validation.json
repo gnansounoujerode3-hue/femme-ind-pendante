@@ -11,14 +11,12 @@
   "text_out_of_bounds": [],
   "errors": [],
   "publication_ready": false,
-  "visual_review": "100 pages photo inspectées sur cinq planches. Corrections de la pintade, du shiro et de la définition du wagassi après contrôle visuel. Sources originales sélectionnées examinées ; pas d’image générée par les outils de génération.",
+  "visual_review": "100 photographies contrôlées sur cinq planches, puis 100 pages photo mises en page sur cinq planches et couverture examinées. Remplacement de photos d’ingrédients et de poisson cru.",
   "limits": [
-    "Définition variable des images, parfois petite",
-    "Photos de variantes, pas des recettes testées pour le livre",
-    "Droits de republication des nouvelles images non vérifiés",
+    "0 photographies manquantes",
+    "100 aperçus basse définition non validés pour publication finale",
     "Recettes non testées en cuisine",
     "Pas de validation imprimeur ou PDF/UA"
   ],
-  "personal_use": true,
-  "public_pdf_unchanged_by_personal_export": true
+  "reconstructed": true
 }

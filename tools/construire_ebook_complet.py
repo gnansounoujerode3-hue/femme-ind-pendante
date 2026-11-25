@@ -32,7 +32,7 @@ def main(final=False, personal=False, manifest=None):
         if item.get('image_kind')=='photograph' and item.get('status')!='rejected' and local and (ROOT/local).is_file():
             photos[item['recipe_id']]=item
     if personal:
-        manifest_path=Path(manifest) if manifest else ROOT/'personnel/manifest.json'
+        manifest_path=Path(manifest) if manifest else ROOT/'assets/food/personnel/manifest.json'
         extras=json.loads(manifest_path.read_text())['images']
         seen=set()
         for item in extras:

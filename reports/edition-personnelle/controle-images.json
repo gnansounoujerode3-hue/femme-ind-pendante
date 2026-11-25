@@ -1,9 +1,11 @@
 {
   "file": "EBOOK-100-RECETTES-TERRE-DE-FETE-PERSONNEL.pdf",
-  "pages": 240,
-  "photo_count": 100,
-  "unique_image_files": 100,
-  "file_size_mb": 18.58,
-  "personal_use": true,
+  "size_bytes": 17616913,
+  "sha256": "726513f7c53a00cb4355a6e630882c34c714dfadb0f56b81093e0fff1d3da31b",
+  "photo_files": 100,
+  "unique_sha256": 100,
+  "missing_photos": 0,
+  "manifest": "assets/food/personnel/manifest.json",
+  "reconstructed": true,
   "publication_ready": false
 }

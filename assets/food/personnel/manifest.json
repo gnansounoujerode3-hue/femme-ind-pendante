@@ -1,0 +1,1296 @@
+{
+  "images": [
+    {
+      "recipe_id": 1,
+      "local_path": "assets/food/personnel/recette-001.jpg",
+      "source_page_url": "https://aistoucuisine.com/publications/pastels-au-poisson-la-recette-traditionnelle",
+      "attribution": "Source : aistoucuisine.com ; droits de réutilisation non vérifiés",
+      "caption": "Pastels au poisson, présentation avec sauce.",
+      "status": "personal_only",
+      "image_kind": "photograph",
+      "publication_ready": false,
+      "acquired_dimensions": [
+        1536,
+        2304
+      ],
+      "search_file": "pastels-poisson-aistoucuisine-1.webp"
+    },
+    {
+      "recipe_id": 3,
+      "local_path": "assets/food/personnel/recette-003.jpg",
+      "source_page_url": "https://ohlagourmande.com/2020/08/07/alokos-bananes-plantain-frites/",
+      "attribution": "Source : ohlagourmande.com ; droits de réutilisation non vérifiés",
+      "caption": "Alloco de plantain frit ; présentation illustrative.",
+      "status": "personal_only",
+      "image_kind": "photograph",
+      "publication_ready": false,
+      "acquired_dimensions": [
+        840,
+        490
+      ],
+      "search_file": "alloco-bananes-plantains-frites-seules-1.jpg"
+    },
+    {
+      "recipe_id": 5,
+      "local_path": "assets/food/personnel/recette-005.jpg",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Beef_samosa,_Le_Petit_Laotien,_Montparnasse,_Paris_002.jpg",
+      "attribution": "Source : commons.wikimedia.org ; droits de réutilisation non vérifiés",
+      "caption": "Samoussas au bœuf ; présentation de restaurant avec sauce et salade.",
+      "status": "personal_only",
+      "image_kind": "photograph",
+      "publication_ready": false,
+      "acquired_dimensions": [
+        5472,
+        3648
+      ],
+      "search_file": "beef-samosa-le-petit-laotien-wikimedia-1.jpg"
+    },
+    {
+      "recipe_id": 6,
+      "local_path": "assets/food/personnel/recette-006.jpg",
+      "source_page_url": "https://monmaraicheralacasserole.over-blog.com/salade-atti%C3%A9k%C3%A9-tomates-poivrons-feta",
+      "attribution": "Source : monmaraicheralacasserole.over-blog.com ; droits de réutilisation non vérifiés",
+      "caption": "Variante de salade d’attiéké avec feta, absente de la fiche.",
+      "status": "personal_only",
+      "image_kind": "photograph",
+      "publication_ready": false,
+      "acquired_dimensions": [
+        500,
+        385
+      ],
+      "search_file": "salade-attieke-tomates-poivrons-feta-mon-1.jpg"
+    },
+    {
+      "recipe_id": 7,
+      "local_path": "assets/food/personnel/recette-007.jpg",
+      "source_page_url": "https://www.cookinwithmima.com/avocado-mango-salad/",
+      "attribution": "Source : cookinwithmima.com ; droits de réutilisation non vérifiés",
+      "caption": "Salade avocat-mangue avec tomates et oignons ; variante de présentation.",
+      "status": "personal_only",
+      "image_kind": "photograph",
+      "publication_ready": false,
+      "acquired_dimensions": [
+        1200,
+        1600
+      ],
+      "search_file": "avocado-mango-salad-cookinwithmima-1.jpg"
+    },
+    {
+      "recipe_id": 8,
+      "local_path": "assets/food/personnel/recette-008.jpg",
+      "source_page_url": "https://www.cuisineculinaire.com/salade-de-poivrons-grilles-tunisienne-slata-mechouia/",
+      "attribution": "Source : cuisineculinaire.com ; droits de réutilisation non vérifiés",
+      "caption": "Méchouia de poivrons et tomates grillés.",
+      "status": "personal_only",
+      "image_kind": "photograph",
+      "publication_ready": false,
+      "acquired_dimensions": [
+        680,
+        1020
+      ],
+      "search_file": "site-cuisineculinaire-com-slata-mechouia-1.jpg"
+    },
+    {
+      "recipe_id": 9,
+      "local_path": "assets/food/personnel/recette-009.jpg",
+      "source_page_url": "https://cookpad.com/fr/recettes/14887533",
+      "attribution": "Source : cookpad.com ; droits de réutilisation non vérifiés",
+      "caption": "Carottes au cumin ; présentation illustrative.",
+      "status": "personal_only",
+      "image_kind": "photograph",
+      "publication_ready": false,
+      "acquired_dimensions": [
+        680,
+        781
+      ],
+      "search_file": "carottes-cumin-cookpad-1.jpg"
+    },
+    {
+      "recipe_id": 10,
+      "local_path": "assets/food/personnel/recette-010.jpg",
+      "source_page_url": "https://www.scrumdiddlyumptious.com/pumpkin-peanut-soup-creamy/280221",
+      "attribution": "Source : scrumdiddlyumptious.com ; droits de réutilisation non vérifiés",
+      "caption": "Soupe potiron-arachide ; garniture illustrative.",
+      "status": "personal_only",
+      "image_kind": "photograph",
+      "publication_ready": false,
+      "acquired_dimensions": [
+        249,
+        187
+      ],
+      "search_file": "pumpkin-peanut-soup-scrumdiddlyumptious-1.jpg"
+    },
+    {
+      "recipe_id": 12,
+      "local_path": "assets/food/personnel/recette-012.jpg",
+      "source_page_url": "https://www.experience-outdoor.com/specialites-culinaires-du-benin/",
+      "attribution": "Source : experience-outdoor.com ; droits de réutilisation non vérifiés",
+      "caption": "Atassi accompagné d’œuf, viande et gari ; accompagnements non inclus dans la fiche.",
+      "status": "personal_only",
+      "image_kind": "photograph",
+      "publication_ready": false,
+      "acquired_dimensions": [
+        640,
+        640
+      ],
+      "search_file": "atassi-benin-experience-outdoor-1.webp"
+    },
+    {
+      "recipe_id": 13,
+      "local_path": "assets/food/personnel/recette-013.jpg",
+      "source_page_url": "https://www.savourous.com/recipe-view/wangashi-wangash-wangasi-or-beninese-cheese/",
+      "attribution": "Source : savourous.com ; droits de réutilisation non vérifiés",
+      "caption": "Wagassi frit servi avec une sauce tomate ; sauce en accompagnement plutôt que fromage mijoté.",
+      "status": "personal_only",
+      "image_kind": "photograph",
+      "publication_ready": false,
+      "acquired_dimensions": [
+        994,
+        1392
+      ],
+      "search_file": "wangashi-savourous-1.jpg"
+    },
+    {
+      "recipe_id": 14,
+      "local_path": "assets/food/personnel/recette-014.jpg",
+      "source_page_url": "https://www.myactivekitchen.com/stock-fish-okra-soup-ila-alasepo-ii/",
+      "attribution": "Source : myactivekitchen.com ; droits de réutilisation non vérifiés",
+      "caption": "Gombo au poisson séché ; composition et garnitures différentes possibles.",
+      "status": "personal_only",
+      "image_kind": "photograph",
+      "publication_ready": false,
+      "acquired_dimensions": [
+        600,
+        399
+      ],
+      "search_file": "okra-soup-fish-cooked-1.jpg"
+    },
+    {
+      "recipe_id": 15,
+      "local_path": "assets/food/personnel/recette-015.jpg",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Sauce_Crin-Crin_(Ninnouwi_ou_Ad%C3%A9m%C3%A9_en_langue_locales_du_B%C3%A9nin)_du_B%C3%A9nin.jpg",
+      "attribution": "Source : commons.wikimedia.org ; droits de réutilisation non vérifiés",
+      "caption": "Sauce crincrin ; crevettes non identifiables sur la photographie.",
+      "status": "personal_only",
+      "image_kind": "photograph",
+      "publication_ready": false,
+      "acquired_dimensions": [
+        4160,
+        3120
+      ],
+      "search_file": "crincrin-sauce-benin-pate-1.jpg"
+    },
+    {
+      "recipe_id": 16,
+      "local_path": "assets/food/personnel/recette-016.jpg",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Ninnouwi_avec_la_p%C3%A2te_du_ma%C3%AFs.jpg",
+      "attribution": "Source : commons.wikimedia.org ; droits de réutilisation non vérifiés",
+      "caption": "Pâte de maïs accompagnée de ninnouwi ; sauce non comprise dans la fiche.",
+      "status": "personal_only",
+      "image_kind": "photograph",
+      "publication_ready": false,
+      "acquired_dimensions": [
+        250,
+        187
+      ],
+      "search_file": "ninnouwi-pate-mais-benin-1.jpg"
+    },
+    {
+      "recipe_id": 17,
+      "local_path": "assets/food/personnel/recette-017.jpg",
+      "source_page_url": "https://www.tasteatlas.com/pounded-yam",
+      "attribution": "Source : tasteatlas.com ; droits de réutilisation non vérifiés",
+      "caption": "Igname pilée, présentation en boule.",
+      "status": "personal_only",
+      "image_kind": "photograph",
+      "publication_ready": false,
+      "acquired_dimensions": [
+        1300,
+        566
+      ],
+      "search_file": "pounded-yam-tasteatlas-1.jpg"
+    },
+    {
+      "recipe_id": 19,
+      "local_path": "assets/food/personnel/recette-019.jpg",
+      "source_page_url": "https://goodmorningbenin.wordpress.com/tag/akassa",
+      "attribution": "Source : goodmorningbenin.wordpress.com ; droits de réutilisation non vérifiés",
+      "caption": "Akassa dans une assiette composée avec alloco, fromage peul et sauce moyo.",
+      "status": "personal_only",
+      "image_kind": "photograph",
+      "publication_ready": false,
+      "acquired_dimensions": [
+        448,
+        336
+      ],
+      "search_file": "akassa-goodmorningbenin-1.jpg"
+    },
+    {
+      "recipe_id": 21,
+      "local_path": "assets/food/personnel/recette-021.jpg",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Poulet_Bicyclette.jpg",
+      "attribution": "Source : commons.wikimedia.org ; droits de réutilisation non vérifiés",
+      "caption": "Poulet bicyclette sur gril ; assaisonnement au gingembre non vérifiable.",
+      "status": "personal_only",
+      "image_kind": "photograph",
+      "publication_ready": false,
+      "acquired_dimensions": [
+        500,
+        667
+      ],
+      "search_file": "file-poulet-bicyclette-jpg-1.jpg"
+    },
+    {
+      "recipe_id": 23,
+      "local_path": "assets/food/personnel/recette-023.jpg",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:African_Chicken_Peanut_Stew_(37673757141).jpg",
+      "attribution": "Source : commons.wikimedia.org ; droits de réutilisation non vérifiés",
+      "caption": "Poulet à l’arachide ; variante avec garniture et morceaux de légumes.",
+      "status": "personal_only",
+      "image_kind": "photograph",
+      "publication_ready": false,
+      "acquired_dimensions": [
+        5184,
+        3456
+      ],
+      "search_file": "african-chicken-peanut-stew-wikimedia-1.jpg"
+    },
+    {
+      "recipe_id": 26,
+      "local_path": "assets/food/personnel/recette-026.jpg",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Chicken_moambe_with_French_fries_(14792587921).jpg",
+      "attribution": "Source : commons.wikimedia.org ; droits de réutilisation non vérifiés",
+      "caption": "Poulet moambé avec frites ; frites non incluses dans la fiche.",
+      "status": "personal_only",
+      "image_kind": "photograph",
+      "publication_ready": false,
+      "acquired_dimensions": [
+        4928,
+        3264
+      ],
+      "search_file": "chicken-moambe-french-fries-wikimedia-1.jpg"
+    },
+    {
+      "recipe_id": 27,
+      "local_path": "assets/food/personnel/recette-027.jpg",
+      "source_page_url": "https://www.marmiton.org/recettes/recette_poulet-coco-citron-vert_195829.aspx",
+      "attribution": "Source : marmiton.org ; droits de réutilisation non vérifiés",
+      "caption": "Poulet coco au citron vert accompagné de riz.",
+      "status": "personal_only",
+      "image_kind": "photograph",
+      "publication_ready": false,
+      "acquired_dimensions": [
+        225,
+        225
+      ],
+      "search_file": "poulet-coco-citron-vert-marmiton-195829-2.webp"
+    },
+    {
+      "recipe_id": 28,
+      "local_path": "assets/food/personnel/recette-028.jpg",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:2018-02-03_Chicken_Piri-Piri,_Albufeira_(1).JPG",
+      "attribution": "Source : commons.wikimedia.org ; droits de réutilisation non vérifiés",
+      "caption": "Poulet piri-piri ; présentation portugaise ouverte à plat.",
+      "status": "personal_only",
+      "image_kind": "photograph",
+      "publication_ready": false,
+      "acquired_dimensions": [
+        960,
+        927
+      ],
+      "search_file": "chicken-piri-piri-albufeira-wikimedia-1.jpg"
+    },
+    {
+      "recipe_id": 29,
+      "local_path": "assets/food/personnel/recette-029.jpg",
+      "source_page_url": "http://lafermedevillars.over-blog.com/2019/05/cuisses-de-pintade-aux-oignons.html",
+      "attribution": "Source : lafermedevillars.over-blog.com ; droits de réutilisation non vérifiés",
+      "caption": "Cuisse de pintade aux oignons terminée, servie avec des légumes non inclus dans la fiche.",
+      "status": "personal_only",
+      "image_kind": "photograph",
+      "publication_ready": false,
+      "acquired_dimensions": [
+        1200,
+        900
+      ],
+      "search_file": "pintade-oignons-ferme-villars-cuisses-pi-1.jpg"
+    },
+    {
+      "recipe_id": 30,
+      "local_path": "assets/food/personnel/recette-030.jpg",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Roast_turkey_from_fall_season.jpg",
+      "attribution": "Source : commons.wikimedia.org ; droits de réutilisation non vérifiés",
+      "caption": "Dinde rôtie entière ; épices non vérifiables sur la photo.",
+      "status": "personal_only",
+      "image_kind": "photograph",
+      "publication_ready": false,
+      "acquired_dimensions": [
+        960,
+        640
+      ],
+      "search_file": "roast-turkey-fall-season-wikimedia-1.jpg"
+    },
+    {
+      "recipe_id": 31,
+      "local_path": "assets/food/personnel/recette-031.jpg",
+      "source_page_url": "https://valeriepassioncuisine.over-blog.com/2019/11/mafe-au-boeuf.html",
+      "attribution": "Source : valeriepassioncuisine.over-blog.com ; droits de réutilisation non vérifiés",
+      "caption": "Mafé de bœuf servi avec riz ; variante de garniture.",
+      "status": "personal_only",
+      "image_kind": "photograph",
+      "publication_ready": false,
+      "acquired_dimensions": [
+        500,
+        667
+      ],
+      "search_file": "mafe-boeuf-valeriepassioncuisine-1.jpg"
+    },
+    {
+      "recipe_id": 32,
+      "local_path": "assets/food/personnel/recette-032.jpg",
+      "source_page_url": "https://www.marmiton.org/recettes/recette_boeuf-au-gingembre_39769.aspx",
+      "attribution": "Source : marmiton.org ; droits de réutilisation non vérifiés",
+      "caption": "Bœuf au gingembre, présentation dans son plat de cuisson.",
+      "status": "personal_only",
+      "image_kind": "photograph",
+      "publication_ready": false,
+      "acquired_dimensions": [
+        648,
+        414
+      ],
+      "search_file": "boeuf-gingembre-marmiton-1.webp"
+    },
+    {
+      "recipe_id": 33,
+      "local_path": "assets/food/personnel/recette-033.jpg",
+      "source_page_url": "https://www.chilipeppermadness.com/recipes/suya/",
+      "attribution": "Source : chilipeppermadness.com ; droits de réutilisation non vérifiés",
+      "caption": "Suya en brochettes avec crudités non incluses dans la fiche.",
+      "status": "personal_only",
+      "image_kind": "photograph",
+      "publication_ready": false,
+      "acquired_dimensions": [
+        1200,
+        1800
+      ],
+      "search_file": "site-chilipeppermadness-com-recipes-suya-1.jpg"
+    },
+    {
+      "recipe_id": 34,
+      "local_path": "assets/food/personnel/recette-034.jpg",
+      "source_page_url": "https://www.cuisineaz.com/recettes/boulettes-de-boeuf-a-la-sauce-tomate-77303.aspx",
+      "attribution": "Source : cuisineaz.com ; droits de réutilisation non vérifiés",
+      "caption": "Boulettes de bœuf à la tomate.",
+      "status": "personal_only",
+      "image_kind": "photograph",
+      "publication_ready": false,
+      "acquired_dimensions": [
+        180,
+        135
+      ],
+      "search_file": "boulettes-boeuf-sauce-tomate-cuisineaz-1.jpg"
+    },
+    {
+      "recipe_id": 35,
+      "local_path": "assets/food/personnel/recette-035.jpg",
+      "source_page_url": "https://www.marmiton.org/recettes/recette_tajine-d-agneau-aux-pruneaux-et-aux-amandes_41981.aspx",
+      "attribution": "Source : marmiton.org ; droits de réutilisation non vérifiés",
+      "caption": "Agneau aux pruneaux ; variante avec amandes, absentes de la fiche.",
+      "status": "personal_only",
+      "image_kind": "photograph",
+      "publication_ready": false,
+      "acquired_dimensions": [
+        225,
+        225
+      ],
+      "search_file": "tajine-agneau-pruneaux-marmiton-1.webp"
+    },
+    {
+      "recipe_id": 36,
+      "local_path": "assets/food/personnel/recette-036.jpg",
+      "source_page_url": "https://sweetnessandmore.wordpress.com/2012/12/20/tajine-de-mouton-carottes-et-pommes-de-terre/",
+      "attribution": "Source : sweetnessandmore.wordpress.com ; droits de réutilisation non vérifiés",
+      "caption": "Mouton aux carottes et pommes de terre ; présentation illustrative.",
+      "status": "personal_only",
+      "image_kind": "photograph",
+      "publication_ready": false,
+      "acquired_dimensions": [
+        560,
+        746
+      ],
+      "search_file": "tajine-mouton-carottes-pommes-terre-swee-1.jpg"
+    },
+    {
+      "recipe_id": 37,
+      "local_path": "assets/food/personnel/recette-037.jpg",
+      "source_page_url": "https://www.nomrecipes.com/instant-pot-pressure-cooker-goat-stew/",
+      "attribution": "Source : nomrecipes.com ; droits de réutilisation non vérifiés",
+      "caption": "Chèvre à la tomate ; variante cuite sous pression.",
+      "status": "personal_only",
+      "image_kind": "photograph",
+      "publication_ready": false,
+      "acquired_dimensions": [
+        1200,
+        800
+      ],
+      "search_file": "goat-stew-nomrecipes-1.jpg"
+    },
+    {
+      "recipe_id": 38,
+      "local_path": "assets/food/personnel/recette-038.jpg",
+      "source_page_url": "https://www.marthastewart.com/925230/garlic-lemon-pork",
+      "attribution": "Source : marthastewart.com ; droits de réutilisation non vérifiés",
+      "caption": "Porc ail-citron ; variante sautée, et non braisée comme notre recette.",
+      "status": "personal_only",
+      "image_kind": "photograph",
+      "publication_ready": false,
+      "acquired_dimensions": [
+        750,
+        422
+      ],
+      "search_file": "garlic-lemon-pork-marthastewart-1.jpg"
+    },
+    {
+      "recipe_id": 40,
+      "local_path": "assets/food/personnel/recette-040.jpg",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Ye_Bere_Tibs_-_tenderized,_lean,_cubed_beef,_cooked_in_berbere_sauce._-Ethiopian_-Oakland_(14987170060).jpg",
+      "attribution": "Source : commons.wikimedia.org ; droits de réutilisation non vérifiés",
+      "caption": "Bœuf au berbéré ; garniture de légumes et pain non inclus.",
+      "status": "personal_only",
+      "image_kind": "photograph",
+      "publication_ready": false,
+      "acquired_dimensions": [
+        640,
+        640
+      ],
+      "search_file": "ye-bere-tibs-wikimedia-1.jpg"
+    },
+    {
+      "recipe_id": 41,
+      "local_path": "assets/food/personnel/recette-041.jpg",
+      "source_page_url": "https://foodfaithfitness.com/grilled-tilapia",
+      "attribution": "Source : foodfaithfitness.com ; droits de réutilisation non vérifiés",
+      "caption": "Tilapia grillé en filets ; découpe différente et garniture non incluse dans la fiche.",
+      "status": "personal_only",
+      "image_kind": "photograph",
+      "publication_ready": false,
+      "acquired_dimensions": [
+        1200,
+        1800
+      ],
+      "search_file": "grilled-tilapia-foodfaithfitness-1.jpg"
+    },
+    {
+      "recipe_id": 42,
+      "local_path": "assets/food/personnel/recette-042.jpg",
+      "source_page_url": "https://www.evacuisine.fr/archives/2014/03/31/ragout-de-poisson-aux-tomates-et-aux-pommes-de-terre.html",
+      "attribution": "Source : evacuisine.fr ; droits de réutilisation non vérifiés",
+      "caption": "Poisson à la tomate ; variante accompagnée de pommes de terre.",
+      "status": "personal_only",
+      "image_kind": "photograph",
+      "publication_ready": false,
+      "acquired_dimensions": [
+        500,
+        333
+      ],
+      "search_file": "ragout-poisson-tomate-journaldesfemmes-3-1.jpg"
+    },
+    {
+      "recipe_id": 43,
+      "local_path": "assets/food/personnel/recette-043.jpg",
+      "source_page_url": "https://www.maggi.ci/recipes/yassa-de-poisson",
+      "attribution": "Source : maggi.ci ; droits de réutilisation non vérifiés",
+      "caption": "Yassa au poisson avec oignons et accompagnements.",
+      "status": "personal_only",
+      "image_kind": "photograph",
+      "publication_ready": false,
+      "acquired_dimensions": [
+        944,
+        531
+      ],
+      "search_file": "yassa-poisson-maggi-1.png"
+    },
+    {
+      "recipe_id": 45,
+      "local_path": "assets/food/personnel/recette-045.jpg",
+      "source_page_url": "https://www.cuisineculinaire.com/crevettes-a-lail-et-citron-recette-rapide-15-mn/",
+      "attribution": "Source : cuisineculinaire.com ; droits de réutilisation non vérifiés",
+      "caption": "Crevettes ail-citron ; citron visible et gingembre non vérifiable, variante de la fiche.",
+      "status": "personal_only",
+      "image_kind": "photograph",
+      "publication_ready": false,
+      "acquired_dimensions": [
+        680,
+        1020
+      ],
+      "search_file": "crevettes-ail-citron-papillote-1.jpg"
+    },
+    {
+      "recipe_id": 46,
+      "local_path": "assets/food/personnel/recette-046.jpg",
+      "source_page_url": "https://cuisine.journaldesfemmes.fr/recette/352682-curry-de-crevettes-au-lait-de-coco",
+      "attribution": "Source : cuisine.journaldesfemmes.fr ; droits de réutilisation non vérifiés",
+      "caption": "Curry de crevettes au coco ; assaisonnement et accompagnements illustratifs.",
+      "status": "personal_only",
+      "image_kind": "photograph",
+      "publication_ready": false,
+      "acquired_dimensions": [
+        750,
+        500
+      ],
+      "search_file": "crevettes-lait-coco-journaldesfemmes-101-1.jpg"
+    },
+    {
+      "recipe_id": 47,
+      "local_path": "assets/food/personnel/recette-047.jpg",
+      "source_page_url": "https://www.auxdelicesdupalais.net/rouget-barbet-a-la-chermoula-au-four.html",
+      "attribution": "Source : auxdelicesdupalais.net ; droits de réutilisation non vérifiés",
+      "caption": "Rougets à la chermoula cuits au four ; olives et légumes en accompagnement, variante de présentation.",
+      "status": "personal_only",
+      "image_kind": "photograph",
+      "publication_ready": false,
+      "acquired_dimensions": [
+        799,
+        1200
+      ],
+      "search_file": "poisson-chermoula-cuit-assiette-2.jpg"
+    },
+    {
+      "recipe_id": 48,
+      "local_path": "assets/food/personnel/recette-048.jpg",
+      "source_page_url": "https://www.mesrecettesfaciles.fr/recipe/calamars-en-sauce-tomate",
+      "attribution": "Source : mesrecettesfaciles.fr ; droits de réutilisation non vérifiés",
+      "caption": "Calamars en sauce tomate ; garniture illustrative.",
+      "status": "personal_only",
+      "image_kind": "photograph",
+      "publication_ready": false,
+      "acquired_dimensions": [
+        1200,
+        686
+      ],
+      "search_file": "calamars-sauce-tomate-1.webp"
+    },
+    {
+      "recipe_id": 49,
+      "local_path": "assets/food/personnel/recette-049.jpg",
+      "source_page_url": "https://www.marmiton.org/recettes/recette_maquereaux-au-four-aux-oignons_20284.aspx",
+      "attribution": "Source : marmiton.org ; droits de réutilisation non vérifiés",
+      "caption": "Maquereaux aux oignons ; variante de la source contenant du vin blanc, absent de la fiche.",
+      "status": "personal_only",
+      "image_kind": "photograph",
+      "publication_ready": false,
+      "acquired_dimensions": [
+        300,
+        300
+      ],
+      "search_file": "maquereau-four-oignons-1.webp"
+    },
+    {
+      "recipe_id": 50,
+      "local_path": "assets/food/personnel/recette-050.jpg",
+      "source_page_url": "https://cookpad.com/us/recipes/3718827-wet-fried-fish-ugali-and-spinach",
+      "attribution": "Source : cookpad.com ; droits de réutilisation non vérifiés",
+      "caption": "Poisson frit avec épinards et ugali ; lait de coco non vérifiable et présentation séparée.",
+      "status": "personal_only",
+      "image_kind": "photograph",
+      "publication_ready": false,
+      "acquired_dimensions": [
+        680,
+        964
+      ],
+      "search_file": "fish-spinach-ugali-cookpad-1.jpg"
+    },
+    {
+      "recipe_id": 51,
+      "local_path": "assets/food/personnel/recette-051.jpg",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Plates_of_Jollof_Rice,_Fried_Rice_and_Chicken.jpg",
+      "attribution": "Source : commons.wikimedia.org ; droits de réutilisation non vérifiés",
+      "caption": "Riz tomate au poulet présenté avec riz sauté ; variante de service.",
+      "status": "personal_only",
+      "image_kind": "photograph",
+      "publication_ready": false,
+      "acquired_dimensions": [
+        500,
+        563
+      ],
+      "search_file": "plates-of-jollof-rice-1.jpg"
+    },
+    {
+      "recipe_id": 53,
+      "local_path": "assets/food/personnel/recette-053.jpg",
+      "source_page_url": "https://asaaseradio.com/best-places-to-eat-waakye-in-accra/",
+      "attribution": "Source : asaaseradio.com ; droits de réutilisation non vérifiés",
+      "caption": "Waakye en assiette composée ; accompagnements non compris dans la fiche.",
+      "status": "personal_only",
+      "image_kind": "photograph",
+      "publication_ready": false,
+      "acquired_dimensions": [
+        960,
+        720
+      ],
+      "search_file": "waakye-accra-ghana-wikimedia-1.jpg"
+    },
+    {
+      "recipe_id": 54,
+      "local_path": "assets/food/personnel/recette-054.jpg",
+      "source_page_url": "https://theafrikanstore.com/blogs/recipes/the-east-africa-coconut-rice-wali-wa-nazi",
+      "attribution": "Source : theafrikanstore.com ; droits de réutilisation non vérifiés",
+      "caption": "Wali wa nazi, riz au coco swahili.",
+      "status": "personal_only",
+      "image_kind": "photograph",
+      "publication_ready": false,
+      "acquired_dimensions": [
+        1024,
+        538
+      ],
+      "search_file": "wali-wa-nazi-coconut-rice-theafrikanstor-1.jpg"
+    },
+    {
+      "recipe_id": 55,
+      "local_path": "assets/food/personnel/recette-055.jpg",
+      "source_page_url": "https://soyummyrecipes.com/vegetable-pilau-rice/",
+      "attribution": "Source : soyummyrecipes.com ; droits de réutilisation non vérifiés",
+      "caption": "Pilau végétarien ; variante pakistanaise, épices différentes possibles.",
+      "status": "personal_only",
+      "image_kind": "photograph",
+      "publication_ready": false,
+      "acquired_dimensions": [
+        1200,
+        1200
+      ],
+      "search_file": "vegetable-pilau-rice-soyummyrecipes-1.jpg"
+    },
+    {
+      "recipe_id": 56,
+      "local_path": "assets/food/personnel/recette-056.jpg",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Couscous_v%C3%A9g%C3%A9tarien.jpg",
+      "attribution": "Source : commons.wikimedia.org ; droits de réutilisation non vérifiés",
+      "caption": "Couscous aux légumes ; proportions et garniture illustratives.",
+      "status": "personal_only",
+      "image_kind": "photograph",
+      "publication_ready": false,
+      "acquired_dimensions": [
+        500,
+        375
+      ],
+      "search_file": "couscous-vegetarien-wikimedia-1.jpg"
+    },
+    {
+      "recipe_id": 57,
+      "local_path": "assets/food/personnel/recette-057.jpg",
+      "source_page_url": "https://aistoucuisine.com/publications/thiere-couscous-de-mil-aux-legumes",
+      "attribution": "Source : aistoucuisine.com ; droits de réutilisation non vérifiés",
+      "caption": "Thiéré végétarien aux légumes.",
+      "status": "personal_only",
+      "image_kind": "photograph",
+      "publication_ready": false,
+      "acquired_dimensions": [
+        1536,
+        2304
+      ],
+      "search_file": "thi-r-v-g-tarien-1.webp"
+    },
+    {
+      "recipe_id": 58,
+      "local_path": "assets/food/personnel/recette-058.jpg",
+      "source_page_url": "https://kjsfood.com/recipe/fonio-sauteed-with-vegetables",
+      "attribution": "Source : kjsfood.com ; droits de réutilisation non vérifiés",
+      "caption": "Fonio sauté aux légumes.",
+      "status": "personal_only",
+      "image_kind": "photograph",
+      "publication_ready": false,
+      "acquired_dimensions": [
+        1080,
+        724
+      ],
+      "search_file": "fonio-vegetables-kjsfood-1.webp"
+    },
+    {
+      "recipe_id": 59,
+      "local_path": "assets/food/personnel/recette-059.jpg",
+      "source_page_url": "https://www.pachakam.com/recipes/kerala-style-vegetable-fried-rice",
+      "attribution": "Source : pachakam.com ; droits de réutilisation non vérifiés",
+      "caption": "Riz sauté aux légumes ; variante du Kerala.",
+      "status": "personal_only",
+      "image_kind": "photograph",
+      "publication_ready": false,
+      "acquired_dimensions": [
+        800,
+        441
+      ],
+      "search_file": "vegetable-fried-rice-pachakam-1.jpg"
+    },
+    {
+      "recipe_id": 60,
+      "local_path": "assets/food/personnel/recette-060.jpg",
+      "source_page_url": "https://www.marmiton.org/recettes/recette_riz-et-haricots-rouges-a-la-creole_64982.aspx",
+      "attribution": "Source : marmiton.org ; droits de réutilisation non vérifiés",
+      "caption": "Riz aux haricots rouges ; variante créole.",
+      "status": "personal_only",
+      "image_kind": "photograph",
+      "publication_ready": false,
+      "acquired_dimensions": [
+        640,
+        817
+      ],
+      "search_file": "riz-haricots-rouges-creole-marmiton-1.webp"
+    },
+    {
+      "recipe_id": 61,
+      "local_path": "assets/food/personnel/recette-061.jpg",
+      "source_page_url": "https://bestofvegan.com/vegan-red-red-stew-from-zoes-ghana-kitchen-by-zoe-adjonyoh/",
+      "attribution": "Source : bestofvegan.com ; droits de réutilisation non vérifiés",
+      "caption": "Red red végétalien, sans poisson.",
+      "status": "personal_only",
+      "image_kind": "photograph",
+      "publication_ready": false,
+      "acquired_dimensions": [
+        961,
+        1235
+      ],
+      "search_file": "red-red-bestofvegan-stew-bowl-1.jpg"
+    },
+    {
+      "recipe_id": 62,
+      "local_path": "assets/food/personnel/recette-062.jpg",
+      "source_page_url": "https://www.yummymedley.com/nigerian-beans-porridge/",
+      "attribution": "Source : yummymedley.com ; droits de réutilisation non vérifiés",
+      "caption": "Haricots mijotés nigérians ; variante de présentation.",
+      "status": "personal_only",
+      "image_kind": "photograph",
+      "publication_ready": false,
+      "acquired_dimensions": [
+        750,
+        1125
+      ],
+      "search_file": "beans-porridge-yummymedley-1.jpg"
+    },
+    {
+      "recipe_id": 63,
+      "local_path": "assets/food/personnel/recette-063.jpg",
+      "source_page_url": "https://thetastyveganchef.wordpress.com/2016/04/17/vegan-beans-and-plantain-moimoi/",
+      "attribution": "Source : thetastyveganchef.wordpress.com ; droits de réutilisation non vérifiés",
+      "caption": "Moi-moi végétaliens avec plantain ; variante de composition et de cuisson.",
+      "status": "personal_only",
+      "image_kind": "photograph",
+      "publication_ready": false,
+      "acquired_dimensions": [
+        2000,
+        1500
+      ],
+      "search_file": "vegan-plantain-moimoi-thetastyveganchef-1.jpg"
+    },
+    {
+      "recipe_id": 64,
+      "local_path": "assets/food/personnel/recette-064.jpg",
+      "source_page_url": "https://www.chilipeppermadness.com/recipes/misir-wat/",
+      "attribution": "Source : chilipeppermadness.com ; droits de réutilisation non vérifiés",
+      "caption": "Misir wat aux lentilles ; la version photographiée peut être plus pimentée.",
+      "status": "personal_only",
+      "image_kind": "photograph",
+      "publication_ready": false,
+      "acquired_dimensions": [
+        300,
+        300
+      ],
+      "search_file": "misir-wat-chilipeppermadness-1.jpg"
+    },
+    {
+      "recipe_id": 65,
+      "local_path": "assets/food/personnel/recette-065.jpg",
+      "source_page_url": "https://urbanfarmie.com/shiro-wat/",
+      "attribution": "Source : urbanfarmie.com ; droits de réutilisation non vérifiés",
+      "caption": "Shiro de pois chiches accompagné de riz ; riz non inclus dans la fiche.",
+      "status": "personal_only",
+      "image_kind": "photograph",
+      "publication_ready": false,
+      "acquired_dimensions": [
+        1200,
+        1798
+      ],
+      "search_file": "shiro-wat-urbanfarmie-1.jpg"
+    },
+    {
+      "recipe_id": 66,
+      "local_path": "assets/food/personnel/recette-066.jpg",
+      "source_page_url": "https://www.sugarlovespices.com/ethiopian-spinach-stew-gomen-wot/",
+      "attribution": "Source : sugarlovespices.com ; droits de réutilisation non vérifiés",
+      "caption": "Gomen aux épinards accompagné de riz.",
+      "status": "personal_only",
+      "image_kind": "photograph",
+      "publication_ready": false,
+      "acquired_dimensions": [
+        474,
+        711
+      ],
+      "search_file": "gomen-sugarlovespices-spinach-stew-rice-1.jpg"
+    },
+    {
+      "recipe_id": 67,
+      "local_path": "assets/food/personnel/recette-067.jpg",
+      "source_page_url": "https://www.thetastychilli.com/south-african-chakalaka-recipe/",
+      "attribution": "Source : thetastychilli.com ; droits de réutilisation non vérifiés",
+      "caption": "Chakalaka ; niveau de piment non vérifiable sur la photo.",
+      "status": "personal_only",
+      "image_kind": "photograph",
+      "publication_ready": false,
+      "acquired_dimensions": [
+        500,
+        750
+      ],
+      "search_file": "chakalaka-thetastychilli-1.jpg"
+    },
+    {
+      "recipe_id": 69,
+      "local_path": "assets/food/personnel/recette-069.jpg",
+      "source_page_url": "https://urbanfarmie.com/vegan-efo-riro/",
+      "attribution": "Source : urbanfarmie.com ; droits de réutilisation non vérifiés",
+      "caption": "Efo riro végétalien ; variante avec champignons.",
+      "status": "personal_only",
+      "image_kind": "photograph",
+      "publication_ready": false,
+      "acquired_dimensions": [
+        1200,
+        1200
+      ],
+      "search_file": "vegan-efo-riro-urbanfarmie-1.jpg"
+    },
+    {
+      "recipe_id": 70,
+      "local_path": "assets/food/personnel/recette-070.jpg",
+      "source_page_url": "https://thegreenquest.org/fr/salade-aux-aubergines-roties-tomates-et-pois-chiches/",
+      "attribution": "Source : thegreenquest.org ; droits de réutilisation non vérifiés",
+      "caption": "Aubergines, tomates et pois chiches ; variante en salade, différente du mijoté de la fiche.",
+      "status": "personal_only",
+      "image_kind": "photograph",
+      "publication_ready": false,
+      "acquired_dimensions": [
+        1080,
+        1350
+      ],
+      "search_file": "salade-aubergines-pois-chiches-thegreenq-1.jpg"
+    },
+    {
+      "recipe_id": 71,
+      "local_path": "assets/food/personnel/recette-071.jpg",
+      "source_page_url": "https://cookpad.com/fr/recettes/16643301-dambou-kopto-couscous-aux-feuilles-de-moringa",
+      "attribution": "Source : cookpad.com ; droits de réutilisation non vérifiés",
+      "caption": "Dambou au moringa servi avec viande ; viande non incluse dans notre adaptation au couscous.",
+      "status": "personal_only",
+      "image_kind": "photograph",
+      "publication_ready": false,
+      "acquired_dimensions": [
+        300,
+        426
+      ],
+      "search_file": "dambou-kopto-cookpad-1.jpg"
+    },
+    {
+      "recipe_id": 72,
+      "local_path": "assets/food/personnel/recette-072.jpg",
+      "source_page_url": "https://wetrinifood.com/how-to-make-boiled-plantain/",
+      "attribution": "Source : wetrinifood.com ; droits de réutilisation non vérifiés",
+      "caption": "Plantains bouillis.",
+      "status": "personal_only",
+      "image_kind": "photograph",
+      "publication_ready": false,
+      "acquired_dimensions": [
+        1200,
+        800
+      ],
+      "search_file": "boiled-plantain-wetrinifood-1.jpg"
+    },
+    {
+      "recipe_id": 73,
+      "local_path": "assets/food/personnel/recette-073.jpg",
+      "source_page_url": "https://www.cuisineaz.com/recettes/plantain-au-four-82640.aspx",
+      "attribution": "Source : cuisineaz.com ; droits de réutilisation non vérifiés",
+      "caption": "Plantains rôtis au four ; gingembre non vérifiable.",
+      "status": "personal_only",
+      "image_kind": "photograph",
+      "publication_ready": false,
+      "acquired_dimensions": [
+        660,
+        495
+      ],
+      "search_file": "plantain-four-cuisineaz-1.jpg"
+    },
+    {
+      "recipe_id": 74,
+      "local_path": "assets/food/personnel/recette-074.jpg",
+      "source_page_url": "https://cuisine.journaldesfemmes.fr/recette/359276-puree-de-patate-douce-au-lait-de-coco",
+      "attribution": "Source : cuisine.journaldesfemmes.fr ; droits de réutilisation non vérifiés",
+      "caption": "Purée de patate douce coco ; présentation moulée et garniture illustrative.",
+      "status": "personal_only",
+      "image_kind": "photograph",
+      "publication_ready": false,
+      "acquired_dimensions": [
+        750,
+        500
+      ],
+      "search_file": "puree-patate-douce-coco-journaldesfemmes-1.jpg"
+    },
+    {
+      "recipe_id": 75,
+      "local_path": "assets/food/personnel/recette-075.jpg",
+      "source_page_url": "https://cuisinedecheznous.net/blog/2021/10/12/du-ndole-accompagne-de-miondos",
+      "attribution": "Source : cuisinedecheznous.net ; droits de réutilisation non vérifiés",
+      "caption": "Miondos servis avec ndolé, non poêlés ; présentation et accompagnement différents de la fiche.",
+      "status": "personal_only",
+      "image_kind": "photograph",
+      "publication_ready": false,
+      "acquired_dimensions": [
+        1200,
+        1200
+      ],
+      "search_file": "miondos-ndole-cuisinedecheznous-1.jpg"
+    },
+    {
+      "recipe_id": 76,
+      "local_path": "assets/food/personnel/recette-076.jpg",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Ugali_Posho.jpg",
+      "attribution": "Source : commons.wikimedia.org ; droits de réutilisation non vérifiés",
+      "caption": "Ugali présenté en bloc.",
+      "status": "personal_only",
+      "image_kind": "photograph",
+      "publication_ready": false,
+      "acquired_dimensions": [
+        960,
+        640
+      ],
+      "search_file": "ugali-posho-wikimedia-1.jpg"
+    },
+    {
+      "recipe_id": 77,
+      "local_path": "assets/food/personnel/recette-077.jpg",
+      "source_page_url": "https://cheflolaskitchen.com/east-african-chapati/",
+      "attribution": "Source : cheflolaskitchen.com ; droits de réutilisation non vérifiés",
+      "caption": "Chapatis est-africains ; présentation illustrative.",
+      "status": "personal_only",
+      "image_kind": "photograph",
+      "publication_ready": false,
+      "acquired_dimensions": [
+        680,
+        1017
+      ],
+      "search_file": "chapati-cheflolaskitchen-1.webp"
+    },
+    {
+      "recipe_id": 78,
+      "local_path": "assets/food/personnel/recette-078.jpg",
+      "source_page_url": "https://www.auxdelicesdupalais.net/pain-a-la-poele-marocain-inratable-batbout.html",
+      "attribution": "Source : auxdelicesdupalais.net ; droits de réutilisation non vérifiés",
+      "caption": "Batbouts à la semoule et aux graines de nigelle ; graines non incluses dans la fiche.",
+      "status": "personal_only",
+      "image_kind": "photograph",
+      "publication_ready": false,
+      "acquired_dimensions": [
+        682,
+        1024
+      ],
+      "search_file": "batbout-pain-semoule-poele-1.jpg"
+    },
+    {
+      "recipe_id": 79,
+      "local_path": "assets/food/personnel/recette-079.jpg",
+      "source_page_url": "https://www.olgasflavorfactory.com/recipes/easy-tomato-onion-sauce/",
+      "attribution": "Source : olgasflavorfactory.com ; droits de réutilisation non vérifiés",
+      "caption": "Sauce tomate-oignons ; texture mixée, variante de présentation.",
+      "status": "personal_only",
+      "image_kind": "photograph",
+      "publication_ready": false,
+      "acquired_dimensions": [
+        800,
+        1200
+      ],
+      "search_file": "tomato-onion-sauce-olgasflavorfactory-1.webp"
+    },
+    {
+      "recipe_id": 80,
+      "local_path": "assets/food/personnel/recette-080.jpg",
+      "source_page_url": "https://www.lesfoodies.com/souimanga/recette/condiment-doignon-au-citron",
+      "attribution": "Source : lesfoodies.com ; droits de réutilisation non vérifiés",
+      "caption": "Condiment oignon-citron ; couleur et assaisonnement illustratifs.",
+      "status": "personal_only",
+      "image_kind": "photograph",
+      "publication_ready": false,
+      "acquired_dimensions": [
+        1200,
+        1200
+      ],
+      "search_file": "condiment-oignon-citron-souimanga-lesfoo-1.jpg"
+    },
+    {
+      "recipe_id": 81,
+      "local_path": "assets/food/personnel/recette-081.jpg",
+      "source_page_url": "https://www.peko-peko.fr/recettes/thiakry/",
+      "attribution": "Source : peko-peko.fr ; droits de réutilisation non vérifiés",
+      "caption": "Dèguè / thiakry au mil et lait fermenté.",
+      "status": "personal_only",
+      "image_kind": "photograph",
+      "publication_ready": false,
+      "acquired_dimensions": [
+        1600,
+        1060
+      ],
+      "search_file": "thiakry-peko-peko-main-1.jpg"
+    },
+    {
+      "recipe_id": 82,
+      "local_path": "assets/food/personnel/recette-082.jpg",
+      "source_page_url": "https://savourous.com/recipe-view/lactose-free-degue-or-thiakry-a-sweet-creamy-west-african-yogurt-based-dessert",
+      "attribution": "Source : savourous.com ; droits de réutilisation non vérifiés",
+      "caption": "Thiakry sans lactose ; base végétale à comparer à notre adaptation coco.",
+      "status": "personal_only",
+      "image_kind": "photograph",
+      "publication_ready": false,
+      "acquired_dimensions": [
+        1254,
+        1253
+      ],
+      "search_file": "lactose-free-degue-savourous-1.jpg"
+    },
+    {
+      "recipe_id": 83,
+      "local_path": "assets/food/personnel/recette-083.jpg",
+      "source_page_url": "https://www.750g.com/bouillie-de-mil-r56082.htm",
+      "attribution": "Source : 750g.com ; droits de réutilisation non vérifiés",
+      "caption": "Bouillie de mil, présentation illustrative.",
+      "status": "personal_only",
+      "image_kind": "photograph",
+      "publication_ready": false,
+      "acquired_dimensions": [
+        640,
+        400
+      ],
+      "search_file": "bouillie-mil-750g-1.jpg"
+    },
+    {
+      "recipe_id": 84,
+      "local_path": "assets/food/personnel/recette-084.jpg",
+      "source_page_url": "https://hellolindana.blogspot.com/2016/04/yovo-dokogateaux-farinebeignets-la.html",
+      "attribution": "Source : hellolindana.blogspot.com ; droits de réutilisation non vérifiés",
+      "caption": "Yovo doko, beignets sucrés terminés.",
+      "status": "personal_only",
+      "image_kind": "photograph",
+      "publication_ready": false,
+      "acquired_dimensions": [
+        640,
+        370
+      ],
+      "search_file": "yovo-doko-hellolindana-1.jpg"
+    },
+    {
+      "recipe_id": 86,
+      "local_path": "assets/food/personnel/recette-086.jpg",
+      "source_page_url": "https://myactivekitchen.com/how-to-make-nigerian-chin-chin",
+      "attribution": "Source : myactivekitchen.com ; droits de réutilisation non vérifiés",
+      "caption": "Chin-chin servis dans un verre.",
+      "status": "personal_only",
+      "image_kind": "photograph",
+      "publication_ready": false,
+      "acquired_dimensions": [
+        600,
+        399
+      ],
+      "search_file": "chin-chin-myactivekitchen-glass-1.jpg"
+    },
+    {
+      "recipe_id": 87,
+      "local_path": "assets/food/personnel/recette-087.jpg",
+      "source_page_url": "https://www.tabouencuisine.com/2017/02/beignets-africains-mikate.html",
+      "attribution": "Source : tabouencuisine.com ; droits de réutilisation non vérifiés",
+      "caption": "Mikaté, beignets terminés.",
+      "status": "personal_only",
+      "image_kind": "photograph",
+      "publication_ready": false,
+      "acquired_dimensions": [
+        500,
+        500
+      ],
+      "search_file": "mikate-tabouencuisine-1.jpg"
+    },
+    {
+      "recipe_id": 89,
+      "local_path": "assets/food/personnel/recette-089.jpg",
+      "source_page_url": "https://gateauetcuisinerachida.com/mhalbi-algerien-creme-de-riz/",
+      "attribution": "Source : gateauetcuisinerachida.com ; droits de réutilisation non vérifiés",
+      "caption": "Mhalbi en verrines, garnitures illustratives.",
+      "status": "personal_only",
+      "image_kind": "photograph",
+      "publication_ready": false,
+      "acquired_dimensions": [
+        1500,
+        2000
+      ],
+      "search_file": "mhalbi-gateauetcuisinerachida-1.jpg"
+    },
+    {
+      "recipe_id": 90,
+      "local_path": "assets/food/personnel/recette-090.jpg",
+      "source_page_url": "https://recettesquebecoises.com/recette/6232-salade-de-fruits-tropicaux",
+      "attribution": "Source : recettesquebecoises.com ; droits de réutilisation non vérifiés",
+      "caption": "Salade de fruits tropicaux ; gingembre non vérifiable.",
+      "status": "personal_only",
+      "image_kind": "photograph",
+      "publication_ready": false,
+      "acquired_dimensions": [
+        180,
+        150
+      ],
+      "search_file": "salade-fruits-tropicaux-recettesquebecoi-1.jpg"
+    },
+    {
+      "recipe_id": 91,
+      "local_path": "assets/food/personnel/recette-091.jpg",
+      "source_page_url": "https://happypapilles.fr/bissap-infusion-hibiscus-citron-basilic/",
+      "attribution": "Source : happypapilles.fr ; droits de réutilisation non vérifiés",
+      "caption": "Bissap citron-basilic-miel ; variante de notre version à la menthe.",
+      "status": "personal_only",
+      "image_kind": "photograph",
+      "publication_ready": false,
+      "acquired_dimensions": [
+        412,
+        617
+      ],
+      "search_file": "bissap-happypapilles-1.jpg"
+    },
+    {
+      "recipe_id": 92,
+      "local_path": "assets/food/personnel/recette-092.jpg",
+      "source_page_url": "https://recettes-ehtymag.com/jus-bissap-blanc/",
+      "attribution": "Source : recettes-ehtymag.com ; droits de réutilisation non vérifiés",
+      "caption": "Bissap blanc ; présentation et garnitures illustratives.",
+      "status": "personal_only",
+      "image_kind": "photograph",
+      "publication_ready": false,
+      "acquired_dimensions": [
+        683,
+        1024
+      ],
+      "search_file": "bissap-blanc-ehtymag-1.jpg"
+    },
+    {
+      "recipe_id": 93,
+      "local_path": "assets/food/personnel/recette-093.jpg",
+      "source_page_url": "https://www.savourous.com/recipe-view/healthy-ginger-juice-gnamakoudji-or-tangawizi/",
+      "attribution": "Source : savourous.com ; droits de réutilisation non vérifiés",
+      "caption": "Gnamakoudji, jus de gingembre.",
+      "status": "personal_only",
+      "image_kind": "photograph",
+      "publication_ready": false,
+      "acquired_dimensions": [
+        300,
+        300
+      ],
+      "search_file": "ginger-juice-gnamakoudji-savourous-1.jpg"
+    },
+    {
+      "recipe_id": 94,
+      "local_path": "assets/food/personnel/recette-094.jpg",
+      "source_page_url": "https://timolokoy.com/blog/index.php/recipe/jus-de-tamarin/",
+      "attribution": "Source : timolokoy.com ; droits de réutilisation non vérifiés",
+      "caption": "Jus de tamarin.",
+      "status": "personal_only",
+      "image_kind": "photograph",
+      "publication_ready": false,
+      "acquired_dimensions": [
+        750,
+        1125
+      ],
+      "search_file": "jus-tamarin-timolokoy-1.jpg"
+    },
+    {
+      "recipe_id": 95,
+      "local_path": "assets/food/personnel/recette-095.jpg",
+      "source_page_url": "https://cookpad.com/fr/recettes/15797426",
+      "attribution": "Source : cookpad.com ; droits de réutilisation non vérifiés",
+      "caption": "Bouye dans la bouteille claire ; la bouteille foncée contient une autre boisson.",
+      "status": "personal_only",
+      "image_kind": "photograph",
+      "publication_ready": false,
+      "acquired_dimensions": [
+        300,
+        426
+      ],
+      "search_file": "bouye-jus-baobab-verre-recette-2.jpg"
+    },
+    {
+      "recipe_id": 96,
+      "local_path": "assets/food/personnel/recette-096.jpg",
+      "source_page_url": "https://cuisinedecheznous.net/blog/2022/04/06/jus-de-gingembre-ananas-menthe-citron",
+      "attribution": "Source : cuisinedecheznous.net ; droits de réutilisation non vérifiés",
+      "caption": "Jus ananas-menthe ; variante avec citron et gingembre.",
+      "status": "personal_only",
+      "image_kind": "photograph",
+      "publication_ready": false,
+      "acquired_dimensions": [
+        1200,
+        1200
+      ],
+      "search_file": "jus-ananas-menthe-cuisinedecheznous-1.jpg"
+    },
+    {
+      "recipe_id": 97,
+      "local_path": "assets/food/personnel/recette-097.jpg",
+      "source_page_url": "https://bullencuisine.wordpress.com/2014/06/20/limonade-au-gingembre",
+      "attribution": "Source : bullencuisine.wordpress.com ; droits de réutilisation non vérifiés",
+      "caption": "Limonade citron-gingembre ; présentation illustrative.",
+      "status": "personal_only",
+      "image_kind": "photograph",
+      "publication_ready": false,
+      "acquired_dimensions": [
+        225,
+        300
+      ],
+      "search_file": "limonade-gingembre-bullencuisine-1.jpg"
+    },
+    {
+      "recipe_id": 98,
+      "local_path": "assets/food/personnel/recette-098.jpg",
+      "source_page_url": "https://ileauxepices.com/fruits-secs/500-arachides-caramelisees-chouchou.html",
+      "attribution": "Source : ileauxepices.com ; droits de réutilisation non vérifiés",
+      "caption": "Arachides caramélisées, présentation commerciale du produit fini.",
+      "status": "personal_only",
+      "image_kind": "photograph",
+      "publication_ready": false,
+      "acquired_dimensions": [
+        445,
+        593
+      ],
+      "search_file": "arachides-caramelisees-ileauxepices-1.jpg"
+    },
+    {
+      "recipe_id": 99,
+      "local_path": "assets/food/personnel/recette-099.jpg",
+      "source_page_url": "https://recetaspanama.com/recetas/reposteria/cocadas",
+      "attribution": "Source : recetaspanama.com ; droits de réutilisation non vérifiés",
+      "caption": "Cocadas panaméennes ; variante des bouchées coco de notre adaptation.",
+      "status": "personal_only",
+      "image_kind": "photograph",
+      "publication_ready": false,
+      "acquired_dimensions": [
+        600,
+        450
+      ],
+      "search_file": "kokada-recetas-antillana-1.webp"
+    },
+    {
+      "recipe_id": 100,
+      "local_path": "assets/food/personnel/recette-100.jpg",
+      "source_page_url": "https://flobidouille.blogspot.com/2013/12/bananes-roties-lhuile-de-coco-ou-lenvie.html",
+      "attribution": "Source : flobidouille.blogspot.com ; droits de réutilisation non vérifiés",
+      "caption": "Bananes rôties au coco ; citron vert non vérifiable.",
+      "status": "personal_only",
+      "image_kind": "photograph",
+      "publication_ready": false,
+      "acquired_dimensions": [
+        640,
+        426
+      ],
+      "search_file": "bananes-roties-coco-flo-bidouille-1.jpg"
+    }
+  ],
+  "publication_ready": false,
+  "reconstruction": true
+}
